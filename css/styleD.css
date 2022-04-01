@@ -698,9 +698,5 @@ tbody tr td a:hover {
     height: auto;
     width: 100%;
   }
-  .input,
-  .magnifier {
-    width: 10%;
-    height: auto;
-  }
+  
 }
