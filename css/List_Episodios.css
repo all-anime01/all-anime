@@ -2793,7 +2793,7 @@ p {
     top: -10px;
   }
 }
-@media all and (min-width: 1020px) {
+@media all and (min-width: 400px) {
   .LsEpsdsCn {
     display: block;
     width: calc(300% + 20px);
@@ -2843,7 +2843,7 @@ p {
     margin-bottom: 0;
   }
 }
-@media all and (min-width: 1020px) and (max-width: 1200px) {
+@media all and (min-width: 400px) and (max-width: 768px) {
   .LsEpsdsCn:before {
     left: -65%;
   }
@@ -2869,7 +2869,7 @@ p {
     display: none;
   }
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 400px) {
   .LsEpsdsCn {
     width: calc(400% + 20px);
   }
@@ -2898,13 +2898,13 @@ p {
     left: 75%;
   }
 }
-@media all and (min-width: 1020px) and (max-width: 1200px) {
+@media all and (min-width: 400px) and (max-width: 768px) {
   .ListAnimes > li:nth-child(3n) .Anime.alt.B .Description {
     left: auto;
     right: 90%;
   }
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 400px) {
   .ListAnimes > li:nth-child(4n) .Anime.alt.B .Description {
     left: auto;
     right: 90%;
