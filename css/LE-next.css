@@ -225,6 +225,11 @@ tbody tr td a:hover {
   background: transparent;
   color: rgb(7, 247, 59);
 }
+#image-min{
+  width: 70px;
+  height: 65px;
+  border-radius: 5px;
+}
 
 .Type.tv {
   background-color: rgb(7, 247, 59);
@@ -559,7 +564,7 @@ h2 {
   font-size: 14px;
 }
 
-@media all and (min-width: 1020px) {
+@media all and (min-width: 720px) {
 }
 .CpCn.show .Brdcrmb a,
 .CpCn.show .CpCnA .CapiTop .Title {
@@ -3119,10 +3124,6 @@ figure img {
   }
   .about .row .image img {
     height: auto;
-    width: 100%;
-  }
-  .input,
-  .magnifier {
     width: 100%;
   }
 }
