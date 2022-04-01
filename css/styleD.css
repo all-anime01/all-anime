@@ -690,14 +690,7 @@ tbody tr td a:hover {
     font-size: 50%;
   }
 
-  section {
-    padding: 1 2%;
-    padding-top: 5rem;
-  }
-  .galley{
-    height: auto;
-    width: 100%;
-  }
+  
   .about .row .image img {
     height: auto;
     width: 100%;
