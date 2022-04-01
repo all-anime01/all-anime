@@ -700,6 +700,6 @@ tbody tr td a:hover {
   }
   .input,
   .magnifier {
-    width: 100%;
+    width: auto;
   }
 }
