@@ -224,7 +224,11 @@ tbody tr td a {
   color: #666;
   transition: all 0.3s;
 }
-
+#image-min{
+  width: 70px;
+  height: 65px;
+  border-radius: 5px;
+}
 tbody tr td a:hover {
   background: transparent;
   color: rgb(7, 247, 59);
@@ -843,9 +847,6 @@ a:-webkit-any-link {
   filter: alpha(opacity=20);
 }
 
-element.style {
-  padding: 20px;
-}
 .Sect > .Bod {
   padding: 15px;
   border-top: 1px solid #f3f3f3;
@@ -896,6 +897,34 @@ select,
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
 }
+.model {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal .in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
 @media all and (min-width: 768px) {
   #MrFwlrs .modal-dialog {
     width: 100%;
@@ -1476,20 +1505,20 @@ h1 {
   text-align: left;
   height: 40px;
 }
-.Votes .Strs > [class*="fa-"] {
+.Votes .Strs > [class*="fa-star"] {
   color: #ffc602;
   font-size: 10px;
   padding-right: 3px;
 }
-.Votes .Strs > [class*="fa-"]:first-child {
+.Votes .Strs > [class*="fa-star"]:first-child {
   padding-right: 0;
 }
-.Votes .Strs > [class*="fa-"].Hf:before {
+.Votes .Strs > [class*="fa-star"].Hf:before {
   content: "\f123";
 }
-.Votes .Strs > [class*="fa-"].On:before,
-.Votes .Strs > a[class*="fa-"]:hover:before,
-.Votes .Strs > a[class*="fa-"]:hover ~ a:before {
+.Votes .Strs > [class*="fa-star"].On:before,
+.Votes .Strs > a[class*="fa-star"]:hover:before,
+.Votes .Strs > a[class*="fa-star"]:hover ~ a:before {
   content: "\f005";
 }
 .Rating {
@@ -3281,10 +3310,6 @@ figure img {
   }
   .about .row .image img {
     height: auto;
-    width: 100%;
-  }
-  .input,
-  .magnifier {
     width: 100%;
   }
 }
