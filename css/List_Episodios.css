@@ -3275,12 +3275,17 @@ figure img {
 }
 
 @media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+
   section {
-    padding: 0;
-    padding-top: 11rem;
+    padding: 0 3%;
+    padding-top: 15rem;
   }
   .about .row .image img {
     height: auto;
     width: 100%;
   }
+  
 }
