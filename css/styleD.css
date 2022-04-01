@@ -690,7 +690,10 @@ tbody tr td a:hover {
     font-size: 50%;
   }
 
-  
+  section {
+    padding: 0 3%;
+    padding-top: 2rem;
+  }
   .about .row .image img {
     height: auto;
     width: 100%;
