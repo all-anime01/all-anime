@@ -224,7 +224,11 @@ tbody tr td a {
   color: #666;
   transition: all 0.3s;
 }
-
+#image-min{
+  width: 70px;
+  height: 65px;
+  border-radius: 5px;
+}
 tbody tr td a:hover {
   background: transparent;
   color: rgb(7, 247, 59);
@@ -1476,20 +1480,20 @@ h1 {
   text-align: left;
   height: 40px;
 }
-.Votes .Strs > [class*="fa-"] {
+.Votes .Strs > [class*="fa-star"] {
   color: #ffc602;
   font-size: 10px;
   padding-right: 3px;
 }
-.Votes .Strs > [class*="fa-"]:first-child {
+.Votes .Strs > [class*="fa-star"]:first-child {
   padding-right: 0;
 }
-.Votes .Strs > [class*="fa-"].Hf:before {
+.Votes .Strs > [class*="fa-star"].Hf:before {
   content: "\f123";
 }
-.Votes .Strs > [class*="fa-"].On:before,
-.Votes .Strs > a[class*="fa-"]:hover:before,
-.Votes .Strs > a[class*="fa-"]:hover ~ a:before {
+.Votes .Strs > [class*="fa-star"].On:before,
+.Votes .Strs > a[class*="fa-star"]:hover:before,
+.Votes .Strs > a[class*="fa-star"]:hover ~ a:before {
   content: "\f005";
 }
 .Rating {
@@ -2793,7 +2797,7 @@ p {
     top: -10px;
   }
 }
-@media all and (min-width: 400px) {
+@media all and (min-width: 1020px) {
   .LsEpsdsCn {
     display: block;
     width: calc(300% + 20px);
@@ -2843,7 +2847,7 @@ p {
     margin-bottom: 0;
   }
 }
-@media all and (min-width: 400px) and (max-width: 768px) {
+@media all and (min-width: 1020px) and (max-width: 1200px) {
   .LsEpsdsCn:before {
     left: -65%;
   }
@@ -2869,7 +2873,7 @@ p {
     display: none;
   }
 }
-@media all and (min-width: 400px) {
+@media all and (min-width: 1200px) {
   .LsEpsdsCn {
     width: calc(400% + 20px);
   }
@@ -2898,13 +2902,13 @@ p {
     left: 75%;
   }
 }
-@media all and (min-width: 400px) and (max-width: 768px) {
+@media all and (min-width: 1020px) and (max-width: 1200px) {
   .ListAnimes > li:nth-child(3n) .Anime.alt.B .Description {
     left: auto;
     right: 90%;
   }
 }
-@media all and (min-width: 400px) {
+@media all and (min-width: 1200px) {
   .ListAnimes > li:nth-child(4n) .Anime.alt.B .Description {
     left: auto;
     right: 90%;
@@ -3275,13 +3279,9 @@ figure img {
 }
 
 @media (max-width: 400px) {
-  html {
-    font-size: 50%;
-  }
-
   section {
-    padding: 0 3%;
-    padding-top: 15rem;
+    padding: 0;
+    padding-top: 11rem;
   }
   .about .row .image img {
     height: auto;
