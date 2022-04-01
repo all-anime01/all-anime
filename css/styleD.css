@@ -695,7 +695,8 @@ tbody tr td a:hover {
     padding-top: 5rem;
   }
   .galley{
-    padding-top: 5rem;
+    height: auto;
+    width: 100%;
   }
   .about .row .image img {
     height: auto;
