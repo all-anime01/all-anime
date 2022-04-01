@@ -225,6 +225,11 @@ tbody tr td a:hover {
   background: transparent;
   color: rgb(7, 247, 59);
 }
+#image-min{
+  width: 70px;
+  height: 65px;
+  border-radius: 5px;
+}
 
 .Type.tv {
   background-color: rgb(7, 247, 59);
