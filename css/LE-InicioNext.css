@@ -115,6 +115,11 @@ header .logo b {
   color: rgb(7, 247, 59);
   font-family: Shadows Into Light;
 }
+header .logo img{
+  width: 55px;
+  height: 50px;
+  margin: -15px 0 -15px;
+}
 
 header .navbar ul {
   display: flex;
@@ -564,7 +569,7 @@ h2 {
   font-size: 14px;
 }
 
-@media all and (min-width: 1020px) {
+@media all and (min-width: 768px) {
 }
 .CpCn.show .Brdcrmb a,
 .CpCn.show .CpCnA .CapiTop .Title {
@@ -795,7 +800,8 @@ a:-webkit-any-link {
   padding-top: 0;
   text-align: center;
 }
-@media (min-width: 767px) .fchlt {
+@media (min-width: 768px) 
+.fchlt {
   text-align: left;
 }
 
@@ -1018,7 +1024,7 @@ h1 {
   display: block;
   width: 100%;
 }
-@media all and (min-width: 767px) {
+@media all and (min-width: 768px) {
   .Container {
     max-width: 765px;
   }
@@ -1095,7 +1101,7 @@ h1 {
     width: 100%;
   }
 }
-@media all and (min-width: 1020px) {
+@media all and (min-width: 768px) {
   .Container {
     max-width: 990px;
   }
@@ -1172,7 +1178,7 @@ h1 {
     width: 100%;
   }
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 720px) {
   .Container {
     max-width: 1170px;
   }
@@ -1677,7 +1683,7 @@ img {
   margin-top: 10px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
   .Wdgt .Top .WdgtLink {
     position: absolute;
     left: 0;
@@ -1732,13 +1738,13 @@ img {
     color: rgb(7, 247, 59);
   }
 }
-@media all and (max-width: 667px) {
+@media all and (max-width: 400px) {
   .Ficha .ListPostOpts > li {
     width: 100%;
     margin-right: 0;
   }
 }
-@media all and (max-width: 467px) {
+@media all and (max-width: 400px) {
   .ListEpisodios.Rows > li,
   .ListAnimes.Rows > li,
   .ListNoticias.Rows > li {
@@ -1751,7 +1757,7 @@ img {
     display: block;
   }
 }
-@media all and (min-width: 667px) {
+@media all and (min-width: 400px) {
   .Ficha .ListPostOpts > li {
     margin-bottom: 0;
   }
@@ -3126,8 +3132,8 @@ figure img {
     height: auto;
     width: 100%;
   }
-  .input,
-  .magnifier {
+  .Bg{
+    height: auto;
     width: 100%;
   }
 }
