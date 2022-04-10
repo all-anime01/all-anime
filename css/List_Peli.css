@@ -4,6 +4,10 @@
   font-family: FuenteLogo;
   src: url("BlackgroundsRegular-1GEYj.ttf");
 }
+@font-face {
+  font-family: fountOneP;
+  src: url("font/Ryuk Font.ttf");
+}
 
 * {
   font-family: "Rubik", sans-serif;
@@ -697,8 +701,7 @@ a.CapNvLs:last-child {
 
 /*Reportar episodio*/
 
-.BtnNw {
-  background-color: rgb(32, 106, 243);
+.cta{
   border-radius: 5px;
   position: relative;
   padding: 13px 10px 13px 50px;
@@ -707,27 +710,9 @@ a.CapNvLs:last-child {
   display: block !important;
   margin-bottom: 10px;
   color: #fff;
+  background-color: rgb(73, 83, 102);
 }
-.BtnNw.Rprt {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 20px;
-  padding-left: 35px;
-  padding-right: 25px;
-  width: 135px;
-  height: 40px;
-  margin: -135px 295px 105px;
-}
-.BtnNw.Rprt:before {
-  top: 10px;
-  font-size: medium;
-  left: 5px;
-}
-.BtnNw.Rprt:before,
-.BtnNw.Rprt:hover {
-  color: #fb3447;
-}
-.BtnNw:before {
+.cta:before{
   width: 30px;
   height: 30px;
   position: absolute;
@@ -740,13 +725,33 @@ a.CapNvLs:last-child {
   margin-right: 0;
   transition: 0.2s;
 }
-.BtnNw span {
+.cta:hover{
+  filter: brightness(0.8);
+}
+.cta.Rprt{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+  padding-left: 35px;
+  padding-right: 25px;
+  width: 135px;
+  height: 40px;
+  margin: -245px 290px 105px;
+}
+.cta.Rprt:before {
+  top: 10px;
+  font-size: medium;
+  left: 5px;
+}
+.cta.Rprt:before,
+.cta.Rprt:hover{
+  color: #fb3447;
+}
+.cta span{
   display: block;
   font-weight: 700;
   text-transform: uppercase;
-}
-a:-webkit-any-link {
-  cursor: pointer;
+  font-family: 'fountOneP';
 }
 [class*="fa-flag-o"]:before {
   display: inline-block;
@@ -764,116 +769,72 @@ a:-webkit-any-link {
 .fa-flag-o:before {
   content: "\f11d";
 }
-
-/*Cuadro de reporte de episodio*/
-.modal {
-  display: none;
-  overflow: hidden;
+.modal-container{
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  z-index: 10050;
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
-}
-.modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-}
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 10px;
-}
-.Sect {
-  background-color: #fff;
-  border-radius: 3px;
-  margin-bottom: 20px;
-}
-.Sect > .Top {
-  margin-bottom: 0 !important;
-}
-.Sect > .Top {
-  padding: 20px 15px;
-  font-size: 20px;
-  font-weight: 300;
-  color: #3b4248;
-  display: block;
-  position: relative;
-  white-space: nowrap;
-  -ms-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  padding-right: 70px;
-}
-.Sect > .Top:before {
-  color: #fec601;
-}
-.Sect > .Top .close {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 15px;
-  text-align: center;
-  background-color: #fb3447;
-  color: #fff;
-  padding: 0;
-  opacity: 1;
-  font-size: 15px;
-}
-.close {
-  float: right;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 1;
-  color: #000;
-  text-shadow: 0 1px 0 #fff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Sect > .Bod {
-  padding: 15px;
-  border-top: 1px solid #f3f3f3;
+.modal{
+  width: 40%;
+  height: 52%;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  transition: transform 1s;
+  transform: translateY(0%);
+  border-radius: 10px;
+}
+.close{
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: #fb3447;
+  color: #fff;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+h4 {
+  position: absolute;
+  top: 5%;
+  left: 55px;
+  font-size: 30px;
+  font-family: sans-serif;
   color: #666;
 }
-input,
-textarea,
-select,
-.Select label,
-.Checkbox [type="checkbox"] + i:before,
-.Radio [type="radio"] + i {
-  border-color: #e8e7f0;
+.fa-solid{
+  color: darkred;
+}
+.modal-close{
+  transform: translateY(-200%);
 }
 .form-group {
-  margin-bottom: 15px;
+  text-align: left;
+  margin-bottom: 5px;
+
 }
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 35px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #555;
   background-color: #fff;
@@ -887,47 +848,31 @@ select,
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-
 .de-auth .form-control {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 1px solid #ccc;
 }
-.fade.in {
-  opacity: 1;
+.modal-text{
+  margin: 45px;
+  text-align: left;
 }
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
+.modal > .modal-text{
+  height: 50%;
+  padding: 25px 10px;
 }
-.model {
-  display: none;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
+.popup-btn {
+  position: absolute;
+  top: 5;
+  background: rgb(224, 221, 221);
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
 }
-.modal .in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
+.popup-btn:hover {
+  filter: brightness(0.8);
 }
 
 @media all and (min-width: 768px) {
