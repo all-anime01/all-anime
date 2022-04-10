@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My Hero Academia: World Heroes Mission Sub Español — All-Anime</title>
     <link rel="shortcut icon" href="image/logo.ico">
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -193,7 +191,7 @@
                                 <span class="Type tvB">PELÍCULA</span></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="#">
+                                    <td><a href="One-Piece-Estampida-movie.html">
                                         <figure>
                                             <img src="image/pOPstampede.jpg" id="image-min" alt="">
                                         </figure>
@@ -393,10 +391,42 @@
                     <a href="Boku-no-Hero-Academy-WHM-movie.html" class="CapNvLs fa-th-list"></a>
                     </div>
 
-                <div class="contenedor-reporte">
-                    <button class="BtnNw Rprt fa-flag-o"><span>REPORTAR</span>Episodio</button>
-                </div>
-
+                    <section>
+                        <div class="container-text">
+                            <a href="#" class="cta Rprt fa-flag-o"><span>REPORTAR</span><span>Episodio</span></a>
+                        </div>
+                    </section>
+                
+                    <form action="https://formsubmit.co/all.anime.lat01@gmail.com" method="POST">
+                
+                    <div class="modal-container">
+                        <div class="modal modal-close">
+                            <p class="close">X</p>
+                            <h4>Reportar<i class="fa-solid fa-anchor-circle-exclamation"></i></h4>
+                            <div class="modal-text">
+                                <label for="report-resaon">Motivo:</label>
+                                <select class="form-control" id="report_reason">
+                                    <option value="0">No reproduce</option>
+                                    <option value="1">Problemas de Audio</option>
+                                    <option value="2">No se encuentra el Archivo</option>
+                                    <option value="3">No es el Episodio</option>
+                                </select>
+                        <div class="form-group">
+                            <label for="report-comment">Explicanos el problema:</label>
+                            <textarea class="form-control" id="report_comment"></textarea>
+                        </div>
+                        <button onclick='mensaje("fue enviado")' class="popup-btn">Enviar Reporte</button>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                    
+                    <script>
+                        function mensaje(enviado){
+                            console.log("El mensaje"+" "+enviado);
+                            alert("El mensaje"+" "+enviado+" " + "gracias por reportarlo!");
+                        }
+                    </script>
                 <!-- Inicio comentarios Disqus -->
                     
                 <div id="disqus_thread"></div>
@@ -419,30 +449,7 @@
                 </script>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                     </section>
-
-                <div class="modal fade active">
-                    <div class="modal-dialog" role="document">
-                        <div class="Sect">
-                            <div class="Top fa-flag">Reportar</div>
-                            <div class="Bod" style="padding: 20px;" id="report_body">
-                                <div class="form-group">
-                    <label for="report_reason">Motivo:</label>
-                    <select class="form-control" id="report_reason">
-                        <option value="0">No Reproduce</option>
-                        <option value="1">Problemas de Audio</option>
-                        <option value="2">Problemas con Subtitulos</option>
-                        <option value="3">No es el episodio</option>
-                        </select>
-                    <button class="popup-btn">Enviar Reporte</button>
-                    <div class="close-icon">
-                        <i class="fas fa-times fa-2x"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-                    
+                
 
     </section>
     <!--contacto-->
