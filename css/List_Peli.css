@@ -5,8 +5,8 @@
   src: url("BlackgroundsRegular-1GEYj.ttf");
 }
 @font-face {
-  font-family: fountOneP;
-  src: url("font/Ryuk Font.ttf");
+  font-family: Ryuk;
+  src: url("font/Ryuk-Font.ttf");
 }
 
 * {
@@ -576,7 +576,7 @@ h2 {
   font-size: 14px;
 }
 
-@media all and (min-width: 1020px) {
+@media all and (min-width: 767px) {
 }
 .CpCn.show .Brdcrmb a,
 .CpCn.show .CpCnA .CapiTop .Title {
@@ -701,14 +701,14 @@ a.CapNvLs:last-child {
 
 /*Reportar episodio*/
 
+
 .cta{
   border-radius: 5px;
   position: relative;
-  padding: 13px 10px 13px 50px;
   font-size: 12px;
   line-height: 12px;
   display: block !important;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   color: #fff;
   background-color: rgb(73, 83, 102);
 }
@@ -720,7 +720,7 @@ a.CapNvLs:last-child {
   top: 10px;
   text-align: center;
   line-height: 30px;
-  font-size: 15px;
+  font-size: 12px;
   border-radius: 15px;
   margin-right: 0;
   transition: 0.2s;
@@ -729,14 +729,14 @@ a.CapNvLs:last-child {
   filter: brightness(0.8);
 }
 .cta.Rprt{
+  display: block;
+  top: -135px;
+  left: 340px;
   padding-top: 8px;
-  padding-bottom: 8px;
   border-radius: 20px;
   padding-left: 35px;
-  padding-right: 25px;
-  width: 135px;
+  width: 125px;
   height: 40px;
-  margin: -245px 290px 105px;
 }
 .cta.Rprt:before {
   top: 10px;
@@ -751,7 +751,7 @@ a.CapNvLs:last-child {
   display: block;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: 'fountOneP';
+  font-family: Rubik;
 }
 [class*="fa-flag-o"]:before {
   display: inline-block;
@@ -848,11 +848,7 @@ h4 {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-.de-auth .form-control {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: 1px solid #ccc;
-}
+
 .modal-text{
   margin: 45px;
   text-align: left;
@@ -2772,7 +2768,7 @@ p {
     top: -10px;
   }
 }
-@media all and (min-width: 1020px) {
+@media all and (min-width: 767px) {
   .LsEpsdsCn {
     display: block;
     width: calc(300% + 20px);
@@ -3262,4 +3258,8 @@ figure img {
     height: auto;
     width: 100%;
   }
+}
+
+@media(min-width: 767px){
+  .contenedor
 }
