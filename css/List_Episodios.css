@@ -700,37 +700,18 @@ a.CapNvLs:last-child {
 
 /*Reportar episodio*/
 
-.BtnNw {
-  background-color: rgb(32, 106, 243);
+
+.cta{
   border-radius: 5px;
   position: relative;
-  padding: 13px 10px 13px 50px;
   font-size: 12px;
   line-height: 12px;
   display: block !important;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   color: #fff;
+  background-color: rgb(73, 83, 102);
 }
-.BtnNw.Rprt {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 20px;
-  padding-left: 35px;
-  padding-right: 25px;
-  width: 135px;
-  height: 40px;
-  margin: -135px 295px 105px;
-}
-.BtnNw.Rprt:before {
-  top: 10px;
-  font-size: medium;
-  left: 5px;
-}
-.BtnNw.Rprt:before,
-.BtnNw.Rprt:hover {
-  color: #fb3447;
-}
-.BtnNw:before {
+.cta:before{
   width: 30px;
   height: 30px;
   position: absolute;
@@ -738,18 +719,38 @@ a.CapNvLs:last-child {
   top: 10px;
   text-align: center;
   line-height: 30px;
-  font-size: 15px;
+  font-size: 12px;
   border-radius: 15px;
   margin-right: 0;
   transition: 0.2s;
 }
-.BtnNw span {
+.cta:hover{
+  filter: brightness(0.8);
+}
+.cta.Rprt{
+  display: block;
+  top: -135px;
+  left: 340px;
+  padding-top: 8px;
+  border-radius: 20px;
+  padding-left: 35px;
+  width: 125px;
+  height: 40px;
+}
+.cta.Rprt:before {
+  top: 10px;
+  font-size: medium;
+  left: 5px;
+}
+.cta.Rprt:before,
+.cta.Rprt:hover{
+  color: #fb3447;
+}
+.cta span{
   display: block;
   font-weight: 700;
   text-transform: uppercase;
-}
-a:-webkit-any-link {
-  cursor: pointer;
+  font-family: Rubik;
 }
 [class*="fa-flag-o"]:before {
   display: inline-block;
@@ -766,6 +767,107 @@ a:-webkit-any-link {
 }
 .fa-flag-o:before {
   content: "\f11d";
+}
+.modal-container{
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal{
+  width: 40%;
+  height: 52%;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  transition: transform 1s;
+  transform: translateY(0%);
+  border-radius: 10px;
+}
+.close{
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: #fb3447;
+  color: #fff;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+h4 {
+  position: absolute;
+  top: 5%;
+  left: 55px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #666;
+}
+.fa-solid{
+  color: darkred;
+}
+.modal-close{
+  transform: translateY(-200%);
+}
+.form-group {
+  text-align: left;
+  margin-bottom: 5px;
+
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.modal-text{
+  margin: 45px;
+  text-align: left;
+}
+.modal > .modal-text{
+  height: 50%;
+  padding: 25px 10px;
+}
+.popup-btn {
+  position: absolute;
+  top: 5;
+  background: rgb(224, 221, 221);
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.popup-btn:hover {
+  filter: brightness(0.8);
 }
 
 /*Cuadro de reporte de episodio*/
