@@ -115,8 +115,7 @@ header .logo b {
   color: rgb(7, 247, 59);
   font-family: Shadows Into Light;
 }
-header .logo img{
-  width: 55px;
+.logo img{
   height: 50px;
   margin: -15px 0 -15px;
 }

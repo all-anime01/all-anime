@@ -120,10 +120,8 @@ header .logo b {
   color: rgb(7, 247, 59);
   font-family: Shadows Into Light;
 }
-header .logo img{
-  width: 55px;
+.logo img{
   height: 50px;
-  position: relative;
   margin: -2px 0 -8px;
   
 }
