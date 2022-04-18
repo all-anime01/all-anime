@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2? family=Rubik+Beastly&family=Rubik:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Beastly&family=Rubik:wght@300;400&family=Shadows+Into+Light&display=swap");
+
 @font-face {
   font-family: FuenteLogo;
   src: url("BlackgroundsRegular-1GEYj.ttf");
@@ -84,7 +85,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  z-index: 10;
+  z-index: 1000;
   background: rgb(202, 48, 48);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   display: flex;
@@ -96,6 +97,7 @@ header {
 header .logo {
   font-size: 1.5rem;
   font-family: Shadows Into Light;
+  text-decoration: none;
 }
 
 header .logo h1 {
@@ -107,7 +109,8 @@ header .logo b {
   color: rgb(7, 247, 59);
   font-family: Shadows Into Light;
 }
-.logo img{
+
+.logo img {
   height: 50px;
   margin: 2px 0 -8px;
 }
@@ -126,12 +129,42 @@ header .navbar ul li {
 header .navbar ul li a {
   font-size: 1.3rem;
   color: lightgray;
+  text-decoration: none;
 }
 
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
   color: rgb(7, 247, 59);
 }
+
+/*Slider*/
+
+.slider img {
+  width: 150px;
+  height: 450px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.sliderItem {
+  display: flex;
+  width: 65%;
+  margin: 125px 200px 55px;
+}
+
+.sliderItem h1 {
+  color: rgb(202, 48, 48);
+  font-family: Rubik;
+}
+
+.sliderItem p {
+  color: rgb(7, 247, 59);
+}
+
+.slider {
+  width: 150%;
+}
+
 
 #menu {
   font-size: 3rem;
@@ -164,6 +197,7 @@ header .navbar ul li a:hover {
   flex: 1 1 40rem;
   padding: 4rem 0;
 }
+
 .Inicio .content h3 {
   color: var(--red);
   font-size: 4rem;
@@ -176,6 +210,7 @@ header .navbar ul li a:hover {
   color: white;
   font-size: 7rem;
 }
+
 .Inicio .content p {
   color: #aaa;
   font-size: 2.5rem;
@@ -193,6 +228,7 @@ header .navbar ul li a:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .gallery .box-container .box {
   flex: 1 1 23rem;
   height: 30rem;
@@ -203,11 +239,13 @@ header .navbar ul li a:hover {
   border-radius: 1.5rem;
   position: relative;
 }
+
 .gallery .box-container .box img {
   height: 100%;
   background-size: cover;
   width: 107%;
 }
+
 .gallery .box-container .box .info {
   position: absolute;
   bottom: -180%;
@@ -248,6 +286,7 @@ header .navbar ul li a:hover {
   color: transparent;
   padding: 50px;
 }
+
 .gallery .box-container .box .play:hover {
   transform: scale(1.3s);
   color: white;
@@ -267,23 +306,28 @@ header .navbar ul li a:hover {
   margin-top: calc(var(--nshare-spacing) * -1);
   margin-right: calc(var(--nshare-spacing) * 5);
 }
+
 .nshare-item {
   margin-right: var(--nshare-spacing);
   margin-top: var(--nshare-spacing);
 }
+
 .nshare-item,
 .nshare-item:hover,
 .nshare-item:active {
   text-decoration: none;
   color: inherit;
 }
+
 .nshare-item {
   transition: background 0.3s, color 0.3s;
 }
+
 .nshare-item i {
   transition: transform 0.3s;
   margin: 0;
 }
+
 .nshare,
 .nshare-item {
   display: flex;
@@ -295,27 +339,35 @@ header .navbar ul li a:hover {
 .nshare-fb {
   background-color: var(--nshare-facebook);
 }
+
 .nshare-tt {
   background-color: var(--nshare-twitter);
 }
+
 .nshare-pt {
   background-color: var(--nshare-pinterest);
 }
+
 .nshare-tb {
   background-color: var(--nshare-tumblr);
 }
+
 .nshare-rd {
   background-color: var(--nshare-reddit);
 }
+
 .nshare-vk {
   background-color: var(--nshare-vk);
 }
+
 .nshare-ws {
   background-color: var(--nshare-whatsapp);
 }
+
 .nshare-tlg {
   background-color: var(--nshare-telegram);
 }
+
 .nshare-msj {
   background-color: var(--nshare-email);
 }
@@ -323,27 +375,35 @@ header .navbar ul li a:hover {
 .nshare-fb:hover {
   color: var(--nshare-facebook);
 }
+
 .nshare-tt:hover {
   color: var(--nshare-twitter);
 }
+
 .nshare-pt:hover {
   color: var(--nshare-pinterest);
 }
+
 .nshare-tb:hover {
   color: var(--nshare-tumblr);
 }
+
 .nshare-rd:hover {
   color: var(--nshare-reddit);
 }
+
 .nshare-vk:hover {
   color: var(--nshare-vk);
 }
+
 .nshare-ws:hover {
   color: var(--nshare-whatsapp);
 }
+
 .nshare-tlg:hover {
   color: var(--nshare-telegram);
 }
+
 .nshare-msj:hover {
   color: var(--nshare-email);
 }
@@ -351,16 +411,21 @@ header .navbar ul li a:hover {
 .nshare-item:hover i {
   transform: rotate(360deg);
 }
+
 /*}} Fin del core {{*/
 
 /*! Personalización */
 /* Contenedor
 -----------------------------------------*/
 .nshare {
-  --nshare-spacing: 0.5rem; /* separacion interna */
-  padding-top: 0; /* separacion superior */
-  padding-bottom: 0; /* separacion inferior */
+  --nshare-spacing: 0.5rem;
+  /* separacion interna */
+  padding-top: 0;
+  /* separacion superior */
+  padding-bottom: 0;
+  /* separacion inferior */
 }
+
 /* Redes sociales
 -----------------------------------------*/
 .nshare {
@@ -373,20 +438,30 @@ header .navbar ul li a:hover {
   --nshare-telegram: #0088cc;
   --nshare-email: #464eb8;
 }
+
 /* Botones
 -----------------------------------------*/
 .nshare-item {
-  font-size: 22px; /* tamaño de iconos */
-  width: 48px; /* ancho */
-  height: 48px; /* alto */
-  border-radius: 0.5rem; /* bordes redondeados */
-  color: #fff; /* color */
+  font-size: 22px;
+  /* tamaño de iconos */
+  width: 48px;
+  /* ancho */
+  height: 48px;
+  /* alto */
+  border-radius: 0.5rem;
+  /* bordes redondeados */
+  color: #fff;
+  /* color */
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.1),
-    0 2px 5px -1px rgba(0, 0, 0, 0.05); /* sombra */
+    0 2px 5px -1px rgba(0, 0, 0, 0.05);
+  /* sombra */
 }
+
 .nshare-item:hover {
-  background-color: transparent; /* fondo (hover) */
+  background-color: transparent;
+  /* fondo (hover) */
 }
+
 /*Fin botones contactanos*/
 
 .Footer {
@@ -415,20 +490,25 @@ header .navbar ul li a:hover {
   margin-top: 0;
   align-items: center;
 }
-.Footer .Row > *,
+
+.Footer .Row>*,
 .Footer p {
   padding-top: 0;
 }
-.Footer > .Container {
+
+.Footer>.Container {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.Footer .Row > div {
+
+.Footer .Row>div {
   padding: 10px 0;
 }
+
 .Footer p {
   margin-bottom: 10px;
 }
+
 .Footer .mnftxt {
   line-height: 25px;
   padding: 0 8px;
@@ -437,12 +517,14 @@ header .navbar ul li a:hover {
   display: inline-block;
   border-radius: 25px;
 }
+
 .Footer .mnftxt a {
   display: inline-block;
   vertical-align: top;
   padding: 0 2px;
   margin: 0 6px;
 }
+
 .Footer .mnftxt a:hover {
   text-decoration: underline;
 }
@@ -517,6 +599,7 @@ header .navbar ul li a:hover {
     padding: 0 3%;
     padding-top: 11rem;
   }
+
   .about .row .image img {
     height: auto;
     width: 100%;
