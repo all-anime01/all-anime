@@ -140,29 +140,32 @@ header .navbar ul li a:hover {
 /*Slider*/
 
 .slider img {
-  width: 150px;
-  height: 450px;
-  border-radius: 20px;
-  position: relative;
+  width: auto;
+  height: 400px;
 }
 
 .sliderItem {
   display: flex;
-  width: 65%;
-  margin: 125px 200px 55px;
+  margin-top: 70px;
+  margin-left: 100px;
 }
 
 .sliderItem h1 {
-  color: rgb(202, 48, 48);
-  font-family: Rubik;
+  color: rgb(170, 170, 170);
+  font-family: sans-serif;
+  font-size: 25px;
+  margin-top: 26px;
+  background-color: #333;
 }
 
 .sliderItem p {
   color: rgb(7, 247, 59);
+  font-size: 16px;
+  background-color: #333;
 }
 
 .slider {
-  width: 150%;
+  width: 60%;
 }
 
 
