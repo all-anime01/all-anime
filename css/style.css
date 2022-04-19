@@ -154,13 +154,13 @@ header .navbar ul li a:hover {
   font-family: sans-serif;
   font-size: 25px;
   margin-top: 26px;
-  background-color: #333;
+  background-color: transparent;
 }
 
 .sliderItem p {
   color: #fff;
   font-size: 16px;
-  background-color: #333;
+  background-color: transparent;
 }
 
 .slider {
