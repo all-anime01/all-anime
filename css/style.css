@@ -141,13 +141,12 @@ header .navbar ul li a:hover {
 
 .slider img {
   width: auto;
-  height: 400px;
+  height: 450px;
 }
 
 .sliderItem {
   display: flex;
   margin-top: 70px;
-  margin-left: 100px;
 }
 
 .sliderItem h1 {
@@ -159,13 +158,20 @@ header .navbar ul li a:hover {
 }
 
 .sliderItem p {
-  color: rgb(7, 247, 59);
+  color: #fff;
   font-size: 16px;
   background-color: #333;
 }
 
 .slider {
-  width: 60%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .sliderItem {
+    margin-top: 63px;
+    display: flex;
+  }
 }
 
 
