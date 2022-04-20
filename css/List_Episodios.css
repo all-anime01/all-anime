@@ -2675,7 +2675,12 @@ html {
   .WdgtCn {
     width: 565px;
   }
+}
 
+@media (max-width: 500px) {
+  .WdgtCn {
+    width: 465px;
+  }
 }
 
 a,
