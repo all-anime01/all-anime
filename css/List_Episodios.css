@@ -2673,15 +2673,10 @@ html {
 
 @media (max-width: 768px) {
   .WdgtCn {
-    width: 565px;
-  }
-}
-
-@media (max-width: 500px) {
-  .WdgtCn {
     width: 465px;
   }
 }
+
 
 a,
 .Title {
