@@ -2671,9 +2671,10 @@ html {
   letter-spacing: -1px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 468px) {
   .WdgtCn {
-    width: 435px;
+    width: 355px;
+    top: 0;
   }
 }
 
