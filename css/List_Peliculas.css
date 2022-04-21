@@ -2708,13 +2708,17 @@ html {
 
   @media (max-width: 465px) {
     .WdgtCn {
-      width: 385px;
+      width: 395px;
     }
   }
 
-  @media(max-width: 430px) {
+  @media(max-width: 400px) {
     .WdgtCn {
-      width: 385px;
+      width: 325px;
+    }
+
+    .Title {
+      width: 167px;
     }
   }
 
