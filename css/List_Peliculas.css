@@ -2681,49 +2681,51 @@ html {
   .WdgtCn {
     width: 665px;
   }
-}
 
-@media(max-width: 625px) {
-  .WdgtCn {
-    width: 605px;
+  @media(max-width: 625px) {
+    .WdgtCn {
+      width: 605px;
+    }
+  }
+
+  @media(max-width: 570px) {
+    .WdgtCn {
+      width: 475px;
+    }
+  }
+
+  @media(min-width: 569px) {
+    .WdgtCn {
+      width: 465px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .WdgtCn {
+      width: 455px;
+    }
+  }
+
+  @media (max-width: 465px) {
+    .WdgtCn {
+      width: 385px;
+    }
+  }
+
+  @media(max-width: 430px) {
+    .WdgtCn {
+      width: 385px;
+    }
+  }
+
+  @media(min-width: 335px) {
+    .WdgtCn {
+      width: 345px;
+    }
   }
 }
 
-@media(max-width: 570px) {
-  .WdgtCn {
-    width: 475px;
-  }
-}
 
-@media(min-width: 569px) {
-  .WdgtCn {
-    width: 465px;
-  }
-}
-
-@media (max-width: 500px) {
-  .WdgtCn {
-    width: 455px;
-  }
-}
-
-@media (max-width: 465px) {
-  .WdgtCn {
-    width: 385px;
-  }
-}
-
-@media(max-width: 430px) {
-  .WdgtCn {
-    width: 385px;
-  }
-}
-
-@media(min-width: 335px) {
-  .WdgtCn {
-    width: 345px;
-  }
-}
 
 
 a,
