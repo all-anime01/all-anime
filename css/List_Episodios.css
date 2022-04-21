@@ -2681,14 +2681,53 @@ html {
   .WdgtCn {
     width: 665px;
   }
-}
 
-@media (max-width: 400px) {
-  .WdgtCn {
-    width: 325px;
+  @media(max-width: 625px) {
+    .WdgtCn {
+      width: 605px;
+    }
+  }
+
+  @media(max-width: 570px) {
+    .WdgtCn {
+      width: 475px;
+    }
+  }
+
+  @media(min-width: 569px) {
+    .WdgtCn {
+      width: 465px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .WdgtCn {
+      width: 455px;
+    }
+  }
+
+  @media (max-width: 465px) {
+    .WdgtCn {
+      width: 395px;
+    }
+  }
+
+  @media(max-width: 400px) {
+    .WdgtCn {
+      width: 325px;
+    }
+
+    .Title {
+      width: 167px;
+    }
+  }
+
+  @media(min-width: 335px) {
+    .WdgtCn {
+      width: 345px;
+    }
   }
 }
-
 
 a,
 .Title {
