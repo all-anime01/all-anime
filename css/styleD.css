@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2? family=Rubik+Beastly&family=Rubik:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Beastly&family=Rubik:wght@300;400&family=Shadows+Into+Light&display=swap");
+
 @font-face {
   font-family: FuenteLogo;
   src: url("BlackgroundsRegular-1GEYj.ttf");
@@ -107,7 +108,8 @@ header .logo b {
   color: rgb(7, 247, 59);
   font-family: Shadows Into Light;
 }
-.logo img{
+
+.logo img {
   height: 50px;
   margin: 2px 0 -8px;
 }
@@ -226,7 +228,8 @@ tbody tr td a:hover {
   background-color: rgb(7, 247, 59);
   border-color: rgb(7, 247, 59);
 }
-#image-min{
+
+#image-min {
   width: 70px;
   height: 65px;
   border-radius: 5px;
@@ -241,7 +244,7 @@ tbody tr td a:hover {
   text-transform: uppercase;
   color: #fff;
   display: inline-block;
-  height: 16px;
+  height: 18px;
   border-radius: 8px;
 }
 
@@ -308,6 +311,7 @@ tbody tr td a:hover {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .gallery .box-container .box {
   flex: 1 1 25rem;
   height: 30rem;
@@ -321,6 +325,7 @@ tbody tr td a:hover {
   background-size: cover;
   width: 110%;
 }
+
 .gallery .box-container .box .info {
   position: absolute;
   bottom: 0;
@@ -339,7 +344,7 @@ tbody tr td a:hover {
 }
 
 .gallery .box-container .box .info h3 {
-  font-size: 2rem;
+  font-size: 16px;
   color: #fff;
   padding-bottom: 0.5rem;
 }
@@ -356,6 +361,7 @@ tbody tr td a:hover {
     font-size: 55%;
   }
 }
+
 /*Navegacion prev next*/
 .pagination {
   display: -ms-flexbox;
@@ -364,6 +370,7 @@ tbody tr td a:hover {
   list-style: none;
   border-radius: 0.25rem;
 }
+
 .page-link {
   position: relative;
   display: block;
@@ -374,6 +381,7 @@ tbody tr td a:hover {
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
+
 .page-link:hover {
   z-index: 2;
   color: #0056b3;
@@ -381,46 +389,56 @@ tbody tr td a:hover {
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
+
 .page-link:focus {
   z-index: 2;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
+
 .page-link:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
+
 .page-item:first-child .page-link {
   margin-left: 0;
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
 }
+
 .page-item:last-child .page-link {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
+
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
   background-color: rgb(7, 247, 59);
   border-color: rgb(7, 247, 59);
 }
+
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   line-height: 1.5;
 }
+
 .pagination-lg .page-item:first-child .page-link {
   border-top-left-radius: 0.3rem;
   border-bottom-left-radius: 0.3rem;
 }
+
 .pagination-lg .page-item:last-child .page-link {
   border-top-right-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
 }
+
 .justify-content-center {
   -ms-flex-pack: center !important;
   justify-content: center !important;
 }
+
 .page-link {
   border: 1px solid transparent;
   border-radius: 5px;
@@ -433,12 +451,14 @@ tbody tr td a:hover {
   -o-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
 }
+
 .page-link:hover {
   color: rgb(7, 247, 59);
   text-decoration: none;
   background-color: transparent;
   border-color: transparent;
 }
+
 .page-item.active .page-link {
   background: linear-gradient(120deg, rgb(7, 247, 59) 0, rgb(7, 233, 56) 100%);
   border-color: transparent;
@@ -458,23 +478,28 @@ tbody tr td a:hover {
   margin-top: calc(var(--nshare-spacing) * -1);
   margin-right: calc(var(--nshare-spacing) * 5);
 }
+
 .nshare-item {
   margin-right: var(--nshare-spacing);
   margin-top: var(--nshare-spacing);
 }
+
 .nshare-item,
 .nshare-item:hover,
 .nshare-item:active {
   text-decoration: none;
   color: inherit;
 }
+
 .nshare-item {
   transition: background 0.3s, color 0.3s;
 }
+
 .nshare-item i {
   transition: transform 0.3s;
   margin: 0;
 }
+
 .nshare,
 .nshare-item {
   display: flex;
@@ -486,27 +511,35 @@ tbody tr td a:hover {
 .nshare-fb {
   background-color: var(--nshare-facebook);
 }
+
 .nshare-tt {
   background-color: var(--nshare-twitter);
 }
+
 .nshare-pt {
   background-color: var(--nshare-pinterest);
 }
+
 .nshare-tb {
   background-color: var(--nshare-tumblr);
 }
+
 .nshare-rd {
   background-color: var(--nshare-reddit);
 }
+
 .nshare-vk {
   background-color: var(--nshare-vk);
 }
+
 .nshare-ws {
   background-color: var(--nshare-whatsapp);
 }
+
 .nshare-tlg {
   background-color: var(--nshare-telegram);
 }
+
 .nshare-msj {
   background-color: var(--nshare-email);
 }
@@ -514,27 +547,35 @@ tbody tr td a:hover {
 .nshare-fb:hover {
   color: var(--nshare-facebook);
 }
+
 .nshare-tt:hover {
   color: var(--nshare-twitter);
 }
+
 .nshare-pt:hover {
   color: var(--nshare-pinterest);
 }
+
 .nshare-tb:hover {
   color: var(--nshare-tumblr);
 }
+
 .nshare-rd:hover {
   color: var(--nshare-reddit);
 }
+
 .nshare-vk:hover {
   color: var(--nshare-vk);
 }
+
 .nshare-ws:hover {
   color: var(--nshare-whatsapp);
 }
+
 .nshare-tlg:hover {
   color: var(--nshare-telegram);
 }
+
 .nshare-msj:hover {
   color: var(--nshare-email);
 }
@@ -542,16 +583,21 @@ tbody tr td a:hover {
 .nshare-item:hover i {
   transform: rotate(360deg);
 }
+
 /*}} Fin del core {{*/
 
 /*! Personalización */
 /* Contenedor
 -----------------------------------------*/
 .nshare {
-  --nshare-spacing: 0.5rem; /* separacion interna */
-  padding-top: 0; /* separacion superior */
-  padding-bottom: 0; /* separacion inferior */
+  --nshare-spacing: 0.5rem;
+  /* separacion interna */
+  padding-top: 0;
+  /* separacion superior */
+  padding-bottom: 0;
+  /* separacion inferior */
 }
+
 /* Redes sociales
 -----------------------------------------*/
 .nshare {
@@ -564,20 +610,30 @@ tbody tr td a:hover {
   --nshare-telegram: #0088cc;
   --nshare-email: #464eb8;
 }
+
 /* Botones
 -----------------------------------------*/
 .nshare-item {
-  font-size: 22px; /* tamaño de iconos */
-  width: 48px; /* ancho */
-  height: 48px; /* alto */
-  border-radius: 0.5rem; /* bordes redondeados */
-  color: #fff; /* color */
+  font-size: 22px;
+  /* tamaño de iconos */
+  width: 48px;
+  /* ancho */
+  height: 48px;
+  /* alto */
+  border-radius: 0.5rem;
+  /* bordes redondeados */
+  color: #fff;
+  /* color */
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.1),
-    0 2px 5px -1px rgba(0, 0, 0, 0.05); /* sombra */
+    0 2px 5px -1px rgba(0, 0, 0, 0.05);
+  /* sombra */
 }
+
 .nshare-item:hover {
-  background-color: transparent; /* fondo (hover) */
+  background-color: transparent;
+  /* fondo (hover) */
 }
+
 /*Fin cbotones contactanos*/
 
 /*Terminos y condiciones de la página*/
@@ -607,20 +663,25 @@ tbody tr td a:hover {
   margin-top: 0;
   align-items: center;
 }
-.Footer .Row > *,
+
+.Footer .Row>*,
 .Footer p {
   padding-top: 0;
 }
-.Footer > .Container {
+
+.Footer>.Container {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.Footer .Row > div {
+
+.Footer .Row>div {
   padding: 10px 0;
 }
+
 .Footer p {
   margin-bottom: 10px;
 }
+
 .Footer .mnftxt {
   line-height: 25px;
   padding: 0 8px;
@@ -629,12 +690,14 @@ tbody tr td a:hover {
   display: inline-block;
   border-radius: 25px;
 }
+
 .Footer .mnftxt a {
   display: inline-block;
   vertical-align: top;
   padding: 0 2px;
   margin: 0 6px;
 }
+
 .Footer .mnftxt a:hover {
   text-decoration: underline;
 }
@@ -703,6 +766,7 @@ tbody tr td a:hover {
     padding: 0 3%;
     padding-top: 15rem;
   }
+
   .about .row .image img {
     height: auto;
     width: 100%;
