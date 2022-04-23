@@ -720,6 +720,12 @@ a.CapNvLs:last-child {
   padding: 0 15px 0 20px;
 }
 
+@media (max-width: 400px) {
+  .CapNv {
+    margin: -490px 15px 95px;
+  }
+}
+
 /*Reportar episodio*/
 
 
@@ -761,6 +767,12 @@ a.CapNvLs:last-child {
   padding-left: 35px;
   width: 125px;
   height: 40px;
+}
+
+@media(max-width: 400px) {
+  .cta.Rprt {
+    left: 190px;
+  }
 }
 
 .cta.Rprt:before {
@@ -826,6 +838,13 @@ a.CapNvLs:last-child {
   transition: transform 1s;
   transform: translateY(0%);
   border-radius: 10px;
+}
+
+@media(max-width: 400px) {
+  .modal {
+    width: 375px;
+    padding: -75px -75px -55px;
+  }
 }
 
 .close {
