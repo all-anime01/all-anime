@@ -835,6 +835,14 @@ a.CapNvLs:last-child {
   border-radius: 10px;
 }
 
+@media(max-width: 400px) {
+  .modal {
+    width: 375px;
+    padding: -75px -75px -55px;
+  }
+}
+
+
 .close {
   position: absolute;
   top: 5px;
