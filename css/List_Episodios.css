@@ -630,15 +630,14 @@ h2 {
 .contenedor {
   width: 65%;
   border-radius: 0.5rem;
-  max-width: 1000px;
+  max-width: 10px;
   margin: -105px 95px 250px;
 }
 
 @media (max-width: 400px) {
   iframe {
     width: 350px;
-    height: 300px;
-    margin: -5px -2px 250px;
+    height: 250px;
   }
 }
 
@@ -722,7 +721,7 @@ a.CapNvLs:last-child {
 
 @media (max-width: 400px) {
   .CapNv {
-    margin: -490px 15px 95px;
+    margin: -225px 15px 195px;
   }
 }
 
@@ -771,7 +770,9 @@ a.CapNvLs:last-child {
 
 @media(max-width: 400px) {
   .cta.Rprt {
+    width: 125px;
     left: 190px;
+    top: -235px;
   }
 }
 
@@ -929,25 +930,7 @@ h4 {
   filter: brightness(0.8);
 }
 
-@media all and (min-width: 768px) {
-  #MrFwlrs .modal-dialog {
-    width: 100%;
-    max-width: 790px;
-  }
 
-  #MrFwlrs .ListImgrnd {
-    margin-bottom: 15px;
-  }
-
-  #MrFwlrs .ListImgrnd>li {
-    width: 11.11111111111111%;
-  }
-
-  #MrFwlrs .Sect .Bod {
-    padding-bottom: 20px;
-    text-align: center;
-  }
-}
 
 /*Listar capitulos*/
 
