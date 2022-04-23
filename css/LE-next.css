@@ -622,23 +622,18 @@ h2 {
 
 .contenedor {
   width: 65%;
-  max-width: 1000px;
+  border-radius: 0.5rem;
+  max-width: 10px;
   margin: -105px 95px 250px;
 }
 
 @media (max-width: 400px) {
   iframe {
     width: 350px;
-    height: 300px;
-    margin: -5px -2px 250px;
+    height: 250px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  main {
-    margin-top: 50px;
-  }
-}
 
 /*PREV List NEXT*/
 .CapNv {
@@ -718,6 +713,12 @@ a.CapNvLs:last-child {
   padding: 0 15px 0 20px;
 }
 
+@media (max-width: 400px) {
+  .CapNv {
+    margin: -225px 0px 195px;
+  }
+}
+
 /*Reportar episodio*/
 
 
@@ -759,6 +760,14 @@ a.CapNvLs:last-child {
   padding-left: 35px;
   width: 125px;
   height: 40px;
+}
+
+@media(max-width: 400px) {
+  .cta.Rprt {
+    width: 115px;
+    left: 270px;
+    top: -235px;
+  }
 }
 
 .cta.Rprt:before {
