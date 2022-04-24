@@ -183,7 +183,7 @@ header .navbar ul li a:hover {
 
 @media (max-width: 768px) {
   .sliderItem {
-    margin-top: 63px;
+    margin-top: 60px;
     display: flex;
   }
 }
