@@ -151,26 +151,39 @@ header .navbar ul li a:hover {
 
 .sliderItem h1 {
   color: rgb(170, 170, 170);
-  font-family: sans-serif;
+  font-family: Rubik;
   font-size: 25px;
   margin-top: 26px;
   background-color: #333;
+  text-align: center;
+  text-shadow: #333;
+  text-transform: uppercase;
+}
+
+.sliderItem h2 {
+  font-family: sans-serif;
+  font-size: 22px;
+  background-color: #333;
+  color: #f0002a;
+  text-align: center;
+  text-decoration: solid rgb(160, 233, 119);
 }
 
 .sliderItem p {
   color: #fff;
   font-size: 16px;
   background-color: #333;
-  
+  text-align: center;
 }
 
 .slider {
   width: 100%;
 }
 
+
 @media (max-width: 768px) {
   .sliderItem {
-    margin-top: 60px;
+    margin-top: 63px;
     display: flex;
   }
 }
