@@ -239,7 +239,7 @@ header .navbar ul li a:hover {
 }
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px)and(min-width: 340px) {
   header .contenedor {
     flex-direction: column;
     text-align: center;
