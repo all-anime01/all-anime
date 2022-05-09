@@ -203,7 +203,7 @@ header .navbar ul li a:hover {
 
 .content-search {
   position: fixed;
-  top: 55px;
+  top: 65px;
   left: 96%;
   transform: translateX(-95%);
   width: 173px;
@@ -213,6 +213,12 @@ header .navbar ul li a:hover {
   display: none;
   border-radius: 2.5px;
   opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .content-search {
+    margin: 0 45px;
+  }
 }
 
 .content-table {

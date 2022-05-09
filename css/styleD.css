@@ -186,7 +186,7 @@ header .navbar ul li a:hover {
 
 .content-search {
   position: fixed;
-  top: 55px;
+  top: 65px;
   left: 96%;
   transform: translateX(-95%);
   width: 173px;
@@ -196,6 +196,12 @@ header .navbar ul li a:hover {
   display: none;
   border-radius: 2.5px;
   opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .content-search {
+    margin: 0 45px;
+  }
 }
 
 .content-table {
@@ -227,6 +233,25 @@ tbody tr td a:hover {
 .Type.tv {
   background-color: rgb(7, 247, 59);
   border-color: rgb(7, 247, 59);
+}
+
+.Estreno span {
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  left: -25px;
+  top: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #01ae43;
+  z-index: 2;
+  line-height: 25px;
 }
 
 #image-min {

@@ -200,7 +200,7 @@ header .navbar ul li a:hover {
 
 .content-search {
   position: fixed;
-  top: 55px;
+  top: 65px;
   left: 96%;
   transform: translateX(-95%);
   width: 173px;
