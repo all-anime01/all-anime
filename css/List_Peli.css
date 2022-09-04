@@ -507,7 +507,7 @@ a :-webkit-any-link {
   line-height: 25px;
   color: #666;
   margin-bottom: 15px;
-  margin: 25px 25px 95px;
+  margin: 25px 25px 20px;
 }
 
 a {
@@ -634,6 +634,53 @@ h2 {
 
 }
 
+/*Contenedor de categorias*/
+
+[data-content] {
+  display: none;
+}
+
+.active[data-content] {
+  display: block;
+}
+
+.container-category {
+  width: 100%;
+  margin: 125px 555px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -5px;
+  text-align: center;
+}
+
+.container-category p {
+  padding: 5px 30px;
+  font-size: 15px;
+  margin: -5px 1px;
+  background: #252424;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #666;
+}
+
+.container-category p:hover {
+  background: #cf3d2e;
+  color: #ddd;
+  opacity: 0.8;
+}
+
+
+@media (max-width: 400px) {
+  .container-category {
+    width: 100%;
+    margin: 125px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -5px;
+    text-align: center;
+  }
+}
+
 /*Reproductor*/
 
 .contenedor {
@@ -641,6 +688,13 @@ h2 {
   border-radius: 0.5rem;
   max-width: 10px;
   margin: -105px 95px 250px;
+}
+
+@media (max-width: 720px) {
+  iframe {
+    width: 550px;
+    height: 450px;
+  }
 }
 
 @media (max-width: 400px) {
