@@ -646,7 +646,7 @@ h2 {
 
 .container-category {
     width: 100%;
-    margin: 5px 555px 125px;
+    margin: 5px 493px 125px;
     display: flex;
     flex-wrap: wrap;
     margin-top: -5px;
@@ -672,10 +672,10 @@ h2 {
 
 @media (max-width: 400px) {
     .container-category {
-        width: 100%;
-        margin: 125px 80px;
+        width: 8px;
+        margin: 125px 95px;
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: row;
         margin-top: -5px;
         text-align: center;
     }
@@ -699,7 +699,7 @@ h2 {
 
 @media (max-width: 400px) {
     iframe {
-        width: 350px;
+        width: 330px;
         height: 250px;
     }
 }
