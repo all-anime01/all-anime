@@ -796,7 +796,8 @@ ul.tabs {
 }
 
 .CapNv a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #10853e;
+  color: #fff;
 }
 
 a.CapNvPv,
@@ -828,8 +829,12 @@ a.CapNvNx {
 a.CapNvLs {
   width: 50px;
   font-size: 15px;
-  color: #eeff07;
+  color: #ffc107;
   text-align: center;
+}
+
+a.CapNvLs:hover {
+  color: #ffc107;
 }
 
 a.CapNvLs {
@@ -849,9 +854,19 @@ a.CapNvLs:last-child {
   padding: 0 15px 0 20px;
 }
 
+
 @media (max-width: 400px) {
   .CapNv {
-    margin: -225px 15px 195px;
+    margin: -225px 95px 195px;
+  }
+
+  a.CapNvNx {
+    padding-left: 5px;
+  }
+
+  a.CapNvPv,
+  a.CapNvNx {
+    font-size: 10;
   }
 }
 
@@ -901,7 +916,7 @@ a.CapNvLs:last-child {
 @media(max-width: 400px) {
   .cta.Rprt {
     width: 125px;
-    left: 190px;
+    left: 290px;
     top: -235px;
   }
 }

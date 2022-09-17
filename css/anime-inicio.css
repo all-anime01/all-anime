@@ -794,6 +794,11 @@ ul.tabs {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.CapNv a:hover {
+  background-color: #10853e;
+  color: #fff;
+}
+
 a.CapNvPv,
 a.CapNvNx {
   font-size: 10px;
@@ -823,8 +828,12 @@ a.CapNvNx {
 a.CapNvLs {
   width: 50px;
   font-size: 15px;
-  color: #eeff07;
+  color: #ffc107;
   text-align: center;
+}
+
+a.CapNvLs:hover {
+  color: #ffc107;
 }
 
 a.CapNvLs {
