@@ -69,10 +69,6 @@ section {
   padding-top: 1rem;
   margin-top: 1rem;
   border-radius: 2px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .btn:hover {
@@ -114,7 +110,6 @@ header .logo {
 header .logo h1 {
   color: white;
   font-family: Shadows Into Light;
-  line-height: 90%;
 }
 
 header .logo b {
@@ -124,8 +119,7 @@ header .logo b {
 
 .logo img {
   height: 50px;
-  margin: -2px 0 -8px;
-
+  margin: -15px 0 -15px;
 }
 
 header .navbar ul {
@@ -200,7 +194,7 @@ header .navbar ul li a:hover {
 
 .content-search {
   position: fixed;
-  top: 65px;
+  top: 60px;
   left: 96%;
   transform: translateX(-95%);
   width: 173px;
@@ -239,15 +233,15 @@ tbody tr td a {
   transition: all 0.3s;
 }
 
+tbody tr td a:hover {
+  background: transparent;
+  color: rgb(7, 247, 59);
+}
+
 #image-min {
   width: 70px;
   height: 65px;
   border-radius: 5px;
-}
-
-tbody tr td a:hover {
-  background: transparent;
-  color: rgb(7, 247, 59);
 }
 
 .Type.tv {
@@ -307,7 +301,7 @@ tbody tr td a:hover {
   justify-content: center;
   flex-wrap: wrap;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
-    url(fondoPag1.jpg) no-repeat;
+    url(fondoPag.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -647,10 +641,6 @@ h2 {
   text-align: center;
 }
 
-.container-category a:hover {
-  color: #ddd;
-}
-
 .container-category p {
   padding: 5px 30px;
   font-size: 15px;
@@ -664,6 +654,10 @@ h2 {
 .container-category p:hover {
   background: #cf3d2e;
   opacity: 0.8;
+}
+
+.container-category a:hover {
+  color: #ddd;
 }
 
 
@@ -771,13 +765,14 @@ ul.tabs {
   }
 }
 
+
 /*PREV List NEXT*/
 .CapNv {
   background-color: rgb(7, 247, 59);
   font-size: 0;
   line-height: 40px;
   border-radius: 20px;
-  width: 152px;
+  width: 165px;
   height: 40px;
   margin: -235px 90px 95px;
 }
@@ -851,7 +846,9 @@ a.CapNvLs:last-child {
 
 @media (max-width: 400px) {
   .CapNv {
-    margin: -225px 15px 195px;
+    margin: -225px 95px 195px;
+    display: flex;
+    flex-flow: row;
   }
 }
 
@@ -890,7 +887,7 @@ a.CapNvLs:last-child {
 .cta.Rprt {
   display: block;
   top: -135px;
-  left: 390px;
+  left: 340px;
   padding-top: 8px;
   border-radius: 20px;
   padding-left: 35px;
@@ -901,7 +898,7 @@ a.CapNvLs:last-child {
 @media(max-width: 400px) {
   .cta.Rprt {
     width: 125px;
-    left: 190px;
+    left: 300px;
     top: -235px;
   }
 }
@@ -1091,8 +1088,6 @@ h4 {
   filter: brightness(0.8);
 }
 
-
-
 /*Listar capitulos*/
 
 /*Ficha Img Fondo*/
@@ -1103,7 +1098,7 @@ h4 {
 }
 
 .Bg {
-  background-image: url("");
+  background-image: url("image/Kimetsu-Y.jpg");
 }
 
 .Ficha>.Bg {
@@ -1138,7 +1133,7 @@ h4 {
   text-align: center;
 }
 
-@media (min-width: 767px) .fchlt {
+@media (min-width: 768px) .fchlt {
   text-align: left;
 }
 
@@ -1166,8 +1161,6 @@ img {
   display: inline-block;
   vertical-align: middle;
 }
-
-
 
 @media print {
 
@@ -1401,7 +1394,7 @@ h1 {
   width: 100%;
 }
 
-@media all and (min-width: 767px) {
+@media all and (min-width: 768px) {
   .Container {
     max-width: 765px;
   }
@@ -1495,7 +1488,7 @@ h1 {
   }
 }
 
-@media all and (min-width: 1020px) {
+@media all and (min-width: 768px) {
   .Container {
     max-width: 990px;
   }
@@ -1589,7 +1582,7 @@ h1 {
   }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 720px) {
   .Container {
     max-width: 1170px;
   }
@@ -1759,23 +1752,23 @@ h1 {
   height: 40px;
 }
 
-.Votes .Strs>[class*="fa-star"] {
+.Votes .Strs>[class*="fa-"] {
   color: #ffc602;
   font-size: 10px;
   padding-right: 3px;
 }
 
-.Votes .Strs>[class*="fa-star"]:first-child {
+.Votes .Strs>[class*="fa-"]:first-child {
   padding-right: 0;
 }
 
-.Votes .Strs>[class*="fa-star"].Hf:before {
+.Votes .Strs>[class*="fa-"].Hf:before {
   content: "\f123";
 }
 
-.Votes .Strs>[class*="fa-star"].On:before,
-.Votes .Strs>a[class*="fa-star"]:hover:before,
-.Votes .Strs>a[class*="fa-star"]:hover~a:before {
+.Votes .Strs>[class*="fa-"].On:before,
+.Votes .Strs>a[class*="fa-"]:hover:before,
+.Votes .Strs>a[class*="fa-"]:hover~a:before {
   content: "\f005";
 }
 
@@ -2143,7 +2136,7 @@ img {
   margin-top: 10px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 768px) {
   .Wdgt .Top .WdgtLink {
     position: absolute;
     left: 0;
@@ -2206,14 +2199,14 @@ img {
   }
 }
 
-@media all and (max-width: 667px) {
+@media all and (max-width: 400px) {
   .Ficha .ListPostOpts>li {
     width: 100%;
     margin-right: 0;
   }
 }
 
-@media all and (max-width: 467px) {
+@media all and (max-width: 400px) {
 
   .ListEpisodios.Rows>li,
   .ListAnimes.Rows>li,
@@ -2230,7 +2223,7 @@ img {
   }
 }
 
-@media all and (min-width: 667px) {
+@media all and (min-width: 400px) {
   .Ficha .ListPostOpts>li {
     margin-bottom: 0;
   }
@@ -2802,64 +2795,6 @@ html {
   font-weight: 700;
   line-height: 60px;
   letter-spacing: -1px;
-}
-
-@media (max-width: 900px) {
-  .WdgtCn {
-    width: 765px;
-  }
-}
-
-@media (max-width: 768px) {
-  .WdgtCn {
-    width: 665px;
-  }
-
-  @media(max-width: 625px) {
-    .WdgtCn {
-      width: 605px;
-    }
-  }
-
-  @media(max-width: 570px) {
-    .WdgtCn {
-      width: 475px;
-    }
-  }
-
-  @media(min-width: 569px) {
-    .WdgtCn {
-      width: 465px;
-    }
-  }
-
-  @media (max-width: 500px) {
-    .WdgtCn {
-      width: 455px;
-    }
-  }
-
-  @media (max-width: 465px) {
-    .WdgtCn {
-      width: 395px;
-    }
-  }
-
-  @media(max-width: 400px) {
-    .WdgtCn {
-      width: 325px;
-    }
-
-    .Title {
-      width: 167px;
-    }
-  }
-
-  @media(min-width: 335px) {
-    .WdgtCn {
-      width: 345px;
-    }
-  }
 }
 
 a,
@@ -3624,7 +3559,7 @@ figure img {
 }
 
 .nshare-item {
-  transition: background 0.3s, color 0.3s;
+  transition: 0.3s, color 0.3s;
 }
 
 .nshare-item i {
@@ -3748,9 +3683,9 @@ figure img {
 .nshare-item {
   font-size: 22px;
   /* tamaño de iconos */
-  width: 48px;
+  width: 38px;
   /* ancho */
-  height: 48px;
+  height: 38px;
   /* alto */
   border-radius: 0.5rem;
   /* bordes redondeados */
