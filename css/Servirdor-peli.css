@@ -871,7 +871,7 @@ a.CapNvLs:last-child {
 
 @media (max-width: 400px) {
     .CapNv {
-        margin: -225px 15px 195px;
+        margin: -225px 95px 195px;
     }
 }
 
@@ -921,7 +921,7 @@ a.CapNvLs:last-child {
 @media(max-width: 400px) {
     .cta.Rprt {
         width: 125px;
-        left: 190px;
+        left: 300px;
         top: -235px;
     }
 }
