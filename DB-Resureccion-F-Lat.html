@@ -381,24 +381,37 @@
             <h2 class="SubTitle">Película</h2>
             <div class="lang-op"></div>
             </div>
-            <div class="container-category">
-                <p data-target="#SB-F"><image><img src="image/Logo-server/luffy.png" width="25px"></image> SB-F</p>
-                <p data-target="#XYZ"><image><img src="image/Logo-server/goku.png" width="25px"></image> .XYZ</p>
-                <p data-target="#ZFast"><image><img src="image/Logo-server/naruto.png" width="25px"></image> MEGA</p>
-            </div>
-        
-            <div class="contenedor">
-                <div data-content id="SB-F" class="active"> 
-                <IFRAME SRC="https://sbfast.com/e/3vskyet2yduk.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=840 HEIGHT=460 allowfullscreen></IFRAME>
-                </div>
-                <div data-content id="ZFast">
-                    <iframe src="https://mega.nz/embed/PtZ0mBiJ#9xKBCv2XJzb7X47Jm-1irWAXTKniZC4Q8sVGThQLACk" width="840" height="460" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div data-content id="XYZ">
-                <IFRAME SRC="https://owodeuwu.xyz/v/8g9drxjzpoy" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=840 HEIGHT=460 allowfullscreen></IFRAME>
-                </div>
-            </div>
-            </div>
+
+            <div class="wrap">
+                <ul class="tabs">
+                    <li><a href="#tab1" title="Japones"><img src="image/Banderas-lenguaje/japon.png" width="40px" height="40px" alt="tab"><span class="tab-text"></span></a></li>
+                    <li><a href="#tab2" title="Latino"><img src="image/Banderas-lenguaje/mexico.png" width="40px" height="40px" alt="tab"><span class="tab-text"></span></a></li>
+                </ul>
+    
+                <div class="secciones">
+                    <article id="tab1">
+                        <div class="container-category">
+                            <p><a href="https://www.yourupload.com/embed/Eg7R7ANQ226w" class="Title1" title="YourUpload" target="ServerC"><image><img src="image/Logo-server/luffy.png" width="25px"></image>Opcion 1</a></p>
+                            <p><a href="https://sblanh.com/e/o6utm73dkvyw.html" class="Title1" title="SB-F" target="ServerC"><image><img src="image/Logo-server/goku.png" width="25px"></image>Opcion 2</a></p>
+                            <p><a href="https://mega.nz/embed/PtZ0mBiJ#9xKBCv2XJzb7X47Jm-1irWAXTKniZC4Q8sVGThQLACk" class="Title1" title="Mega" target="ServerC"><image><img src="image/Logo-server/naruto.png" width="30px"></image>Opcion 3</a></p>
+                        </div>
+                        <div class="contenedor"> 
+                            <IFRAME name="ServerC" SRC="https://www.yourupload.com/embed/Eg7R7ANQ226w" FRAMEBORDER=1 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=840 HEIGHT=460 allowfullscreen></IFRAME>
+                        </div>
+                    </article>
+                    
+                    <article id="tab2">
+                        <div class="secciones1">
+                            <div class="container-category">
+                                <p><a href="https://sbfast.com/e/3vskyet2yduk.html" target="Latino" class="Title1" title="SB-F"><image><img src="image/Logo-server/luffy.png" width="25px"></image>Opcion 1</a></p>
+                                <p><a href="https://owodeuwu.xyz/v/8g9drxjzpoy" target="Latino" class="Title1" title="All-Anime.XYZ"><image><img src="image/Logo-server/goku.png" width="25px"></image>Opcion 2</a></p>
+                                <p><a href="https://uqload.org/embed-zza428ofm4hs.html" target="Latino" class="Title1" title="Uqload"><image><img src="image/Logo-server/naruto.png" width="25px"></image>Opcion 3</a></p>
+                            </div>
+                            <div class="contenedor">
+                                <IFRAME name="Latino" SRC="https://sbfast.com/e/3vskyet2yduk.html" FRAMEBORDER=1 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=840 HEIGHT=460 allowfullscreen></IFRAME>
+                            </div>
+                        </div>
+                    </article>
 
                 <div class="CpCnB">
                     <div class="CapOptns ClFx show">
@@ -508,6 +521,7 @@
     
     
     <script src="js/script.js"></script>
+    <script src="js/idioma.js"></script>
     <script src="alert.js"></script>
 </body>
 </html>
