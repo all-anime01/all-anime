@@ -504,7 +504,7 @@ a :-webkit-any-link {
   line-height: 25px;
   color: #666;
   margin-bottom: 15px;
-  margin: 25px 25px 95px;
+  margin: 25px 25px 90px;
 }
 
 a {
@@ -2644,7 +2644,7 @@ html {
 
 .WdgtCn .Top .Title {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 60px;
   letter-spacing: -1px;
 }
@@ -3736,6 +3736,7 @@ figure img {
 
 @media (max-width: 400px) {
   section {
+    min-height: 100%;
     padding: 0;
     padding-top: 11rem;
   }
