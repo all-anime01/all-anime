@@ -14,4 +14,18 @@ $('ul.tabs li a:first').addClass('active');
         return false;
     });
 
+//Funcion Busqueda tabla dapage2
+
+var buscador = $("#table").DataTable();
+$(".search-table").keyup(function(){
+    
+  buscador.search($(this).val()).draw();
+    
+  if ($(".search-table").val() == ""){
+        $(".content-search").fadeOut(300);
+  }else{
+        $(".content-search").fadeIn(300);
+  }
+});
+
 
