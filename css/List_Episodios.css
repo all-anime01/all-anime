@@ -634,6 +634,37 @@ h2 {
 
 }
 
+/*mostrar info*/
+
+.list-temp {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  position: relative;
+  color: #3b4248;
+}
+
+.temp1 {
+  width: 230px;
+  height: 45px;
+  padding: 10px;
+  font-size: 15px;
+  position: relative;
+  display: grid;
+  border: 2px solid #111;
+  background-color: #222;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+.temp1:hover {
+  background-color: #333;
+  border: 2px solid #444;
+  transition: 1s;
+}
+
 /*Reproductor*/
 
 .contenedor {
@@ -2625,6 +2656,7 @@ html {
 
 /*Cuadro Sinopsis*/
 .WdgtCn {
+  box-sizing: border-box;
   background-color: #fff;
   border-radius: 3px;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
@@ -2663,41 +2695,49 @@ html {
 @media (max-width: 768px) {
   .WdgtCn {
     width: 665px;
+    box-sizing: border-box;
   }
 
   @media(max-width: 625px) {
     .WdgtCn {
       width: 605px;
+      box-sizing: border-box;
     }
   }
 
   @media(max-width: 570px) {
     .WdgtCn {
       width: 475px;
+      box-sizing: border-box;
     }
   }
 
   @media(min-width: 569px) {
     .WdgtCn {
       width: 465px;
+      box-sizing: border-box;
     }
   }
 
   @media (max-width: 500px) {
     .WdgtCn {
       width: 455px;
+      box-sizing: border-box;
     }
   }
 
   @media (max-width: 465px) {
     .WdgtCn {
       width: 395px;
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
   }
 
   @media(max-width: 400px) {
     .WdgtCn {
       width: 325px;
+      box-sizing: border-box;
     }
 
     .Title {
@@ -3454,6 +3494,8 @@ figure img {
 }
 
 /*contactanos*/
+
+
 .flx {
   display: flex;
   justify-content: center;
