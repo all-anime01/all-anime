@@ -153,7 +153,7 @@ header .navbar ul li a:hover {
   display: none;
 }
 
-/* Buscador de contenido
+/*Buscador de contenido*/
 
 .search {
   position: relative;
@@ -259,10 +259,10 @@ header .navbar ul li a:hover {
   height: 15px;
   background: #999;
   transform: rotate(315deg);
-} */
+}
 
 /*Buscador de contenido*/
-
+/* 
 .search-bar-container {
   display: flex;
   align-items: center;
@@ -301,7 +301,7 @@ header .navbar ul li a:hover {
 
 .active .input {
   width: 0;
-}
+} */
 
 .content-search {
   position: fixed;
