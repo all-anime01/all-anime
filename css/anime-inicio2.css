@@ -305,16 +305,16 @@ header .navbar ul li a:hover {
 
 .content-search {
   position: fixed;
-  top: 60px;
-  left: 96%;
+  top: 65px;
+  left: 95%;
   transform: translateX(-95%);
-  width: 173px;
+  width: 185px;
   background: white;
-  z-index: 1000;
+  z-index: 200;
   overflow: hidden;
   display: none;
   border-radius: 2.5px;
-  opacity: 1;
+  opacity: 2;
 }
 
 @media (max-width: 400px) {
@@ -324,11 +324,11 @@ header .navbar ul li a:hover {
 }
 
 .content-table {
-  width: 140px;
+  width: 97%;
   max-height: 200px;
   background: white;
   height: auto;
-  margin-left: 30px;
+  margin-left: 25px;
   overflow-y: visible;
   overflow-x: hidden;
 }
