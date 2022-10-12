@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2? family=Rubik+Beastly&family=Rubik:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Beastly&family=Rubik:wght@300;400&family=Shadows+Into+Light&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"crossorigin="anonymous">);
 
 @font-face {
   font-family: FuenteLogo;
@@ -651,19 +652,19 @@ h2 {
   font-size: 15px;
   position: relative;
   display: grid;
-  border: 2px solid #111;
-  background-color: #222;
-  color: #fff;
+  border: 3px solid #222;
+  background-color: #fff;
+  color: #333;
   border-radius: 2px;
   cursor: pointer;
 }
 
 
 .temp1:hover {
-  background-color: #333;
-  border: 2px solid #444;
-  transition: 1s;
+  background-color: #f7f7f7;
+  border: 3px solid rgb(202, 48, 48);
 }
+
 
 /*Reproductor*/
 
