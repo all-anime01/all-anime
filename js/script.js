@@ -37,16 +37,6 @@ $(".input-search").keyup(function(){
     }
 });
 
-
-//cambio de imagen
-
-let ep1 = document.getElementById("cambioimg");
-let imgchange= document.getElementById("imgchange");
-
-ep1.onclick= function(){
-  imgchange.src = "./image/Cyber-Punk-EdgeRunners/01.gif";
-}
-
 //Reporte Episodio
 
 let cerrar = document.querySelectorAll(".close")[0];
@@ -65,4 +55,4 @@ cerrar.addEventListener("click", function(){
     modal.classList.toggle("modal-close");
     modalC.style.opacity = "0";
     modalC.style.visibility = "hidden";
-})
+});
