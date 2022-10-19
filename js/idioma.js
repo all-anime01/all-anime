@@ -96,6 +96,13 @@ function ver3(linea, boton){
     document.getElementById('linea3').style.display = 'block';
   }
 }
+function ver4(linea, boton){
+  if(document.getElementById('linea4').style.display=='block'){
+    document.getElementById('linea4').style.display = 'none';
+  }else{
+    document.getElementById('linea4').style.display = 'block';
+  }
+}
 
 
 
