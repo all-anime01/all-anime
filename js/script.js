@@ -56,3 +56,4 @@ cerrar.addEventListener("click", function(){
     modalC.style.opacity = "0";
     modalC.style.visibility = "hidden";
 });
+
