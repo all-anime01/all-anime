@@ -19,7 +19,7 @@
     <main>
         <div class="peliculas-recomendadas contenedor">
             <div class="contenedor-titulo-controles">
-                <h3>Tendencia <img src="image/Banderas-lenguaje/luffy.png"></h3>
+                <h3>Tendencia<img src="image/Banderas-lenguaje/luffy.png"></h3>
                 <div class="indicadores"></div>
             </div>
 
