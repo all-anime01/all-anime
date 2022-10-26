@@ -148,7 +148,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <a href="https://www.all-anime.ga/ver/Bleach-sennen-kessen-hen/Bleach-sennen-kessen-hen-3" class="btn">Episodio 3</a>
+                    <a href="https://www.all-anime.ga/ver/Bleach-sennen-kessen-hen/3" class="btn">Episodio 3</a>
                 </div>
             </div>
             <div class="box">
