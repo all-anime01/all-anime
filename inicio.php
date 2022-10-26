@@ -118,6 +118,23 @@
         <div class="box-container">
 
             <div class="box">
+                <img src="image/Mob-psycho-III/poster.png" alt="">
+                <div class="info">
+                    <div class="play">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                    <h3>Mob Psycho 100: III</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="https://www.all-anime.ga/ver/Mob-Psycho-100-III/3" class="btn">Episodio 3</a>
+                </div>
+            </div>
+            <div class="box">
                 <img src="image/chainsaw-man/poster.png" alt="chainsaw man">
                 <div class="info">
                     <div class="play">
@@ -183,23 +200,6 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <a href="https://www.all-anime.ga/Pokemon-viajes-129" class="btn">Episodio 129</a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="image/Mob-psycho-III/poster.png" alt="">
-                <div class="info">
-                    <div class="play">
-                        <i class="fa-solid fa-circle-play"></i>
-                    </div>
-                    <h3>Mob Psycho 100: III</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <a href="https://www.all-anime.ga/ver/Mob-Psycho-100-III/3" class="btn">Episodio 3</a>
                 </div>
             </div>
             <div class="box">
