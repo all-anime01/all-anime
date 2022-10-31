@@ -793,7 +793,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     .container-category {
         width: 8px;
         margin: 125px 365px;
