@@ -793,6 +793,17 @@ h2 {
     }
 }
 
+@media screen and (min-width: 800px) {
+    .container-category {
+        width: 8px;
+        margin: 125px 365px;
+        display: flex;
+        flex-flow: row;
+        margin-top: -5px;
+        text-align: center;
+    }
+}
+
 /*seleccion de idioma*/
 
 .wrap {
@@ -864,6 +875,13 @@ ul.tabs {
 @media screen and (max-width: 720px) {
     iframe {
         width: 550px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    iframe {
+        width: 600px;
         height: 450px;
     }
 }
@@ -1301,7 +1319,7 @@ img {
     }
 
     a[href]:after {
-        content: "("attr(href) ")";
+        content: "(" attr(href) ")";
     }
 
     a[href^="#"]:after,
