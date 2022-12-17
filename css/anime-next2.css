@@ -6,16 +6,24 @@
     src: url("BlackgroundsRegular-1GEYj.ttf");
 }
 
+*,
+* ::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
 * {
     font-family: "Rubik", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    outline: none;
+    outline: 0;
     border: none;
     transition: all 0.3s cubic-bezier(0.16, 0.8, 0.62, 1.52);
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-weight: normal;
 }
 

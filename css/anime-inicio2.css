@@ -15,7 +15,7 @@
   outline: none;
   border: none;
   transition: all 0.3s cubic-bezier(0.16, 0.8, 0.62, 1.52);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-weight: normal;
 }
 
