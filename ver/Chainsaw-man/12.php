@@ -1,4 +1,4 @@
-<?php include('./template/siguiente.php');
+<?php include('../../template/siguiente.php');
 ?>
 
 <title>Chainsaw man Episodio 12 — All-Anime</title>
@@ -21,21 +21,21 @@
 
     <div class="wrap">
         <ul class="tabs">
-            <li><a href="#tab1" title="Japones"><img src="../image/Banderas-lenguaje/japon.png" width="40px" height="40px" alt="tab"><span class="tab-text"></span></a></li>
-            <!-- <li><a href="#tab2" title="Latino"><img src="/image/Banderas-lenguaje/mexico.png" width="40px" height="40px" alt="tab"><span class="tab-text"></span></a></li> -->
+            <li><a href="#tab1" title="Japones"><img src="../../image/Banderas-lenguaje/japon.png" width="40px" height="40px" alt="tab"><span class="tab-text"></span></a></li>
+            <!-- <li><a href="#tab2" title="Latino"><img src="../../image/Banderas-lenguaje/mexico.png" width="40px" height="40px" alt="tab"><span class="tab-text"></span></a></li> -->
         </ul>
 
         <div class="secciones">
             <article id="tab1">
                 <div class="container-category">
                     <p><a href="https://sbchill.com/e/36w226tmobfz.html" class="Title1" title="SB-F" target="ServerC">
-                            <image><img src="../image/Logo-server/luffy.png" width="25px"></image>Opcion 1
+                            <image><img src="../../image/Logo-server/luffy.png" width="25px"></image>Opcion 1
                         </a></p>
                     <p><a href="https://filemoon.sx/e/eok8vrv10h5h/_AnimeOnlineNinja__Chainsaw_Man_12" class="Title1" title="Filemoon" target="ServerC">
-                            <image><img src="/image/Logo-server/goku.png" width="25px"></image>Opcion 2
+                            <image><img src="../../image/Logo-server/goku.png" width="25px"></image>Opcion 2
                         </a></p>
                     <p><a href="https://shavetape.cash/e/r4BZVlkRzjFbjZo/" class="Title1" title="Streamtape" target="ServerC">
-                            <image><img src="/image/Logo-server/naruto.png" width="30px"></image>Opcion 3
+                            <image><img src="../../image/Logo-server/naruto.png" width="30px"></image>Opcion 3
                         </a></p>
                 </div>
                 <div class="contenedor">
@@ -45,9 +45,9 @@
             <!-- <article id="tab2">
                         <div class="secciones1">
                             <div class="container-category">
-                                <p><a href="https://sblanh.com/e/3ig6b6hlk9zr.html" target="Latino" class="Title1" title="SB-F"><image><img src="/image/Logo-server/luffy.png" width="25px"></image>Opcion 1</a></p>
-                                <p><a href="https://streamtape.com/e/ZVPRbyVppxTqXjl/" target="Latino" class="Title1" title="streamtape"><image><img src="/image/Logo-server/goku.png" width="25px"></image>Opcion 2</a></p>
-                                <p><a href="https://sltube.org/e/Jj8GzOq867ynvPog" target="Latino" class="Title1" title="Sltube"><image><img src="/image/Logo-server/naruto.png" width="25px"></image>Opcion 3</a></p>
+                                <p><a href="https://sblanh.com/e/3ig6b6hlk9zr.html" target="Latino" class="Title1" title="SB-F"><image><img src="../../image/Logo-server/luffy.png" width="25px"></image>Opcion 1</a></p>
+                                <p><a href="https://streamtape.com/e/ZVPRbyVppxTqXjl/" target="Latino" class="Title1" title="streamtape"><image><img src="../../image/Logo-server/goku.png" width="25px"></image>Opcion 2</a></p>
+                                <p><a href="https://sltube.org/e/Jj8GzOq867ynvPog" target="Latino" class="Title1" title="Sltube"><image><img src="../../image/Logo-server/naruto.png" width="25px"></image>Opcion 3</a></p>
                             </div>
                             <div class="contenedor">
                                 <IFRAME name="Latino" SRC="https://sblanh.com/e/3ig6b6hlk9zr.html" FRAMEBORDER=1 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=840 HEIGHT=460 allowfullscreen></IFRAME>
@@ -66,5 +66,5 @@
                         <a href="#" class="cta Rprt fa-flag-o"><span>REPORTAR</span><span>Episodio</span></a>
                     </div>
 
-                    <?php include('./template/footer.php');
+                    <?php include('../../template/footer.php');
                     ?>

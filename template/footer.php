@@ -3,7 +3,7 @@
     <div class="modal-container">
         <div class="modal modal-close">
             <p class="close">X</p>
-            <h4>Reportar<img src="../image/Banderas-lenguaje/windrose.gif" width="30px"></i></h4>
+            <h4>Reportar<img src="../../image/Banderas-lenguaje/windrose.gif" width="30px"></i></h4>
             <div class="modal-text">
                 <label for="report-resaon">Motivo:</label>
                 <select class="form-control" id="report_reason">
@@ -29,7 +29,7 @@
     }
 </script>
 <!-- Inicio comentarios Disqus -->
-<div class="comentarios"><img src="/image/Logo-server/kame-senin.png" width="45px" alt="" id="mycircle"> Comentarios</div>
+<div class="comentarios"><img src="../../image/Logo-server/kame-senin.png" width="45px" alt="" id="mycircle"> Comentarios</div>
 <div id="disqus_thread"></div>
 <script>
     /**
@@ -84,8 +84,8 @@
         </div>
     </div>
 </footer>
-<script src="../js/script.js"></script>
-<script src="../js/idioma.js"></script>
+<script src="../../js/script.js"></script>
+<script src="../../js/idioma.js"></script>
 </body>
 
 </html>
