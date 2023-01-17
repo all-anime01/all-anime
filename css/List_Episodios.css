@@ -987,6 +987,12 @@ h4 {
   background-image: url("");
 }
 
+@media (max-width: 400px) {
+  .Bg {
+    background-size: cover;
+  }
+}
+
 
 .Ficha>.Bg {
   position: absolute;
