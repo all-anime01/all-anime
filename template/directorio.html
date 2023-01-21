@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
 </head>
 <body>
+    <nav>
     <!-- Base de datos -->
     <div class="content-search">
         <div class="content-table">
@@ -742,8 +742,25 @@
             </table>
         </div>
     </div>
+</nav>
+
+<script>
+    //Fucion Busqueda tabla
+var buscador = $("#table").DataTable();
+
+$(".input-search").keyup(function(){
+    
+    buscador.search($(this).val()).draw();
+    
+    if ($(".input-search").val() == ""){
+        $(".content-search").fadeOut(300);
+    }else{
+        $(".content-search").fadeIn(300);
+    }
+});
+</script>
+<!-- <script src="/js/script.js"></script> -->
 </body>
-<script src="/js/script.js"></script>
 </html>
 
                 
