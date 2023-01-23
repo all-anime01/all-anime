@@ -161,7 +161,7 @@ header .navbar ul li a:hover {
 }
 
 /*Buscador de contenido*/
-
+/* 
 .search {
     position: relative;
     width: 40px;
@@ -266,7 +266,7 @@ header .navbar ul li a:hover {
     height: 15px;
     background: #999;
     transform: rotate(315deg);
-}
+} */
 
 
 /* Buscador de contenido
@@ -309,7 +309,7 @@ header .navbar ul li a:hover {
 .active .input {
     width: 0;
 } */
-.content-search {
+/* .content-search {
     position: fixed;
     top: 75px;
     left: 95%;
@@ -359,7 +359,7 @@ tbody tr td a:hover {
     width: 70px;
     height: 65px;
     border-radius: 5px;
-}
+} */
 
 .Type.tv {
     background-color: rgb(7, 247, 59);
@@ -405,12 +405,12 @@ tbody tr td a:hover {
     padding: 0;
 }
 
-#table_length,
+/* #table_length,
 #table_filter,
 #table_info,
 #table_paginate {
     display: none;
-}
+} */
 
 .Inicio {
     display: flex;

@@ -56,35 +56,92 @@
         <nav class="navbar">
             <ul>
                 <li><a href="https://www.all-anime.ga/">INICIO</a></li>
-                <li><a href="https://www.all-anime.ga/directorioanime">DIRECTORIO ANIME</a></li>
+                <li><a class="active" href="https://www.all-anime.ga/directorioanime">DIRECTORIO ANIME<a></li>
                 <li><a href="https://www.all-anime.ga/peliculas">PELÍCULAS</a></li>
 
                 <div class="search">
-                    <div class="icon"></div>
-                    <div class="input">
-                        <input type="text" class="search-table" placeholder="Buscar..." id="mysearch">
-                    </div>
-                    <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar..." id="search-input" oninput="hideResults()">
+                        <div id="search-results"></div>
+                      </div>
                 </div>
-                <script>
-                    const icon = document.querySelector('.icon');
-                    const search = document.querySelector('.search');
-                    icon.onclick = function () {
-                        search.classList.toggle('active')
-                    }
-                </script>
-                <div id="plantilla"></div>
-
-                <script>
-                fetch('/template/directorio.html')
-                  .then(response => response.text())
-                  .then(data => {
-                    document.getElementById('plantilla').innerHTML = data;
-                  });
-                </script>
             </ul>
         </nav>
 
+        <style>
+            .search-container {
+              position: relative;
+              top: 5px;
+              left: 100%;
+              transform: translateX(-95%);
+              width: 185px;
+              height: 35px;
+              background: white;
+              z-index: 2000;
+              border-radius: 2.5px;
+              opacity: 2;
+            }
+      
+            #search-input {
+              padding: 12px 20px;
+              box-sizing: border-box;
+              border-radius: 4px;
+              width: 100%;
+            }
+      
+            #search-results {
+              position: absolute;
+              width: 100%;
+              background-color: #f2f2f2;
+              z-index: 1;
+            }
+      
+            #search-results div {
+              display: flex;
+              align-items: center;
+              padding: 10px;
+              border-bottom: 1px solid #fff;
+            }
+      
+            #search-results div a {
+              display: flex;
+              align-items: center;
+              text-decoration: none;
+              color: #333;
+            }
+      
+            #search-results img {
+              height: 70px;
+              margin-right: 10px;
+            }
+      
+            /* #search-results .title {
+              font-weight: bold;
+            } */
+            .title:hover {
+              color: rgb(7, 247, 59);
+            }
+      
+            #search-results .Type {
+              margin-left: auto;
+            }
+            .Type {
+              background-color: rgb(7, 247, 59);
+              border-color: rgb(7, 247, 59);
+              text-align: center;
+              font-size: 10px;
+              font-weight: 700;
+              line-height: 16px;
+              width: 60px;
+              color: #fff;
+              height: 16px;
+              border-radius: 8px;
+            }
+            .Type:hover{
+                background-color: rgb(32, 106, 243);
+        border-color: rgb(32, 106, 243);
+            }
+        </style>
     </header>
 
     <div class="CpCnA">

@@ -144,7 +144,7 @@ header .navbar ul li a:hover {
 
 /*Buscador de contenido*/
 
-.search {
+/* .search {
   position: relative;
   width: 40px;
   height: 40px;
@@ -248,7 +248,7 @@ header .navbar ul li a:hover {
   height: 15px;
   background: #999;
   transform: rotate(315deg);
-}
+} */
 
 /*
 .search-bar-container {
@@ -291,7 +291,7 @@ header .navbar ul li a:hover {
   width: 0;
 }
 */
-.content-search {
+/* .content-search {
   position: fixed;
   top: 70px;
   left: 95%;
@@ -309,7 +309,7 @@ header .navbar ul li a:hover {
   .content-search {
     margin: 0 45px;
   }
-}
+} */
 
 .content-table {
   width: 97%;
@@ -361,11 +361,11 @@ tbody tr td a:hover {
   line-height: 25px;
 }
 
-#image-min {
+/* #image-min {
   width: 70px;
   height: 65px;
   border-radius: 5px;
-}
+} */
 
 .Type {
   font-size: 10px;
@@ -385,18 +385,6 @@ tbody tr td a:hover {
   border-color: rgb(32, 106, 243);
 }
 
-.Type {
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 16px;
-  width: 60px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  display: inline-block;
-  height: 16px;
-  border-radius: 8px;
-}
 
 *,
 :before,

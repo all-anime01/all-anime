@@ -155,7 +155,7 @@ header .navbar ul li a:hover {
 
 /*Buscador de contenido*/
 
-.search {
+/* .search {
   position: relative;
   width: 40px;
   height: 40px;
@@ -259,7 +259,7 @@ header .navbar ul li a:hover {
   height: 15px;
   background: #999;
   transform: rotate(315deg);
-}
+} */
 
 /*Buscador de contenido*/
 /* 
@@ -303,7 +303,7 @@ header .navbar ul li a:hover {
   width: 0;
 } */
 
-.content-search {
+/* .content-search {
   position: fixed;
   top: 65px;
   left: 95%;
@@ -353,7 +353,7 @@ tbody tr td a:hover {
   width: 70px;
   height: 65px;
   border-radius: 5px;
-}
+} */
 
 .Type.tv {
   background-color: rgb(7, 247, 59);
@@ -3938,71 +3938,71 @@ figure img {
     text-align: center;
   }
 
-  .content-search {
+  /* .content-search {
     position: absolute;
     top: 100%;
     left: 62.5%;
   }
-}
+} */
 
-@media (max-width: 400px) {
-  section {
-    padding: 0;
-    padding-top: 11rem;
+  @media (max-width: 400px) {
+    section {
+      padding: 0;
+      padding-top: 11rem;
+    }
+
+    .about .row .image img {
+      height: auto;
+      width: 100%;
+    }
+
+    .Bg {
+      height: auto;
+      width: 100%;
+    }
+
+    .Footer {
+      color: #777f82;
+      font-size: 12px;
+      text-align: center;
+      display: flex;
+      height: auto;
+    }
+
+
+    *,
+    :before,
+    :after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .Footer .Row {
+      margin-top: 0;
+      align-items: center;
+    }
+
+    .Footer .Row>*,
+    .Footer p {
+      padding-top: 0;
+    }
+
+    .Footer>.Container {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .Footer .Row>div {
+      padding: 10px 0;
+    }
+
+    .Footer p {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Footer .mnftxt {
+      width: 340px;
+    }
   }
-
-  .about .row .image img {
-    height: auto;
-    width: 100%;
-  }
-
-  .Bg {
-    height: auto;
-    width: 100%;
-  }
-
-  .Footer {
-    color: #777f82;
-    font-size: 12px;
-    text-align: center;
-    display: flex;
-    height: auto;
-  }
-
-
-  *,
-  :before,
-  :after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  .Footer .Row {
-    margin-top: 0;
-    align-items: center;
-  }
-
-  .Footer .Row>*,
-  .Footer p {
-    padding-top: 0;
-  }
-
-  .Footer>.Container {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .Footer .Row>div {
-    padding: 10px 0;
-  }
-
-  .Footer p {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .Footer .mnftxt {
-    width: 340px;
-  }
-}

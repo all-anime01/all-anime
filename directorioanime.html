@@ -52,35 +52,91 @@
         <nav class="navbar">
             <ul>
                 <li><a href="https://www.all-anime.ga/">INICIO</a></li>
-                <li><a class="active" href="https://www.all-anime.ga/directorioanime">DIRECTORIO ANIME</a></li>
+                <li><a class="active" href="https://www.all-anime.ga/directorioanime">DIRECTORIO ANIME<a></li>
                 <li><a href="https://www.all-anime.ga/peliculas">PELÍCULAS</a></li>
 
                 <div class="search">
-                    <div class="icon"></div>
-                    <div class="input">
-                        <input type="text" class="search-table" placeholder="Buscar..." id="mysearch">
-                    </div>
-                    <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+                    <div class="search-container">
+                        <input type="text" placeholder="Buscar..." id="search-input" oninput="hideResults()">
+                        <div id="search-results"></div>
+                      </div>
                 </div>
-                <script>
-                    const icon = document.querySelector('.icon');
-                    const search = document.querySelector('.search');
-                    icon.onclick = function(){
-                        search.classList.toggle('active')
-                    }
-                </script>
-                  <div id="plantilla"></div>
-
-                  <script>
-                  fetch('/template/directorio.html')
-                    .then(response => response.text())
-                    .then(data => {
-                      document.getElementById('plantilla').innerHTML = data;
-                    });
-                  </script>
             </ul>
         </nav>
-        
+
+        <style>
+            .search-container {
+              position: relative;
+              top: 5px;
+              left: 100%;
+              transform: translateX(-95%);
+              width: 185px;
+              background: white;
+              z-index: 2000;
+              border-radius: 2.5px;
+              opacity: 2;
+            }
+      
+            #search-input {
+              padding: 12px 20px;
+              box-sizing: border-box;
+              border-radius: 4px;
+              width: 100%;
+            }
+      
+            #search-results {
+              position: absolute;
+              width: 100%;
+              background-color: #f2f2f2;
+              z-index: 1;
+            }
+      
+            #search-results div {
+              display: flex;
+              align-items: center;
+              padding: 10px;
+              border-bottom: 1px solid #fff;
+            }
+      
+            #search-results div a {
+              display: flex;
+              align-items: center;
+              text-decoration: none;
+              color: #333;
+            }
+      
+            #search-results img {
+              height: 70px;
+              margin-right: 10px;
+            }
+      
+            #search-results .title {
+              font-weight: bold;
+            }
+            .title:hover {
+              color: rgb(7, 247, 59);
+            }
+      
+            #search-results .Type {
+              margin-left: auto;
+            }
+            .Type {
+              background-color: rgb(7, 247, 59);
+              border-color: rgb(7, 247, 59);
+              text-align: center;
+              font-size: 10px;
+              font-weight: 700;
+              line-height: 16px;
+              width: 60px;
+              color: #fff;
+              height: 16px;
+              border-radius: 8px;
+            }
+            .Type:hover{
+                background-color: rgb(32, 106, 243);
+        border-color: rgb(32, 106, 243);
+            }
+        </style>      
     </header>
 
     <section class="Inicio" id="Inicio">
@@ -91,7 +147,7 @@
     
                 <div class="box-container">
                     <div class="box">
-                        <img src="image/Kimetsu-no-yaiba-yuukaku-hen-Temporada2/poster.jpg" alt="all anime">
+                        <img src="image/Kimetsu-no-yaiba-yuukaku-hen-Temporada2/p.jpe" alt="all anime">
                          <div class="info">
                              <h3>Kimetsu no Yaiba <span class="Type tv">ANIME</span></h3>
                              <a href="https://www.all-anime.ga/ver/Kimetsu-no-yaiba/tv" class="btn">Ver Capítulos</a>
@@ -99,10 +155,10 @@
                         </div>
     
                     <div class="box">
-                        <img src="image/SNK season 1/SNK-poster.jpg" alt="all anime">
+                        <img src="image/SNK-season-4-part2/poster.jpg" alt="all anime">
                          <div class="info">
                              <h3>Shingeki no Kyojin <span class="Type tv">ANIME</span></h3>
-                             <a href="Shingeki-no-kyojin-tv.html" class="btn">Ver Capítulos</a>
+                             <a href="https://www.all-anime.ga/Shingeki-no-kyojin-tv" class="btn">Ver Capítulos</a>
                             </div>
                         </div>
                     <div class="box">
@@ -116,35 +172,35 @@
                         <img src="image/Jujutsu-Kaisen/poster.png" alt="all anime">
                          <div class="info">
                              <h3>Jujutsu Kaisen <span class="Type tv">ANIME</span></h3>
-                             <a href="Jujutsu-Kaisen-tv.html" class="btn">Ver Capítulos</a>
+                             <a href="https://www.all-anime.ga/Jujutsu-Kaisen-tv" class="btn">Ver Capítulos</a>
                             </div>
                         </div>
                     <div class="box">
                         <img src="image/shamanking.jpg" alt="all anime">
                          <div class="info">
                              <h3>Shaman King (2021) <span class="Type tv">ANIME</span></h3> 
-                             <a href="Shaman-king(2021)-tv.html" class="btn">Ver Capítulos</a>
+                             <a href="https://www.all-anime.ga/Shaman-king(2021)-tv" class="btn">Ver Capítulos</a>
                             </div>
                         </div>
                     <div class="box">
-                        <img src="image/naruto.jpg" alt="all anime">
+                        <img src="image/Naruto/poster.jpeg" alt="all anime">
                          <div class="info">
                              <h3>Naruto <span class="Type tv">ANIME</span></h3>
                              <a href="https://www.all-anime.ga/Naruto-tv" class="btn">Ver Capítulos</a>
                             </div>
                         </div>
                     <div class="box">
-                        <img src="image/shippuden.png" alt="all anime">
+                        <img src="image/Naruto-Shippuden/p.jpe" alt="all anime">
                          <div class="info">
                              <h3>Naruto Shippuden <span class="Type tv">ANIME</span></h3>
-                             <a href="Naruto-Shippuden-tv.html" class="btn">Ver Capítulos</a>
+                             <a href="https://www.all-anime.ga/Naruto-Shippuden-tv.html" class="btn">Ver Capítulos</a>
                             </div>
                         </div>
                     <div class="box">
                         <img src="image/lostcanvas.webp" alt="all anime">
                          <div class="info">
-                             <h3>Saint Seiya Lost Canvas<span class="Type tv">ANIME</span></h3>
-                             <a href="Saint-Seiya-Lost-Canvas-tv.html" class="btn">Ver Capítulos</a>
+                             <h3>Saint Seiya: Lost Canvas<span class="Type tv">ANIME</span></h3>
+                             <a href="https://www.all-anime.ga/Saint-Seiya-Lost-Canvas-tv.html" class="btn">Ver Capítulos</a>
                             </div>
                         </div>
                     <div class="box">
@@ -169,7 +225,7 @@
                          </div>
                     </div>
                     <div class="box">
-                        <img src="image/Bleach/bleach-poster.jpg" alt="all anime">
+                        <img src="image/Bleach/p.jpg" alt="all anime">
                          <div class="info">
                              <h3>Bleach <span class="Type tv">ANIME</span></h3>
                              <a href="https://www.all-anime.ga/ver/Bleach/tv" class="btn">Ver Capítulos</a>
