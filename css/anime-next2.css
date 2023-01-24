@@ -3945,11 +3945,12 @@ figure img {
         text-align: center;
     }
 
+    /* 
     .content-search {
         position: absolute;
         top: 100%;
         left: 62.5%;
-    }
+    } */
 }
 
 @media (max-width: 400px) {
