@@ -164,6 +164,12 @@ $('ul.tabs li a:first').addClass('active');
           type: "ANIME",
         },
         {
+          name: "Trigun Stampede",
+          link: "https://www.all-anime.ga/ver/Trigun-stampede/tv",
+          image: "/image/Trigun-stampede/p.jpe",
+          type: "ANIME",
+        },
+        {
           name: "Bleach",
           link: "https://www.all-anime.ga/ver/Bleach/tv",
           image: "/image/Bleach/p.jpg",
