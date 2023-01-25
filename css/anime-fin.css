@@ -159,7 +159,7 @@ header .navbar ul li a:hover {
   display: none;
 }
 
-.search {
+/* .search {
   position: relative;
   width: 40px;
   height: 40px;
@@ -284,7 +284,7 @@ header .navbar ul li a:hover {
     margin: 0 45px;
   }
 }
-
+ */
 .content-table {
   width: 97%;
   max-height: 200px;

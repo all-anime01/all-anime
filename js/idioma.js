@@ -170,6 +170,18 @@ $('ul.tabs li a:first').addClass('active');
           type: "ANIME",
         },
         {
+          name: "Mob Psycho",
+          link: "https://www.all-anime.ga/ver/Mob-Psycho-100/tv",
+          image: "/image/Mob-psycho-III/poster.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Spy x Family",
+          link: "https://www.all-anime.ga/ver/Spy-x-family/tv",
+          image: "/image/Mob-psycho-III/poster.jpg",
+          type: "ANIME",
+        },
+        {
           name: "Bleach",
           link: "https://www.all-anime.ga/ver/Bleach/tv",
           image: "/image/Bleach/p.jpg",
