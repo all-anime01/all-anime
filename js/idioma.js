@@ -158,6 +158,12 @@ $('ul.tabs li a:first').addClass('active');
           type: "ANIME",
         },
         {
+          name: "Pokemon: Viajes",
+          link: "https://www.all-anime.ga/ver/Pokemon-viajes/tv",
+          image: "/image/Pokemon-mezase-pokemon-master/p.jpg",
+          type: "ANIME",
+        },
+        {
           name: "Pokemon: Mezase Pokemon master",
           link: "https://www.all-anime.ga/ver/Pokemon-viajes/tv",
           image: "/image/Pokemon-mezase-pokemon-master/p.jpg",
@@ -178,7 +184,7 @@ $('ul.tabs li a:first').addClass('active');
         {
           name: "Spy x Family",
           link: "https://www.all-anime.ga/ver/Spy-x-family/tv",
-          image: "/image/Mob-psycho-III/poster.jpg",
+          image: "/image/Spy-X-Family/p.jpg",
           type: "ANIME",
         },
         {
