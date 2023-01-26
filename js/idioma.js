@@ -93,7 +93,7 @@ $('ul.tabs li a:first').addClass('active');
         },
         {
           name: "One Piece",
-          link: "https://www.all-anime.ga/ver/One-Piece/tv",
+          link: "https://www.all-anime.ga/ver/One-piece/tv",
           image: "/image/One-Piece-cap/One-Piece-poster.jpg",
           type: "ANIME",
         },
