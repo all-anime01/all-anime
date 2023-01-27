@@ -100,13 +100,25 @@ $('ul.tabs li a:first').addClass('active');
         {
           name: "Blue lock",
           link: "https://www.all-anime.ga/ver/Blue-lock/tv",
-          image: "/image/Blue-lock/poster.jpg",
+          image: "/image/Blue-lock/p.jpe",
           type: "ANIME",
         },
         {
           name: "Ousama ranking",
           link: "https://www.all-anime.ga/ver/Ousama-ranking/tv",
           image: "/image/Ousama-Ranking/p.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Shuumatsu no Valkyrie",
+          link: "https://www.all-anime.ga/ver/Shuumatsu-no-valkyrie/tv",
+          image: "/image/Record-of-ragnarok/poster.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Record of Ragnarok",
+          link: "https://www.all-anime.ga/ver/Shuumatsu-no-valkyrie/tv",
+          image: "/image/Record-of-ragnarok/poster.jpg",
           type: "ANIME",
         },
         {
