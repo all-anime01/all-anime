@@ -43,17 +43,17 @@ magnifierEl.addEventListener("click", () => {
 });
 
 
-//Fucion Busqueda tabla
-var buscador = $("#table").DataTable();
+// //Fucion Busqueda tabla
+// var buscador = $("#table").DataTable();
 
-$(".input-search").keyup(function(){
+// $(".input-search").keyup(function(){
     
-    buscador.search($(this).val()).draw();
+//     buscador.search($(this).val()).draw();
     
-    if ($(".input-search").val() == ""){
-        $(".content-search").fadeOut(300);
-    }else{
-        $(".content-search").fadeIn(300);
-    }
-});
+//     if ($(".input-search").val() == ""){
+//         $(".content-search").fadeOut(300);
+//     }else{
+//         $(".content-search").fadeIn(300);
+//     }
+// });
 
