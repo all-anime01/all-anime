@@ -110,7 +110,7 @@ $('ul.tabs li a:first').addClass('active');
           type: "ANIME",
         },
         {
-          name: "Shuumatsu no Valkyrie",
+          name: "Shumatsu no Valkyrie",
           link: "https://www.all-anime.ga/ver/Shuumatsu-no-valkyrie/tv",
           image: "/image/Record-of-ragnarok/poster.jpg",
           type: "ANIME",
