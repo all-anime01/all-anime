@@ -129,7 +129,7 @@ $('ul.tabs li a:first').addClass('active');
         },
         {
           name: "Shingeki no kyojin",
-          link: "https://www.all-anime.ga/Shingeki-no-kyojin-tv",
+          link: "https://www.all-anime.ga/ver/Shingeki-no-kyojin/tv",
           image: "/image/SNK-season-4-part2/poster.jpg",
           type: "ANIME",
         },
