@@ -104,6 +104,12 @@ $('ul.tabs li a:first').addClass('active');
           type: "ANIME",
         },
         {
+          name: "Dr stone",
+          link: "https://www.all-anime.ga/ver/Dr-stone/tv",
+          image: "/image/Dr-Stone-Ryusui/poster.png",
+          type: "ANIME",
+        },
+        {
           name: "Ousama ranking",
           link: "https://www.all-anime.ga/ver/Ousama-ranking/tv",
           image: "/image/Ousama-Ranking/p.jpg",
