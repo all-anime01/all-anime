@@ -104,6 +104,12 @@ $('ul.tabs li a:first').addClass('active');
           type: "ANIME",
         },
         {
+          name: "Dragon Quest: Dai no Daibouken",
+          link: "https://www.all-anime.ga/ver/Dragon-quest/tv",
+          image: "/image/Dragon-quest/p.jpg",
+          type: "ANIME",
+        },
+        {
           name: "Dr stone",
           link: "https://www.all-anime.ga/ver/Dr-stone/tv",
           image: "/image/Dr-Stone-Ryusui/poster.png",
