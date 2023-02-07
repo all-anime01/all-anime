@@ -79,28 +79,59 @@ $('ul.tabs li a:first').addClass('active');
       }
 
       const animes = [
+        
         {
-          name: "Kimetsu no Yaiba",
-          link: "https://www.all-anime.ga/ver/Kimetsu-no-yaiba/tv",
-          image: "/image/Kimetsu-no-yaiba-yuukaku-hen-Temporada2/p.jpe",
+          name: "Ao Ashi",
+          link: "https://www.all-anime.ga/ver/Ao-ashi/tv",
+          image: "/image/Ao-Ashi/p.jpe",
           type: "ANIME",
         },
         {
-          name: "Demon slayer",
-          link: "https://www.all-anime.ga/ver/Kimetsu-no-yaiba/tv",
-          image: "/image/Kimetsu-no-Yaiba-Temporada-1/poster.jpg",
+          name: "Bleach",
+          link: "https://www.all-anime.ga/ver/Bleach/tv",
+          image: "/image/Bleach/p.jpg",
           type: "ANIME",
         },
         {
-          name: "One Piece",
-          link: "https://www.all-anime.ga/ver/One-piece/tv",
-          image: "/image/One-Piece-cap/One-Piece-poster.jpg",
+          name: "Bleach: Sennen Kessen-hen",
+          link: "https://www.all-anime.ga/ver/Bleach-sennen-kessen-hen/tv",
+          image: "/image/Bleach-thousand-year-blood-war/poster.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Bleach: Thousand-Year-blood-war",
+          link: "https://www.all-anime.ga/ver/Bleach-sennen-kessen-hen/tv",
+          image: "/image/Bleach-thousand-year-blood-war/poster.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Boku no hero academia",
+          link: "https://www.all-anime.ga/ver/My-hero-academia/tv",
+          image: "/image/Boku-no-hero-academia-season-6/poster.jpg",
           type: "ANIME",
         },
         {
           name: "Blue lock",
           link: "https://www.all-anime.ga/ver/Blue-lock/tv",
           image: "/image/Blue-lock/p.jpe",
+          type: "ANIME",
+        },
+        {
+          name: "Cyberpunk edge runners",
+          link: "https://www.all-anime.ga/ver/Cyberpunk-edge-runners/tv.html",
+          image: "/image/Cyber-Punk-EdgeRunners/poster.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Chainsaw man",
+          link: "https://www.all-anime.ga/ver/Chainsaw-man/tv",
+          image: "/image/chainsaw-man/poster.png",
+          type: "ANIME",
+        },
+        {
+          name: "Demon slayer",
+          link: "https://www.all-anime.ga/ver/Kimetsu-no-yaiba/tv",
+          image: "/image/Kimetsu-no-Yaiba-Temporada-1/poster.jpg",
           type: "ANIME",
         },
         {
@@ -116,45 +147,15 @@ $('ul.tabs li a:first').addClass('active');
           type: "ANIME",
         },
         {
-          name: "Ousama ranking",
-          link: "https://www.all-anime.ga/ver/Ousama-ranking/tv",
-          image: "/image/Ousama-Ranking/p.jpg",
-          type: "ANIME",
-        },
-        {
-          name: "Shumatsu no Valkyrie",
-          link: "https://www.all-anime.ga/ver/Shuumatsu-no-valkyrie/tv",
-          image: "/image/Record-of-ragnarok/poster.jpg",
-          type: "ANIME",
-        },
-        {
-          name: "Record of Ragnarok",
-          link: "https://www.all-anime.ga/ver/Shuumatsu-no-valkyrie/tv",
-          image: "/image/Record-of-ragnarok/poster.jpg",
-          type: "ANIME",
-        },
-        {
-          name: "Ranking of king",
-          link: "https://www.all-anime.ga/ver/Ousama-ranking/tv",
-          image: "/image/Ousama-Ranking/p.jpg",
-          type: "ANIME",
-        },
-        {
-          name: "Shingeki no kyojin",
-          link: "https://www.all-anime.ga/ver/Shingeki-no-kyojin/tv",
-          image: "/image/SNK-season-4-part2/poster.jpg",
-          type: "ANIME",
-        },
-        {
           name: "Jujutsu kaien",
           link: "https://www.all-anime.ga/Jujutsu-Kaisen-tv",
           image: "/image/Jujutsu-Kaisen/poster.png",
           type: "ANIME",
         },
         {
-          name: "Shaman king: 2021",
-          link: "https://www.all-anime.ga/Shaman-king(2021)-tv",
-          image: "/image/shamanking.jpg",
+          name: "Kimetsu no Yaiba",
+          link: "https://www.all-anime.ga/ver/Kimetsu-no-yaiba/tv",
+          image: "/image/Kimetsu-no-yaiba-yuukaku-hen-Temporada2/p.jpe",
           type: "ANIME",
         },
         {
@@ -164,15 +165,21 @@ $('ul.tabs li a:first').addClass('active');
           type: "ANIME",
         },
         {
-          name: "Naruto shippuden",
-          link: "https://www.all-anime.ga/Naruto-Shippuden-tv.html",
-          image: "/image/Naruto-Shippuden/p.jpe",
+          name: "My hero academia",
+          link: "https://www.all-anime.ga/ver/My-hero-academia/tv",
+          image: "/image/Boku-no-hero-academia-season-6/poster.jpg",
           type: "ANIME",
         },
         {
-          name: "Saint Seiya: Lost Canvas",
+          name: "Mob Psycho",
+          link: "https://www.all-anime.ga/ver/Mob-Psycho-100/tv",
+          image: "/image/Mob-psycho-III/poster.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Naruto shippuden",
           link: "https://www.all-anime.ga/Naruto-Shippuden-tv.html",
-          image: "/image/Saint-seiya-lost-canvas/p.jpg",
+          image: "/image/Naruto-Shippuden/p.jpe",
           type: "ANIME",
         },
         {
@@ -194,15 +201,51 @@ $('ul.tabs li a:first').addClass('active');
           type: "ANIME",
         },
         {
-          name: "Trigun Stampede",
-          link: "https://www.all-anime.ga/ver/Trigun-stampede/tv",
-          image: "/image/Trigun-stampede/p.jpe",
+          name: "One Piece",
+          link: "https://www.all-anime.ga/ver/One-piece/tv",
+          image: "/image/One-Piece-cap/One-Piece-poster.jpg",
           type: "ANIME",
         },
         {
-          name: "Mob Psycho",
-          link: "https://www.all-anime.ga/ver/Mob-Psycho-100/tv",
-          image: "/image/Mob-psycho-III/poster.jpg",
+          name: "Ousama ranking",
+          link: "https://www.all-anime.ga/ver/Ousama-ranking/tv",
+          image: "/image/Ousama-Ranking/p.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Record of Ragnarok",
+          link: "https://www.all-anime.ga/ver/Shuumatsu-no-valkyrie/tv",
+          image: "/image/Record-of-ragnarok/poster.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Ranking of king",
+          link: "https://www.all-anime.ga/ver/Ousama-ranking/tv",
+          image: "/image/Ousama-Ranking/p.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Shingeki no kyojin",
+          link: "https://www.all-anime.ga/ver/Shingeki-no-kyojin/tv",
+          image: "/image/SNK-season-4-part2/poster.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Shumatsu no Valkyrie",
+          link: "https://www.all-anime.ga/ver/Shuumatsu-no-valkyrie/tv",
+          image: "/image/Record-of-ragnarok/poster.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Shaman king: 2021",
+          link: "https://www.all-anime.ga/Shaman-king(2021)-tv",
+          image: "/image/shamanking.jpg",
+          type: "ANIME",
+        },
+        {
+          name: "Saint Seiya: Lost Canvas",
+          link: "https://www.all-anime.ga/Naruto-Shippuden-tv.html",
+          image: "/image/Saint-seiya-lost-canvas/p.jpg",
           type: "ANIME",
         },
         {
@@ -212,27 +255,9 @@ $('ul.tabs li a:first').addClass('active');
           type: "ANIME",
         },
         {
-          name: "Bleach",
-          link: "https://www.all-anime.ga/ver/Bleach/tv",
-          image: "/image/Bleach/p.jpg",
-          type: "ANIME",
-        },
-        {
-          name: "Bleach: Sennen Kessen-hen",
-          link: "https://www.all-anime.ga/ver/Bleach-sennen-kessen-hen/tv",
-          image: "/image/Bleach-thousand-year-blood-war/poster.jpg",
-          type: "ANIME",
-        },
-        {
-          name: "My hero academia",
-          link: "https://www.all-anime.ga/ver/My-hero-academia/tv",
-          image: "/image/Boku-no-hero-academia-season-6/poster.jpg",
-          type: "ANIME",
-        },
-        {
-          name: "Boku no hero academia",
-          link: "https://www.all-anime.ga/ver/My-hero-academia/tv",
-          image: "/image/Boku-no-hero-academia-season-6/poster.jpg",
+          name: "Trigun Stampede",
+          link: "https://www.all-anime.ga/ver/Trigun-stampede/tv",
+          image: "/image/Trigun-stampede/p.jpe",
           type: "ANIME",
         },
         {
@@ -247,22 +272,11 @@ $('ul.tabs li a:first').addClass('active');
           image: "/image/Vinland-Saga/T2/p.jpg",
           type: "ANIME",
         },
+        //PELICULAS
         {
           name: "Dragon ball super: super hero",
           link: "https://www.all-anime.ga/peliculas/Dragon-ball-Super-super-hero/movie",
           image: "/image/Dragon-ball-super-Super-Hero/poster.png",
-          type: "PELICULA",
-        },
-        {
-          name: "One piece: Film red",
-          link: "https://www.all-anime.ga/peliculas/One-piece-film-red/movie",
-          image: "/image/One-piece-Film-red/p.jpg",
-          type: "PELICULA",
-        },
-        {
-          name: "One piece: Film gold",
-          link: "https://www.all-anime.ga/peliculas/One-piece-film-gold/movie",
-          image: "/image/One-piece-Film-gold/p.jpg",
           type: "PELICULA",
         },
         {
@@ -275,6 +289,18 @@ $('ul.tabs li a:first').addClass('active');
           name: "Nanatsu no taizai: El rencor de edimburgo",
           link: "https://www.all-anime.ga/peliculas/Nanatsu-no-taizai-el-rencor-de-edimburgo/movie",
           image: "/image/Nanatsu-no-taizai-el-rencor-de-edimburgo/poster.jpg",
+          type: "PELICULA",
+        },
+        {
+          name: "One piece: Film red",
+          link: "https://www.all-anime.ga/peliculas/One-piece-film-red/movie",
+          image: "/image/One-piece-Film-red/p.jpg",
+          type: "PELICULA",
+        },
+        {
+          name: "One piece: Film gold",
+          link: "https://www.all-anime.ga/peliculas/One-piece-film-gold/movie",
+          image: "/image/One-piece-Film-gold/p.jpg",
           type: "PELICULA",
         },
       ];
