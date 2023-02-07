@@ -105,7 +105,7 @@ $('ul.tabs li a:first').addClass('active');
         },
         {
           name: "Dragon Quest: Dai no Daibouken",
-          link: "https://www.all-anime.ga/ver/Dragon-quest/tv",
+          link: "https://www.all-anime.ga/ver/Dragon-quest-dai-no-daibouken/tv",
           image: "/image/Dragon-quest/p.jpg",
           type: "ANIME",
         },
