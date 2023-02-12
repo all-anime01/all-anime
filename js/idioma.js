@@ -303,6 +303,30 @@ $('ul.tabs li a:first').addClass('active');
           image: "/image/One-piece-Film-gold/p.jpg",
           type: "PELICULA",
         },
+        {
+          name: "One piece: Stampede",
+          link: "https://www.all-anime.ga/peliculas/One-piece-stampede/movie",
+          image: "/image/One-piece-estampida/p.webp",
+          type: "PELICULA",
+        },
+        {
+          name: "Yu-Gi-Oh!: pirámide de la luz",
+          link: "https://www.all-anime.ga/peliculas/Yu-gi-oh!-pirámide-de-la-luz/movie",
+          image: "/image/Yu-gi-oh-la-piramide-de-la-luz/p.jpg",
+          type: "PELICULA",
+        },
+        {
+          name: "Yu-Gi-Oh!: Lazos mas alla del tiempo",
+          link: "https://www.all-anime.ga/peliculas/Yu-gi-oh!-lazos-mas-alla-del-tiempo/movie",
+          image: "/image/Yu-gi-oh-lazos-mas-alla-del-tiempo/p.jpg",
+          type: "PELICULA",
+        },
+        {
+          name: "Yu-Gi-Oh!: El lado oscuro de las dimensiones",
+          link: "https://www.all-anime.ga/peliculas/Yu-gi-oh!-el-lado-oscuro-de-las-dimensiones/movie",
+          image: "/image/Yu-gi-oh-El-lado-oscuro-de-las-dimensiones/poster.jpg",
+          type: "PELICULA",
+        },
       ];
 
       function hideResults() {

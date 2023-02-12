@@ -164,7 +164,7 @@ header .navbar ul li a:hover {
 
 /*Buscador de contenido*/
 
-.search {
+/* .search {
     position: relative;
     width: 40px;
     height: 40px;
@@ -282,7 +282,7 @@ header .navbar ul li a:hover {
     display: none;
     border-radius: 2.5px;
     opacity: 2;
-}
+} */
 
 @media (max-width: 400px) {
     .content-search {
@@ -823,10 +823,15 @@ ul.tabs {
 /*Reproductor*/
 
 .contenedor {
-    width: 65%;
-    border-radius: 0.5rem;
     max-width: 10px;
     margin: -105px 95px 250px;
+}
+
+iframe {
+    border: 2px transparent #ccc;
+    /* Añade un borde de 2 píxeles con un color gris claro */
+    border-radius: 10px;
+    /* Añade esquinas redondeadas de 10 píxeles */
 }
 
 @media screen and (max-width: 720px) {
@@ -3650,7 +3655,7 @@ figure img {
     justify-content: center;
     align-items: center;
     min-height: 20vh;
-    background: rgb(202, 48, 48);
+    background: transparent;
 }
 
 .nshare {
@@ -3818,12 +3823,15 @@ figure img {
 
 /*Terminos y condiciones de la página*/
 .Footer {
-    background-color: rgb(202, 48, 48);
-    color: #777f82;
-    font-size: 12px;
+    background: linear-gradient(360deg,
+            rgba(202, 48, 48, 1) 32%,
+            rgba(212, 87, 87, 1) 59%,
+            rgba(255, 255, 255, 1) 89%);
+    background-blend-mode: normal;
+    color: #ffffff;
     text-align: center;
-    display: block;
-    min-height: 2vh;
+    padding: 20px;
+    margin-bottom: -20px;
 }
 
 .Footer span,

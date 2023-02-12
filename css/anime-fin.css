@@ -3689,7 +3689,7 @@ figure img {
   justify-content: center;
   align-items: center;
   min-height: 20vh;
-  background: rgb(202, 48, 48);
+  background: transparent;
 }
 
 .nshare {
