@@ -280,6 +280,18 @@ $('ul.tabs li a:first').addClass('active');
           type: "PELICULA",
         },
         {
+          name: "Dragon ball: La resurrección de Freezer",
+          link: "https://www.all-anime.ga/peliculas/Dragon-ball-la-resurreccion-de-freezer/movie",
+          image: "/image/Dragon-ball-la-resurreccion-de-freezer/p.jpg",
+          type: "PELICULA",
+        },
+        {
+          name: "Dragon ball: Super Broly",
+          link: "https://www.all-anime.ga/peliculas/Dragon-ball-super-broly/movie",
+          image: "/image/dragon-ball-super-super-broly/poster.png",
+          type: "PELICULA",
+        },
+        {
           name: "Kimetsu No Yaiba: Mugen Train",
           link: "https://www.all-anime.ga/Kimetsu-no-yaiba-mugen-train-movie.html",
           image: "/image/Kimetsu-No-Yaiba-Mugen-Train-Pelicula/poster.jpg",
