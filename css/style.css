@@ -68,16 +68,17 @@ section {
 .btn {
   display: inline-block;
   padding: 0.7rem 4rem;
-  font-size: 1.8rem;
+  font-size: 12px;
   color: rgb(7, 247, 59);
   background: rgb(202, 48, 48);
   padding-top: 1rem;
   margin-top: 1rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 
 .btn:hover {
   transform: scale(1.02);
+  color: #ccc;
 }
 
 .heading {
@@ -346,12 +347,13 @@ header .navbar ul li a:hover {
 }
 
 .gallery .box-container .box {
-  flex: 1 1 23rem;
+  flex: auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
   height: 30rem;
   overflow: hidden;
   text-align: center;
   padding: 2.5rem;
-  margin: 2rem;
   border-radius: 1.5rem;
   position: relative;
 }
@@ -359,26 +361,25 @@ header .navbar ul li a:hover {
 .gallery .box-container .box img {
   height: 100%;
   background-size: cover;
-  width: 107%;
+  width: 101%;
 }
 
 .gallery .box-container .box .info {
   position: absolute;
-  bottom: -180%;
   left: 0%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 5rem;
+  width: 102%;
+  padding: 3rem;
   cursor: pointer;
 }
 
 .gallery .box-container .box:hover .info {
-  bottom: -5px;
-  transition: 0.5s;
+  bottom: 1px;
+  background-color: rgba(0, 0, 0, .3);
+  transition: 0.7s;
 }
 
 .gallery .box-container .box:hover img {
-  transform: scale(1.4);
+  transform: scale(1.6);
 }
 
 .gallery .box-container .box:hover {
@@ -386,9 +387,9 @@ header .navbar ul li a:hover {
 }
 
 .gallery .box-container .box .info h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
 }
 
 .gallery .box-container .box .info .stars i {
@@ -405,7 +406,7 @@ header .navbar ul li a:hover {
 
 .gallery .box-container .box .play:hover {
   transform: scale(1.3s);
-  color: white;
+  color: rgb(7, 247, 59);
 }
 
 /*Etiqueta hoy*/
