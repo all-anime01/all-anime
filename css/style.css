@@ -392,11 +392,6 @@ header .navbar ul li a:hover {
   padding-bottom: 2rem;
 }
 
-.gallery .box-container .box .info .stars i {
-  font-size: 2rem;
-  color: orange;
-  padding: 1rem.1rem;
-}
 
 .gallery .box-container .box .play {
   font-size: 3.5rem;
@@ -408,6 +403,26 @@ header .navbar ul li a:hover {
   transform: scale(1.3s);
   color: rgb(7, 247, 59);
 }
+
+.etiquet {
+  position: static;
+  width: 50px;
+  height: 30px;
+  background-color: rgb(202, 48, 48);
+  color: #ccc;
+  top: -20px;
+  left: 10px;
+  transform: translate(0, -105%);
+  z-index: 2;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 3px;
+}
+
+.box:hover .etiquet {
+  opacity: 0;
+}
+
+
 
 /*Etiqueta hoy*/
 .Order>a {
