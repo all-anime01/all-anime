@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="El mejor portal de anime online para latinoamérica, encuentra animes clásicos, animes del momento, animes más populares y mucho más, todo en all-anime, tu fuente de anime diaria." />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>All-anime — Disfruta del anime más popular Anime HD</title>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="http://www.class.pm/projects/jquery/classysocial">
+    <title>Ver Bungo stray dogs Online — All-Anime</title>
     <link rel="shortcut icon" href="/image/logo.ico">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/List_Episodios.css">
     <script src="/js/jquery.js"></script>
     <script src="/js/jquery.dataTables.min.js"></script>
-    <meta name="google-site-verification" content="aHaoCkE-TN1y47HKbby7bRVV_SkZIvPdDAwxou31f6s" />
 </head>
 
 <body>
@@ -54,7 +53,7 @@
 
         <nav class="navbar">
             <ul>
-                <li><a class="active" href="https://www.all-anime.ga/">INICIO</a></li>
+                <li><a href="https://www.all-anime.ga/">INICIO</a></li>
                 <li><a href="https://www.all-anime.ga/directorioanime">DIRECTORIO ANIME</a></li>
                 <li><a href="https://www.all-anime.ga/peliculas">PELÍCULAS</a></li>
 
@@ -144,595 +143,572 @@
         </style>
     </header>
 
-    <!-- <script defer src="https://app.embed.im/snow.js"></script> -->
-
-    <!--home section inicio-->
     <section class="Inicio" id="Inicio">
 
-        <div class="content">
-            <h3>All-ANIME</h3>
-            <h1>Bienvenidos fans del anime</h1>
-            <p>estaré subiendo sus animes favoritos poco a poco con sus respectivos doblajes.</p>
-            <a href="#gallery" class="btn">Empezar<i class="fa-solid fa-hand-back-point-down"></i></a>
-            <a href="/all-anime Setup 1.0.0.rar" class="btn" download>
-                Descargar<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="25" height="25" fill="url(#pattern4)"/>
-                    <defs>
-                    <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_1_2" transform="scale(0.0111111)"/>
-                    </pattern>
-                    <image id="image0_1_2" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFJklEQVR4nO2c22tcdRDHf/UuojU7s02rQhVF/BcUIVispslvcgHj7UUEqUX0RbSJTz55QZCiqIggCNYX30QQpEikqcXYM7MxxAvVBwVBqEVBU03UZmXO5rJJ9m5253c2vy/M07LLzOfMzpnfnNl1LioqKioqKioqKioqKioqKioqKioqKqsamM7vJoFhz/i8ZzzmBWaJ8Scv8KcX/JsYf/UC3xHjx8TwCgk+oO+x9jsTGkt6dnrBR0jgODEukWCxaWP8gjj/xMj0lWAdT3C6a+6qHDG+pNnaEtyKwGHeCxwZLOSuddtdfZPuIl+Apz3jb1sGuAJwYjh8MHEXu+2oAb56r2c40TbAm4EXDszgzW47yTNQW7O4innG3weT3KjbDhpivD/tGjoMeRW24L+e4ZDrZnnOP6yBWkFeX0rwoOtGUQL7SPAfc8DlmV2AEddtNz5iOGMNdxNshj98Are4btCzRXcBMU5bQ60BW7qi9fMMh6xh1i8j8JQLTXr1hwpwh57kSGDKC3y/fCiY94zfEsOnXvDFYcnfNjrTu8sLnrUG2UgJGU1wjwtB+2d6r/CMT5LAz40HgIvWEBs3eNmasSPO9zcDmLJoDPNmg6jlG9kLLU/SJGPGucc7T7nodnjGN8yDl06CxumOc/YMz5kHLh0HvaQ38M5BFuzbNuVC1ptnvK8jkMdOXnd5+ogogKDJArTAkY6A9gKPWQdLlsbwUfspF90OEvzaILgFfQoyxHCNGjGMW/Xg+m1uO2fPPbcaZdHhjb4obBvQeLbtoK2CG61w/C2tG5hc9IW2g/aCH1gE56pdeIuMZlxs2+lvSHJ3eoEPrVo6FxDoEmw4MVTIj4297y7cEsg6YUs3gIwCokBBrwIXmNX7VsuAx+bcJST4mmc8bx0MBQw6hc143gu8qsyagjw4u7OHGCetA6CMgF4DDp/5ZA82BFnHgCZ9smQfdAk2zun6Wt0nI17wE2tnKcOgSwbH+0/fdGlV0CGPPF2mQKdTvtcrQ07yt4c8jXPZA72kHdvmjU3GOXPnpItAl1q/L9f12YOSv8faKepC0Cns8k2n0Fo56ibQjMdSR4cLvddb12av406GcR0SpYMiHVzpWLRZ0KVR6rrPMV9nYFzSdbd0e9P6qhPD+EaAXvBAOey6oBkW9D2bPwcmzOOT3EPa0r1j7chAlV9KDSb5u0ngr3qgNWt1cb3i67O7eq3j8wJvq6OJtSOjNVatVjK7Kugqmbwi/Wzr+LzgKQX9o70jMFEN1ArsVl5LL4TknrGOjwR/cCRwztwRrp2VrWpjnbczOOdCWTL0NepsKyqv7+ampS+olVnemswOJ5NX4zqjN5OCuSOydZkdVCavWaKnwvcCcKS4FZkdXCavJI/gu8FuHfkmMzvQTF6OBR51I0n+RusjOP3PzA41k0sx4JKOOVJHSfCkuUPSWmaHnMklg6myjIAH7R3CpmGHDxmLlOC9qw7rcDr9tZS1U1KvjMCEHqnV0mFRqOViLUG+2rRgQ5Lbb+0YdZslsK/yTYXhLXPnpDtMH3TX2eTHU9ZOUsbNC37eN7n3spqtUr/szgdfryVo+6bhbSWFnf6Tlr3TxaxlsrJrCHJ5GSHBN62dpwzV5LrlopZ0L1q/DtaBUMAtXNXuollpL6j/gpj+Y1eox3XpoKUMYEp/b6hL+q4dopneG3RIQoxHSYB1nh3KwwNqT8YuksAv6bNVxqMa++rsIioqKioqKioqKioqKioqKioqKioqyjWo/wCEk4cItAkSsQAAAABJRU5ErkJggg=="/>
-                    </defs>
-                    </svg></a>
+    <div class="Body">
+        <div>
+        <div class="Ficha fchlt">
+        <div class="Bg" style="background-image:url(/image/Bungo-stray-dogs/T4/b.jpg)"></div>
+        <div class="Container">
+        <h1 class="Title">Bungo stray dogs</h1> <span class="Type tv">Anime</span>
+        <div>
+        <span class="TxtAlt">T4-All-ANIME</span>
         </div>
-        <div class="image">
-            <img src="https://p4.wallpaperbetter.com/wallpaper/970/92/936/anime-crossover-wallpaper-preview.jpg" alt="">
+        <div class="vtshr">
+        <div class="Votes">
+        <span class="vtprmd" id="votes_prmd">4.8</span>
+        <div class="Strs RateIt" data-id="7">
+        <a href="#" class="fa-star-o Hf" data-value="5" title="5 Estrellas"></a>
+        <a href="#" class="fa-star-o On" data-value="4" title="4 Estrellas"></a>
+        <a href="#" class="fa-star-o On" data-value="3" title="3 Estrellas"></a>
+        <a href="#" class="fa-star-o On" data-value="2" title="2 Estrellas"></a>
+        <a href="#" class="fa-star-o On" data-value="1" title="1 Estrellas"></a>
         </div>
+        <span class="Nmbr"><span id="votes_nmbr">21.8K</span> VOTOS</span>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="Container">
+        <div class="BX Row BFluid Sp20">
+        
+        <aside class="SidebarA BFixed">
+        <div class="AnimeCover">
+        <div class="Image">
+        <figure><img src="/image/Bungo-stray-dogs/T4/p.jpe" alt="Bungo stray dogs" itemprop="image"></figure>
+        </div>
+        </div>
+        <p class="AnmStts"><span class="fa-tv">En Emisión</span></p>
+        <ul class="ListAnmBnts ClFx">
 
-
-        <!--carousel-->
-        <main>
-            <div class="peliculas-recomendadas contenedor">
-                <div class="contenedor-titulo-controles">
-                    <h3>Tendencia <img src="/image/Banderas-lenguaje/luffy.png"></h3>
-                    <div class="indicadores"></div>
-                </div>
-
-                <div class="contenedor-principal">
-                    <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
-
-                    <div class="contenedor-carousel">
-                        <div class="carousel">
-                            <div class="pelicula">
-                                <a href="https://www.all-anime.ga/Chainsaw-man-tv">
-                                    <img src="/image/Carousel/chainsaw-man.jpg" onmouseover="this.src='./image/Carousel/chainsaw-man.webp';" onmouseout="this.src='./image/Carousel/chainsaw-man.jpg';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="https://www.all-anime.ga/Blue-Lock-tv">
-                                    <img src="/image/Carousel/Blue-lock.png" onmouseover="this.src='./image/Carousel/Blue-lock.webp';" onmouseout="this.src='./image/Carousel/Blue-lock.png';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="https://www.all-anime.ga/Boku-no-hero-academia-season-6-tv">
-                                    <img src="/image/Carousel/boku-no-hero-academia.jpg" onmouseover="this.src='./image/Carousel/boku-no-hero-academia.webp';" onmouseout="this.src='./image/Carousel/boku-no-hero-academia.jpg';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="Dr-Stone-Ryusui-tv.html">
-                                    <img src="/image/Carousel/Spy-x-family.png" onmouseover="this.src='./image/Carousel/Spy-x-family.webp';" onmouseout="this.src='./image/Carousel/Spy-x-family.png';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="one-piece-tv.html">
-                                    <img src="/image/Carousel/One-piece-carousel.png" onmouseover="this.src='./image/Carousel/One-piece.webp';" onmouseout="this.src='./image/Carousel/One-piece-carousel.png';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="Ao-Ashi-tv.html">
-                                    <img src="/image/Carousel/Ao-ashi.png" onmouseover="this.src='./image/Carousel/Ao-ashi.webp';" onmouseout="this.src='./image/Carousel/Ao-ashi.png';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#">
-                                    <img src="/image/Carousel/Bleach-carousel.png" onmouseover="this.src='./image/Carousel/Bleach-carousel.webp';" onmouseout="this.src='./image/Carousel/Bleach-carousel.png';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="https://www.all-anime.ga/Jujutsu-Kaisen-0-movie">
-                                    <img src="/image/Carousel/Jujutsu-Kaisen-0-01.png" onmouseover="this.src='./image/Carousel/Jujutsu-Kaisen-0.webp';" onmouseout="this.src='./image/Carousel/Jujutsu-Kaisen-0-01.png';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="Digimon-Last-Evolution-Kizuna-movie.html">
-                                    <img src="/image/Carousel/digimon-LE-carousel.jpg" onmouseover="this.src='./image/Carousel/digimon-LE.webp';" onmouseout="this.src='./image/Carousel/digimon-LE-carousel.jpg';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="https://www.all-anime.ga/Dragon-Ball-Super-Super-Hero-movie">
-                                    <img src="/image/Carousel/Dragon-ball-super-super-hero.jpg" onmouseover="this.src='./image/Carousel/Dragon-ball-super-super-hero.webp';" onmouseout="this.src='./image/Carousel/Dragon-ball-super-super-hero.jpg';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#">
-                                    <img src="../image/Carousel/Pokemon-viajes.png" onmouseover="this.src='./image/Carousel/Pokemon-viajes.webp';" onmouseout="this.src='./image/Carousel/Pokemon-viajes.png';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="/image/Carousel/mob-psycho100.jpg" onmouseover="this.src='./image/Carousel/mob-psycho.webp';" onmouseout="this.src='./image/Carousel/mob-psycho100.jpg';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="/image/Carousel/To-your-eternity.jpg" onmouseover="this.src='./image/Carousel/To-your-eternity.webp';" onmouseout="this.src='./image/Carousel/To-your-eternity.jpg';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="/image/Carousel/Sabikui-bisco.jpg" onmouseover="this.src='./image/Carousel/Sabikui-bisco.webp';" onmouseout="this.src='./image/Carousel/Sabikui-bisco.jpg';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="/image/Carousel/full-metal-alchemist.jpg" onmouseover="this.src='./image/Carousel/full-metal-alchemist.webp';" onmouseout="this.src='./image/Carousel/full-metal-alchemist.jpg';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="/image/Carousel/Platinum-end.jpg" onmouseover="this.src='./image/Carousel/Platinum-end.webp';" onmouseout="this.src='./image/Carousel/Platinum-end.jpg';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="/image/Carousel/Eden-zero.jpg" onmouseover="this.src='./image/Carousel/Eden-zero.webp';" onmouseout="this.src='./image/Carousel/Eden-zero.jpg';"></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="/image/Carousel/record-of-ragnarok-carousel.gif" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="/image/Carousel/mushoku-tensei-carousel.gif" alt=""></a>
-                            </div>
-                            <div class="pelicula">
-                                <a href="#"><img src="/image/Carousel/tokyo-revengers-carousel.gif" alt=""></a>
-                            </div>
+        </aside>
+        
+        
+        <main class="Main">
+        
+        <section class="WdgtCn">
+         <div class="Top">
+        <div class="Title">Sinopsis</div>
+        </div>
+        <nav class="Nvgnrs">
+        <a href="#">Acci&oacute;n</a><a href="#">Drama</a><a href="#">Comedia</a><a href="#">Seinen</a><a href="#">Sobrenatural</a> </nav>
+        <div class="Description">
+        <p>Habiendo sido expulsado del orfanato y estando a punto de morir de hambre, Atsushi Nakajima conoce a unos hombres. Ambos son miembros de la Agencia Armada de Detectives que se dice que puede resolver cualquier incidente, incluso aquellos que la policía y el ejército no se atreven a investigar. Atsushi acaba acompañándolos en una misión. En la ciudad de Yokohama hay personas que ostentan el nombre de grandes maestros literarios y que poseen poderes inusuales vinculados a su nombre. Este es el inicio de la batalla entre los misteriosos poderes de la Agencia Armada de Detectives y la Port Mafia. </p>
+        </div>
+        </section>
+        
+        
+        <section class="WdgtCn">
+          <br>
+          <span class="list-temp">Temporadas y Episodios</span>
+          <br>
+          <br>
+          <details open>
+          <summary class="temp1">Temporada 4<img class="desplegar" src="https://img.icons8.com/ios-filled/50/000000/drag-list-down.png" width="20px" style="margin: -25px 175px;"></summary>
+                      <div id='linea1'>
+                  <div class="Top">
+                        <div class="Title">Lista de episodios</div>
+                        <div class="lstopt-frm">
+                        <span class="order-lst">
+                        </span>
                         </div>
-                    </div>
-
-                    <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
-                </div>
-            </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img src="/image/Bungo-stray-dogs/T4/n.webp" alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p>Finalizado.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m{
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
+                          <li class="fa-play-circle">
+                            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T4/28">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/SNK-season-4-part2/28.jpe"
+                                 onmouseover="this.src='/image/SNK-season-4-part2/28.webp';"
+                                 onmouseout="this.src='/image/SNK-season-4-part2/28.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">El amanecer de la humanidad.</h3>
+                              <p>Episodio 28</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T4/4">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/SNK-season-4-part2/4.jpe"
+                                 onmouseover="this.src='/image/SNK-season-4-part2/4.webp';"
+                                 onmouseout="this.src='/image/SNK-season-4-part2/4.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">De mano en mano.</h3>
+                              <p>Episodio 4</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T4/3">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/SNK-season-4-part2/3.jpe"
+                                 onmouseover="this.src='/image/SNK-season-4-part2/3.webp';"
+                                 onmouseout="this.src='/image/SNK-season-4-part2/3.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">La puerta de la eperanza.</h3>
+                              <p>Episodio 3</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T4/2">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/SNK-season-4-part2/2.jpe"
+                                 onmouseover="this.src='/image/SNK-season-4-part2/2.webp';"
+                                 onmouseout="this.src='/image/SNK-season-4-part2/2.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Tren de medianoche.</h3>
+                              <p>Episodio 2</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T4/1">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/SNK-season-4-part2/1.jpe"
+                                 onmouseover="this.src='/image/SNK-season-4-part2/1.webp';"
+                                 onmouseout="this.src='/image/SNK-season-4-part2/1.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Al otro lado del mar.</h3>
+                              <p>Episodio 1</p>
+                            </a>
+                          </li>
+          </details>
+          <br>
+          <br>
+          <details>
+            <summary class="temp1">Temporada 3<img class="desplegar" src="https://img.icons8.com/ios-filled/50/000000/drag-list-down.png" width="20px" style="margin: -25px 175px;"></summary>
+                          <div id='linea1'>
+                      <div class="Top">
+                            <div class="Title">Lista de episodios</div>
+                            <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                            </div>
+                            </div>
+                            <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                              <li class="fa-play-circle Next">
+                                <a href="#">
+                                  <figure>
+                                    <img src="/image/Bungo-stray-dogs/T3/p.webp" alt="" style="display: block;">
+                                  </figure>
+                                  <h3 class="Title">Proximo Episodio</h3>
+                                  <p>Finalizado.</p>
+                                </a>
+                              </li>
+              <li class="fa-play-circle">
+                <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T3/22">
+                  <figure>
+                    <img class="lazy1" alt="" src="/image/SNK-season3/22.jpe"
+                     onmouseover="this.src='/image/SNK-season3/22.webp';"
+                     onmouseout="this.src='/image/SNK-season3/22.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">23m</p>
+                  </figure>
+                  <h3 class="Title">Al otro lado de las murallas.</h3>
+                  <p>Episodio 22</p>
+                </a>
+              </li>
+            </details>
+            <br>
+            <br>
+          <details>
+            <summary class="temp1">Temporada 2<img class="desplegar" src="https://img.icons8.com/ios-filled/50/000000/drag-list-down.png" width="20px" style="margin: -25px 175px;"></summary>
+                          <div id='linea1'>
+                      <div class="Top">
+                            <div class="Title">Lista de episodios</div>
+                            <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                            </div>
+                            </div>
+                            <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                              <li class="fa-play-circle Next">
+                                <a href="#">
+                                  <figure>
+                                    <img src="/image/Bungo-stray-dogs/T2/p.jfif" alt="" style="display: block;">
+                                  </figure>
+                                  <h3 class="Title">Proximo Episodio</h3>
+                                  <p>Finalizado.</p>
+                                </a>
+                              </li>
+                              <li class="fa-play-circle">
+                                <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T2/12">
+                                  <figure>
+                                    <img class="lazy1" alt="" src="/image/SNK-season2/12.jpe"
+                                     onmouseover="this.src='/image/SNK-season2/12.webp';"
+                                     onmouseout="this.src='/image/SNK-season2/12.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">23m</p>
+                                  </figure>
+                                  <h3 class="Title">Grito.</h3>
+                                  <p>Episodio 12</p>
+                                </a>
+                              </li>
+            </details>
+            <br>
+            <br>
+                        <details>
+        <summary class="temp1">Temporada 1<img class="desplegar" src="https://img.icons8.com/ios-filled/50/000000/drag-list-down.png" width="20px" style="margin: -25px 175px;"></summary>
+                      <div id='linea1'>
+                  <div class="Top">
+                        <div class="Title">Lista de episodios</div>
+                        <div class="lstopt-frm">
+                        <span class="order-lst">
+                        </span>
+                        </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img src="/image/Bungo-stray-dogs/T1/p.jpg" alt="" style="display: block;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p>Finalizado.</p>
+                            </a>
+                          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/25">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/25.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/25.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/25.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">23m</p>
+              </figure>
+              <h3 class="Title">La muralla. Redada en el distrito Trost(3).</h3>
+              <p>Episodio 25</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/24">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/24.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/24.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/24.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Piedad. Redada en el distrito Trost (2).</h3>
+              <p>Episodio 24</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/23">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/23.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/23.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/23.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Sonrisa. Redada en el distrito Trost (1).</h3>
+              <p>Episodio 23</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/22">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/22.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/22.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/22.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Los derrotados. 57.ª expedición más allá de las murallas (6).</h3>
+              <p>Episodio 22</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/21">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/21.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/21.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/21.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Golpe devastador. 57.ª expedición más allá de las murallas (5).</h3>
+              <p>Episodio 21</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/20">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/20.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/20.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/20.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Erwin Smith. 57.ª expedición más allá de las murallas (4).</h3>
+              <p>Episodio 20</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/19">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/19.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/19.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/19.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Mordisco. 57.ª expedición más allá de las murallas (3).</h3>
+              <p>Episodio 19</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/18">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/18.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/18.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/18.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Bosque de árboles gigantes. 57.ª expedición más allá de las murallas (2).</h3>
+              <p>Episodio 18</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/17">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/17.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/17.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/17.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">La titán hembra. 57.ª expedición más allá de las murallas (1).</h3>
+              <p>Episodio 17</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/16">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/16.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/16.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/16.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Lo que hay que hacer. La noche antes de la contraofensiva (3).</h3>
+              <p>Episodio 16</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/15">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/15.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/15.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/15.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Escuadrón de Operaciones Especiales. La noche antes de la contraofensiva (2).</h3>
+              <p>Episodio 15</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/14">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/14.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/14.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/14.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Aún no puedo mirarlo a los ojos. La noche antes de la contraofensiva (1).</h3>
+              <p>Episodio 14</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/13.5">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/13.5.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/13.5.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/13.5.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Desde aquel día.</h3>
+              <p>Episodio 13.5</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/13">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/13.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/13.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/13.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Deseos primarios. La batalla de Trost (9).</h3>
+              <p>Episodio 13</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/12">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/12.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/12.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/12.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Herida. La batalla de Trost (8).</h3>
+              <p>Episodio 12</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/11">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/11.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/11.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/11.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Símbolo. La batalla de Trost (7).</h3>
+              <p>Episodio 11</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/10">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/10.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/10.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/10.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Respuesta. La batalla de Trost (6).</h3>
+              <p>Episodio 10</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/9">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/9.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/9.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/9.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">El paradero del brazo izquierdo. La batalla de Trost (5).</h3>
+              <p>Episodio 9</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/8">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/8.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/8.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/8.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Oigo sus latidos. La batalla de Trost (4).</h3>
+              <p>Episodio 8</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/7">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/7.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/7.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/7.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Una pequeña hoja. La batalla de Trost (3).</h3>
+              <p>Episodio 7</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/6">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/6.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/6.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/6.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">El mundo a los ojos de la chica. La batalla de Trost - Segunda Parte.</h3>
+              <p>Episodio 6</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/5">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/5.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/5.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/5.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Primera batalla. La batalla de Trost - Primera Parte.</h3>
+              <p>Episodio 5</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/4">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/4.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/4.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/4.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">La noche de la ceremonia de graduación. La humanidad se levanta denuevo- segunda parte.</h3>
+              <p>Episodio 4</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/3">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/3.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/3.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/3.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Una tenue luz en la desesperción. La humanidad se levanta denuevo- primera parte.</h3>
+              <p>Episodio 3</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/2">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/2.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/2.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/2.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">Ese día. La caída de Shiganshina- segunda parte.</h3>
+              <p>Episodio 2</p>
+            </a>
+          </li>
+          <li class="fa-play-circle">
+            <a href="https://www.all-anime.ga/ver/Shingeki-no-kyojin/T1/1">
+              <figure>
+                <img class="lazy1" alt="" src="/image/SNK-season-1/1.jpe"
+                 onmouseover="this.src='/image/SNK-season-1/1.webp';"
+                 onmouseout="this.src='/image/SNK-season-1/1.jpe'" style="display: block;"><p class="time-m" style="color: #fff;">24m</p>
+              </figure>
+              <h3 class="Title">A ti, 2000 años en el futuro. La caída de Shiganhina- primera parte.</h3>
+              <p>Episodio 1</p>
+            </a>
+          </li>
+          
+        </ul>
+        </section>
+      </section>
+      </section>
+        </div>
+        </section>
         </main>
 
-        <section class="gallery" id="gallery">
-
-            <h1 class="heading"><span>Últimos episodios</span></h1>
-            <div class="Order">
-                <a href="#" class="Active">HOY</a>
-            </div>
-
-
-            <div class="box-container">
-                
-                <div class="box">
-                    <img src="/image/Vinland-Saga/T2/p.jpg" alt="">
-                    <div class="etiquet">
-                        <h3 class="num-cap" style="font-size: 12px;">Episodio 6</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Japones</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Vinland Saga S2</h3>
-                        <a href="https://www.all-anime.ga/ver/Vinland-saga/T2/6" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/One-Piece-cap/One-Piece-poster.jpg" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 1051</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Japones</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>One piece</h3>
-                        <a href="https://www.all-anime.ga/ver/One-piece/1051" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Blue-lock/p.jpe" alt="">
-                    <div class="etiquet">
-                        <h3 class="num-cap" style="font-size: 12px;">Episodio 18</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Japones</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Blue Lock</h3>
-                        <a href="https://www.all-anime.ga/ver/Blue-lock/18" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Tokyo-revengers-seiya-kessen-hen/p.jpg" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 6</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Japones</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Tokyo Revengers: Seiya kessen hen</h3>
-                        <a href="https://www.all-anime.ga/ver/Tokyo-revengers/T2/6" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Trigun-stampede/p.jpe" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 6</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Japones</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Trigun Stampede</h3>
-                        <a href="https://www.all-anime.ga/ver/Trigun-stampede/6" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Boku-no-hero-academia-season-6/poster.jpg" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 19</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Japones</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Boku no Hero Academia: S6</h3>
-                        <a href="https://www.all-anime.ga/ver/My-hero-academia/T6/19" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Pokemon-mezase-pokemon-master/p.jpg" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 5</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Japones</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Pokemon: Mezase Pokemon master</h3>
-                        <a href="https://www.all-anime.ga/ver/Pokemon-viajes/Pokemon-mezase-pokemon-master/5" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Nier-automata-ver-1-1a/p.webp" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 3</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Multiaudio</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Nier:Automata Ver1.1A</h3>
-                        <a href="https://www.all-anime.ga/ver/Nier-automata-ver-1-1a/3" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Record-of-ragnarok/poster.jpg" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 10</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Multiaudio</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Shūmatsu no Valkyrie T2</h3>
-                        <a href="https://www.all-anime.ga/ver/Shuumatsu-no-valkyrie/T2/10" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/chainsaw-man/poster.jpg" alt="chainsaw man">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 12</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Multiaudio</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Chainsaw man</h3>
-                        <a href="https://www.all-anime.ga/ver/Chainsaw-man/12" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Bleach-thousand-year-blood-war/poster.jpg" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 13</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Multiaudio</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Bleach: Sennen Kessen-hen</h3>
-                        <a href="https://www.all-anime.ga/ver/Bleach-sennen-kessen-hen/13" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Spy-X-Family/p.jpg" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 25</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Multiaudio</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Spy X Family</h3>
-                        <a href="https://www.all-anime.ga/ver/Spy-x-family/25" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Dragon-quest/p.jpg" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 1</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Multiaudio</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Dragon Quest: Dai no Daibouken</h3>
-                        <a href="https://www.all-anime.ga/ver/Dragon-quest-dai-no-daibouken/1" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Bungo-stray-dogs/T4/p.jpe" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 1</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Japones</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Bungo stray dogs T4</h3>
-                        <a href="https://www.all-anime.ga/ver/Spy-x-family/8" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Spy-X-Family/p.jpg" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 8</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Multiaudio</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Spy X Family</h3>
-                        <a href="https://www.all-anime.ga/ver/Spy-x-family/8" class="btn">ver</a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/image/Spy-X-Family/p.jpg" alt="">
-                    <div class="etiquet">
-                        <h3 style="font-size: 12px;">Episodio 7</h3>
-                    </div>
-                    <div class="etiquet-leng">
-                        <span class="letrero" style="font-size: 12px;">Multiaudio</span>
-                    </div>
-                    <div class="info">
-                        <div class="play">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <h3>Spy X Family</h3>
-                        <a href="https://www.all-anime.ga/ver/Spy-x-family/7" class="btn">ver</a>
-                    </div>
-                </div>
-                <br>
-                <br>
-        </section>
-        <section class="dimension">
-            <style>
-                .tarjetas-row {
-                    position: relative;
-                    display: grid;
-                    gap: 4rem;
-                    grid-auto-rows: 32rem;
-                    background: transparent;
-                    opacity: 1.2;
-                    grid-template-columns: repeat(auto-fill,
-                            minmax(10rem,
-                                0.2fr));
-                }
-
-                @media(max-width: 400px) {
-                    .tarjetas-row {
-                        position: relative;
-                        display: grid;
-                        gap: auto;
-                        grid-auto-rows: auto;
-                        background: transparent;
-                        opacity: 1.2;
-                        grid-template-columns: repeat(auto-fill,
-                                minmax(15rem,
-                                    0.1fr));
-                    }
-                }
-
-                .card {
-                    background: transparent;
-                    border: none;
-                }
-
-                .card:hover {
-                    cursor: pointer;
-                    background: #888;
-                    color: #111;
-                    opacity: 0.9;
-                }
-
-                .card-title {
-                    color: #fff;
-                }
-
-                .heading-text {
-                    text-align: start;
-                    text-transform: uppercase;
-                }
-
-                .dimension {
-                    display: flexbox;
-                    width: 1200px;
-                    min-height: auto;
-                }
-            </style>
-
-            <h2 class="heading-text"><span style="color: #fff; font-size: 25px;">Estrenos agregados</span></h2>
-            <div class="tarjetas-row">
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/Dragon-ball-super-Super-Hero/poster.png" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Dragon ball super: Super Hero</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">Multiaudio | Blue-Ray</p>
-                        <a href="https://www.all-anime.ga/peliculas/Dragon-ball-Super-super-hero/movie" style="text-decoration: none; color: rgb(53, 197, 197);">Pelicula</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/Bleach-thousand-year-blood-war/poster.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Bleach: sennen kessen hen</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">Subtitulado</p>
-                        <a href="https://www.all-anime.ga/ver/Bleach-sennen-kessen-hen/tv" style="text-decoration: none; color: rgb(53, 197, 197);">Serie</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/One-piece-Film-red/p.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">One piece: Film red</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">MultiAudio | CAM-HD</p>
-                        <a href="https://www.all-anime.ga/peliculas/One-piece-film-red/movie" style="text-decoration: none; color: rgb(53, 197, 197);">Película</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/Blue-lock/poster.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Blue lock</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">Subtitulado</p>
-                        <a href="https://www.all-anime.ga/ver/Blue-lock/tv" style="text-decoration: none; color: rgb(53, 197, 197);">Serie</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/Boku-no-hero-academia-season-6/poster.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Boku no hero academia: season 6</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">Subtitulado</p>
-                        <a href="https://www.all-anime.ga/ver/My-hero-academia/tv" style="text-decoration: none; color: rgb(53, 197, 197);">Serie</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/chainsaw-man/poster.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Chainsaw-man</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">Subtitulado</p>
-                        <a href="https://www.all-anime.ga/ver/Chainsaw-man/tv" style="text-decoration: none; color: rgb(53, 197, 197);">Serie</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="dimension">
-
-            <h2 class="heading-text"><span style="color: #fff; font-size: 25px;">¡Doblajes!</span></h2>
-            <div class="tarjetas-row">
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/Mob-psycho-III/poster.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Mob psycho III</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">MultiAudio</p>
-                        <a href="https://www.all-anime.ga/ver/Mob-Psycho-100/T3/12" style="text-decoration: none; color: rgb(53, 197, 197);">Serie | Ep 12</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/chainsaw-man/poster.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Chainsaw-man</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">MultiAudio</p>
-                        <a href="https://www.all-anime.ga/ver/Chainsaw-man/12" style="text-decoration: none; color: rgb(53, 197, 197);">Serie | Ep 12</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/Bleach-thousand-year-blood-war/poster.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Bleach: sennen kessen hen</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">MultiAudio</p>
-                        <a href="https://www.all-anime.ga/ver/Bleach-sennen-kessen-hen/13" style="text-decoration: none; color: rgb(53, 197, 197);">Serie | Ep 13</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/Blue-lock/poster.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Blue lock</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">MultiAudio</p>
-                        <a href="https://www.all-anime.ga/ver/Blue-lock/14" style="text-decoration: none; color: rgb(53, 197, 197);">Serie | Ep 14</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/Boku-no-hero-academia-season-6/poster.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">My hero academia: season 6</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">MultiAudio</p>
-                        <a href="https://www.all-anime.ga/ver/My-hero-academia/T6/15" style="text-decoration: none; color: rgb(53, 197, 197);">Serie | Ep 15</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 140px;">
-                    <img class="card-img-top" src="/image/Spy-X-Family/p.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Spy x Family</h4>
-                        <p class="card-text" style="color: rgb(7, 247, 59);">MultiAudio</p>
-                        <a href="https://www.all-anime.ga/ver/Spy-x-family/20" style="text-decoration: none; color: rgb(53, 197, 197);">Serie | Ep 20</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <!--contacto-->
-    <div class='flx'>
-        <div class='demo-content'>
+        <!--contacto-->
+        <div class='flx'>
+          <div class='demo-content'>
             <div class="nshare">
-                <a class="nshare-item nshare-fb" href="#">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a class="nshare-item nshare-tt" href="#">
-                    <i class="fab fa-youtube"></i>
-                </a>
-                <a class="nshare-item nshare-tb" href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a class="nshare-item nshare-msj" href="#">
-                    <i class="fab fa-discord"></i>
-                </a>
+              <a class="nshare-item nshare-fb" href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a class="nshare-item nshare-tt" href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a class="nshare-item nshare-tb" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
+          </div>
         </div>
-    </div>
 
-    <footer class="Footer">
-        <div class="Container">
-            <div class="BX Row BFluid Sp20 NMb">
-                <div>
-                    <p><span>Anime HD Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
-                    <nav class="mnftxt">
-                        <a href="https://www.all-anime.ga/condiciones-de-uso">Términos y Condiciones</a>
-                        <a href="https://www.all-anime.ga/politica-de-privacidad">Política de Privacidad</a>
-                        <a href="https://www.all-anime.ga/sobre-all-anime">Sobre All-ANIME</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <footer class="Footer">
+          <div class="Container">
+          <div class="BX Row BFluid Sp20 NMb">
+          <div><p><span>Anime HD Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+          <nav class="mnftxt">
+          <a href="https://www.all-anime.ga/condiciones-de-uso">Términos y Condiciones</a>
+          <a href="https://www.all-anime.ga/politica-de-privacidad">Política de Privacidad</a>
+          <a href="https://www.all-anime.ga/sobre-all-anime">Sobre All-ANIME</a>
+          </nav>
+          </div>
+      </div>
+  </div>
+  </footer>
 
-    <script src="/js/script.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/idioma.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+      <script src="/js/script.js"></script>
+      <script src="/js/idioma.js"></script>
 </body>
-
 </html>

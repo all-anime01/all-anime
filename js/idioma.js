@@ -87,6 +87,12 @@ $('ul.tabs li a:first').addClass('active');
           type: "ANIME",
         },
         {
+          name: "Bungo stray dogs",
+          link: "https://www.all-anime.ga/ver/Bungo-stray-dogs/tv",
+          image: "/image/Bungo-stray-dogs/T4/p.jpe",
+          type: "ANIME",
+        },
+        {
           name: "Bleach",
           link: "https://www.all-anime.ga/ver/Bleach/tv",
           image: "/image/Bleach/p.jpg",
