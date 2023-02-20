@@ -280,6 +280,18 @@ $('ul.tabs li a:first').addClass('active');
         },
         //PELICULAS
         {
+          name: "Jujutsu Kaisen: 0",
+          link: "https://www.all-anime.ga/peliculas/Jujutsu-kaisen-0/movie",
+          image: "/image/Jujutsu-Kaisen-0/poster.jpg",
+          type: "PELICULA",
+        },
+        {
+          name: "Digimon adventure: Last evolution kizuna",
+          link: "https://www.all-anime.ga/peliculas/Digimon-last-evolution-kizuna/movie",
+          image: "/image/Digimon-last-evolution-kizuna/p.jpg",
+          type: "PELICULA",
+        },
+        {
           name: "Dragon ball super: super hero",
           link: "https://www.all-anime.ga/peliculas/Dragon-ball-Super-super-hero/movie",
           image: "/image/Dragon-ball-super-Super-Hero/poster.png",
