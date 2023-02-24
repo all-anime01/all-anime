@@ -338,6 +338,12 @@ const animes = [
     type: "PELICULA",
   },
   {
+    name: "Pokemon: Koko secretos de la jungla",
+    link: "https://www.all-anime.ga/peliculas/Pokemon-movie-23-koko/movie",
+    image: "/image/Pokemon-koko/p.jpg",
+    type: "PELICULA",
+  },
+  {
     name: "Yu-Gi-Oh!: pirámide de la luz",
     link: "https://www.all-anime.ga/peliculas/Yu-gi-oh!-pirámide-de-la-luz/movie",
     image: "/image/Yu-gi-oh-la-piramide-de-la-luz/p.jpg",
