@@ -315,7 +315,7 @@ const animes = [
   },
   {
     name: "Kuroko no basket: Movie 4 Last game",
-    link: "https://www.all-anime.ga/Kuroko-no-basket-movie-4-last-game/movie",
+    link: "https://www.all-anime.ga/peliculas/Kuroko-no-basket-movie-4-last-game/movie",
     image: "/image/Kuroko-no-basket-last-game/p.jpg",
     type: "PELICULA",
   },
