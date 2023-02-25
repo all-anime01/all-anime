@@ -122,7 +122,7 @@ const animes = [
   },
   {
     name: "Cyberpunk edge runners",
-    link: "https://www.all-anime.ga/ver/Cyberpunk-edge-runners/tv.html",
+    link: "https://www.all-anime.ga/ver/Cyberpunk-edge-runners/tv",
     image: "/image/Cyber-Punk-EdgeRunners/poster.jpg",
     type: "ANIME",
   },
@@ -182,7 +182,7 @@ const animes = [
   },
   {
     name: "Naruto shippuden",
-    link: "https://www.all-anime.ga/Naruto-Shippuden-tv.html",
+    link: "https://www.all-anime.ga/Naruto-Shippuden-tv",
     image: "/image/Naruto-Shippuden/p.jpe",
     type: "ANIME",
   },
@@ -248,7 +248,7 @@ const animes = [
   },
   {
     name: "Saint Seiya: Lost Canvas",
-    link: "https://www.all-anime.ga/Naruto-Shippuden-tv.html",
+    link: "https://www.all-anime.ga/Naruto-Shippuden-tv",
     image: "/image/Saint-seiya-lost-canvas/p.jpg",
     type: "ANIME",
   },
@@ -309,8 +309,14 @@ const animes = [
   },
   {
     name: "Kimetsu No Yaiba: Mugen Train",
-    link: "https://www.all-anime.ga/Kimetsu-no-yaiba-mugen-train-movie.html",
+    link: "https://www.all-anime.ga/Kimetsu-no-yaiba-mugen-train-movie",
     image: "/image/Kimetsu-No-Yaiba-Mugen-Train-Pelicula/poster.jpg",
+    type: "PELICULA",
+  },
+  {
+    name: "Kuroko no basket: Movie 4 Last game",
+    link: "https://www.all-anime.ga/Kuroko-no-basket-movie-4-last-game/movie",
+    image: "/image/Kuroko-no-basket-last-game/p.jpg",
     type: "PELICULA",
   },
   {
