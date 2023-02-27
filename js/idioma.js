@@ -139,6 +139,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Death note",
+    link: "https://www.all-anime.ga/ver/Death-note/tv",
+    image: "/image/Death-Note/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Dragon Quest: Dai no Daibouken",
     link: "https://www.all-anime.ga/ver/Dragon-quest-dai-no-daibouken/tv",
     image: "/image/Dragon-quest/p.jpg",
