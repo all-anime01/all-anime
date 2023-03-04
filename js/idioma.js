@@ -237,7 +237,7 @@ const animes = [
   {
     name: "Shingeki no kyojin",
     link: "https://www.all-anime.ga/ver/Shingeki-no-kyojin/tv",
-    image: "/image/SNK-season-4-part2/poster.jpg",
+    image: "/image/Snk-season-4-parte3/p.webp",
     type: "ANIME",
   },
   {
@@ -261,7 +261,7 @@ const animes = [
   {
     name: "Spy x Family",
     link: "https://www.all-anime.ga/ver/Spy-x-family/tv",
-    image: "/image/Spy-X-Family/p.jpg",
+    image: "/image/Spy-X-Family/p.webp",
     type: "ANIME",
   },
   {
