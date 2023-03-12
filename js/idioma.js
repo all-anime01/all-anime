@@ -158,8 +158,8 @@ const animes = [
   },
   {
     name: "Jujutsu kaien",
-    link: "https://www.all-anime.ga/Jujutsu-Kaisen-tv",
-    image: "/image/Jujutsu-Kaisen/poster.png",
+    link: "https://www.all-anime.ga/ver/Jujutsu-kaisen/tv",
+    image: "/image/Jujutsu-Kaisen/p.png",
     type: "ANIME",
   },
   {
