@@ -290,6 +290,12 @@ const animes = [
     type: "PELICULA",
   },
   {
+    name: "Kimetsu no Yaiba: Jougen Shuuketsu",
+    link: "https://www.all-anime.ga/peliculas/kimetsu-no-yaiba-Jougen-Shuuketsu-Soshite-Katanakaji-no-Sato-e/movie",
+    image: "/image/Kimetsu-no-yaiba-pelicula-2/p.jpg",
+    type: "PELICULA",
+  },
+  {
     name: "Digimon adventure: Last evolution kizuna",
     link: "https://www.all-anime.ga/peliculas/Digimon-last-evolution-kizuna/movie",
     image: "/image/Digimon-last-evolution-kizuna/p.jpg",
