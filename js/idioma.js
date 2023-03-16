@@ -159,7 +159,7 @@ const animes = [
   {
     name: "Jujutsu kaisen",
     link: "https://www.all-anime.ga/ver/Jujutsu-kaisen/tv",
-    image: "/image/Jujutsu-Kaisen/p.png",
+    image: "/image/Jujutsu-Kaisen-T1/p.png",
     type: "ANIME",
   },
   {
