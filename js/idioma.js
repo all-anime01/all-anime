@@ -145,6 +145,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Dragon Ball Z",
+    link: "https://www.all-anime.ga/ver/Dragon-ball-z/tv",
+    image: "/image/Dragon-ball-Z/p.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Dragon Quest: Dai no Daibouken",
     link: "https://www.all-anime.ga/ver/Dragon-quest-dai-no-daibouken/tv",
     image: "/image/Dragon-quest/p.jpg",
