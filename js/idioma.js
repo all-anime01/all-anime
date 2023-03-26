@@ -111,7 +111,7 @@ const animes = [
   {
     name: "Boku no hero academia",
     link: "https://www.all-anime.ga/ver/My-hero-academia/tv",
-    image: "/image/Boku-no-hero-academia-season-6/poster.jpg",
+    image: "/image/Boku-no-hero-academia-season-6/p.jpe",
     type: "ANIME",
   },
   {
@@ -183,7 +183,7 @@ const animes = [
   {
     name: "My hero academia",
     link: "https://www.all-anime.ga/ver/My-hero-academia/tv",
-    image: "/image/Boku-no-hero-academia-season-6/poster.jpg",
+    image: "/image/Boku-no-hero-academia-season-6/p.jpe",
     type: "ANIME",
   },
   {
