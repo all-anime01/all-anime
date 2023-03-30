@@ -457,6 +457,62 @@ header .navbar ul li a:hover {
   transition: 0.5;
 }
 
+#agregados {
+  width: 100%;
+}
+
+.etiquet-1 {
+  position: absolute;
+  bottom: 25px;
+  right: 23px;
+  padding: 3px 5px;
+  line-height: 19px;
+  font-size: 13.5px;
+  background: rgb(202, 48, 48);
+  color: #ffffff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 8px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.box:hover .etiquet {
+  opacity: 0;
+  transition: 0.7;
+}
+
+.etiquet-leng2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 7px 7px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.box:hover .etiquet-leng2 {
+  opacity: 0;
+  transition: 0.7;
+}
+
+.letrero-1 {
+  padding: 2px 5px !important;
+  line-height: 20px !important;
+  font-size: 12px !important;
+  background: rgb(7, 247, 59) !important;
+  color: #ffff !important;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  z-index: 4;
+}
+
+.box:hover .etiquet-leng {
+  opacity: 0;
+  transition: 0.5;
+}
 
 
 /*Etiqueta hoy*/
