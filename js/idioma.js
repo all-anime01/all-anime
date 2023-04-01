@@ -163,9 +163,27 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Edens Zero",
+    link: "https://www.all-anime.ga/ver/Edens-zero/tv",
+    image: "/image/Eden-zero/T2/p.webp",
+    type: "ANIME",
+  },
+  {
+    name: "Hells Paradise",
+    link: "https://www.all-anime.ga/ver/Hells-paradise/tv",
+    image: "/image/Hells-paradise/p.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Jujutsu kaisen",
     link: "https://www.all-anime.ga/ver/Jujutsu-kaisen/tv",
     image: "/image/Jujutsu-Kaisen-T1/p.png",
+    type: "ANIME",
+  },
+  {
+    name: "Jigokuraku",
+    link: "https://www.all-anime.ga/ver/Hells-paradise/tv",
+    image: "/image/Hells-paradise/p.jpe",
     type: "ANIME",
   },
   {
