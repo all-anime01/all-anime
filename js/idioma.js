@@ -193,9 +193,9 @@ const animes = [
     type: "ANIME",
   },
   {
-    name: "Naruto",
-    link: "https://www.all-anime.ga/Naruto-tv",
-    image: "/image/Naruto/poster.jpeg",
+    name: "My Home Hero",
+    link: "https://www.all-anime.ga/ver/My-home-hero/tv",
+    image: "/image/My-home-hero/p.webp",
     type: "ANIME",
   },
   {
@@ -208,6 +208,12 @@ const animes = [
     name: "Mob Psycho",
     link: "https://www.all-anime.ga/ver/Mob-Psycho-100/tv",
     image: "/image/Mob-psycho-III/poster.jpg",
+    type: "ANIME",
+  },
+  {
+    name: "Naruto",
+    link: "https://www.all-anime.ga/Naruto-tv",
+    image: "/image/Naruto/poster.jpeg",
     type: "ANIME",
   },
   {
