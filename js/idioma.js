@@ -295,6 +295,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Tengoku Daimakyou",
+    link: "https://www.all-anime.ga/ver/Tengoku-daimakyou/tv",
+    image: "/image/Tengoku-daimakyou/p.webp",
+    type: "ANIME",
+  },
+  {
     name: "Trigun Stampede",
     link: "https://www.all-anime.ga/ver/Trigun-stampede/tv",
     image: "/image/Trigun-stampede/p.jpe",
