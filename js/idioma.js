@@ -309,7 +309,7 @@ const animes = [
   {
     name: "Vinland saga",
     link: "https://www.all-anime.ga/ver/Vinland-saga/tv",
-    image: "/image/Vinland-Saga/T2/p.jpg",
+    image: "/image/Vinland-Saga/T2/p.jpe",
     type: "ANIME",
   },
   //PELICULAS
