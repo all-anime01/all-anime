@@ -618,7 +618,7 @@
                 border-bottom-right-radius: 10px;
                 border-top-left-radius: 0px;
                 border-bottom-left-radius: 0px;
-                z-index: 4;
+                z-index: 100;
             }
 
             .box:hover .etiquet-leng-1 {
@@ -658,6 +658,16 @@
                 width: calc(100px * 14);
             }
 
+            .slide-track {
+                width: 500%;
+                height: 500px;
+                display: flex;
+            }
+
+            .slide-track input {
+                display: none;
+            }
+
             .slider .slide {
                 width: 200px;
             }
@@ -683,7 +693,10 @@
             <h2 style="text-align: left; color: #666;">Últimos agregados</h2>
             <div class="slider">
                 <div class="slide-track">
-                    <div class="slide" style="margin-right: 15px;">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <div class="slide first" style="margin-right: 15px;">
                         <a href="https://www.all-anime.ga/ver/Dragon-ball-z/tv">
                             <img src="/image/Dragon-ball-Z/p.jpg" alt="#"
                                 style="width: 210px; height: 280px; border: 4px solid #444;">
@@ -792,6 +805,16 @@
                                 <p style="font-size: 13px;">1080p</p>
                             </div>
                     </div>
+                </div>
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
                 </div>
             </div>
         </section>
