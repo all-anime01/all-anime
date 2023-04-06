@@ -159,7 +159,7 @@ const animes = [
   {
     name: "Dr stone",
     link: "https://www.all-anime.ga/ver/Dr-stone/tv",
-    image: "/image/Dr-Stone-Ryusui/poster.png",
+    image: "/image/Dr-stone-new-world/p.webp",
     type: "ANIME",
   },
   {
