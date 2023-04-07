@@ -205,6 +205,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Mashle: magic and muscles",
+    link: "https://www.all-anime.ga/ver/Mashle-magic-and-muscles/tv",
+    image: "/image/Mashle-magic-and-muscles/p.webp",
+    type: "ANIME",
+  },
+  {
     name: "Mob Psycho",
     link: "https://www.all-anime.ga/ver/Mob-Psycho-100/tv",
     image: "/image/Mob-psycho-III/poster.jpg",
