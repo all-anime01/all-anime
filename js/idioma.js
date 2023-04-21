@@ -247,6 +247,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Pokemon: Horizons",
+    link: "https://all-anime.net/ver/Pokemon-horizons/tv",
+    image: "/image/Pokemon-Horizons/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Pokemon: Mezase Pokemon master",
     link: "https://all-anime.net/ver/Pokemon-viajes/tv",
     image: "/image/Pokemon-mezase-pokemon-master/p.jpg",
