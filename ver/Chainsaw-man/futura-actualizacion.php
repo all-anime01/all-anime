@@ -7,9 +7,9 @@
 <div class="CpCnA">
     <span class="lgtbx"></span>
     <nav class="Brdcrmb fa-home">
-        <a href="https://www.all-anime.ga/inicio" title="Inicio All-Anime">INICIO</a>
+        <a href="https://all-anime.net/inicio" title="Inicio All-Anime">INICIO</a>
         <i class="fa-caret-right"></i>
-        <a href="https://www.all-anime.ga/ver/Chainsaw-man/tv" style="color: orange;">CHAINSAW MAN</a>
+        <a href="https://all-anime.net/ver/Chainsaw-man/tv" style="color: orange;">CHAINSAW MAN</a>
         <i class="fa-caret-right"></i> <strong>118.9K(4.9)</strong>
     </nav>
 
@@ -58,8 +58,8 @@
             <div class="CpCnB">
                 <div class="CapOptns ClFx show">
                     <div class="CapNv">
-                        <a href="https://www.all-anime.ga/ver/Chainsaw-man/10" class="CapNvPv fa-chevron-left">ANTERIOR</a>
-                        <a href="https://www.all-anime.ga/ver/Chainsaw-man/tv" class="CapNvLs fa-th-list"></a>
+                        <a href="https://all-anime.net/ver/Chainsaw-man/10" class="CapNvPv fa-chevron-left">ANTERIOR</a>
+                        <a href="https://all-anime.net/ver/Chainsaw-man/tv" class="CapNvLs fa-th-list"></a>
                         <a href="#" class="CapNvNx fa-chevron-right">SIGUIENTE</a>
                     </div>
                     <div class="container-text">
