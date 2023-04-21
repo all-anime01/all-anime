@@ -145,6 +145,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Dead Mount Death Play",
+    link: "https://all-anime.net/ver/Dead-mount-death-play/tv",
+    image: "/image/Dead-mount-death-play/p.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Dragon Ball Z",
     link: "https://all-anime.net/ver/Dragon-ball-z/tv",
     image: "/image/Dragon-ball-Z/p.jpe",
