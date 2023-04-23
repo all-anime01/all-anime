@@ -213,7 +213,7 @@ const animes = [
   {
     name: "Mashle: magic and muscles",
     link: "https://all-anime.net/ver/Mashle-magic-and-muscles/tv",
-    image: "/image/Mashle-magic-and-muscles/p.webp",
+    image: "/image/Mashle-magic-and-muscles/p.jpe",
     type: "ANIME",
   },
   {
