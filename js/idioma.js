@@ -319,6 +319,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "The Marginal Service",
+    link: "https://all-anime.net/ver/The-marginal-service/tv",
+    image: "/image/The-marginal-service/p.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Trigun Stampede",
     link: "https://all-anime.net/ver/Trigun-stampede/tv",
     image: "/image/Trigun-stampede/p.jpe",
