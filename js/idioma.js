@@ -392,6 +392,12 @@ const animes = [
     type: "PELICULA",
   },
   {
+    name: "Super Mario Bros La pelìcula",
+    link: "https://all-anime.net/peliculas/Super-mario-la-pelicula/1",
+    image: "/image/Super-mario/p.jpg",
+    type: "PELICULA",
+  },
+  {
     name: "Nanatsu no taizai: El rencor de edimburgo",
     link: "https://all-anime.net/peliculas/Nanatsu-no-taizai-el-rencor-de-edimburgo/movie",
     image: "/image/Nanatsu-no-taizai-el-rencor-de-edimburgo/poster.jpg",
