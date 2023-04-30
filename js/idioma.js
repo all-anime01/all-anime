@@ -393,7 +393,7 @@ const animes = [
   },
   {
     name: "Super Mario Bros La pelìcula",
-    link: "https://all-anime.net/peliculas/Super-mario-la-pelicula/1",
+    link: "https://all-anime.net/peliculas/Super-mario-la-pelicula-2023/1",
     image: "/image/Super-mario/p.jpg",
     type: "PELICULA",
   },
