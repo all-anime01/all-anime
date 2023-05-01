@@ -135,7 +135,7 @@ const animes = [
   {
     name: "Demon slayer",
     link: "https://all-anime.net/ver/Kimetsu-no-yaiba/tv",
-    image: "/image/Kimetsu-no-yaiba-katanakaji-no-sato-T3/p.webp",
+    image: "/image/Kimetsu-no-yaiba-katanakaji-no-sato-T3/p.jpe",
     type: "ANIME",
   },
   {
@@ -195,7 +195,7 @@ const animes = [
   {
     name: "Kimetsu no Yaiba",
     link: "https://all-anime.net/ver/Kimetsu-no-yaiba/tv",
-    image: "/image/Kimetsu-no-yaiba-katanakaji-no-sato-T3/p.webp",
+    image: "/image/Kimetsu-no-yaiba-katanakaji-no-sato-T3/p.jpe",
     type: "ANIME",
   },
   {
