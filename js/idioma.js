@@ -345,7 +345,7 @@ const animes = [
   //PELICULAS
   {
     name: "Black clover: La espada del Rey mago",
-    link: "https://all-anime.net/peliculas/Black-clover-La-espada-del-rey-mago/1",
+    link: "https://all-anime.net/peliculas/Black-clover-la-espada-del-rey-mago/movie",
     image: "/image/Black-clover-La-espada-del-rey-mago/p.jpg",
     type: "PELICULA",
   },
