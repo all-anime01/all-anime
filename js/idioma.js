@@ -344,15 +344,9 @@ const animes = [
   },
   //PELICULAS
   {
-    name: "Jujutsu Kaisen: 0",
-    link: "https://all-anime.net/peliculas/Jujutsu-kaisen-0/movie",
-    image: "/image/Jujutsu-Kaisen-0/poster.jpg",
-    type: "PELICULA",
-  },
-  {
-    name: "Kimetsu no Yaiba: Jougen Shuuketsu",
-    link: "https://all-anime.net/peliculas/kimetsu-no-yaiba-Jougen-Shuuketsu-Soshite-Katanakaji-no-Sato-e/movie",
-    image: "/image/Kimetsu-no-yaiba-pelicula-2/p.jpg",
+    name: "Black clover: La espada del Rey mago",
+    link: "https://all-anime.net/peliculas/Black-clover-La-espada-del-rey-mago/1",
+    image: "/image/Black-clover-La-espada-del-rey-mago/p.jpg",
     type: "PELICULA",
   },
   {
@@ -377,6 +371,18 @@ const animes = [
     name: "Dragon ball: Super Broly",
     link: "https://all-anime.net/peliculas/Dragon-ball-super-broly/movie",
     image: "/image/dragon-ball-super-super-broly/poster.png",
+    type: "PELICULA",
+  },
+  {
+    name: "Jujutsu Kaisen: 0",
+    link: "https://all-anime.net/peliculas/Jujutsu-kaisen-0/movie",
+    image: "/image/Jujutsu-Kaisen-0/poster.jpg",
+    type: "PELICULA",
+  },
+  {
+    name: "Kimetsu no Yaiba: Jougen Shuuketsu",
+    link: "https://all-anime.net/peliculas/kimetsu-no-yaiba-Jougen-Shuuketsu-Soshite-Katanakaji-no-Sato-e/movie",
+    image: "/image/Kimetsu-no-yaiba-pelicula-2/p.jpg",
     type: "PELICULA",
   },
   {
