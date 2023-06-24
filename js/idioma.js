@@ -223,6 +223,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Mushoku Tensei",
+    link: "https://all-anime.net/ver/Mushoku-tensei/tv",
+    image: "/image/Mushoku-Tensei/T1/p.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Naruto",
     link: "https://all-anime.net/Naruto-tv",
     image: "/image/Naruto/poster.jpeg",
