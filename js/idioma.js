@@ -183,7 +183,7 @@ const animes = [
   {
     name: "Jujutsu kaisen",
     link: "https://all-anime.net/ver/Jujutsu-kaisen/tv",
-    image: "/image/Jujutsu-Kaisen-T1/p.png",
+    image: "/image/jujutsu-k/T2/p.webp",
     type: "ANIME",
   },
   {
@@ -226,6 +226,12 @@ const animes = [
     name: "Mushoku Tensei",
     link: "https://all-anime.net/ver/Mushoku-tensei/tv",
     image: "/image/Mushoku-Tensei/T1/p.jpe",
+    type: "ANIME",
+  },
+  {
+    name: "Malevolent Spirits: Mononogatari",
+    link: "https://all-anime.net/ver/Monogatari/tv",
+    image: "/image/Monogatari/T2/p.webp",
     type: "ANIME",
   },
   {
