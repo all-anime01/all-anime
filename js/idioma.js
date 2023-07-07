@@ -295,6 +295,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Rurouni Kenshin (2023)",
+    link: "https://all-anime.net/ver/Rurouni-Kenshin-2023/tv",
+    image: "/image/Rurouni-kenshin-meiji-kenkaku-romantan-2023/p.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Shingeki no kyojin",
     link: "https://all-anime.net/ver/Shingeki-no-kyojin/tv",
     image: "/image/Snk-season-4-parte3/p.webp",
