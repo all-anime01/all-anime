@@ -99,13 +99,13 @@ const animes = [
   {
     name: "Bleach: Sennen Kessen-hen",
     link: "https://all-anime.net/ver/Bleach-sennen-kessen-hen/tv",
-    image: "/image/Bleach-thousand-year-blood-war/poster.jpg",
+    image: "/image/Bleach-thousand-year-blood-war/P2/p.webp",
     type: "ANIME",
   },
   {
     name: "Bleach: Thousand-Year-blood-war",
     link: "https://all-anime.net/ver/Bleach-sennen-kessen-hen/tv",
-    image: "/image/Bleach-thousand-year-blood-war/poster.jpg",
+    image: "/image/Bleach-thousand-year-blood-war/P2/p.webp",
     type: "ANIME",
   },
   {
