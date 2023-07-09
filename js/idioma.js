@@ -360,6 +360,12 @@ const animes = [
     image: "/image/Vinland-Saga/T2/p.jpe",
     type: "ANIME",
   },
+  {
+    name: "Zom 100: The Bucket List of the Dead",
+    link: "https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv",
+    image: "/image/Zom-100-The-Bucket-List-of-the-Dead/p.jpe",
+    type: "ANIME",
+  },
   //PELICULAS
   {
     name: "Black clover: La espada del Rey mago",
