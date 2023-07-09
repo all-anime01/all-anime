@@ -225,12 +225,12 @@ const animes = [
   {
     name: "Mushoku Tensei",
     link: "https://all-anime.net/ver/Mushoku-tensei/tv",
-    image: "/image/Mushoku-Tensei/T1/p.jpe",
+    image: "/image/Mushoku-Tensei/T2/P.jpg",
     type: "ANIME",
   },
   {
     name: "Malevolent Spirits: Mononogatari",
-    link: "https://all-anime.net/ver/Monogatari/tv",
+    link: "https://all-anime.net/ver/Mononogatari/tv",
     image: "/image/Monogatari/T2/p.webp",
     type: "ANIME",
   },
