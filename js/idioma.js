@@ -133,6 +133,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Dark Gathering",
+    link: "https://all-anime.net/ver/Dark-gathering/tv",
+    image: "https://cdn.myanimelist.net/images/anime/1748/136736l.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Demon slayer",
     link: "https://all-anime.net/ver/Kimetsu-no-yaiba/tv",
     image: "/image/Kimetsu-no-yaiba-katanakaji-no-sato-T3/p.jpe",
