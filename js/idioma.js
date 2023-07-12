@@ -87,7 +87,7 @@ const animes = [
   {
     name: "Bungo stray dogs",
     link: "https://all-anime.net/ver/Bungo-stray-dogs/tv",
-    image: "/image/Bungo-stray-dogs/T4/p.jpe",
+    image: "https://jcrcomicarts.files.wordpress.com/2023/06/image-530.png",
     type: "ANIME",
   },
   {
@@ -291,7 +291,8 @@ const animes = [
   {
     name: "Record of Ragnarok",
     link: "https://all-anime.net/ver/Shuumatsu-no-valkyrie/tv",
-    image: "/image/Record-of-ragnarok/poster.jpg",
+    image:
+      "https://i3.wp.com/animeyt.es/wp-content/uploads/2023/01/0xkN3SB0azUg.jpg",
     type: "ANIME",
   },
   {
@@ -315,7 +316,8 @@ const animes = [
   {
     name: "Shumatsu no Valkyrie",
     link: "https://all-anime.net/ver/Shuumatsu-no-valkyrie/tv",
-    image: "/image/Record-of-ragnarok/poster.jpg",
+    image:
+      "https://i3.wp.com/animeyt.es/wp-content/uploads/2023/01/0xkN3SB0azUg.jpg",
     type: "ANIME",
   },
   {
