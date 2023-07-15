@@ -205,6 +205,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Link Click",
+    link: "https://all-anime.net/ver/Link-click/tv",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/7d142e198546b9a0758754479a43c649.jpe",
+    type: "ANIME",
+  },
+  {
     name: "My Home Hero",
     link: "https://all-anime.net/ver/My-home-hero/tv",
     image: "/image/My-home-hero/p.webp",
