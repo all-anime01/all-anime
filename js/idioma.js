@@ -383,6 +383,13 @@ const animes = [
   },
   //PELICULAS
   {
+    name: "Boruto: Naruto the Movie",
+    link: "https://all-anime.net/peliculas/Boruto-naruto-the-movie/movie",
+    image:
+      "https://gatonplayseries.com/wp-content/uploads/2020/08/9GB2iXCPVP6bgyQXXPUchX8CD7p.jpg",
+    type: "PELICULA",
+  },
+  {
     name: "Black clover: La espada del Rey mago",
     link: "https://all-anime.net/peliculas/Black-clover-la-espada-del-rey-mago/movie",
     image: "/image/Black-clover-La-espada-del-rey-mago/p.jpg",
