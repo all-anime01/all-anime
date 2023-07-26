@@ -181,6 +181,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Hanma Baki: Son of Ogre",
+    link: "https://all-anime.net/ver/Hanma-Baki-Son-of-Ogre/tv",
+    image:
+      "https://i3.wp.com/animeyt.es/wp-content/uploads/2023/07/gBOcSBvzRZfx.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Hells Paradise",
     link: "https://all-anime.net/ver/Hells-paradise/tv",
     image: "/image/Hells-paradise/p.jpe",
@@ -367,6 +374,13 @@ const animes = [
     name: "Tokyo revengers",
     link: "https://all-anime.net/ver/Tokyo-revengers/tv",
     image: "/image/Tokyo-revengers-seiya-kessen-hen/p.jpg",
+    type: "ANIME",
+  },
+  {
+    name: "Undead Murder Farce",
+    link: "https://all-anime.net/ver/Undead-Murder-Farce/tv",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/e02ff0b76c447cbd0e512545bdf71e51.jpe",
     type: "ANIME",
   },
   {
