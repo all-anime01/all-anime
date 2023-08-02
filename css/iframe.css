@@ -359,7 +359,7 @@ h2 {
 
 .ODDIV li:hover {
     background: #103e64;
-    background: -webkit-linear-gradient(left, #103e64 25%, rgba(231, 56, 39, 0) 100%)
+    background: -webkit-linear-gradient(left, rgb(7, 247, 59) 25%, rgba(231, 56, 39, 0) 100%)
 }
 
 .OD {
