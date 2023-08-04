@@ -91,6 +91,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Black Clover",
+    link: "https://all-anime.net/ver/Black-clover/tv",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/e108ae17d8d0407417cac40eb52d849a.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Bleach",
     link: "https://all-anime.net/ver/Bleach/tv",
     image: "/image/Bleach/p.jpg",
