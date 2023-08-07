@@ -201,6 +201,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Hunter x Hunter",
+    link: "https://all-anime.net/ver/Hunter-x-hunter/tv",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/cbb55a6382682bf71e91f685c6473c5a.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Jujutsu kaisen",
     link: "https://all-anime.net/ver/Jujutsu-kaisen/tv",
     image: "/image/jujutsu-k/T2/p.webp",
