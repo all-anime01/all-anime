@@ -11,7 +11,9 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>All-anime — Disfruta del anime más popular Anime HD</title>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="shortcut icon" href="/image/logo.ico">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/jquery.js"></script>
@@ -191,7 +193,8 @@
         <main>
             <div class="peliculas-recomendadas contenedor">
                 <div class="contenedor-titulo-controles">
-                    <h3>Recomendados<img src="/./image/Banderas-lenguaje/luffy.png"></h3>
+                    <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Nuestras
+                        recomendaciones<img src="/image/Banderas-lenguaje/luffy.png"></h3>
                     <div class="indicadores"></div>
                 </div>
 
@@ -744,6 +747,11 @@
                 transition: 0.7;
             }
 
+            .box:hover .calidad-etiq {
+                opacity: 0;
+                transition: 0.7;
+            }
+
             .letrero-1 {
                 padding: 2px 5px !important;
                 line-height: 20px !important;
@@ -757,262 +765,354 @@
                 z-index: 100;
             }
 
-            .box:hover .etiquet-leng-1 {
-                opacity: 0;
-                transition: 0.5;
-            }
-
-            .description {
-                background-color: #333;
-                border: 3px solid #444;
-                width: 210px;
-                height: 55px;
-                color: #fff;
-                text-align: center;
-                text-decoration: none;
-                border-bottom-left-radius: 4px;
-                border-bottom-right-radius: 4px;
-                opacity: 1;
-            }
-
-            .description:hover {
-                color: aquamarine;
-                text-decoration: none;
-            }
-
-            .slider {
-                width: 75vw;
-                height: auto;
-                margin: auto;
+            .card {
+                flex: 0 0 calc(20% - 10px);
+                /* Asegurarse de que haya 5 tarjetas en una fila */
+                margin: 5px;
+                border-radius: 8px;
+                max-width: 505px;
                 overflow: hidden;
+                position: relative;
+                cursor: pointer;
+                gap: -20;
+                /* Hacer que las tarjetas sean seleccionables */
             }
 
-            .slider .slide-track {
-                display: flex;
-                animation: scroll 50s linear infinite;
-                -webkit-animation: scroll 50s linear infinite;
-                width: calc(100px * 15);
-            }
-
-            .slide-track {
-                width: 500%;
-                height: 500px;
-                display: flex;
-            }
-
-            .slide-track input {
-                display: none;
-            }
-
-            .slider .slide {
-                width: 200px;
-            }
-
-            .slider .slide img {
+            .card img {
                 width: 100%;
+                height: auto;
             }
 
-            @keyframes scroll {
-                0% {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
-                }
+            .card-content {
+                padding: 10px;
+            }
 
-                100% {
-                    -webkit-transform: translateX(calc(-200px * 12));
-                    transform: translateX(calc(-100px * 12));
-                }
+            .card h2 {
+                margin: 0;
+                font-size: 1.5rem;
+            }
+
+            .card p {
+                margin-top: 8px;
+            }
+
+            .card a {
+                display: block;
+                margin-top: -1px;
+                color: #333;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .card a:hover {
+                text-decoration: none;
+            }
+
+            /* ... (otros estilos) ... */
+
+            .card:hover .additional-info {
+                opacity: 2;
+                visibility: visible;
+            }
+
+            .additional-info {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: #fff;
+                font-size: 0.9rem;
+                border-radius: 8px;
+                opacity: 0;
+                visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                text-align: center;
+                transition: opacity 0.5s;
+            }
+
+            .slick-prev {
+                left: 12px;
+            }
+
+            .slick-next {
+                right: 2px;
             }
         </style>
         <br>
-        <section id="agregados" style="background-color: #f0f0f0; border-radius: 3px; margin-bottom: 20px;">
-            <h2 style="text-align: left; color: #666;">Últimos agregados</h2>
-            <div class="slider">
-                <div class="slide-track">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <div class="slide first" style="margin-right: 15px;">
-                        <a href="https://all-anime.net/ver/Dragon-ball-z/tv">
-                            <img src="/image/Dragon-ball-Z/p.jpg" alt="#"
-                                style="width: 210px; height: 280px; border: 4px solid #444;">
-                            <div class="etiquet-leng2">
-                                <span class="letrero-1" style="font-size: 12px;">Multiaudio</span>
-                            </div>
-                            <div class="description">
-                                <p style="font-size: 13px;">Dragon Ball Z
-                                </p>
-                                <p style="font-size: 13px;">E1 al 35-LAT[1080p]</p>
-                            </div>
-                    </div>
-                    <div class="slide" style="margin-right: 15px;">
-                        <a href="https://all-anime.net/ver/Mushoku-tensei/T2/0">
-                            <img src="/image/Mushoku-Tensei/T2/P.jpg" alt="#"
-                                style="width: 210px; height: 280px; border: 4px solid #444;">
-                            <div class="description">
-                                <div class="etiquet-leng2">
-                                    <span class="letrero-1" style="font-size: 12px;">Japones</span>
-                                </div>
-                                <p style="font-size: 10px;">Mushoku Tensei: Jobless Reincarnation
-                                </p>
-                                <p style="font-size: 13px;">Episodio 0</p>
-                            </div>
-                    </div>
-                    <div class="slide" style="margin-right: 15px;">
-                        <a href="https://all-anime.net/ver/Hells-paradise/T1/3">
-                            <img src="/image/Hells-paradise/p.jpe" alt="#"
-                                style="width: 210px; height: 280px; border: 4px solid #444;">
-                            <div class="description">
-                                <p style="font-size: 13px;">Hells Paradise</p>
-                                <p style="font-size: 13px;">E3-LAT [1080p]</p>
-                            </div>
-                    </div>
-                    <div class="slide" style="margin-right: 15px;">
-                        <a href="https://all-anime.net/ver/Dr-stone/tv">
-                            <img src="/image/Dr-stone-2/p.jpg" alt="#"
-                                style="width: 210px; height: 280px; border: 4px solid #444;">
-                            <div class="etiquet-leng2">
-                                <span class="letrero-1" style="font-size: 12px;">Multiaudio</span>
-                            </div>
-                            <div class="description">
-                                <p style="font-size: 13px;">Dr Stone: Stone Wars
-                                </p>
-                                <p style="font-size: 13px;">E1-11[1080p]</p>
-                            </div>
-                    </div>
-                    <div class="slide" style="margin-right: 15px;">
-                        <a href="https://all-anime.net/ver/Dragon-quest-dai-no-daibouken/tv">
-                            <img src="/image/Dragon-quest/p.jpg" alt="#"
-                                style="width: 210px; height: 280px; border: 4px solid #444;">
-                            <div class="description">
-                                <div class="etiquet-leng2">
-                                    <span class="letrero-1" style="font-size: 12px;">Multiaudio</span>
-                                </div>
-                                <p style="font-size: 13px;">Dragon Quest: Dai no Daibouken
-                                </p>
-                                <p style="font-size: 13px;">E1 [1080p]</p>
-                            </div>
-                    </div>
-                    <div class="slide" style="margin-right: 15px;">
-                        <a href="https://all-anime.net/ver/Death-note/tv">
-                            <img src="/image/Death-Note/p.jpg" alt="#"
-                                style="width: 210px; height: 280px; border: 4px solid #444;">
-                            <div class="description">
-                                <div class="etiquet-leng2">
-                                    <span class="letrero-1" style="font-size: 12px;">Multiaudio</span>
-                                </div>
-                                <p style="font-size: 13px;">Death Note
-                                </p>
-                                <p style="font-size: 13px;">E1-37[720p]</p>
-                            </div>
-                    </div>
-                    <div class="slide" style="margin-right: 15px;">
-                        <a href="https://all-anime.net/ver/My-hero-academia/T6/25">
-                            <img src="/image/Boku-no-hero-academia-season-6/p.jpe" alt="#"
-                                style="width: 210px; height: 280px; border: 4px solid #444;">
-                            <div class="etiquet-leng2">
-                                <span class="letrero-1" style="font-size: 12px;">Multiaudio</span>
-                            </div>
-                            <div class="description">
-                                <p style="font-size: 13px;">My Hero Academia T6
-                                </p>
-                                <p style="font-size: 13px;">E1-25[1080p]</p>
-                            </div>
-                    </div>
-                    <div class="slide" style="margin-right: 15px;">
-                        <a href="https://all-anime.net/ver/Ousama-ranking/tv">
-                            <img src="/image/Ousama-Ranking/p.jpg" alt="#"
-                                style="width: 210px; height: 280px; border: 4px solid #444;">
-                            <div class="description">
-                                <div class="etiquet-leng2">
-                                    <span class="letrero-1" style="font-size: 12px;">Multiaudio</span>
-                                </div>
-                                <p style="font-size: 13px;">Ousama Ranking
-                                </p>
-                                <p style="font-size: 13px;">E1-11[1080p]</p>
-                            </div>
-                    </div>
-                    <div class="slide" style="margin-right: 15px;">
-                        <div class="etiquet-leng2">
-                            <span class="letrero-1" style="font-size: 12px;">Mutiaudio</span>
-                        </div>
-                        <a href="https://all-anime.net/ver/Bungo-stray-dogs/tv">
-                            <img src="/image/Bungo-stray-dogs/T3/p.webp" alt="#"
-                                style="width: 210px; height: 280px; border: 4px solid #444;">
-                            <div class="description">
-                                <p style="font-size: 13px;">Bungo Stray Dogs T3
-                                </p>
-                                <p style="font-size: 13px;">1080p</p>
-                            </div>
-                    </div>
-                    <div class="slide" style="margin-right: 15px;">
-                        <a href="https://all-anime.net/peliculas/One-piece-film-red/movie">
-                            <img src="/image/One-piece-Film-red/p.jpg" alt="#"
-                                style="width: 210px; height: 280px; border: 4px solid #444;">
-                            <div class="description">
-                                <p style="font-size: 13px;">One Piece: Film Red</p>
-                                <p style="font-size: 13px;">Blu-Ray</p>
-                            </div>
-                    </div>
-                    <div class="slide" style="margin-right: 15px;">
-                        <a href="https://all-anime.net/peliculas/Dragon-ball-Super-super-hero/movie">
-                            <img src="/image/Dragon-ball-super-Super-Hero/poster.png" alt="#"
-                                style="width: 210px; height: 280px; border: 4px solid #444;">
-                            <div class="description">
-                                <p style="font-size: 13px;">Dragon Ball Super: Super Hero</p>
-                                <p style="font-size: 13px;">1080p</p>
-                            </div>
-                    </div>
-                </div>
-                <div class="nav-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
-                <div class="nav-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
-            </div>
-        </section>
 
         <section class="dimension" id="agregados"
             style="background-color: #f0f0f0; border-radius: 3px; margin-bottom: 10px; max-height: 350px;">
 
-            <h2 class=" heading-text"><span style="color: #666; font-size: 25px;">¡Doblajes!</span>
+            <h2 class=" heading-text"><span
+                    style="color: #666; font-size: 25px; font-family: Arial, Helvetica, sans-serif; text-align: start; line-height: 18px;">Últimos
+                    agregados</span>
             </h2>
             <br>
+            <br>
 
-            <div class="slide first" style="margin-right: 15px;">
-                <a href="https://all-anime.net/ver/Dragon-ball-z/tv">
-                    <img src="/image/Dragon-ball-Z/p.jpg" alt="#"
-                        style="width: 210px; height: 280px; border: 4px solid #444;">
-                    <div class="etiquet-leng2">
-                        <span class="letrero-1" style="font-size: 12px;">Multiaudio</span>
+            <div class="slick-carousel">
+                <div class="card" id="card">
+                    <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/cbb55a6382682bf71e91f685c6473c5a.jpe"
+                        alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Hunter x Hunter<a href="https://all-anime.net/ver/Hunter-x-hunter/tv"></h2>
+                        <p style="color: #666;">Sub | Dob.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Hunter x Hunter</p>
+                            <p style="font-size: 15px;">Temporada 1</p>
+                            <p style="font-size: 10px;">Episodios del 1 al 5</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Un niño que no tiene el poder de hacer magia
+                                lucha
+                                por obtener
+                                el título de Rey Mago, mientras cuatro antiguos Reyes Magos reaparecen para destruir el
+                                Reino del Trébol. Protagonistas:Gakuto...</p>
+                        </div>
                     </div>
-                    <div class="description">
-                        <p style="font-size: 13px;">Dragon Ball Z
-                        </p>
-                        <p style="font-size: 13px;">E1 - 35 [1080p]</p>
+                </div>
+                <div class="card" id="card">
+                    <img src="/image/Black-clover/p.jpe" alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Black
+                            Clover<a href="https://all-anime.net/ver/Black-clover/tv"></h2>
+                        <p style="color: #666;">Sub | Dob.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Black Clover</p>
+                            <p style="font-size: 15px;">Temporada 1</p>
+                            <p style="font-size: 10px;">Episodios del 1 al 35</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">En un mundo en el que la magia lo es todo, Asta
+                                y
+                                Yuno son dos
+                                niños que encuentran
+                                abandonados el mismo día en una iglesia. Mientras que Yuno crece demostrando tener unos
+                                grandes poderes mágicos, Asta parece ser...</p>
+                        </div>
                     </div>
+                </div>
+                <div class="card" id="card">
+                    <img src="/image/Black-clover-La-espada-del-rey-mago/p.jpg" alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Black
+                            Clover: La espada del rey mago<a
+                                href="https://all-anime.net/peliculas/Black-clover-la-espada-del-rey-mago/movie"></h2>
+                        <p style="color: #666;">Sub | Dob.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Black Clover</p>
+                            <p style="font-size: 15px;">La Espada del Rey Mago</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Un niño que no tiene el poder de hacer magia
+                                lucha
+                                por obtener
+                                el título de Rey Mago, mientras cuatro antiguos Reyes Magos reaparecen para destruir el
+                                Reino del Trébol. Protagonistas:Gakuto...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <img src="/image/Dragon-ball-Z/p.jpe" alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Dragon Ball Z<a href="https://all-anime.net/ver/Dragon-ball-z/tv"></h2>
+                        <p style="color: #666;">Sub | Dob.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Dragon Ball Z</p>
+                            <p style="font-size: 15px;">Saga Saiyajin</p>
+                            <p style="font-size: 10px;">Episodios del 1 al 35</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Villanos terroríficamente malvados de los
+                                rincones más oscuros del espacio y el tiempo se enfrentan con la Tierra, y Goku, el
+                                guerrero más fuerte del planeta, es todo lo que se interpone entre la humanidad y la
+                                extinción...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/98034e78c5ab24fab83db14c22ebf91f.jpe"
+                        alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Mushoku Tensei: Jobless Reincarnation<a href="https://all-anime.net/ver/Mushoku-tensei/tv">
+                        </h2>
+                        <p style="color: #666;">Sub | Dob.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Mushoku Tensei</p>
+                            <p style="font-size: 15px;">Temporada 2</p>
+                            <p style="font-size: 10px;">Episodios del 0 al 2</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Cuando un autobús atropella a un joven de 34
+                                años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo
+                                reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre
+                                quiso. ¡Con la ayuda de sus amigos...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/ac6729b4a892d2382d11ae6cecf8fb0a.jpe"
+                        alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Zom 100: The Bucket List of the Dead<a
+                                href="https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv">
+                        </h2>
+                        <p style="color: #666;">Sub | Esp.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Zom 100: The Bucket List of the Dead</p>
+                            <p style="font-size: 15px;">Temporada 1</p>
+                            <p style="font-size: 10px;">Episodios del 1 al 2</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Akira ve cómo una empresa explotadora le
+                                absorbe por completo la vida. Mientras tanto, cuando su ciudad es azotada repentinamente
+                                por un apocalipsis zombi, encuentra un nuevo sentido a la vida...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/ac6729b4a892d2382d11ae6cecf8fb0a.jpe"
+                        alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Zom 100: The Bucket List of the Dead<a
+                                href="https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv">
+                        </h2>
+                        <p style="color: #666;">Sub | Esp.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Zom 100: The Bucket List of the Dead</p>
+                            <p style="font-size: 15px;">Temporada 1</p>
+                            <p style="font-size: 10px;">Episodios del 1 al 2</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Akira ve cómo una empresa explotadora le
+                                absorbe por completo la vida. Mientras tanto, cuando su ciudad es azotada repentinamente
+                                por un apocalipsis zombi, encuentra un nuevo sentido a la vida...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/ac6729b4a892d2382d11ae6cecf8fb0a.jpe"
+                        alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Zom 100: The Bucket List of the Dead<a
+                                href="https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv">
+                        </h2>
+                        <p style="color: #666;">Sub | Esp.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Zom 100: The Bucket List of the Dead</p>
+                            <p style="font-size: 15px;">Temporada 1</p>
+                            <p style="font-size: 10px;">Episodios del 1 al 2</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Akira ve cómo una empresa explotadora le
+                                absorbe por completo la vida. Mientras tanto, cuando su ciudad es azotada repentinamente
+                                por un apocalipsis zombi, encuentra un nuevo sentido a la vida...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/ac6729b4a892d2382d11ae6cecf8fb0a.jpe"
+                        alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Zom 100: The Bucket List of the Dead<a
+                                href="https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv">
+                        </h2>
+                        <p style="color: #666;">Sub | Esp.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Zom 100: The Bucket List of the Dead</p>
+                            <p style="font-size: 15px;">Temporada 1</p>
+                            <p style="font-size: 10px;">Episodios del 1 al 2</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Akira ve cómo una empresa explotadora le
+                                absorbe por completo la vida. Mientras tanto, cuando su ciudad es azotada repentinamente
+                                por un apocalipsis zombi, encuentra un nuevo sentido a la vida...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/ac6729b4a892d2382d11ae6cecf8fb0a.jpe"
+                        alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Zom 100: The Bucket List of the Dead<a
+                                href="https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv">
+                        </h2>
+                        <p style="color: #666;">Sub | Esp.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Zom 100: The Bucket List of the Dead</p>
+                            <p style="font-size: 15px;">Temporada 1</p>
+                            <p style="font-size: 10px;">Episodios del 1 al 2</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Akira ve cómo una empresa explotadora le
+                                absorbe por completo la vida. Mientras tanto, cuando su ciudad es azotada repentinamente
+                                por un apocalipsis zombi, encuentra un nuevo sentido a la vida...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/ac6729b4a892d2382d11ae6cecf8fb0a.jpe"
+                        alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Zom 100: The Bucket List of the Dead<a
+                                href="https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv">
+                        </h2>
+                        <p style="color: #666;">Sub | Esp.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Zom 100: The Bucket List of the Dead</p>
+                            <p style="font-size: 15px;">Temporada 1</p>
+                            <p style="font-size: 10px;">Episodios del 1 al 2</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Akira ve cómo una empresa explotadora le
+                                absorbe por completo la vida. Mientras tanto, cuando su ciudad es azotada repentinamente
+                                por un apocalipsis zombi, encuentra un nuevo sentido a la vida...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/ac6729b4a892d2382d11ae6cecf8fb0a.jpe"
+                        alt="Imagen de la tarjeta">
+                    <div class="card-content">
+                        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            Zom 100: The Bucket List of the Dead<a
+                                href="https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv">
+                        </h2>
+                        <p style="color: #666;">Sub | Esp.</p>
+                        <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                                Zom 100: The Bucket List of the Dead</p>
+                            <p style="font-size: 15px;">Temporada 1</p>
+                            <p style="font-size: 10px;">Episodios del 1 al 2</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Akira ve cómo una empresa explotadora le
+                                absorbe por completo la vida. Mientras tanto, cuando su ciudad es azotada repentinamente
+                                por un apocalipsis zombi, encuentra un nuevo sentido a la vida...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- <div class="slide first" style="margin-right: 15px;">
-                <a href="https://all-anime.net/ver/Black-clover/tv">
-                    <img src="/image/Black-clover/p.jpe" alt="#"
-                        style="width: 210px; height: 280px; border: 4px solid #444;">
-                    <div class="etiquet-leng2">
-                        <span class="letrero-1" style="font-size: 12px;">Multiaudio</span>
-                    </div>
-                    <div class="description">
-                        <p style="font-size: 13px;">Black Clover
-                        </p>
-                        <p style="font-size: 13px;">E1 - 30 [720p]</p>
-                    </div>
-            </div> -->
         </section>
     </section>
+    <script>
+        $(document).ready(function () {
+            $('.slick-carousel').slick({
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 1800,
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+            });
+        });
 
+
+    </script>
 
     <!--contacto-->
     <div class='flx'>
@@ -1050,8 +1150,9 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/js/script.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>
     <script src="/js/idioma.js"></script>
 </body>
