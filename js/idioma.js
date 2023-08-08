@@ -565,3 +565,15 @@ function ver4(linea, boton) {
     document.getElementById("linea4").style.display = "block";
   }
 }
+
+//carouser slick
+$(document).ready(function () {
+  $(".slick-carousel").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
+  });
+});

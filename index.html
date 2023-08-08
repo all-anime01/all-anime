@@ -12,12 +12,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>All-anime — Disfruta del anime más popular Anime HD</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="shortcut icon" href="/image/logo.ico">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/jquery.js"></script>
     <script src="/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <meta name="google-site-verification" content="aHaoCkE-TN1y47HKbby7bRVV_SkZIvPdDAwxou31f6s" />
 </head>
 
@@ -767,15 +766,11 @@
             }
 
             .card {
-                flex: 0 0 calc(20% - 10px);
-                /* Asegurarse de que haya 5 tarjetas en una fila */
-                margin: 5px;
                 border-radius: 8px;
-                max-width: 505px;
+                max-width: 205px;
                 overflow: hidden;
                 position: relative;
                 cursor: pointer;
-                gap: -20;
                 /* Hacer que las tarjetas sean seleccionables */
             }
 
@@ -799,7 +794,7 @@
 
             .card a {
                 display: block;
-                margin-top: -1px;
+                margin-top: 1px;
                 color: #333;
                 text-decoration: none;
                 font-weight: bold;
@@ -837,12 +832,16 @@
                 transition: opacity 0.5s;
             }
 
-            .slick-prev {
-                left: 12px;
+            .slick-slide {
+                margin: 0 -120px;
+                /* Ajusta este valor según tus necesidades */
             }
 
-            .slick-next {
-                right: 2px;
+            @media screen and (max-width: 915px) {
+                .slick-slide {
+                    margin: 0 -25px;
+                    /* Ajusta este valor según tus necesidades */
+                }
             }
         </style>
         <br>
@@ -984,7 +983,7 @@
                             Nanatsu no Taizai: El rencor de Edimburgo Parte 2<a
                                 href="https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv">
                         </h2>
-                        <p style="color: #666;">Sub | Esp.</p>
+                        <p style="color: #666;">Sub | Dob.</p>
                         <div class="additional-info" id="additionalInfo">
                             <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
                                 Nanatsu no Taizai: El rencor de Edimburgo</p>
@@ -997,22 +996,22 @@
                     </div>
                 </div>
                 <div class="card" id="card">
-                    <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/ac6729b4a892d2382d11ae6cecf8fb0a.jpe"
+                    <img src="https://somoskudasai.com/wp-content/uploads/2023/05/FvwvgcAXgAApESn.jpg"
                         alt="Imagen de la tarjeta">
                     <div class="card-content">
                         <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            Zom 100: The Bucket List of the Dead<a
-                                href="https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv">
+                            Hanma Baki: Son of Ogre<a href="https://all-anime.net/ver/Hanma-Baki-Son-of-Ogre/tv">
                         </h2>
-                        <p style="color: #666;">Sub | Esp.</p>
+                        <p style="color: #666;">Sub | Dob.</p>
                         <div class="additional-info" id="additionalInfo">
                             <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
-                                Zom 100: The Bucket List of the Dead</p>
-                            <p style="font-size: 15px;">Temporada 1</p>
-                            <p style="font-size: 10px;">Episodios del 1 al 2</p>
-                            <p style=" font-size: 10px; color: #f4f4f4;">Akira ve cómo una empresa explotadora le
-                                absorbe por completo la vida. Mientras tanto, cuando su ciudad es azotada repentinamente
-                                por un apocalipsis zombi, encuentra un nuevo sentido a la vida...</p>
+                                Hanma Baki: Son of Ogre</p>
+                            <p style="font-size: 15px;">Temporada 2</p>
+                            <p style="font-size: 10px;">Episodios del 1 al 13</p>
+                            <p style=" font-size: 10px; color: #f4f4f4;">Segunda temporada de Hanma Baki: Son of Ogre.
+                                Deseoso de eclipsar a su padre, Baki ingresa en la Penitenciaría del Estado de Arizona
+                                para adquirir los conocimientos necesarios y desafía al notorio recluso conocido como Mr
+                                Unchained...</p>
                         </div>
                     </div>
                 </div>
@@ -1099,20 +1098,6 @@
             </div>
         </section>
     </section>
-    <script>
-        $(document).ready(function () {
-            $('.slick-carousel').slick({
-                arrows: true,
-                autoplay: true,
-                autoplaySpeed: 1800,
-                infinite: true,
-                slidesToShow: 6,
-                slidesToScroll: 1,
-            });
-        });
-
-
-    </script>
 
     <!--contacto-->
     <div class='flx'>
@@ -1150,11 +1135,11 @@
         </div>
     </footer>
 
+    <script src="/js/main.js"></script>
+    <script src="/js/idioma.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/idioma.js"></script>
 </body>
 
 </html>
