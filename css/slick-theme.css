@@ -16,14 +16,24 @@
 }
 
 /* Arrows */
+.slick-prev {
+    position: relative;
+    float: left;
+    top: 25px;
+    left: 0;
+}
+
+.slick-next {
+    position: relative;
+    float: right;
+    top: 25px;
+    left: 0;
+}
+
 .slick-prev,
 .slick-next {
     font-size: 0;
     line-height: 0;
-
-    position: absolute;
-    top: 45%;
-
     display: block;
 
     width: 20px;
@@ -73,10 +83,6 @@
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-prev {
-    left: -25px;
 }
 
 [dir='rtl'] .slick-prev {
