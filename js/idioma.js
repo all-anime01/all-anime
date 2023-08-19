@@ -569,10 +569,13 @@ function ver4(linea, boton) {
 //carouser slick
 $(document).ready(function () {
   $(".slick-carousel").slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    speed: 300,
+    infinite: true,
+    centerPadding: "60px",
+    autoplaySpeed: 5000,
+    slidesToShow: 6,
+    slidesToScroll: 2,
   });
 });
