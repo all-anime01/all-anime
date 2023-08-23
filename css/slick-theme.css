@@ -16,39 +16,25 @@
 }
 
 /* Arrows */
-.slick-prev {
-    position: relative;
-    float: left;
-    top: 25px;
-    left: 0;
-}
-
-.slick-next {
-    position: relative;
-    float: right;
-    top: 25px;
-    left: 0;
-}
-
 .slick-prev,
 .slick-next {
     font-size: 0;
     line-height: 0;
-    display: block;
 
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    top: 50%;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
 
     cursor: pointer;
-
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
+    display: block;
+    background: #63544f;
+    border-radius: 5px;
+    width: 39px;
+    height: 40px;
+    text-align: center;
 }
 
 .slick-prev:hover,
@@ -78,11 +64,15 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .45;
-    color: #333;
+    opacity: .75;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+    left: -25px;
 }
 
 [dir='rtl'] .slick-prev {
