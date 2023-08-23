@@ -29,9 +29,8 @@
     transform: translate(0, -50%);
 
     cursor: pointer;
-    display: block;
-    background: #63544f;
-    border-radius: 5px;
+    display: inline-block;
+    background: transparent;
     width: 39px;
     height: 40px;
     text-align: center;
@@ -43,7 +42,8 @@
 .slick-next:focus {
     color: transparent;
     outline: none;
-    background: transparent;
+    background: #63544f;
+    border-radius: 5px;
 }
 
 .slick-prev:hover:before,
