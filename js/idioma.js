@@ -571,11 +571,18 @@ $(document).ready(function () {
   $(".slick-carousel").slick({
     arrows: true,
     autoplay: true,
-    speed: 300,
     infinite: true,
     centerPadding: "60px",
     autoplaySpeed: 5000,
     slidesToShow: 6,
     slidesToScroll: 2,
+  });
+  $(".slick-carousel").slick("slickGoTo", 0);
+
+  $(".slick-carousel").on("afterChange", function (event, slick, currentSlide) {
+    if (currentSlide === 0) {
+      // Reiniciar el carrusel cuando se vuelve al principio
+      $(".slick-carousel").slick("slickGoTo", 0);
+    }
   });
 });
