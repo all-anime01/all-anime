@@ -287,6 +287,25 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "One Piece",
+    link: "https://all-anime.net/ver/One-piece/tv",
+    image: "/image/One-Piece-cap/One-Piece-poster.jpg",
+    type: "ANIME",
+  },
+  {
+    name: "One Piece: Live Action",
+    link: "https://all-anime.net/ver/One-piece-netflix-live-action/tv",
+    image:
+      "https://i2.wp.com/animeyt.es/wp-content/uploads/2023/08/tcSwvmIgrRcH.jpg",
+    type: "ANIME",
+  },
+  {
+    name: "Ousama ranking",
+    link: "https://all-anime.net/ver/Ousama-ranking/tv",
+    image: "/image/Ousama-Ranking/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Pokemon: Viajes",
     link: "https://all-anime.net/ver/Pokemon-viajes/tv",
     image: "/image/Pokemon-mezase-pokemon-master/p.jpg",
@@ -302,18 +321,6 @@ const animes = [
     name: "Pokemon: Mezase Pokemon master",
     link: "https://all-anime.net/ver/Pokemon-viajes/tv",
     image: "/image/Pokemon-mezase-pokemon-master/p.jpg",
-    type: "ANIME",
-  },
-  {
-    name: "One Piece",
-    link: "https://all-anime.net/ver/One-piece/tv",
-    image: "/image/One-Piece-cap/One-Piece-poster.jpg",
-    type: "ANIME",
-  },
-  {
-    name: "Ousama ranking",
-    link: "https://all-anime.net/ver/Ousama-ranking/tv",
-    image: "/image/Ousama-Ranking/p.jpg",
     type: "ANIME",
   },
   {
