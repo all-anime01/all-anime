@@ -593,19 +593,24 @@ function actualizarTiempoTranscurrido() {
 actualizarTiempoTranscurrido();
 
 //Contador de vistas
-// Obtiene el elemento del contador
-var contadorElement = document.getElementById("con-vistas");
 
-// Inicializa el contador desde localStorage o establece a 0 si es la primera vez
-var contador = localStorage.getItem("contador") || 0;
-contadorElement.textContent = contador;
+// Obtiene el elemento enlace y el contador de vistas
+var enlace = document.getElementById("con-view");
+var contadorVistas = document.getElementById("vistas");
 
-// Agrega un evento al elemento para aumentar el contador cuando se ingrese
-contadorElement.addEventListener("mouseenter", function () {
+// Inicializa el contador
+var contador = 0;
+
+// Función para aumentar el contador y actualizar el contador de vistas
+function aumentarContador() {
   contador++;
-  contadorElement.textContent = contador;
-  localStorage.setItem("contador", contador);
-});
+  contadorVistas.textContent = contador;
+  // Deshabilita el evento de clic para que no se pueda hacer clic nuevamente
+  enlace.removeEventListener("click", aumentarContador);
+}
+
+// Agrega un evento de clic al enlace para aumentar el contador
+enlace.addEventListener("click", aumentarContador);
 
 //carouser slick
 $(document).ready(function () {
