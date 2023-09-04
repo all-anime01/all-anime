@@ -573,6 +573,40 @@ function ver4(linea, boton) {
   }
 }
 
+//Contador tiempo real
+function actualizarTiempoTranscurrido() {
+  // Obtiene el elemento span
+  var spanTiempo = document.getElementById("contador-h");
+
+  // Obtiene la hora actual
+  var horaActual = new Date();
+  var horas = horaActual.getHours();
+
+  // Actualiza el contenido del span con el tiempo transcurrido
+  spanTiempo.textContent = horas + " horas";
+
+  // Programa la función para que se actualice cada hora (3600000 milisegundos)
+  setTimeout(actualizarTiempoTranscurrido, 3600000);
+}
+
+// Llama a la función para iniciar el contador de tiempo
+actualizarTiempoTranscurrido();
+
+//Contador de vistas
+// Obtiene el elemento del contador
+var contadorElement = document.getElementById("con-vistas");
+
+// Inicializa el contador desde localStorage o establece a 0 si es la primera vez
+var contador = localStorage.getItem("contador") || 0;
+contadorElement.textContent = contador;
+
+// Agrega un evento al elemento para aumentar el contador cuando se ingrese
+contadorElement.addEventListener("mouseenter", function () {
+  contador++;
+  contadorElement.textContent = contador;
+  localStorage.setItem("contador", contador);
+});
+
 //carouser slick
 $(document).ready(function () {
   $(".slick-carousel").slick({
