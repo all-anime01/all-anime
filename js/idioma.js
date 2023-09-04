@@ -574,23 +574,47 @@ function ver4(linea, boton) {
 }
 
 //Contador tiempo real
-function actualizarTiempoTranscurrido() {
-  // Obtiene el elemento span
-  var spanTiempo = document.getElementById("contador-h");
+// Obtiene el elemento span del contador de horas
+var contadorHoras = document.getElementById("contadorHoras");
 
+// Hora inicial en formato HH:mm (24 horas)
+var horaInicial = "12:00";
+
+// Convierte la hora inicial en un objeto Date
+var horaInicialDate = new Date();
+var partesHoraInicial = horaInicial.split(":");
+horaInicialDate.setHours(
+  parseInt(partesHoraInicial[0], 10),
+  parseInt(partesHoraInicial[1], 10),
+  0,
+  0
+);
+
+// Función para actualizar el contador de horas
+// Obtiene el elemento span
+var contadorHoras = document.getElementById("contadorHoras");
+
+// Obtiene la hora de inicio establecida en el HTML (por ejemplo, "1 hora")
+var horaInicioTexto = contadorHoras.textContent;
+var horaInicio = parseInt(horaInicioTexto); // Extrae el número de horas
+
+// Función para actualizar el contador de horas
+function actualizarContadorHoras() {
   // Obtiene la hora actual
   var horaActual = new Date();
-  var horas = horaActual.getHours();
 
-  // Actualiza el contenido del span con el tiempo transcurrido
-  spanTiempo.textContent = horas + " horas";
+  // Calcula la diferencia en horas entre la hora de inicio y la hora actual
+  var diferenciaHoras = Math.floor((horaActual - horaInicio) / 3600000); // 3600000 milisegundos en una hora
 
-  // Programa la función para que se actualice cada hora (3600000 milisegundos)
-  setTimeout(actualizarTiempoTranscurrido, 3600000);
+  // Actualiza el contenido del span con la diferencia en horas
+  contadorHoras.textContent = diferenciaHoras + " horas";
 }
 
-// Llama a la función para iniciar el contador de tiempo
-actualizarTiempoTranscurrido();
+// Llama a la función para iniciar el contador de horas
+actualizarContadorHoras();
+
+// Programa la función para que se actualice cada hora (3600000 milisegundos)
+setInterval(actualizarContadorHoras, 3600000);
 
 //Contador de vistas
 
