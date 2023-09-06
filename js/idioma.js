@@ -573,36 +573,6 @@ function ver4(linea, boton) {
   }
 }
 
-//Contador tiempo real
-// Función para actualizar el tiempo transcurrido
-function actualizarTiempo() {
-  // Obtener todos los elementos con la clase "tiempo"
-  var spansTiempo = document.querySelectorAll("contadorHoras");
-
-  // Iterar sobre los elementos y actualizar el tiempo en cada uno
-  spansTiempo.forEach(function (spanTiempo) {
-    // Obtener el valor actual del texto en el span
-    var tiempoTexto = spanTiempo.textContent;
-
-    // Utilizar una expresión regular para extraer el número
-    var match = tiempoTexto.match(/(\d+) (\w+)/);
-
-    if (match) {
-      var cantidad = parseInt(match[1]);
-      var unidad = match[2];
-
-      // Actualizar el tiempo
-      cantidad += 1;
-
-      // Actualizar el texto en el span
-      spanTiempo.textContent = cantidad + " " + unidad;
-    }
-  });
-}
-
-// Actualizar el tiempo cada segundo (1000 milisegundos)
-setInterval(actualizarTiempo, 1000);
-
 //Contador de vistas
 
 // Obtiene el elemento enlace y el contador de vistas
