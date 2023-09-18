@@ -373,7 +373,7 @@ header .navbar ul li a:hover {
   flex: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
-  height: 30rem;
+  height: 35rem;
   overflow: hidden;
   text-align: center;
   padding: 2.5rem;
