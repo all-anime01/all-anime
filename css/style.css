@@ -291,23 +291,13 @@ header .navbar ul li a:hover {
   display: none;
 }
 
-.Inicio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
-    url(https://www.wallpapertip.com/wmimgs/12-126432_hd-wallpaper-anime-characters-crossover.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
 .Inicio-home {
   display: flex;
+  width: 100%;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
     url(https://www.wallpapertip.com/wmimgs/12-126432_hd-wallpaper-anime-characters-crossover.jpg) no-repeat;
   background-size: cover;
@@ -315,17 +305,37 @@ header .navbar ul li a:hover {
   background-attachment: fixed;
 }
 
-.Inicio .image {
-  flex: 1 1 40rem;
+.Inicio-home .content {
+  z-index: 888;
+  color: #fff;
+  width: 85%;
+  margin-top: 50px;
 }
 
-.Inicio .image img {
-  width: 100%;
+.Inicio-home .content img {
+  width: 231px;
+  height: 260px;
+  line-height: 75px;
 }
 
-.Inicio .content {
-  flex: 1 1 40rem;
-  padding: 4rem 0;
+.Inicio-home .content h1 {
+  margin-top: 45px;
+  color: #666;
+  font-size: 18px;
+}
+
+.Inicio-home .content p {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.Inicio-home .content a {
+  margin-top: 15px;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  background: rgb(202, 48, 48);
 }
 
 .Inicio .content h3 {
