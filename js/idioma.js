@@ -368,6 +368,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Soul Eater",
+    link: "https://all-anime.net/ver/Soul-Eater/tv",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/1b083a97efcac96d6f3f6c3880321f93.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Spy x Family",
     link: "https://all-anime.net/ver/Spy-x-family/tv",
     image: "/image/Spy-X-Family/p.webp",
