@@ -128,6 +128,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Captain Tsubasa",
+    link: "https://all-anime.net/ver/Captain-Tsubasa/tv",
+    image:
+      "https://m.media-amazon.com/images/M/MV5BOTJjOTRmMzctMDUwYS00MjExLWJlMGQtZjlmNjI3OTAxNzZiXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Cyberpunk edge runners",
     link: "https://all-anime.net/ver/Cyberpunk-edge-runners/tv",
     image: "/image/Cyber-Punk-EdgeRunners/poster.jpg",
@@ -185,6 +192,13 @@ const animes = [
     name: "Edens Zero",
     link: "https://all-anime.net/ver/Edens-zero/tv",
     image: "/image/Eden-zero/T2/p.webp",
+    type: "ANIME",
+  },
+  {
+    name: "Firefighter Daigo Rescuer in Orange",
+    link: "https://all-anime.net/ver/Firefighter-Daigo-Rescuer-in-Orange/tv",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/52e6e1fa11290f2b78df02bd694f89a4.jpe",
     type: "ANIME",
   },
   {
@@ -248,6 +262,13 @@ const animes = [
     name: "Mashle: magic and muscles",
     link: "https://all-anime.net/ver/Mashle-magic-and-muscles/tv",
     image: "/image/Mashle-magic-and-muscles/p.jpe",
+    type: "ANIME",
+  },
+  {
+    name: "Mf Ghost",
+    link: "https://all-anime.net/ver/MF-GHOST/tv",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/00c8ed6414e0ef37dbacf36bec86565a.jpe",
     type: "ANIME",
   },
   {
@@ -324,16 +345,23 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Ranking of king",
+    link: "https://all-anime.net/ver/Ousama-ranking/tv",
+    image: "/image/Ousama-Ranking/p.jpg",
+    type: "ANIME",
+  },
+  {
+    name: "Ragna Crimson",
+    link: "https://all-anime.net/ver/Ragna-Crimson/tv",
+    image:
+      "https://cdn.anisabi.com/assets/anime/ragna-crimson/ragna-crimson-1696133427.jpg?t=4.0.11",
+    type: "ANIME",
+  },
+  {
     name: "Record of Ragnarok",
     link: "https://all-anime.net/ver/Shuumatsu-no-valkyrie/tv",
     image:
       "https://i3.wp.com/animeyt.es/wp-content/uploads/2023/01/0xkN3SB0azUg.jpg",
-    type: "ANIME",
-  },
-  {
-    name: "Ranking of king",
-    link: "https://all-anime.net/ver/Ousama-ranking/tv",
-    image: "/image/Ousama-Ranking/p.jpg",
     type: "ANIME",
   },
   {
@@ -359,6 +387,13 @@ const animes = [
     name: "Shaman king: 2021",
     link: "https://all-anime.net/Shaman-king(2021)-tv",
     image: "/image/shamanking.jpg",
+    type: "ANIME",
+  },
+  {
+    name: "Shangri-La Frontier",
+    link: "https://all-anime.net/ver/Shangri-La-Frontier/tv",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/7f2aff9b498788fc48d376ea326297d0.jpe",
     type: "ANIME",
   },
   {
