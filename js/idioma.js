@@ -436,7 +436,8 @@ const animes = [
   {
     name: "Tokyo revengers",
     link: "https://all-anime.net/ver/Tokyo-revengers/tv",
-    image: "/image/Tokyo-revengers-seiya-kessen-hen/p.jpg",
+    image:
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2MKNdcI5rIJVqnP3UYwE8CoeM-MnQS4NW4aIldYJwI55x6MtA26hQTKixor6DKqibj6X4tQElVDutBlB7uJFLCqr8JKzKhMh4eQ9SOMlXAYG1rBjTfA9ahbFZDTbTDHLUadZo7-oPj83oJGh2VBOSfm3Ed4MbHj3aj5QPtXeZBOs823r4dQIPjuyFR6Pu/s1095/tokyo-revengers-3-anime-poster.jpg",
     type: "ANIME",
   },
   {
