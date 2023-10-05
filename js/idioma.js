@@ -448,6 +448,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Under Ninja",
+    link: "https://all-anime.net/ver/Under-ninja/tv",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/39201a3e092424769aac68d0b8211dce.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Vinland saga",
     link: "https://all-anime.net/ver/Vinland-saga/tv",
     image: "/image/Vinland-Saga/T2/p.jpe",
