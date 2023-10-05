@@ -528,6 +528,13 @@ const animes = [
     type: "PELICULA",
   },
   {
+    name: "Nausicaa del valle del viento",
+    link: "https://all-anime.net/peliculas/Nausicaa-del-valle-del-viento/movie",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs0VTwEpDc4fcJg_xj4ujt-0nLw8igNL0sU97WeYGFaK_-qI3j4-1lWN7C-dHNUogQaUw&usqp=CAU",
+    type: "PELICULA",
+  },
+  {
     name: "Nanatsu no taizai: El rencor de edimburgo",
     link: "https://all-anime.net/peliculas/Nanatsu-no-taizai-el-rencor-de-edimburgo/movie",
     image: "/image/Nanatsu-no-taizai-el-rencor-de-edimburgo/poster.jpg",
