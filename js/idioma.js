@@ -240,6 +240,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "La isla de las sombras",
+    link: "https://all-anime.net/ver/Summer-time-render/tv",
+    image:
+      "https://i0.wp.com/animeyt.es/wp-content/uploads/2022/04/ZWHsrVSyVHzr.jpg?resize=247,350",
+    type: "ANIME",
+  },
+  {
     name: "Link Click",
     link: "https://all-anime.net/ver/Link-click/tv",
     image:
@@ -407,6 +414,13 @@ const animes = [
     link: "https://all-anime.net/ver/Soul-Eater/tv",
     image:
       "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/1b083a97efcac96d6f3f6c3880321f93.jpe",
+    type: "ANIME",
+  },
+  {
+    name: "Summer time render",
+    link: "https://all-anime.net/ver/Summer-time-render/tv",
+    image:
+      "https://i0.wp.com/animeyt.es/wp-content/uploads/2022/04/ZWHsrVSyVHzr.jpg?resize=247,350",
     type: "ANIME",
   },
   {
