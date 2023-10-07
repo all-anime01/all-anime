@@ -12,7 +12,7 @@ function go_to_player(url) {
   displayVideo.innerHTML =
     `
   <span id="backToPlayers" onclick="listPlayer();">
-      <img src="https://i.imgur.com/CyF9UPO.png">
+      <img src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ibmF2LWl0ZW0taWNvbiBiYXNlLXN2Zy0taXMtZmxpcC0tUXZDUUMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI0IDI0IiBkYXRhLXQ9InNpZ24tb3V0LXN2ZyIgYXJpYS1sYWJlbGxlZGJ5PSJzaWduLW91dC1zdmciIGFyaWEtaGlkZGVuPSJ0cnVlIiByb2xlPSJpbWciPjx0aXRsZSBpZD0ic2lnbi1vdXQtc3ZnIj5EZXNjb25lY3RhcjwvdGl0bGU+PHBhdGggZD0iTTE1IDE1YTEgMSAwIDAgMSAxIDF2NWExIDEgMCAwIDEtMSAxSDVhMSAxIDAgMCAxLTEtMVYzYTEgMSAwIDAgMSAxLTFoMTBhMSAxIDAgMCAxIDEgMXY1YTEgMSAwIDEgMS0yIDBWNEg2djE2aDh2LTRhMSAxIDAgMCAxIDEtMXptOC45MjMtMi42MThhMSAxIDAgMCAxLS4yMTcuMzI2bC00IDMuOTk5QS45OTMuOTkzIDAgMCAxIDE5IDE3YS45OTkuOTk5IDAgMCAxLS43MDctMS43MDdMMjAuNTg2IDEzSDE1YTEgMSAwIDAgMSAwLTJoNS41ODZsLTIuMjkzLTIuMjkzYS45OTkuOTk5IDAgMSAxIDEuNDE0LTEuNDE0bDMuOTk5IDRhLjk5Mi45OTIgMCAwIDEgLjIxNyAxLjA4OXoiLz48L3N2Zz4=">
   </span>
   <iframe onload='document.querySelector(".BotHumano").classList.remove("BotHumanoA")' id="IFR" src="` +
     url +
