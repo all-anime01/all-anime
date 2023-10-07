@@ -462,6 +462,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Undead Unluck",
+    link: "https://all-anime.net/ver/Undead-unluck/tv",
+    image: "/image/Undead-unluck/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Under Ninja",
     link: "https://all-anime.net/ver/Under-ninja/tv",
     image:
