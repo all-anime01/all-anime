@@ -85,6 +85,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Beyblade X",
+    link: "https://all-anime.net/ver/Beyblade-x/tv",
+    image:
+      "https://m.media-amazon.com/images/M/MV5BMmJhNGQ4MjItMTBhMC00OWIxLTg5NjAtYjM5ZjE3NWM2ZjMzXkEyXkFqcGdeQXVyMTY2MjYzNzE2._V1_.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Bungo stray dogs",
     link: "https://all-anime.net/ver/Bungo-stray-dogs/tv",
     image: "https://jcrcomicarts.files.wordpress.com/2023/06/image-530.png",
@@ -306,6 +313,12 @@ const animes = [
     name: "Naruto shippuden",
     link: "https://all-anime.net/Naruto-Shippuden-tv",
     image: "/image/Naruto-Shippuden/p.jpe",
+    type: "ANIME",
+  },
+  {
+    name: "Nanatsu no Taizai: Mokushiroku no Yonkishi",
+    link: "https://all-anime.net/ver/Nanatsu-no-taizai-mokushiroku-no-yonkishi/tv",
+    image: "https://cdn.myanimelist.net/images/anime/1389/134598l.jpg",
     type: "ANIME",
   },
   {
