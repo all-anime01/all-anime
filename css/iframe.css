@@ -642,7 +642,7 @@ h2 {
     border-radius: 30rem;
     top: 0;
     right: 0;
-    background-color: #103e64;
+    background-color: rgb(61, 142, 79);
     filter: blur(64px);
     opacity: .3
 }
@@ -652,13 +652,13 @@ h2 {
     top: auto;
     left: 0;
     bottom: 0;
-    background-color: #2178c1;
+    background-color: rgb(7, 247, 59);
 }
 
 .msjad .btn {
     letter-spacing: normal;
     font-size: .75rem;
-    background: #145489;
+    background: rgb(7, 247, 59);
     padding: 12px 15px;
     border: none;
     color: #fff;
@@ -667,7 +667,7 @@ h2 {
 }
 
 .msjad .btn:hover {
-    background: #2179c3;
+    background: rgb(7, 247, 59);
 }
 
 .msjad .btn.send-btn {
