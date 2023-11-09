@@ -348,7 +348,7 @@ const animes = [
   },
   {
     name: "Pluto",
-    link: "https://all-anime.net/ver/Putlo/tv",
+    link: "https://all-anime.net/ver/Pluto/tv",
     image:
       "https://images.ctfassets.net/4cd45et68cgf/4ESSpHx4iyHhdk6GEMhRjO/6b0f609919df286437ffa98c7e51a428/en-US_pluto_main_main_vertical_27x40_rgb_pre_1.jpg",
     type: "ANIME",
