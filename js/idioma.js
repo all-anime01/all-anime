@@ -545,6 +545,13 @@ const animes = [
     type: "PELICULA",
   },
   {
+    name: "Digimon Adventure 02: The beginning",
+    link: "https://all-anime.net/peliculas/Digimon-adventure-the-beginning-2/1",
+    image:
+      "https://a.storyblok.com/f/178900/900x1272/c465eca008/digimon-adventure-02-the-beginning-character-poster.jpg/m/filters:quality(95)format(webp)",
+    type: "ANIME",
+  },
+  {
     name: "Jujutsu Kaisen: 0",
     link: "https://all-anime.net/peliculas/Jujutsu-kaisen-0/movie",
     image: "/image/Jujutsu-Kaisen-0/poster.jpg",
