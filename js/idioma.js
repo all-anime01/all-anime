@@ -94,7 +94,8 @@ const animes = [
   {
     name: "Bungo stray dogs",
     link: "https://all-anime.net/ver/Bungo-stray-dogs/tv",
-    image: "https://jcrcomicarts.files.wordpress.com/2023/06/image-530.png",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/48f5e5d1b485eb5c9a33c517accd1fec.jpe",
     type: "ANIME",
   },
   {
