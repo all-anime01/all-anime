@@ -85,6 +85,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Ao No Exorcist",
+    link: "https://all-anime.net/ver/Ao-no-exorcist/tv",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/8ba76601a6580828dc27271ddd3d27d7.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Beyblade X",
     link: "https://all-anime.net/ver/Beyblade-x/tv",
     image:
@@ -435,6 +442,13 @@ const animes = [
     link: "https://all-anime.net/ver/Soul-Eater/tv",
     image:
       "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/1b083a97efcac96d6f3f6c3880321f93.jpe",
+    type: "ANIME",
+  },
+  {
+    name: "Solo Leveling",
+    link: "https://all-anime.net/ver/Solo-Leveling/tv",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/5e7f533c3b4f46244ca228af62e83dfa.jpe",
     type: "ANIME",
   },
   {
