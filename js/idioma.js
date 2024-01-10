@@ -425,6 +425,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Shaman king: Flowers",
+    link: "https://all-anime.net/ver/Shaman-king-flowers/",
+    image:
+      "https://a.storyblok.com/f/178900/960x1345/e49c568b91/shaman-king-flowers-key-visual.jpg/m/filters:quality(95)format(webp)",
+    type: "ANIME",
+  },
+  {
     name: "Shangri-La Frontier",
     link: "https://all-anime.net/ver/Shangri-La-Frontier/tv",
     image:
