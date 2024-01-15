@@ -426,9 +426,9 @@ const animes = [
   },
   {
     name: "Shaman king: Flowers",
-    link: "https://all-anime.net/ver/Shaman-king-flowers/",
+    link: "https://all-anime.net/ver/Shaman-king-flowers/tv",
     image:
-      "https://a.storyblok.com/f/178900/960x1345/e49c568b91/shaman-king-flowers-key-visual.jpg/m/filters:quality(95)format(webp)",
+      "https://hanapop.com.co/wp-content/uploads/2023/10/POSTER-Shaman-King-Flowers-731x1024.jpg",
     type: "ANIME",
   },
   {
