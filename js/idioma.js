@@ -88,7 +88,7 @@ const animes = [
     name: "Ao No Exorcist",
     link: "https://all-anime.net/ver/Ao-no-exorcist/tv",
     image:
-      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/8ba76601a6580828dc27271ddd3d27d7.jpe",
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/ff18ec2d3a400d17921ad9b3a03045ce.jpe",
     type: "ANIME",
   },
   {
@@ -283,7 +283,8 @@ const animes = [
   {
     name: "Mashle: magic and muscles",
     link: "https://all-anime.net/ver/Mashle-magic-and-muscles/tv",
-    image: "/image/Mashle-magic-and-muscles/p.jpe",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/f7dfe109de592c6dd9a78dc75ec1965b.jpe",
     type: "ANIME",
   },
   {
