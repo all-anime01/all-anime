@@ -2679,7 +2679,7 @@ html {
 
 .WdgtCn .Description {
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .WdgtCn .Top {
@@ -2689,8 +2689,8 @@ html {
 
 .WdgtCn .Top .Title {
   font-size: 20px;
-  font-weight: 500;
-  line-height: 60px;
+  font-weight: 370;
+  line-height: 90px;
   letter-spacing: -1px;
 }
 
@@ -2755,7 +2755,7 @@ html {
 
   @media(min-width: 335px) {
     .WdgtCn {
-      width: 345px;
+      width: 360px;
     }
   }
 }
