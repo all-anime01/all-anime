@@ -436,7 +436,7 @@ const animes = [
     name: "Shangri-La Frontier",
     link: "https://all-anime.net/ver/Shangri-La-Frontier/tv",
     image:
-      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/7f2aff9b498788fc48d376ea326297d0.jpe",
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/2995bef133df4020b3acbfe7a694cbdf.jpe",
     type: "ANIME",
   },
   {
