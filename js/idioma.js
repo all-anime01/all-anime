@@ -727,7 +727,7 @@ $(document).ready(function () {
     autoplay: true,
     infinite: true,
     centerPadding: "60px",
-    autoplaySpeed: 5000,
+    autoplaySpeed: 5100,
     slidesToShow: 6,
     slidesToScroll: 2,
   });
