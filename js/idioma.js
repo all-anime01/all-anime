@@ -337,6 +337,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Ninja Kamui",
+    link: "https://all-anime.net/ver/Ninja-kamui/tv",
+    image: "/image/Ninja-kamui/T1/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "One Piece",
     link: "https://all-anime.net/ver/One-piece/tv",
     image: "/image/One-Piece-cap/One-Piece-poster.jpg",
