@@ -345,7 +345,8 @@ const animes = [
   {
     name: "One Piece",
     link: "https://all-anime.net/ver/One-piece/tv",
-    image: "/image/One-Piece-cap/One-Piece-poster.jpg",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe",
     type: "ANIME",
   },
   {
