@@ -414,6 +414,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Sand Land: The series",
+    link: "https://all-anime.net/ver/Sand-Land/tv",
+    image: "/image/Sand-Land/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Shingeki no kyojin",
     link: "https://all-anime.net/ver/Shingeki-no-kyojin/tv",
     image: "/image/Snk-season-4-parte3/p.webp",
@@ -500,8 +506,7 @@ const animes = [
   {
     name: "Tokyo revengers",
     link: "https://all-anime.net/ver/Tokyo-revengers/tv",
-    image:
-      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2MKNdcI5rIJVqnP3UYwE8CoeM-MnQS4NW4aIldYJwI55x6MtA26hQTKixor6DKqibj6X4tQElVDutBlB7uJFLCqr8JKzKhMh4eQ9SOMlXAYG1rBjTfA9ahbFZDTbTDHLUadZo7-oPj83oJGh2VBOSfm3Ed4MbHj3aj5QPtXeZBOs823r4dQIPjuyFR6Pu/s1095/tokyo-revengers-3-anime-poster.jpg",
+    image: "/image/Tokyo-Revengers/T3/p.jpg",
     type: "ANIME",
   },
   {
@@ -603,6 +608,12 @@ const animes = [
     name: "Kuroko no basket: Movie 4 Last game",
     link: "https://all-anime.net/peliculas/Kuroko-no-basket-movie-4-last-game/movie",
     image: "/image/Kuroko-no-basket-last-game/p.jpg",
+    type: "PELICULA",
+  },
+  {
+    name: "Slam Dunk: The First Slam Dunk",
+    link: "https://all-anime.net/peliculas/Slam-dunk-the-first-slam-dunk/movie",
+    image: "/image/Slam-dunk-the-first-slam-dunk/p.jpg",
     type: "PELICULA",
   },
   {
