@@ -536,6 +536,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Wind Breaker",
+    link: "https://all-anime.net/ver/Wind-Breaker/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/16d570ff136955438a3a5bfadbb66eb5.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Zom 100: The Bucket List of the Dead",
     link: "https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv",
     image: "/image/Zom-100-The-Bucket-List-of-the-Dead/p.jpe",
