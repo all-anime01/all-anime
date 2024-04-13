@@ -249,6 +249,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Kaiju No.8",
+    link: "https://all-anime.net/ver/Kaiju-No-8/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/bb5785a9fe043b8331b7842068bfcb05.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Kimetsu no Yaiba",
     link: "https://all-anime.net/ver/Kimetsu-no-yaiba/tv",
     image: "/image/Kimetsu-no-yaiba-katanakaji-no-sato-T3/p.jpe",
