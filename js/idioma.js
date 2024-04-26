@@ -79,6 +79,13 @@ function searchAnime() {
 
 const animes = [
   {
+    name: "Avatar: la leyenda de Aang",
+    link: "https://all-anime.net/ver/Avatar-la-leyenda-de-Aang/tv",
+    image:
+      "https://wwwimage-intl.pplusstatic.com/thumbnails/photos/w370-q80/show_asset/37/84/44/show_asset_53bb5de4-aa5f-4f85-bed3-c098f143c13f.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Ao Ashi",
     link: "https://all-anime.net/ver/Ao-ashi/tv",
     image: "/image/Ao-Ashi/p.jpe",
@@ -405,6 +412,12 @@ const animes = [
     link: "https://all-anime.net/ver/Ragna-Crimson/tv",
     image:
       "https://cdn.anisabi.com/assets/anime/ragna-crimson/ragna-crimson-1696133427.jpg?t=4.0.11",
+    type: "ANIME",
+  },
+  {
+    name: "Ranger Reject",
+    link: "https://all-anime.net/ver/Ranger-reject/tv",
+    image: "/image/Ranger-reject/p.webp",
     type: "ANIME",
   },
   {
