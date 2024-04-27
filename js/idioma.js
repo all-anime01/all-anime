@@ -644,6 +644,12 @@ const animes = [
     type: "PELICULA",
   },
   {
+    name: "Spy x Family: Código Blanco",
+    link: "https://all-anime.net/peliculas/Spy-x-Family-Código-Blanco/movie",
+    image: "/image/Spy-X-Family/Codigo-blanco/p.jpg",
+    type: "PELICULA",
+  },
+  {
     name: "Super Mario Bros La pelìcula",
     link: "https://all-anime.net/peliculas/Super-mario-la-pelicula-2023/1",
     image: "/image/Super-mario/p.jpg",
