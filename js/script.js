@@ -1,16 +1,14 @@
 //Menu Bar
-$(document).ready(function(){
+$(document).ready(function () {
+  $("#menu").click(function () {
+    $(this).toggleClass("fa-times");
+    $(".navbar").toggleClass("nav-toggle");
+  });
 
-    $('#menu').click(function(){
-      $(this).toggleClass('fa-times');
-      $('.navbar').toggleClass('nav-toggle');
-    });
-  
-    $(window).on('scroll load',function(){
-  
-      $('#menu').removeClass('fa-times');
-      $('.navbar').removeClass('nav-toggle');
-    });
+  $(window).on("scroll load", function () {
+    $("#menu").removeClass("fa-times");
+    $(".navbar").removeClass("nav-toggle");
+  });
 });
 
 //Reporte Episodio
@@ -20,17 +18,17 @@ let abrir = document.querySelectorAll(".cta")[0];
 let modal = document.querySelectorAll(".modal")[0];
 let modalC = document.querySelectorAll(".modal-container")[0];
 
-abrir.addEventListener("click", function(e){
-    e.preventDefault();
-    modalC.style.opacity = "1";
-    modalC.style.visibility = "visible";
-    modal.classList.toggle("modal-close");
+abrir.addEventListener("click", function (e) {
+  e.preventDefault();
+  modalC.style.opacity = "1";
+  modalC.style.visibility = "visible";
+  modal.classList.toggle("modal-close");
 });
 
-cerrar.addEventListener("click", function(){
-    modal.classList.toggle("modal-close");
-    modalC.style.opacity = "0";
-    modalC.style.visibility = "hidden";
+cerrar.addEventListener("click", function () {
+  modal.classList.toggle("modal-close");
+  modalC.style.opacity = "0";
+  modalC.style.visibility = "hidden";
 });
 
 //Funcion para ocultar buscador
@@ -42,18 +40,27 @@ magnifierEl.addEventListener("click", () => {
   inputsearch.value = "";
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var elems = document.querySelectorAll(".collapsible");
+  var instances = M.Collapsible.init(elems, options);
+});
+
+// Or with jQuery
+
+$(document).ready(function () {
+  $(".collapsible").collapsible();
+});
 
 // //Fucion Busqueda tabla
 // var buscador = $("#table").DataTable();
 
 // $(".input-search").keyup(function(){
-    
+
 //     buscador.search($(this).val()).draw();
-    
+
 //     if ($(".input-search").val() == ""){
 //         $(".content-search").fadeOut(300);
 //     }else{
 //         $(".content-search").fadeIn(300);
 //     }
 // });
-

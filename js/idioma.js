@@ -791,3 +791,33 @@ $(document).ready(function () {
     }
   });
 });
+
+//Accordion, Expandable o Popout
+
+document.addEventListener("DOMContentLoaded", function () {
+  var elems = document.querySelectorAll(".collapsible");
+  var instances = M.Collapsible.init(elems, options);
+});
+
+// Or with jQuery
+
+$(document).ready(function () {
+  $(".collapsible").collapsible();
+});
+var instance = M.Collapsible.getInstance(elem);
+
+/* jQuery Method Calls
+  You can still use the old jQuery plugin method calls.
+  But you won't be able to access instance properties.
+
+  $('.collapsible').collapsible('methodName');
+  $('.collapsible').collapsible('methodName', paramName);
+*/
+var elem = document.querySelector(".collapsible.expandable");
+var instance = M.Collapsible.init(elem, {
+  accordion: false,
+});
+
+//Toast
+
+M.toast({ html: "I am a toast!" });
