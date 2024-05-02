@@ -12,6 +12,8 @@
   <title>Ver Wind Breaker Online — All-Anime</title>
   <link rel="shortcut icon" href="/image/logo.ico">
   <link rel="stylesheet" href="/css/List_Episodios.css">
+  <link rel="stylesheet" href="/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="/js/jquery.js"></script>
   <script src="/js/jquery.dataTables.min.js"></script>
 </head>
@@ -161,7 +163,7 @@
     <div class="Body">
       <div>
         <div class="Ficha fchlt">
-          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=94,width=1350/cr/landscape_large/afe6d25b-eb59-4582-955f-dd07ee550121.png); background-size: 100% 92%; background-repeat: no-repeat;
+          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=94,width=1350/cr/landscape_large/afe6d25b-eb59-4582-955f-dd07ee550121.png); max-width: 100%; height: 105%; background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;">
           </div>
@@ -243,105 +245,159 @@
                 <span class="list-temp">Temporadas y Episodios</span>
                 <br>
                 <br>
-                <details open>
-                  <summary class="temp1">Temporada 1<img class="desplegar"
-                      src="https://img.icons8.com/ios-filled/50/000000/drag-list-down.png" width="20px"
-                      style="margin: -25px 175px;"></summary>
-                  <div id='linea1'>
-                    <div class="Top">
-                      <div class="Title">Lista de episodios</div>
-                      <div class="lstopt-frm">
-                        <span class="order-lst">
-                        </span>
-                      </div>
-                    </div>
-                    <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
-                      <li class="fa-play-circle Next">
-                        <a href="#">
-                          <figure>
-                            <img
-                              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/c3705f0653418420369d475cbff2e2c8.jpe"
-                              alt="" style="display: block; background-image: cover;">
-                          </figure>
-                          <h3 class="Title">Proximo Episodio Jueves</h3>
-                          <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
-                              alt="calendar" />Estreno 18/04/24.</p>
-                        </a>
-                      </li>
-                      <style>
-                        .time-m {
-                          z-index: 1000;
-                          background: #222;
-                          font-family: sans-serif;
-                          opacity: 0.8;
-                          height: 22px;
-                          width: 30px;
-                          margin: 44px 75px;
-                          text-align: center;
-                        }
-                      </style>
+                <ul class="collapsible accordion">
+                  <li class="active">
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">fiber_new</i>Temporada 1</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/c3705f0653418420369d475cbff2e2c8.jpe"
+                                  alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio Jueves</h3>
+                              <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                                  alt="calendar" />Estreno 09/05/24.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m {
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
 
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Wind-Breaker/T1/4">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/b25bd2536f6120b2cb3b5d2c065d59a1.jpe"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/hI8KhbmTwNQORrWs8VmXOYHAgLG.jpg';"
-                              onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/b25bd2536f6120b2cb3b5d2c065d59a1.jpe'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">4. Enfrentamiento.</h3>
-                          <p>Subtitulado</p>
-                          <p style="color: rgb(7, 247, 59)">25/04/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Wind-Breaker/T1/3">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/73fbf1b383eacfcfb7d9677f0fa07f38.jpe"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/3JPeuDgqAz20jBeZ0fciRlOxx9n.jpg';"
-                              onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/73fbf1b383eacfcfb7d9677f0fa07f38.jpe'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">3. El hombre en la cima.</h3>
-                          <p>Subtitulado</p>
-                          <p style="color: rgb(7, 247, 59)">18/04/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Wind-Breaker/T1/2">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/8b59e513697d98f22fbc185de41d2fd1.jpe"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/9Ld4WJiU31CZKn4kj3iiajlVMg3.jpg';"
-                              onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/8b59e513697d98f22fbc185de41d2fd1.jpe'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">2. Los héroes idolatrados.</h3>
-                          <p>Subtitulado</p>
-                          <p style="color: rgb(7, 247, 59)">11/04/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Wind-Breaker/T1/1">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/83e46252754b32f923948209591abeed.jpe"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/g84xbY09pycSbUHIf37ehvtruoL.jpg';"
-                              onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/83e46252754b32f923948209591abeed.jpe'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">1. Sakura y la Furin.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">04/04/24</p>
-                        </a>
-                      </li>
-                </details>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Wind-Breaker/T1/5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/38322d48333baa6db71a69c1d004c91f.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/qSVvOx05fLB0YuuCvz5wkQEMcup.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/38322d48333baa6db71a69c1d004c91f.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">5. Un buen hombre.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">02/05/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Wind-Breaker/T1/4">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/b25bd2536f6120b2cb3b5d2c065d59a1.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/hI8KhbmTwNQORrWs8VmXOYHAgLG.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/b25bd2536f6120b2cb3b5d2c065d59a1.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">4. Enfrentamiento.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">25/04/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Wind-Breaker/T1/3">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/73fbf1b383eacfcfb7d9677f0fa07f38.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/3JPeuDgqAz20jBeZ0fciRlOxx9n.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/73fbf1b383eacfcfb7d9677f0fa07f38.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">3. El hombre en la cima.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">18/04/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Wind-Breaker/T1/2">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/8b59e513697d98f22fbc185de41d2fd1.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/9Ld4WJiU31CZKn4kj3iiajlVMg3.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/8b59e513697d98f22fbc185de41d2fd1.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">2. Los héroes idolatrados.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">11/04/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Wind-Breaker/T1/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/83e46252754b32f923948209591abeed.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/g84xbY09pycSbUHIf37ehvtruoL.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/83e46252754b32f923948209591abeed.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">1. Sakura y la Furin.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">04/04/24</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <!-- <li>
+                      <div class="collapsible-header"><i class="material-icons">place</i>Temporada 2</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li> -->
+                </ul>
+
+                <script>
+                  //expandible
+
+                  document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.collapsible');
+                    var instances = M.Collapsible.init(elems, options);
+                  });
+
+                  // Or with jQuery
+
+                  $(document).ready(function () {
+                    $('.collapsible').collapsible();
+                  });
+                  var instance = M.Collapsible.getInstance(elem);
+
+                  /* jQuery Method Calls
+                    You can still use the old jQuery plugin method calls.
+                    But you won't be able to access instance properties.
+                
+                    $('.collapsible').collapsible('methodName');
+                    $('.collapsible').collapsible('methodName', paramName);
+                  */
+                  var elem = document.querySelector('.collapsible.expandable');
+                  var instance = M.Collapsible.init(elem, {
+                    accordion: false
+                  });
+                </script>
                 <br>
                 <br>
               </section>
@@ -385,6 +441,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="/js/script.js"></script>
   <script src="/js/idioma.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>

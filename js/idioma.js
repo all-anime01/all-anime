@@ -556,6 +556,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Viral Hit",
+    link: "https://all-anime.net/ver/Viral-Hit/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/a0ad4900ae610de44eb49dfc0881cc6a.jpe",
+    type: "ANIME",
+  },
+  {
     name: "Wind Breaker",
     link: "https://all-anime.net/ver/Wind-Breaker/tv",
     image:
