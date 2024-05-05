@@ -12,7 +12,8 @@
   <title>Ver One Piece Online — All-Anime</title>
   <link rel="shortcut icon" href="/image/logo.ico">
   <link rel="stylesheet" href="/css/List_Episodios.css">
-  <link rel="stylesheet" href="/css/materialize.css">
+  <!-- Link to the file hosted on your server, -->
+  <link rel="stylesheet" href="path-to-the-file/splide.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="/js/jquery.js"></script>
   <script src="/js/jquery.dataTables.min.js"></script>
@@ -163,7 +164,7 @@
     <div class="Body">
       <div>
         <div class="Ficha fchlt">
-          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.30), #000000), url(https://static.crunchyroll.com/fms/landscape_large/94/png/a2f0200a-0562-41ea-bbba-f8777480e5e9.jpg); background-size: 100% 140%; background-repeat: no-repeat;
+          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.30), #000000), url(https://static.crunchyroll.com/fms/landscape_large/94/png/a2f0200a-0562-41ea-bbba-f8777480e5e9.jpg); max-width: 100%; height: 105%; background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;">
           </div>
@@ -230,34 +231,239 @@
                     de los Piratas" y zarpar para conocer amigos y tener aventuras con ellos, teniendo como meta
                     encontrar el "One Piece". </p>
                 </div>
-                <div style="clear:both"></div>
+                <br>
+                <div class="relative w-full" style="display: flex; position: relative;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/NEkjydqQ3LU?si=CHWCC7eA5tY3z7zJ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <!-- </div>
+                <br>
+                <div class="Title">Secuelas</div>
+                <br>
                 <ul class="ListAnmRel">
-                  <li class="fa-chevron-circle-right"><a href="/One-Piece-Film-Z-movie.html">One Piece Film Z</a>
-                    (Historia Paralela)</li>
-                  <li class="fa-chevron-circle-right"><a href="/One-Piece-Estampida-movie.html">One Piece Stampide</a>
-                    (Historia Paralela)</li>
+                  <div class="container-row">
+                    <div class="">
+                      <div class="card" id="card">
+                        <img
+                          src="https://m.media-amazon.com/images/S/pv-target-images/5b7106a494a1b45c4d056cc76c465913c4c1904f3c77d0eb142e58112283d175.jpg"
+                          alt="Imagen de la tarjeta" class="card-image">
+                        <div class="card-content">
+                          <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            One Piece: Film Red<a href="https://all-anime.net/peliculas/One-piece-film-red/movie">
+                          </h2>
+                          <p style="color: #666;">Sub | Dob.</p>
+                          <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                              One Piece: Film Red</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <div class="card" id="card">
+                        <img
+                          src="https://m.media-amazon.com/images/S/pv-target-images/8f5e347f4019e8ed7701436dad05dc9bcf5d6016f07a8acad461ad952207c403.png"
+                          alt="Imagen de la tarjeta" class="card-image">
+                        <div class="card-content">
+                          <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;">
+                            One Piece: Film Z<a href="https://all-anime.net/ver/Pluto/tv">
+                          </h2>
+                          <p style="color: #666;">Sub | Dob.</p>
+                          <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                              One Piece: Film Z</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <div class="card" id="card">
+                        <img
+                          src="https://m.media-amazon.com/images/S/pv-target-images/6adb4549a5ad92b50957b47da22d3a576c9880d9e61cd3cfb001823357f575a9.jpg"
+                          alt="Imagen de la tarjeta" class="card-image">
+                        <div class="card-content">
+                          <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            One Piece: Stampede<a href="https://all-anime.net/peliculas/One-piece-stampede/movie">
+                          </h2>
+                          <p style="color: #666;">Sub | Dob.</p>
+                          <div class="additional-info" id="additionalInfo">
+                            <p href="#" id="toggleBtn" style="color: #fff; text-decoration: none; font-size: 12px;">
+                              One Piece: Stampede</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </ul>
+                <style>
+                  .container-row {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 3px;
+                  }
+
+                  .card {
+                    width: 100%;
+                    max-width: 200px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                  }
+
+                  @media (min-width: 768px) {
+                    .card-container {
+                      flex-wrap: wrap;
+                    }
+
+                    .card {
+                      flex: 1 1 30%;
+                    }
+                  }
+
+                  .card-content {
+                    padding: 10px;
+                    color: #fff;
+                    box-shadow: #fff;
+                  }
+
+                  .card h2 {
+                    margin: 0;
+                    font-size: 1.5rem;
+                  }
+
+                  .card p {
+                    margin-top: 1px;
+                  }
+
+                  .card a {
+                    display: block;
+                    margin-top: 1px;
+                    color: #333;
+                    text-decoration: none;
+                    font-weight: bold;
+                  }
+
+                  .card a:hover {
+                    text-decoration: none;
+                  }
+
+                  /* ... (otros estilos) ... */
+
+                  .card:hover .additional-info {
+                    opacity: 2;
+                    visibility: visible;
+                  }
+
+                  .additional-info {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    max-width: 100%;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    color: #fff;
+                    font-size: 0.9rem;
+                    border-radius: 8px;
+                    opacity: 0;
+                    visibility: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    text-align: center;
+                    transition: opacity 0.7s;
+                  }
+
+                  .slick-slide {
+                    margin: 0 -190px;
+                    /* Ajusta este valor según tus necesidades */
+                  }
+
+                  @media screen and (max-width: 1565px) {
+                    .slick-slide {
+                      margin: 0 -65px;
+                      /* Ajusta este valor según tus necesidades */
+                    }
+                  }
+
+                  @media screen and (max-width: 1280px) {
+                    .slick-slide {
+                      margin: 0 -65px;
+                      /* Ajusta este valor según tus necesidades */
+                    }
+                  }
+
+                  @media screen and (max-width: 1000px) {
+                    .slick-slide {
+                      margin: 0 -45px;
+                      /* Ajusta este valor según tus necesidades */
+                    }
+                  }
+
+                  @media screen and (max-width: 915px) {
+                    .slick-slide {
+                      margin: 0 -30px;
+                      /* Ajusta este valor según tus necesidades */
+                    }
+                  }
+
+                  @media screen and (max-width: 740px) {
+                    .slick-slide {
+                      margin: 0 -22px;
+                      /* Ajusta este valor según tus necesidades */
+                    }
+                  }
+
+                  @media screen and (max-width: 480px) {
+                    .slick-slide {
+                      margin: 0 -22px;
+                      /* Ajusta este valor según tus necesidades */
+                    }
+                  }
+
+                  @media screen and (max-width: 480px) {
+                    .tarjeta-hoy {
+                      width: 310px;
+                      height: 110px;
+                    }
+                  }
+
+                  @media screen and (max-width: 1280px) {
+                    .grids {
+                      display: grid;
+                      grid-template-columns: repeat(2, 1fr);
+                      grid-template-rows: repeat(2, 1fr);
+                      grid-column-gap: 10px;
+                      grid-row-gap: 20px;
+                    }
+                  }
+
+                  @media screen and (max-width: 1740px) {
+                    .grids {
+                      display: grid;
+                      grid-template-columns: repeat(3, 1fr);
+                      grid-template-rows: repeat(3, 1fr);
+                      grid-column-gap: 1px;
+                      grid-row-gap: 2px;
+                    }
+
+                    .tarjeta-hoy {
+                      width: 300px;
+                      height: 110px;
+                    }
+                  }
+
+                  @media screen and (max-width: 480px) {
+                    .grids {
+                      display: grid;
+                      grid-template-columns: repeat(1, 1fr);
+                      grid-template-rows: repeat(1, 1fr);
+                      grid-column-gap: 10px;
+                      grid-row-gap: 20px;
+                    }
+                  }
+                </style> -->
               </section>
-
-              <!-- <script>
-          var sinRelleno = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-          var relleno = [11, 12, 13, 14, 15, 16];
-          var buscador = document.getElementById("buscador");
-    
-            buscador.addEventListener("input", function(){
-        var busqueda = buscador.value;
-        var sinRellenoFiltrado = sinRelleno.filter(function(capitulo){
-          return capitulo.toString().indexOf(busqueda) !== -1;
-        });
-        var rellenoFiltrado = relleno.filter(function(capitulo){
-          return capitulo.toString().indexOf(busqueda) !== -1;
-        });
-        console.log("Capítulos sin relleno: " + sinRellenoFiltrado);
-        console.log("Capítulos con relleno: " + rellenoFiltrado);
-      });
-    </script>
-
-<input type="text" id="buscador" placeholder="Ingresa un número de capítulo para buscar"> -->
 
               <section class="WdgtCn">
                 <br>
