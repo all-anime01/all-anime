@@ -12,6 +12,8 @@
   <title>Ver Ninja Kamui Online — All-Anime</title>
   <link rel="shortcut icon" href="/image/logo.ico">
   <link rel="stylesheet" href="/css/List_Episodios.css">
+  <link rel="stylesheet" href="/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="/js/jquery.js"></script>
   <script src="/js/jquery.dataTables.min.js"></script>
 </head>
@@ -161,8 +163,7 @@
     <div class="Body">
       <div>
         <div class="Ficha fchlt">
-          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://m.media-amazon.com/images/S/pv-target-images/02697b4b0c48f17be53943baea709926e0ae70646e0ff266dcbb6d5ed1ca5e50._SX1080_FMjpg_.jpg); background-size: 100% 92%; background-repeat: no-repeat;
-            background-position: center;
+          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://m.media-amazon.com/images/S/pv-target-images/02697b4b0c48f17be53943baea709926e0ae70646e0ff266dcbb6d5ed1ca5e50._SX1080_FMjpg_.jpg); max-width: 100%; height: 105%; background-repeat: no-repeat;
             background-attachment: fixed;">
           </div>
           <div class="Container">
@@ -225,10 +226,10 @@
                 </div>
                 <br>
                 <div class="relative w-full" style="display: flex; position: relative;">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Ai83FJsPoVo?si=Hkc4XKT4gKrzDsHc"
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/du4P0T9C6OE?si=_Afh6y4BkHXKD6qD"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
               </section>
@@ -239,225 +240,320 @@
                 <span class="list-temp">Temporadas y Episodios</span>
                 <br>
                 <br>
-                <details open>
-                  <summary class="temp1">Temporada 1<img class="desplegar"
-                      src="https://img.icons8.com/ios-filled/50/000000/drag-list-down.png" width="20px"
-                      style="margin: -25px 175px;"></summary>
-                  <div id='linea1'>
-                    <div class="Top">
-                      <div class="Title">Lista de episodios</div>
-                      <div class="lstopt-frm">
-                        <span class="order-lst">
-                        </span>
-                      </div>
-                    </div>
-                    <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
-                      <li class="fa-play-circle Next">
-                        <a href="#">
-                          <figure>
-                            <img
-                              src="https://hbomax-images.warnermediacdn.com/images/GZa5psg2MQ8JMRAEAACXW/tileburnedin?size=1280x720&partner=hbomaxcom&v=783507f94f30ea841e66175245f76cda&host=art-gallery.api.hbo.com&language=es-419&w=1280"
-                              alt="" style="display: block; background-image: cover;">
-                          </figure>
-                          <h3 class="Title">Proximo Episodio</h3>
-                          <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
-                              alt="calendar" />Finalizado.</p>
-                        </a>
-                      </li>
-                      <style>
-                        .time-m {
-                          z-index: 1000;
-                          background: #222;
-                          font-family: sans-serif;
-                          opacity: 0.8;
-                          height: 22px;
-                          width: 30px;
-                          margin: 44px 75px;
-                          text-align: center;
-                        }
-                      </style>
 
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/12">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://m.media-amazon.com/images/S/pv-target-images/edc7ccfc282751b511994f075b1a56691b2883f42eeaf9ebfe1c16e067d31e4b._AC_SX720_FMwebp_.jpg"
-                              onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image_thumb/jkvideo_ebea1c104661c2825f33d0a4c40df168.jpg';"
-                              onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/edc7ccfc282751b511994f075b1a56691b2883f42eeaf9ebfe1c16e067d31e4b._AC_SX720_FMwebp_.jpg'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">12. Episode 12.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">20/04/24</p>
-                        </a>
+                <ul class="collapsible popout">
+                  <li class="active">
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">ondemand_video</i>Temporada 1</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://hbomax-images.warnermediacdn.com/images/GZa5psg2MQ8JMRAEAACXW/tileburnedin?size=1280x720&partner=hbomaxcom&v=783507f94f30ea841e66175245f76cda&host=art-gallery.api.hbo.com&language=es-419&w=1280"
+                                  alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                                  alt="calendar" />Finalizado.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m {
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
+
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/12">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/edc7ccfc282751b511994f075b1a56691b2883f42eeaf9ebfe1c16e067d31e4b._AC_SX720_FMwebp_.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image_thumb/jkvideo_ebea1c104661c2825f33d0a4c40df168.jpg';"
+                                  onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/edc7ccfc282751b511994f075b1a56691b2883f42eeaf9ebfe1c16e067d31e4b._AC_SX720_FMwebp_.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">12. Episode 12.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">20/04/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/11">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/467f813c22b417043d9e5a90b59b94aac83862e09ba2d890f263d4cec8bfa00e._AC_SX720_FMwebp_.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/yuW8w4IODIonVdCFARtycAJkgTk.jpg';"
+                                  onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/467f813c22b417043d9e5a90b59b94aac83862e09ba2d890f263d4cec8bfa00e._AC_SX720_FMwebp_.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">11. Episode 11.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">20/04/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/10">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/8282c226c865b933311a0534340c7c85a14007274a61f11b76d5550c12daf1db._AC_SX720_FMjpg_.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image_thumb/jkvideo_35f19534264488a0e0fb54b77189297f.jpg';"
+                                  onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/8282c226c865b933311a0534340c7c85a14007274a61f11b76d5550c12daf1db._AC_SX720_FMjpg_.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">10. Episode 10.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">13/04/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/9">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/83f491c30f78ec021284de8805f4ac8f30553d5a921cc67f4a997a8e00e717c8._AC_SX720_FMjpg_.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/3x16ArwUHxcJF2PKXKfftNkFGIW.jpg';"
+                                  onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/83f491c30f78ec021284de8805f4ac8f30553d5a921cc67f4a997a8e00e717c8._AC_SX720_FMjpg_.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">9. Episode 9.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">06/04/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/8">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/635debbf965e1193058eb4d965a2de94beec57def011d34b5484407a3dadbdce._AC_SX720_FMjpg_.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image_thumb/jkvideo_51254d8d944b3dd0c6bac56c7875b5cc.jpg';"
+                                  onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/635debbf965e1193058eb4d965a2de94beec57def011d34b5484407a3dadbdce._AC_SX720_FMjpg_.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">8. Episode 8.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">30/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/7">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/ee8a37cc-9c70-4c24-bb78-b788d655ff23/85a5e801c47643eeb54abb2c509cde754edc3cf5.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=160"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image_thumb/jkvideo_bb73d6ccfd12a22efe773aa4ba7ee51d.jpg';"
+                                  onmouseout="this.src='https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/ee8a37cc-9c70-4c24-bb78-b788d655ff23/85a5e801c47643eeb54abb2c509cde754edc3cf5.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=160'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">7. Episode 7.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">23/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/6">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/b468f7fe4f12425a5408d7a0c72d3dbd919119d26c081df7ff51ca6bdb0f4e2d._AC_SX720_FMjpg_.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/t9D5WY4CjDWgXf6sLnlPRtar0ye.jpg';"
+                                  onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/b468f7fe4f12425a5408d7a0c72d3dbd919119d26c081df7ff51ca6bdb0f4e2d._AC_SX720_FMjpg_.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">6. Episode 6.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">16/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/df51640eb0db3cd73220bc3a8776a6d0a69bde1b8a79ef3bffabd92e440db4a9._AC_SX720_FMjpg_.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/eicGQGtFyR9tgalETy3ukr7gxFf.jpg';"
+                                  onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/df51640eb0db3cd73220bc3a8776a6d0a69bde1b8a79ef3bffabd92e440db4a9._AC_SX720_FMjpg_.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">5. Episode 5.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">09/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/4">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/615c10102c31cf2afa033dc4d20a30b3fa4494500ed8976f07409bd9024e6efc._AC_SX720_FMjpg_.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/nrpUium9LyYVuKvOTQgb2BUX8Ik.jpg';"
+                                  onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/615c10102c31cf2afa033dc4d20a30b3fa4494500ed8976f07409bd9024e6efc._AC_SX720_FMjpg_.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">4. Episode 4.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">02/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/3">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/925bb650232edeb5baffae78b2ac93e6c53f91e1fc0712789476719c72b8b25e._AC_SX720_FMjpg_.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/Aet4Un3Hak2WpuB73vHHLLIWCyo.jpg';"
+                                  onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/925bb650232edeb5baffae78b2ac93e6c53f91e1fc0712789476719c72b8b25e._AC_SX720_FMjpg_.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">3. Episode 3.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">24/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/2">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://hbomax-images.warnermediacdn.com/images/GZa5pswbKOZaQVgEAACXU/tile?size=320x180&partner=hbomaxcom&v=3be54fa9829e5c8c05eace63a2a95ae7&host=art-gallery.api.hbo.com&language=es-419&w=160"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/60tRTURoKm4ZDIu5PcHg9CiJa9K.jpg';"
+                                  onmouseout="this.src='https://hbomax-images.warnermediacdn.com/images/GZa5pswbKOZaQVgEAACXU/tile?size=320x180&partner=hbomaxcom&v=3be54fa9829e5c8c05eace63a2a95ae7&host=art-gallery.api.hbo.com&language=es-419&w=160'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">2. Episode 2.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">17/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ninja-kamui/T1/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://hbomax-images.warnermediacdn.com/images/GZa5qFASW1cJMRAEAACXo/tile?size=320x180&partner=hbomaxcom&v=a9c6ee1bdde14d0c15cb53f5b3c30ecf&host=art-gallery.api.hbo.com&language=es-419&w=160"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/txpYP64ubpwSBDTNKUMq1rpW6WE.jpg';"
+                                  onmouseout="this.src='https://hbomax-images.warnermediacdn.com/images/GZa5qFASW1cJMRAEAACXo/tile?size=320x180&partner=hbomaxcom&v=a9c6ee1bdde14d0c15cb53f5b3c30ecf&host=art-gallery.api.hbo.com&language=es-419&w=160'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">1. Episode 1.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">10/02/24</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <!-- <li>
+                        <div class="collapsible-header"><i class="material-icons">place</i>Temporada 2</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
                       </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/11">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://m.media-amazon.com/images/S/pv-target-images/467f813c22b417043d9e5a90b59b94aac83862e09ba2d890f263d4cec8bfa00e._AC_SX720_FMwebp_.jpg"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/yuW8w4IODIonVdCFARtycAJkgTk.jpg';"
-                              onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/467f813c22b417043d9e5a90b59b94aac83862e09ba2d890f263d4cec8bfa00e._AC_SX720_FMwebp_.jpg'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">11. Episode 11.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">20/04/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/10">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://m.media-amazon.com/images/S/pv-target-images/8282c226c865b933311a0534340c7c85a14007274a61f11b76d5550c12daf1db._AC_SX720_FMjpg_.jpg"
-                              onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image_thumb/jkvideo_35f19534264488a0e0fb54b77189297f.jpg';"
-                              onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/8282c226c865b933311a0534340c7c85a14007274a61f11b76d5550c12daf1db._AC_SX720_FMjpg_.jpg'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">10. Episode 10.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">13/04/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/9">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://m.media-amazon.com/images/S/pv-target-images/83f491c30f78ec021284de8805f4ac8f30553d5a921cc67f4a997a8e00e717c8._AC_SX720_FMjpg_.jpg"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/3x16ArwUHxcJF2PKXKfftNkFGIW.jpg';"
-                              onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/83f491c30f78ec021284de8805f4ac8f30553d5a921cc67f4a997a8e00e717c8._AC_SX720_FMjpg_.jpg'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">9. Episode 9.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">06/04/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/8">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://m.media-amazon.com/images/S/pv-target-images/635debbf965e1193058eb4d965a2de94beec57def011d34b5484407a3dadbdce._AC_SX720_FMjpg_.jpg"
-                              onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image_thumb/jkvideo_51254d8d944b3dd0c6bac56c7875b5cc.jpg';"
-                              onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/635debbf965e1193058eb4d965a2de94beec57def011d34b5484407a3dadbdce._AC_SX720_FMjpg_.jpg'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">8. Episode 8.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">30/03/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/7">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/ee8a37cc-9c70-4c24-bb78-b788d655ff23/85a5e801c47643eeb54abb2c509cde754edc3cf5.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=160"
-                              onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image_thumb/jkvideo_bb73d6ccfd12a22efe773aa4ba7ee51d.jpg';"
-                              onmouseout="this.src='https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/ee8a37cc-9c70-4c24-bb78-b788d655ff23/85a5e801c47643eeb54abb2c509cde754edc3cf5.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=160'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">7. Episode 7.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">23/03/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/6">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://m.media-amazon.com/images/S/pv-target-images/b468f7fe4f12425a5408d7a0c72d3dbd919119d26c081df7ff51ca6bdb0f4e2d._AC_SX720_FMjpg_.jpg"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/t9D5WY4CjDWgXf6sLnlPRtar0ye.jpg';"
-                              onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/b468f7fe4f12425a5408d7a0c72d3dbd919119d26c081df7ff51ca6bdb0f4e2d._AC_SX720_FMjpg_.jpg'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">6. Episode 6.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">16/03/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/5">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://m.media-amazon.com/images/S/pv-target-images/df51640eb0db3cd73220bc3a8776a6d0a69bde1b8a79ef3bffabd92e440db4a9._AC_SX720_FMjpg_.jpg"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/eicGQGtFyR9tgalETy3ukr7gxFf.jpg';"
-                              onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/df51640eb0db3cd73220bc3a8776a6d0a69bde1b8a79ef3bffabd92e440db4a9._AC_SX720_FMjpg_.jpg'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">5. Episode 5.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">09/03/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/4">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://m.media-amazon.com/images/S/pv-target-images/615c10102c31cf2afa033dc4d20a30b3fa4494500ed8976f07409bd9024e6efc._AC_SX720_FMjpg_.jpg"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/nrpUium9LyYVuKvOTQgb2BUX8Ik.jpg';"
-                              onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/615c10102c31cf2afa033dc4d20a30b3fa4494500ed8976f07409bd9024e6efc._AC_SX720_FMjpg_.jpg'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">4. Episode 4.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">02/03/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/3">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://m.media-amazon.com/images/S/pv-target-images/925bb650232edeb5baffae78b2ac93e6c53f91e1fc0712789476719c72b8b25e._AC_SX720_FMjpg_.jpg"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/Aet4Un3Hak2WpuB73vHHLLIWCyo.jpg';"
-                              onmouseout="this.src='https://m.media-amazon.com/images/S/pv-target-images/925bb650232edeb5baffae78b2ac93e6c53f91e1fc0712789476719c72b8b25e._AC_SX720_FMjpg_.jpg'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">3. Episode 3.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">24/02/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/2">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://hbomax-images.warnermediacdn.com/images/GZa5pswbKOZaQVgEAACXU/tile?size=320x180&partner=hbomaxcom&v=3be54fa9829e5c8c05eace63a2a95ae7&host=art-gallery.api.hbo.com&language=es-419&w=160"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/60tRTURoKm4ZDIu5PcHg9CiJa9K.jpg';"
-                              onmouseout="this.src='https://hbomax-images.warnermediacdn.com/images/GZa5pswbKOZaQVgEAACXU/tile?size=320x180&partner=hbomaxcom&v=3be54fa9829e5c8c05eace63a2a95ae7&host=art-gallery.api.hbo.com&language=es-419&w=160'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">2. Episode 2.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">17/02/24</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Ninja-kamui/T1/1">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://hbomax-images.warnermediacdn.com/images/GZa5qFASW1cJMRAEAACXo/tile?size=320x180&partner=hbomaxcom&v=a9c6ee1bdde14d0c15cb53f5b3c30ecf&host=art-gallery.api.hbo.com&language=es-419&w=160"
-                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/txpYP64ubpwSBDTNKUMq1rpW6WE.jpg';"
-                              onmouseout="this.src='https://hbomax-images.warnermediacdn.com/images/GZa5qFASW1cJMRAEAACXo/tile?size=320x180&partner=hbomaxcom&v=a9c6ee1bdde14d0c15cb53f5b3c30ecf&host=art-gallery.api.hbo.com&language=es-419&w=160'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">1. Episode 1.</h3>
-                          <p>Sub | Dob</p>
-                          <p style="color: rgb(7, 247, 59)">10/02/24</p>
-                        </a>
-                      </li>
-                </details>
+                      <li>
+                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                      </li> -->
+                </ul>
+
+                <script>
+                  //expandible
+
+                  document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.collapsible');
+                    var instances = M.Collapsible.init(elems, options);
+                  });
+
+                  // Or with jQuery
+
+                  $(document).ready(function () {
+                    $('.collapsible').collapsible();
+                  });
+                  var instance = M.Collapsible.getInstance(elem);
+
+                  /* jQuery Method Calls
+                    You can still use the old jQuery plugin method calls.
+                    But you won't be able to access instance properties.
+                
+                    $('.collapsible').collapsible('methodName');
+                    $('.collapsible').collapsible('methodName', paramName);
+                  */
+                  var elem = document.querySelector('.collapsible.expandable');
+                  var instance = M.Collapsible.init(elem, {
+                    accordion: false
+                  });
+                </script>
+
+                <!-- <details open>
+                      <summary class="temp1 btn-floating btn-large pulse">Temporada 1<i class="material-icons"
+                          style="margin: -25px 175px; font-size: 28px;">fiber_new</i></summary>
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/397409971ee95b61bcaaa65b598280e7.jpe"
+                                  alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio Miércoles</h3>
+                              <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                                  alt="calendar" />Estreno 08/05/24.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m {
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
+    
+                          
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Viral-Hit/T1/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/b8bf242593f0f0fa1abee4f1d1aed7f8.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/xG54T2JtsnR9qSg2nLQMoLghkRs.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/b8bf242593f0f0fa1abee4f1d1aed7f8.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">22m</p>
+                              </figure>
+                              <h3 class="Title">1. Primer post.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">10/04/24</p>
+                            </a>
+                          </li>
+                    </details> -->
                 <br>
                 <br>
               </section>
@@ -501,6 +597,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="/js/script.js"></script>
   <script src="/js/idioma.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
