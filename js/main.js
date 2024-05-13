@@ -58,3 +58,66 @@ peliculas.forEach((pelicula) => {
 fila.addEventListener("mouseleave", () => {
   peliculas.forEach((pelicula) => pelicula.classList.remove("hover"));
 });
+
+//Carousel inicial
+let nextBtn = document.querySelector(".next");
+let prevBtn = document.querySelector(".prev");
+
+let slider = document.querySelector(".sliderAni");
+let sliderList = slider.querySelector(".sliderAni .listAni");
+let thumbnail = document.querySelector(".sliderAni .thumbnail");
+let thumbnailItems = thumbnail.querySelectorAll(".itemAni");
+
+thumbnail.appendChild(thumbnailItems[0]);
+
+document.addEventListener("DOMContentLoaded", function () {
+  var elems = document.querySelectorAll(".sliderAni");
+  var instances = M.SliderAni.init(elems, {
+    fullWidth: true,
+    indicators: false, // Si deseas mostrar indicadores de slide
+    duration: 200, // Duración de la transición entre slides
+  });
+
+  // Autoplay
+  var autoplayInterval = 5000; // Intervalo de cambio de slides (en milisegundos)
+  setInterval(function () {
+    var carouselInstance = M.SliderAni.getInstance(elems[0]);
+    carouselInstance.next();
+  }, autoplayInterval);
+});
+// Function for next button
+nextBtn.onclick = function () {
+  moveSlider("next");
+};
+
+// Function for prev button
+prevBtn.onclick = function () {
+  moveSlider("prev");
+};
+
+function moveSlider(direction) {
+  let sliderItems = sliderList.querySelectorAll(".itemAni");
+  let thumbnailItems = document.querySelectorAll(".thumbnail .itemAni");
+
+  if (direction === "next") {
+    sliderList.appendChild(sliderItems[0]);
+    thumbnail.appendChild(thumbnailItems[0]);
+    slider.classList.add("next");
+  } else {
+    sliderList.prepend(sliderItems[sliderItems.length - 1]);
+    thumbnail.prepend(thumbnailItems[thumbnailItems.length - 1]);
+    slider.classList.add("prev");
+  }
+
+  slider.addEventListener(
+    "animationend",
+    function () {
+      if (direction === "next") {
+        slider.classList.remove("next");
+      } else {
+        slider.classList.remove("prev");
+      }
+    },
+    { once: true }
+  ); // Remove the event listener after it's triggered once
+}
