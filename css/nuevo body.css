@@ -59,8 +59,8 @@ header a:hover {
 .sliderAni .listAni .itemAni .contentAni {
     position: absolute;
     top: 20%;
-    width: 1140px;
-    max-width: 80%;
+    width: 100vw;
+    max-width: 90%;
     left: 50%;
     transform: translateX(-50%);
     padding-right: 30%;
