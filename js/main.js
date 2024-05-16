@@ -69,22 +69,6 @@ let thumbnail = document.querySelector(".sliderAni .thumbnail");
 let thumbnailItems = thumbnail.querySelectorAll(".itemAni");
 
 thumbnail.appendChild(thumbnailItems[0]);
-
-document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".sliderAni");
-  var instances = M.SliderAni.init(elems, {
-    fullWidth: true,
-    indicators: false, // Si deseas mostrar indicadores de slide
-    duration: 200, // Duración de la transición entre slides
-  });
-
-  // Autoplay
-  var autoplayInterval = 5000; // Intervalo de cambio de slides (en milisegundos)
-  setInterval(function () {
-    var carouselInstance = M.SliderAni.getInstance(elems[0]);
-    carouselInstance.next();
-  }, autoplayInterval);
-});
 // Function for next button
 nextBtn.onclick = function () {
   moveSlider("next");

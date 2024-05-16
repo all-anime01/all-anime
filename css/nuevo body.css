@@ -56,12 +56,23 @@ header a:hover {
     object-fit: cover;
 }
 
+.itemAni::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
 .sliderAni .listAni .itemAni .contentAni {
     position: absolute;
     top: 20%;
-    width: 100vw;
+    width: 60vw;
     max-width: 90%;
-    left: 50%;
+    left: 35%;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -129,6 +140,10 @@ header a:hover {
     height: 220px;
     flex-shrink: 0;
     position: relative;
+}
+
+.thumbnail .itemAni::before {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 00%, rgba(0, 0, 0, 0) 0%);
 }
 
 .thumbnail .itemAni img {
@@ -292,7 +307,7 @@ header a:hover {
 .sliderAni.prev .thumbnail .itemAni:nth-child(1) {
     overflow: hidden;
     opacity: 0;
-    animation: showThumbnail .7s linear 1 forwards;
+    animation: showThumbnail .5s linear 1 forwards;
 }
 
 .sliderAni.next .nextPrevArrows button,
@@ -305,14 +320,14 @@ header a:hover {
 .sliderAni.prev .listAni .itemAni:nth-child(2) .contentAni .type,
 .sliderAni.prev .listAni .itemAni:nth-child(2) .contentAni .description,
 .sliderAni.prev .listAni .itemAni:nth-child(2) .contentAni .buttoncito {
-    animation: contentOut 1.8s linear 2 forwards !important;
+    animation: contentOut 2.8s linear 3 forwards !important;
 }
 
 @keyframes contentOut {
     to {
         transform: translateY(-150px);
         filter: blur(20px);
-        opacity: 0;
+        opacity: 2;
     }
 }
 
@@ -322,6 +337,6 @@ header a:hover {
     }
 
     .sliderAni .listAni .itemAni .contentAni .title {
-        font-size: 50px;
+        font-size: 30px;
     }
 }
