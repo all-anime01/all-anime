@@ -63,7 +63,7 @@ header a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 25%, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0) 100%);
     pointer-events: none;
 }
 
@@ -82,13 +82,13 @@ header a:hover {
 
 .sliderAni .listAni .itemAni .contentAni .title,
 .sliderAni .listAni .itemAni .contentAni .type {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     line-height: 1.3em;
 }
 
 .sliderAni .listAni .itemAni .type {
-    color: #d8d6d6;
+    color: #939393;
 }
 
 .sliderAni .listAni .itemAni .buttoncito {

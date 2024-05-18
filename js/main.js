@@ -59,7 +59,6 @@ fila.addEventListener("mouseleave", () => {
   peliculas.forEach((pelicula) => pelicula.classList.remove("hover"));
 });
 
-//Carousel inicial
 let nextBtn = document.querySelector(".next");
 let prevBtn = document.querySelector(".prev");
 
@@ -67,16 +66,21 @@ let slider = document.querySelector(".sliderAni");
 let sliderList = slider.querySelector(".sliderAni .listAni");
 let thumbnail = document.querySelector(".sliderAni .thumbnail");
 let thumbnailItems = thumbnail.querySelectorAll(".itemAni");
+let currentIndex = 0;
+let interval;
 
 thumbnail.appendChild(thumbnailItems[0]);
+
 // Function for next button
 nextBtn.onclick = function () {
   moveSlider("next");
+  resetAutoplay();
 };
 
 // Function for prev button
 prevBtn.onclick = function () {
   moveSlider("prev");
+  resetAutoplay();
 };
 
 function moveSlider(direction) {
@@ -105,3 +109,19 @@ function moveSlider(direction) {
     { once: true }
   ); // Remove the event listener after it's triggered once
 }
+
+function startAutoplay() {
+  interval = setInterval(() => {
+    moveSlider("next");
+  }, 9000); // Cambia el valor a la cantidad de milisegundos que desees para el intervalo
+}
+
+function resetAutoplay() {
+  clearInterval(interval);
+  startAutoplay();
+}
+
+// Iniciar autoplay cuando se carga la página
+window.onload = function () {
+  startAutoplay();
+};
