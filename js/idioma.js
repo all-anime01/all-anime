@@ -28,7 +28,7 @@ $("ul.tabs li a").click(function () {
 //   }
 // });
 
-//Buscador nuevo
+//Buscador nuevo BD
 
 const searchInput = document.getElementById("search-input");
 const searchResults = document.getElementById("search-results");
@@ -824,7 +824,3 @@ var elem = document.querySelector(".collapsible.expandable");
 var instance = M.Collapsible.init(elem, {
   accordion: false,
 });
-
-//Toast
-
-M.toast({ html: "I am a toast!" });

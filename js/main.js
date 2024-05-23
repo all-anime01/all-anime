@@ -58,6 +58,7 @@ peliculas.forEach((pelicula) => {
 fila.addEventListener("mouseleave", () => {
   peliculas.forEach((pelicula) => pelicula.classList.remove("hover"));
 });
+//carousel body
 
 let nextBtn = document.querySelector(".next");
 let prevBtn = document.querySelector(".prev");
@@ -125,3 +126,96 @@ function resetAutoplay() {
 window.onload = function () {
   startAutoplay();
 };
+
+//Carousel lista anime
+let currentSlide = 0;
+const slides = document.querySelectorAll(".carousel-item");
+const carouselInner = document.querySelector(".carousel-inner");
+let isDragging = false;
+let startPos = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+let animationID;
+const visibleSlides = 5; // Número de imágenes visibles al mismo tiempo
+
+function showSlide(index) {
+  const totalSlides = slides.length;
+  const maxSlideIndex = totalSlides - visibleSlides;
+
+  currentSlide = Math.max(0, Math.min(index, maxSlideIndex));
+  const newTransform = -currentSlide * (100 / visibleSlides) + "%";
+  carouselInner.style.transform = `translateX(${newTransform})`;
+
+  // Mostrar/ocultar botones según el índice actual
+  document.querySelector(".carousel-control-prev").style.display =
+    currentSlide === 0 ? "none" : "block";
+  document.querySelector(".carousel-control-next").style.display =
+    currentSlide === maxSlideIndex ? "none" : "block";
+}
+
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
+
+carouselInner.addEventListener("touchstart", touchStart);
+carouselInner.addEventListener("touchend", touchEnd);
+carouselInner.addEventListener("touchmove", touchMove);
+
+carouselInner.addEventListener("mousedown", touchStart);
+carouselInner.addEventListener("mouseup", touchEnd);
+carouselInner.addEventListener("mouseleave", touchEnd);
+carouselInner.addEventListener("mousemove", touchMove);
+
+function touchStart(event) {
+  isDragging = true;
+  startPos = getPositionX(event);
+  carouselInner.style.cursor = "grabbing";
+  animationID = requestAnimationFrame(animation);
+}
+
+function touchEnd() {
+  isDragging = false;
+  cancelAnimationFrame(animationID);
+  const movedBy = currentTranslate - prevTranslate;
+
+  if (movedBy < -100) nextSlide();
+  if (movedBy > 100) prevSlide();
+
+  carouselInner.style.cursor = "grab";
+  prevTranslate = currentTranslate;
+}
+
+function touchMove(event) {
+  if (isDragging) {
+    const currentPosition = getPositionX(event);
+    currentTranslate = prevTranslate + currentPosition - startPos;
+  }
+}
+
+function getPositionX(event) {
+  return event.type.includes("mouse") ? event.pageX : event.touches[0].clientX;
+}
+
+function animation() {
+  setSliderPosition();
+  if (isDragging) requestAnimationFrame(animation);
+}
+
+function setSliderPosition() {
+  carouselInner.style.transform = `translateX(${currentTranslate}px)`;
+}
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 768) {
+    visibleSlides = 2; // Cambiar número de imágenes visibles en pantallas pequeñas
+  } else {
+    visibleSlides = 5; // Número de imágenes visibles en pantallas grandes
+  }
+  showSlide(currentSlide);
+});
+
+showSlide(currentSlide); // Inicializar la visualización de las diapositivas
