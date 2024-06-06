@@ -621,6 +621,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Hanma Baki vs Kengan Ashura",
+    link: "https://all-anime.net/peliculas/Hanma-baki-vs-Kengan-ashura/movie",
+    image: "/image/Hanma-baki-vs-Kengan-ashura/p.webp",
+    type: "PELICULA",
+  },
+  {
     name: "Jujutsu Kaisen: 0",
     link: "https://all-anime.net/peliculas/Jujutsu-kaisen-0/movie",
     image: "/image/Jujutsu-Kaisen-0/poster.jpg",
