@@ -524,6 +524,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Tragones y Mazmorras",
+    link: "https://all-anime.net/ver/Tragones-y-mazmorras/tv",
+    image: "/image/Tragones-y-mazmorras/T1/p.webp",
+    type: "ANIME",
+  },
+  {
     name: "Tokyo revengers",
     link: "https://all-anime.net/ver/Tokyo-revengers/tv",
     image: "/image/Tokyo-Revengers/T3/p.jpg",
