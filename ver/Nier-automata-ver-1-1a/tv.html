@@ -12,6 +12,8 @@
   <title>Ver NieR:Automata Ver1.1a Online — All-Anime</title>
   <link rel="shortcut icon" href="/image/logo.ico">
   <link rel="stylesheet" href="/css/List_Episodios.css">
+  <link rel="stylesheet" href="/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="/js/jquery.js"></script>
   <script src="/js/jquery.dataTables.min.js"></script>
 </head>
@@ -160,20 +162,25 @@
 
     <div class="Body">
       <div>
-        <div class="Ficha fchlt" id="cambioimg">
-          <div class="Bg" id="imgchange" style="background-image:url(https://m.media-amazon.com/images/S/pv-target-images/696a4439b714c92c9a4c215a2f9db3ab563ebc2418f676eecd16de912aa91a8a._SX1080_FMjpg_.jpg); background-size: 100% 92%; background-repeat: no-repeat;
-          background-position: center;
-          background-attachment: fixed;"></div>
+        <div class="Ficha fchlt">
+          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=94,width=1920/cr/landscape_large/3292018d-aebe-449d-97f7-7573fc2dc390.png); max-width: 100%; height: 105%; background-repeat: no-repeat;
+            background-attachment: fixed;">
+          </div>
           <div class="Container">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/NieR_Automata_Ver1.1a_logo.svg/2560px-NieR_Automata_Ver1.1a_logo.svg.png"
-              alt="" style="width: 300px;"> <span class="Type tv">Anime</span>
+              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480/cr/logo/d442c357-982a-4fdc-a95b-ed4de45e3177.png"
+              alt="" style="width: 300px;">
+            <span class="Type tv">Anime</span>
             <div>
-              <span class="TxtAlt">All-ANIME</span>
+              <span class="TxtAlt">all-anime</span>
+              <span class="TxtAlt">crunchyroll</span>
+              <span class="TxtAlt">Prime Video</span>
+              <span class="TxtAlt">+14</span>
+              <span class="TxtAlt">Sub | Dob</span>
             </div>
             <div class="vtshr">
               <div class="Votes">
-                <span class="vtprmd" id="votes_prmd">4.9</span>
+                <span class="vtprmd" id="votes_prmd">4.8</span>
                 <div class="Strs RateIt" data-id="7">
                   <a href="#" class="fa-star-o Hf" data-value="5" title="5 Estrellas"></a>
                   <a href="#" class="fa-star-o On" data-value="4" title="4 Estrellas"></a>
@@ -181,7 +188,7 @@
                   <a href="#" class="fa-star-o On" data-value="2" title="2 Estrellas"></a>
                   <a href="#" class="fa-star-o On" data-value="1" title="1 Estrellas"></a>
                 </div>
-                <span class="Nmbr"><span id="votes_nmbr">3K</span> VOTOS</span>
+                <span class="Nmbr"><span id="votes_nmbr">(24.7K)</span> VOTOS</span>
               </div>
             </div>
           </div>
@@ -192,10 +199,12 @@
             <aside class="SidebarA BFixed">
               <div class="AnimeCover">
                 <div class="Image">
-                  <figure><img src="/image/Nier-automata-ver-1-1a/p.webp" alt="One Piece" itemprop="image"></figure>
+                  <figure><img
+                      src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/60ae0b1c6c34b3ef0279f07481a3b983.jpg"
+                      alt="One Piece" itemprop="image"></figure>
                 </div>
               </div>
-              <p class="AnmStts"><span class="fa-tv">Finalizado.</span></p>
+              <p class="AnmStts"><span class="fa-tv">En Emisión.</span></p>
               <ul class="ListAnmBnts ClFx">
 
             </aside>
@@ -233,210 +242,254 @@
                 <span class="list-temp">Temporadas y Episodios</span>
                 <br>
                 <br>
-                <details open>
-                  <summary class="temp1">Temporada 1<img class="desplegar"
-                      src="https://img.icons8.com/ios-filled/50/000000/drag-list-down.png" width="20px"
-                      style="margin: -25px 175px;"></summary>
-                  <div id='linea1'>
-                    <div class="Top">
-                      <div class="Title">Lista de episodios</div>
-                      <div class="lstopt-frm">
-                        <span class="order-lst">
-                        </span>
+                <ul class="collapsible popout">
+                  <li class="active">
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">fiber_new</i>Temporada 1</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/dbdc2d473dd2cd85f9d96a3394bd2903.jpg"
+                                  alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio Viernes</h3>
+                              <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                                  alt="calendar" />Estreno 05/07/24.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m {
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
+
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/13">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/abe9eef38109190a948a0a4cad66b9e2.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_4c0a80db052478d805e52fd840ed19c8.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/abe9eef38109190a948a0a4cad66b9e2.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">13. reckless bra[V]ery.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">05/07/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/12">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2a14c7dcb5786cf9e12252e08f98235f.jpe"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/12.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2a14c7dcb5786cf9e12252e08f98235f.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">12. flowers for
+                                m[A]chines.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">23/07/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/11">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4fb98398111d8ddc99076e8d57e5cafa.jpe"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/11.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4fb98398111d8ddc99076e8d57e5cafa.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">11. head[Y]
+                                battlea.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">23/07/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/10">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b83c7835459bd64a9b5646b14534c9e1.jpe"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/10.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b83c7835459bd64a9b5646b14534c9e1.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">10. over[Z]ealous.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">23/07/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/9">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/fd191b0a6757fef0c6bfd557be43448f.jpe"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/9.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/fd191b0a6757fef0c6bfd557be43448f.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">9. hun[G]ry for
+                                knowledge.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">23/07/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/8">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/8.jpe"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/8.webp';"
+                                  onmouseout="this.src='/image/Nier-automata-ver-1-1a/8.jpe'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">8. Aji wo[K]utta?.</h3>
+                              <p>Sub | Dob</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/7">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/7.jpe"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/7.webp';"
+                                  onmouseout="this.src='/image/Nier-automata-ver-1-1a/7.jpe'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">7. [Q]uestionable actions.</h3>
+                              <p>Sub | Dob</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/6">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/6.jpg"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/6.webp';"
+                                  onmouseout="this.src='/image/Nier-automata-ver-1-1a/6.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">6. [L]one wolf.</h3>
+                              <p>Sub | Dob</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/5">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/5.jpg"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/5.webp';"
+                                  onmouseout="this.src='/image/Nier-automata-ver-1-1a/5.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">5. mave[r]ick.</h3>
+                              <p>Sub | Dob</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/4">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/4.jpg"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/4.webp';"
+                                  onmouseout="this.src='/image/Nier-automata-ver-1-1a/4.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">4. a mountain too [H]igh.</h3>
+                              <p>Sub | Dob</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/3">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/3.jpg"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/3.webp';"
+                                  onmouseout="this.src='/image/Nier-automata-ver-1-1a/3.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">3. break ti[M]e.</h3>
+                              <p>Sub | Dob</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/2">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/2.jpg"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/2.webp';"
+                                  onmouseout="this.src='/image/Nier-automata-ver-1-1a/2.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">2. city e[S]cape.</h3>
+                              <p>Sub | Dob</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/T1/1">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/1.jpg"
+                                  onmouseover="this.src='/image/Nier-automata-ver-1-1a/1.webp';"
+                                  onmouseout="this.src='/image/Nier-automata-ver-1-1a/1.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">1. Or not to [B]e.</h3>
+                              <p>Sub | Dob</p>
+                            </a>
+                          </li>
                       </div>
-                    </div>
-                    <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
-                      <li class="fa-play-circle Next">
-                        <a href="#">
-                          <figure>
-                            <img src="/image/Nier-automata-ver-1-1a/n.jpeg" alt=""
-                              style="display: block; background-image: cover;">
-                          </figure>
-                          <h3 class="Title">Proximo Episodio</h3>
-                          <p>Finalizado.</p>
-                        </a>
-                      </li>
-                      <style>
-                        .time-m {
-                          z-index: 1000;
-                          background: #222;
-                          font-family: sans-serif;
-                          opacity: 0.8;
-                          height: 22px;
-                          width: 30px;
-                          margin: 44px 75px;
-                          text-align: center;
-                        }
-                      </style>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/12">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2a14c7dcb5786cf9e12252e08f98235f.jpe"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/12.webp';"
-                              onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2a14c7dcb5786cf9e12252e08f98235f.jpe'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">flowers for
-                            m[A]chines.</h3>
-                          <p>Episodio 12</p>
-                          <p style="color: rgb(7, 247, 59)">23/07/23</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/11">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4fb98398111d8ddc99076e8d57e5cafa.jpe"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/11.webp';"
-                              onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4fb98398111d8ddc99076e8d57e5cafa.jpe'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">head[Y]
-                            battlea.</h3>
-                          <p>Episodio 11</p>
-                          <p style="color: rgb(7, 247, 59)">23/07/23</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/10">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b83c7835459bd64a9b5646b14534c9e1.jpe"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/10.webp';"
-                              onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/b83c7835459bd64a9b5646b14534c9e1.jpe'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">over[Z]ealous.</h3>
-                          <p>Episodio 10</p>
-                          <p style="color: rgb(7, 247, 59)">23/07/23</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/9">
-                          <figure>
-                            <img class="lazy1" alt=""
-                              src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/fd191b0a6757fef0c6bfd557be43448f.jpe"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/9.webp';"
-                              onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/fd191b0a6757fef0c6bfd557be43448f.jpe'"
-                              style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">hun[G]ry for
-                            knowledge.</h3>
-                          <p>Episodio 9</p>
-                          <p style="color: rgb(7, 247, 59)">23/07/23</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/8">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/8.jpe"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/8.webp';"
-                              onmouseout="this.src='/image/Nier-automata-ver-1-1a/8.jpe'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Aji wo[K]utta?.</h3>
-                          <p>Episodio 8</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/7">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/7.jpe"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/7.webp';"
-                              onmouseout="this.src='/image/Nier-automata-ver-1-1a/7.jpe'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">[Q]uestionable actions.</h3>
-                          <p>Episodio 7</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/6">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/6.jpg"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/6.webp';"
-                              onmouseout="this.src='/image/Nier-automata-ver-1-1a/6.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">[L]one wolf.</h3>
-                          <p>Episodio 6</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/5">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/5.jpg"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/5.webp';"
-                              onmouseout="this.src='/image/Nier-automata-ver-1-1a/5.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">mave[r]ick.</h3>
-                          <p>Episodio 5</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/4">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/4.jpg"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/4.webp';"
-                              onmouseout="this.src='/image/Nier-automata-ver-1-1a/4.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">a mountain too [H]igh.</h3>
-                          <p>Episodio 4</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/3">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/3.jpg"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/3.webp';"
-                              onmouseout="this.src='/image/Nier-automata-ver-1-1a/3.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">break ti[M]e.</h3>
-                          <p>Episodio 3</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/2">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/2.jpg"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/2.webp';"
-                              onmouseout="this.src='/image/Nier-automata-ver-1-1a/2.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">city e[S]cape.</h3>
-                          <p>Episodio 2</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Nier-automata-ver-1-1a/1">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Nier-automata-ver-1-1a/1.jpg"
-                              onmouseover="this.src='/image/Nier-automata-ver-1-1a/1.webp';"
-                              onmouseout="this.src='/image/Nier-automata-ver-1-1a/1.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Or not to [B]e.</h3>
-                          <p>Episodio 1</p>
-                        </a>
-                      </li>
-                  </div>
-                </details>
+                  </li>
+                </ul>
               </section>
-          </div>
-  </section>
-  </section>
+              <script>
+                //expandible
+
+                document.addEventListener("DOMContentLoaded", function () {
+                  var elems = document.querySelectorAll(".collapsible");
+                  var instances = M.Collapsible.init(elems, options);
+                });
+
+                // Or with jQuery
+
+                $(document).ready(function () {
+                  $(".collapsible").collapsible();
+                });
+                var instance = M.Collapsible.getInstance(elem);
+
+                /* jQuery Method Calls
+                  You can still use the old jQuery plugin method calls.
+                  But you won't be able to access instance properties.
+                
+                  $('.collapsible').collapsible('methodName');
+                  $('.collapsible').collapsible('methodName', paramName);
+                */
+                var elem = document.querySelector(".collapsible.expandable");
+                var instance = M.Collapsible.init(elem, {
+                  accordion: false,
+                });
+              </script>
   </section>
   </div>
+  </section>
   </main>
-
 
   <!--contacto-->
   <div class='flx'>
@@ -461,9 +514,9 @@
         <div>
           <p><span>Anime HD Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
           <nav class="mnftxt">
-            <a href="condiciones-de-uso.html">Términos y Condiciones</a>
-            <a href="politica-de-privacidad.html">Política de Privacidad</a>
-            <a href="sobre-all-anime.html">Sobre All-ANIME</a>
+            <a href="https://all-anime.net/condiciones-de-uso">Términos y Condiciones</a>
+            <a href="https://all-anime.net/politica-de-privacidad">Política de Privacidad</a>
+            <a href="https://all-anime.net/sobre-all-anime">Sobre All-ANIME</a>
           </nav>
         </div>
       </div>
@@ -473,6 +526,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="/js/script.js"></script>
   <script src="/js/idioma.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
