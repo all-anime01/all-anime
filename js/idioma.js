@@ -217,6 +217,20 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Fairy Tail 100 Years Quest",
+    link: "https://all-anime.net/ver/Fairy-tail-100-years-quest/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/6c66ccc8929c10b5deb599c4d1a6d5e1.jpg",
+    type: "ANIME",
+  },
+  {
+    name: "Fire Force",
+    link: "https://all-anime.net/ver/Fire-force/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/da1db9f24b365129646e8b4508858217.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Firefighter Daigo Rescuer in Orange",
     link: "https://all-anime.net/ver/Firefighter-Daigo-Rescuer-in-Orange/tv",
     image:
@@ -241,6 +255,12 @@ const animes = [
     link: "https://all-anime.net/ver/Hunter-x-hunter/tv",
     image:
       "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/cbb55a6382682bf71e91f685c6473c5a.jpe",
+    type: "ANIME",
+  },
+  {
+    name: "Isekai Suicide Squad",
+    link: "https://all-anime.net/ver/Isekai-Suicide-Squad/tv",
+    image: "/image/Isekai-Suicide-Squad/p.jpg",
     type: "ANIME",
   },
   {
