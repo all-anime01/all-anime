@@ -283,6 +283,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Kinnikuman Perfect Origin Arc",
+    link: "https://all-anime.net/ver/Kinnikuman-Perfect-Origin-Arc/tv",
+    image: "/image/Kinnikuman-Perfect-Origin-Arc/T1/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Kimetsu no Yaiba",
     link: "https://all-anime.net/ver/Kimetsu-no-yaiba/tv",
     image: "/image/Kimetsu-no-yaiba-katanakaji-no-sato-T3/p.jpe",
@@ -547,6 +553,13 @@ const animes = [
     name: "Tragones y Mazmorras",
     link: "https://all-anime.net/ver/Tragones-y-mazmorras/tv",
     image: "/image/Tragones-y-mazmorras/T1/p.webp",
+    type: "ANIME",
+  },
+  {
+    name: "Tokyo magnitude 8.0",
+    link: "https://all-anime.net/ver/Tokyo-Magnitude-8-0/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/cd003902aeb5c7439e5e9b5f52fbe33a.jpe",
     type: "ANIME",
   },
   {
