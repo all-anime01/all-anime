@@ -153,7 +153,7 @@ const animes = [
     name: "Captain Tsubasa",
     link: "https://all-anime.net/ver/Captain-Tsubasa/tv",
     image:
-      "https://m.media-amazon.com/images/M/MV5BOTJjOTRmMzctMDUwYS00MjExLWJlMGQtZjlmNjI3OTAxNzZiXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg",
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/f18cc7982a918da38a3b8e47c4ab6295.jpg",
     type: "ANIME",
   },
   {
@@ -553,6 +553,13 @@ const animes = [
     name: "Tragones y Mazmorras",
     link: "https://all-anime.net/ver/Tragones-y-mazmorras/tv",
     image: "/image/Tragones-y-mazmorras/T1/p.webp",
+    type: "ANIME",
+  },
+  {
+    name: "Tower of God",
+    link: "https://all-anime.net/ver/Tower-of-god/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/61a390333a858f438565aeb6b4c75485.jpg",
     type: "ANIME",
   },
   {
