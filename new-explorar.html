@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-anime Explorar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">All-Anime</div>
+        <nav class="main-nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#explorar">Explorar</a>
+            <a href="#peliculas">Películas</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    </header>
+    <section id="inicio">
+        <nav class="filter-nav">
+            <input type="text" id="searchInput" placeholder="Buscar por nombre...">
+            <select id="categoryFilter">
+                <option value="">Todas las categorías</option>
+                <option value="accion">Acción</option>
+                <option value="aventura">Aventura</option>
+                <option value="comedia">Comedia</option>
+                <option value="drama">Drama</option>
+                <option value="fantasia">Fantasía</option>
+            </select>
+        </nav>
+        <main id="animeGrid">
+            <!-- Las tarjetas de anime se generarán dinámicamente aquí -->
+        </main>
+    </section>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #f43321;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-right: 20px;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .main-nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .main-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 24px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+
+        .filter-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: #2b2b2b;
+        }
+
+        #searchInput,
+        #categoryFilter {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+
+        #animeGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .animeCard {
+            background-color: #2b2b2b;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .animeCard:hover {
+            transform: scale(1.05);
+        }
+
+        .animeCard img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .animeCard h3 {
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Estilos para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #f42121;
+                width: 100%;
+                padding: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            }
+
+            .main-nav a {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .main-nav.show {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+            }
+
+            .filter-nav {
+                flex-direction: column;
+            }
+
+            #searchInput,
+            #categoryFilter {
+                width: 100%;
+                box-sizing: border-box;
+                margin: 5px 0;
+            }
+        }
+    </style>
+    <script>
+        // Datos de ejemplo de anime
+        const animes = [
+            { id: 1, name: "Naruto", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/8532171bec0d05bfe45769a330fbab82.jpe", link: "#naruto" },
+            { id: 2, name: "Naruto Shippuden", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe", link: "#naruto" },
+            { id: 3, name: "One Piece", category: "aventura", image: "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe", link: "#onepiece" },
+            { id: 4, name: "My Hero Academia", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/6e008ad5211c3998b8f3e4bc166821cd.jpg", link: "#konosuba" },
+            { id: 5, name: "Your Lie in April", category: "drama", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/440aab3e234c4d93737e475620860868.jpe", link: "#yourlieinapril" },
+            { id: 6, name: "Fullmetal Alchemist", category: "fantasia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/0662921aa3b81ff85737ddeb56deefab.jpe", link: "#fullmetalalchemist" },
+            { id: 7, name: "Tower of God", category: "fantasia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/61a390333a858f438565aeb6b4c75485.jpg", link: "#fullmetalalchemist" },
+            { id: 8, name: "Fairy Tail 100 Years Quest", category: "fantasia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/6c66ccc8929c10b5deb599c4d1a6d5e1.jpg", link: "#fullmetalalchemist" },
+            { id: 9, name: "Kaiju No.8", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/bb5785a9fe043b8331b7842068bfcb05.jpe", link: "#fullmetalalchemist" },
+            { id: 10, name: "Quality Assurance in Another World", category: "comedia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/4e20adfbae580632399ac5e7196929e6.jpg", link: "#fullmetalalchemist" },
+            { id: 11, name: "Win Breaker", category: "drama", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/16d570ff136955438a3a5bfadbb66eb5.jpg", link: "#fullmetalalchemist" },
+            { id: 12, name: "Tokyo Revenger", category: "drama", image: "/image/Tokyo-Revengers/T3/p.jpg", link: "#fullmetalalchemist" },
+            { id: 13, name: "Shaman King: Flowers", category: "accion", image: "https://hanapop.com.co/wp-content/uploads/2023/10/POSTER-Shaman-King-Flowers-731x1024.jpg", link: "#fullmetalalchemist" },
+            { id: 13, name: "Kimetsu no Yaiba", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/765ee047befcfb677d169f5de4c82d5c.jpe", link: "#fullmetalalchemist" },
+            // Agrega más animes aquí
+        ];
+
+        const animeGrid = document.getElementById('animeGrid');
+        const searchInput = document.getElementById('searchInput');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        function renderAnimes(animesToRender) {
+            animeGrid.innerHTML = '';
+            animesToRender.forEach(anime => {
+                const animeCard = document.createElement('a');
+                animeCard.className = 'animeCard';
+                animeCard.href = anime.link;
+                animeCard.innerHTML = `
+            <img src="${anime.image}" alt="${anime.name}">
+            <h3>${anime.name}</h3>
+        `;
+                animeGrid.appendChild(animeCard);
+            });
+        }
+
+        function filterAnimes() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedCategory = categoryFilter.value;
+
+            const filteredAnimes = animes.filter(anime =>
+                anime.name.toLowerCase().includes(searchTerm) &&
+                (selectedCategory === '' || anime.category === selectedCategory)
+            );
+
+            renderAnimes(filteredAnimes);
+        }
+
+        searchInput.addEventListener('input', filterAnimes);
+        categoryFilter.addEventListener('change', filterAnimes);
+
+        // Mostrar/ocultar el menú en pantallas pequeñas
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('show');
+        });
+
+        // Renderizar todos los animes inicialmente
+        renderAnimes(animes);
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
