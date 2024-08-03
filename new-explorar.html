@@ -15,6 +15,7 @@
             <a href="#inicio">Inicio</a>
             <a href="#explorar">Explorar</a>
             <a href="#peliculas">Películas</a>
+            <input type="text" id="navSearchInput" placeholder="Buscar anime...">
         </nav>
         <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
     </header>
@@ -46,6 +47,7 @@
         header {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             background-color: #f43321;
             padding: 10px 20px;
             position: relative;
@@ -55,11 +57,11 @@
             font-size: 24px;
             font-weight: bold;
             color: #ffffff;
-            margin-right: 20px;
         }
 
         .main-nav {
             display: flex;
+            align-items: center;
             gap: 20px;
         }
 
@@ -67,10 +69,32 @@
             color: #ffffff;
             text-decoration: none;
             font-size: 18px;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
         }
 
         .main-nav a:hover {
-            text-decoration: underline;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        #navSearchInput {
+            padding: 8px 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            transition: background-color 0.3s;
+        }
+
+        #navSearchInput::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        #navSearchInput:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.3);
         }
 
         .menu-toggle {
@@ -80,7 +104,6 @@
             color: #ffffff;
             font-size: 24px;
             cursor: pointer;
-            margin-left: auto;
         }
 
         .filter-nav {
@@ -112,6 +135,8 @@
             border-radius: 5px;
             overflow: hidden;
             transition: transform 0.3s;
+            cursor: pointer;
+            position: relative;
         }
 
         .animeCard:hover {
@@ -128,6 +153,31 @@
             padding: 10px;
             margin: 0;
             text-align: center;
+            color: #ffffff;
+        }
+
+        .animeLink {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+        }
+
+        .animeDescription {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            color: #ffffff;
+            overflow-y: auto;
+        }
+
+        .animeCard:hover .animeDescription {
+            display: block;
         }
 
         /* Estilos para pantallas pequeñas */
@@ -156,6 +206,12 @@
             .main-nav.show {
                 display: flex;
             }
+
+            #navSearchInput {
+                width: 100%;
+                box-sizing: border-box;
+                margin: 10px 0;
+            }
         }
 
         @media (max-width: 480px) {
@@ -183,20 +239,20 @@
     <script>
         // Datos de ejemplo de anime
         const animes = [
-            { id: 1, name: "Naruto", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/8532171bec0d05bfe45769a330fbab82.jpe", link: "#naruto" },
-            { id: 2, name: "Naruto Shippuden", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe", link: "#naruto" },
-            { id: 3, name: "One Piece", category: "aventura", image: "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe", link: "#onepiece" },
-            { id: 4, name: "My Hero Academia", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/6e008ad5211c3998b8f3e4bc166821cd.jpg", link: "#konosuba" },
-            { id: 5, name: "Your Lie in April", category: "drama", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/440aab3e234c4d93737e475620860868.jpe", link: "#yourlieinapril" },
-            { id: 6, name: "Fullmetal Alchemist", category: "fantasia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/0662921aa3b81ff85737ddeb56deefab.jpe", link: "#fullmetalalchemist" },
-            { id: 7, name: "Tower of God", category: "fantasia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/61a390333a858f438565aeb6b4c75485.jpg", link: "#fullmetalalchemist" },
-            { id: 8, name: "Fairy Tail 100 Years Quest", category: "fantasia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/6c66ccc8929c10b5deb599c4d1a6d5e1.jpg", link: "#fullmetalalchemist" },
-            { id: 9, name: "Kaiju No.8", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/bb5785a9fe043b8331b7842068bfcb05.jpe", link: "#fullmetalalchemist" },
-            { id: 10, name: "Quality Assurance in Another World", category: "comedia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/4e20adfbae580632399ac5e7196929e6.jpg", link: "#fullmetalalchemist" },
-            { id: 11, name: "Win Breaker", category: "drama", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/16d570ff136955438a3a5bfadbb66eb5.jpg", link: "#fullmetalalchemist" },
-            { id: 12, name: "Tokyo Revenger", category: "drama", image: "/image/Tokyo-Revengers/T3/p.jpg", link: "#fullmetalalchemist" },
-            { id: 13, name: "Shaman King: Flowers", category: "accion", image: "https://hanapop.com.co/wp-content/uploads/2023/10/POSTER-Shaman-King-Flowers-731x1024.jpg", link: "#fullmetalalchemist" },
-            { id: 13, name: "Kimetsu no Yaiba", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/765ee047befcfb677d169f5de4c82d5c.jpe", link: "#fullmetalalchemist" },
+            { id: 1, name: "Naruto", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/8532171bec0d05bfe45769a330fbab82.jpe", link: "https://all-anime.net/Naruto-tv", description: "Un joven ninja con el sueño de convertirse en el líder de su aldea." },
+            { id: 2, name: "Naruto Shippuden", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe", link: "#naruto", description: "La continuación de las aventuras de Naruto en su búsqueda por salvar a su amigo Sasuke." },
+            { id: 3, name: "One Piece", category: "aventura", image: "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe", link: "https://all-anime.net/ver/One-piece/tv", description: "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece." },
+            { id: 4, name: "My Hero Academia", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/6e008ad5211c3998b8f3e4bc166821cd.jpg", link: "#konosuba", description: "En un mundo donde la mayoría de la población tiene superpoderes, un joven sin poderes lucha por convertirse en un héroe." },
+            { id: 5, name: "Your Lie in April", category: "drama", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/440aab3e234c4d93737e475620860868.jpe", link: "#yourlieinapril", description: "Un pianista prodigio que ha perdido la capacidad de escuchar su propia música conoce a una violinista que cambia su vida." },
+            { id: 6, name: "Fullmetal Alchemist", category: "fantasia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/0662921aa3b81ff85737ddeb56deefab.jpe", link: "#fullmetalalchemist", description: "Dos hermanos alquimistas buscan la Piedra Filosofal para recuperar sus cuerpos después de un experimento fallido." },
+            { id: 7, name: "Tower of God", category: "fantasia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/61a390333a858f438565aeb6b4c75485.jpg", link: "#fullmetalalchemist", description: "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó." },
+            { id: 8, name: "Fairy Tail 100 Years Quest", category: "fantasia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/6c66ccc8929c10b5deb599c4d1a6d5e1.jpg", link: "#fullmetalalchemist", description: "Natsu y sus amigos emprenden una misión que no ha sido completada en 100 años." },
+            { id: 9, name: "Kaiju No.8", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/bb5785a9fe043b8331b7842068bfcb05.jpe", link: "#fullmetalalchemist", description: "En un mundo plagado de monstruos, un hombre obtiene la habilidad de transformarse en uno de ellos." },
+            { id: 10, name: "Quality Assurance in Another World", category: "comedia", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/4e20adfbae580632399ac5e7196929e6.jpg", link: "#fullmetalalchemist", description: "Un ingeniero de control de calidad es transportado a un mundo de fantasía donde aplica sus habilidades." },
+            { id: 11, name: "Win Breaker", category: "drama", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/16d570ff136955438a3a5bfadbb66eb5.jpg", link: "#fullmetalalchemist", description: "Un joven talentoso se une al equipo de tenis de su escuela para cumplir una promesa." },
+            { id: 12, name: "Tokyo Revenger", category: "drama", image: "/image/Tokyo-Revengers/T3/p.jpg", link: "https://all-anime.net/ver/Tokyo-revengers/tv", description: "Un joven viaja en el tiempo para salvar a su novia y a sus amigos de un futuro trágico." },
+            { id: 13, name: "Shaman King: Flowers", category: "accion", image: "https://hanapop.com.co/wp-content/uploads/2023/10/POSTER-Shaman-King-Flowers-731x1024.jpg", link: "#fullmetalalchemist", description: "La continuación de Shaman King, siguiendo las aventuras de la siguiente generación de chamanes." },
+            { id: 14, name: "Kimetsu no Yaiba", category: "accion", image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/765ee047befcfb677d169f5de4c82d5c.jpe", link: "#fullmetalalchemist", description: "Un joven se convierte en cazador de demonios para vengar a su familia y curar a su hermana." },
             // Agrega más animes aquí
         ];
 
@@ -205,16 +261,19 @@
         const categoryFilter = document.getElementById('categoryFilter');
         const menuToggle = document.querySelector('.menu-toggle');
         const mainNav = document.querySelector('.main-nav');
+        const navSearchInput = document.getElementById('navSearchInput');
 
         function renderAnimes(animesToRender) {
             animeGrid.innerHTML = '';
             animesToRender.forEach(anime => {
-                const animeCard = document.createElement('a');
+                const animeCard = document.createElement('div');
                 animeCard.className = 'animeCard';
-                animeCard.href = anime.link;
                 animeCard.innerHTML = `
-            <img src="${anime.image}" alt="${anime.name}">
-            <h3>${anime.name}</h3>
+            <a href="${anime.link}" class="animeLink">
+                <img src="${anime.image}" alt="${anime.name}">
+                <h3>${anime.name}</h3>
+                <div class="animeDescription">${anime.description}</div>
+            </a>
         `;
                 animeGrid.appendChild(animeCard);
             });
@@ -232,8 +291,17 @@
             renderAnimes(filteredAnimes);
         }
 
+        function navSearch() {
+            const searchTerm = navSearchInput.value.toLowerCase();
+            const filteredAnimes = animes.filter(anime =>
+                anime.name.toLowerCase().includes(searchTerm)
+            );
+            renderAnimes(filteredAnimes);
+        }
+
         searchInput.addEventListener('input', filterAnimes);
         categoryFilter.addEventListener('change', filterAnimes);
+        navSearchInput.addEventListener('input', navSearch);
 
         // Mostrar/ocultar el menú en pantallas pequeñas
         menuToggle.addEventListener('click', () => {
