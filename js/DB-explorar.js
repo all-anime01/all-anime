@@ -96,7 +96,7 @@ const animes = [
     name: "Tower of God",
     category: "fantasia",
     image:
-      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/61a390333a858f438565aeb6b4c75485.jpg",
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/eca729e2c2ae8ab45631c3bd11b81653.jpg",
     link: "https://all-anime.net/ver/Tower-of-god/tv",
     description:
       "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
@@ -136,12 +136,12 @@ const animes = [
     category: "comedia",
     image:
       "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/4e20adfbae580632399ac5e7196929e6.jpg",
-    link: "#fullmetalalchemist",
+    link: "https://all-anime.net/ver/Quality-Assurance-in-Another-World/tv",
     description:
       "Un ingeniero de control de calidad es transportado a un mundo de fantasía donde aplica sus habilidades.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: "Subiendo...",
+    episodes: 6,
   },
   {
     id: 12,
@@ -396,7 +396,7 @@ const animes = [
       "Ranma Saotome es un chico que sufre una peculiar maldición al caer en unos estanques malditos durante un entrenamiento de artes marciales.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 8,
+    episodes: 12,
   },
   // ... (resto de los animes)
 ];

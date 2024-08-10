@@ -428,6 +428,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Quality Assurance in Another World",
+    link: "https://all-anime.net/ver/Quality-Assurance-in-Another-World/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/4e20adfbae580632399ac5e7196929e6.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Ranma 1/2 (2024)",
     link: "https://all-anime.net/ver/Ranma-1-2-2024/tv",
     image: "/image/Ranma-1-2-2024/T1/p.jpg",
@@ -565,7 +572,7 @@ const animes = [
     name: "Tower of God",
     link: "https://all-anime.net/ver/Tower-of-god/tv",
     image:
-      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/61a390333a858f438565aeb6b4c75485.jpg",
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/eca729e2c2ae8ab45631c3bd11b81653.jpg",
     type: "ANIME",
   },
   {
