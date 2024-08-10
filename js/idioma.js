@@ -428,6 +428,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Ranma 1/2 (2024)",
+    link: "https://all-anime.net/ver/Ranma-1-2-2024/tv",
+    image: "/image/Ranma-1-2-2024/T1/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Ranking of king",
     link: "https://all-anime.net/ver/Ousama-ranking/tv",
     image: "/image/Ousama-Ranking/p.jpg",

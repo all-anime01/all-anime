@@ -374,7 +374,7 @@ const animes = [
     episodes: 8,
   },
   {
-    id: 29,
+    id: 30,
     name: "Black Clover",
     category: "accion",
     image:
@@ -383,6 +383,18 @@ const animes = [
     description:
       "En un mundo en el que la magia lo es todo, Asta y Yuno son dos niños que encuentran abandonados el mismo día en una iglesia. Pero para ello tendrán que ser seleccionados primero por una Orden de Caballeros Mágicos, ¡y Asta no tiene magia!.",
     type: "Sub | Dob",
+    seasons: 1,
+    episodes: 8,
+  },
+  {
+    id: 31,
+    name: "Ranma 1/2 (2024)",
+    category: "comedia",
+    image: "/image/Ranma-1-2-2024/T1/p.jpg",
+    link: "https://all-anime.net/ver/Ranma-1-2-2024/tv",
+    description:
+      "Ranma Saotome es un chico que sufre una peculiar maldición al caer en unos estanques malditos durante un entrenamiento de artes marciales.",
+    type: "Subtitulado",
     seasons: 1,
     episodes: 8,
   },
