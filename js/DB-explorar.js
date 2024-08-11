@@ -401,7 +401,7 @@ const animes = [
   {
     id: 32,
     name: "Dragon Ball Z",
-    category: "comedia",
+    category: "accion",
     image:
       "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/35e4ac6339f5fdcc164160a5755790cd.jpe",
     link: "https://all-anime.net/ver/Dragon-ball-z/tv",
