@@ -398,6 +398,19 @@ const animes = [
     seasons: 1,
     episodes: 12,
   },
+  {
+    id: 32,
+    name: "Dragon Ball Z",
+    category: "comedia",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/35e4ac6339f5fdcc164160a5755790cd.jpe",
+    link: "https://all-anime.net/ver/Dragon-ball-z/tv",
+    description:
+      "Villanos terroríficamente malvados de los rincones más oscuros del espacio y el tiempo se enfrentan con la Tierra, y Goku, el guerrero más fuerte del planeta, es todo lo que se interpone entre la humanidad y la extinción. Acompañado en la batalla por los valientes Guerreros Z, Goku viaja a reinos lejanos y peligrosos en busca de los poderes mágicos de las siete Dragon Balls. . . ¡y de una buena pelea!",
+    type: "Subtitulado",
+    seasons: 3,
+    episodes: 35,
+  },
   // ... (resto de los animes)
 ];
 
