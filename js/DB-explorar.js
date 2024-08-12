@@ -37,7 +37,7 @@ const animes = [
       "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
     type: "Sub | Dob",
     seasons: 14,
-    episodes: 1114,
+    episodes: 1115,
   },
   {
     id: 4,
@@ -102,7 +102,7 @@ const animes = [
       "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 18,
+    episodes: 19,
   },
   {
     id: 9,
@@ -115,7 +115,7 @@ const animes = [
       "Natsu y sus amigos emprenden una misión que no ha sido completada en 100 años.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 5,
+    episodes: 6,
   },
   {
     id: 10,
@@ -384,7 +384,7 @@ const animes = [
       "En un mundo en el que la magia lo es todo, Asta y Yuno son dos niños que encuentran abandonados el mismo día en una iglesia. Pero para ello tendrán que ser seleccionados primero por una Orden de Caballeros Mágicos, ¡y Asta no tiene magia!.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 8,
+    episodes: 64,
   },
   {
     id: 31,
@@ -407,9 +407,34 @@ const animes = [
     link: "https://all-anime.net/ver/Dragon-ball-z/tv",
     description:
       "Villanos terroríficamente malvados de los rincones más oscuros del espacio y el tiempo se enfrentan con la Tierra, y Goku, el guerrero más fuerte del planeta, es todo lo que se interpone entre la humanidad y la extinción. Acompañado en la batalla por los valientes Guerreros Z, Goku viaja a reinos lejanos y peligrosos en busca de los poderes mágicos de las siete Dragon Balls. . . ¡y de una buena pelea!",
-    type: "Subtitulado",
+    type: "Sub | Dob",
     seasons: 3,
     episodes: 35,
+  },
+  {
+    id: 33,
+    name: "Kinnikuman Perfect Origin Arc",
+    category: "accion",
+    image: "https://all-anime.net/image/Kinnikuman-Perfect-Origin-Arc/T1/p.jpg",
+    link: "https://all-anime.net/ver/Kinnikuman-Perfect-Origin-Arc/tv",
+    description:
+      "Una nueva serie de Kinnikuman está programada para celebrar el 40 aniversario del anime original, adaptando el manga Perfect Origin. Kinnikuman, un verdadero heredero al trono, ahora lucha contra otros cinco supervillanos en un Real Torneo Real de Supervivientes.",
+    type: "Subtitulado",
+    seasons: 1,
+    episodes: 6,
+  },
+  {
+    id: 34,
+    name: "Pokémon Horizons",
+    category: "aventura",
+    image:
+      "https://cdn.jkdesu.com/assets/images/animes/image/pokemon-shinsaku-anime.jpg",
+    link: "https://all-anime.net/ver/Pokemon-horizons/tv",
+    description:
+      "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
+    type: "Sub | Dob",
+    seasons: 1,
+    episodes: 60,
   },
   // ... (resto de los animes)
 ];
