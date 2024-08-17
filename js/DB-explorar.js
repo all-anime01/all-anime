@@ -425,7 +425,7 @@ const animes = [
   },
   {
     id: 34,
-    name: "Pokémon Horizons",
+    name: "Pokémon: Horizons",
     category: "aventura",
     image:
       "https://cdn.jkdesu.com/assets/images/animes/image/pokemon-shinsaku-anime.jpg",
@@ -435,6 +435,82 @@ const animes = [
     type: "Sub | Dob",
     seasons: 1,
     episodes: 60,
+  },
+  {
+    id: 35,
+    name: "Pokémon: Viajes",
+    category: "aventura",
+    image: "https://all-anime.net/image/Pokemon-mezase-pokemon-master/p.jpg",
+    link: "https://all-anime.net/ver/Pokemon-viajes/tv",
+    description:
+      "La historia final protagonizada por Satoshi y Pikachu para concluir Pokémon (2019). Aquí comienza la cuenta regresiva para despedirnos de Satoshi y Pikachu como protagonistas.",
+    type: "Sub | Dob",
+    seasons: 25,
+    episodes: 1223,
+  },
+  {
+    id: 36,
+    name: "Ranger Reject",
+    category: "accion",
+    image: "https://all-anime.net/image/Ranger-reject/p.webp",
+    link: "https://all-anime.net/ver/Ranger-reject/tv",
+    description:
+      "Con su antiguo escondite y sus jefes aniquilados, los Dusters supervivientes llegan a un acuerdo secreto con el equipo Ranger para participar en el enfrentamiento dominical, uno en el que siempre serán derrotados. ¡Cansado de esta farsa, el Luchador D finalmente da un paso al frente para hacer un cambio de una vez por todas!.",
+    type: "Sub | Dob",
+    seasons: 1,
+    episodes: 12,
+  },
+  {
+    id: 37,
+    name: "Zom 100: The Bucket List of the Dead",
+    category: "comedia",
+    image:
+      "https://all-anime.net/image/Zom-100-The-Bucket-List-of-the-Dead/p.jpe",
+    link: "https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv",
+    description:
+      "Akira ve cómo una empresa explotadora le absorbe por completo la vida. Mientras tanto, cuando su ciudad es azotada repentinamente por un apocalipsis zombi, encuentra un nuevo sentido a la vida.",
+    type: "Sub | Dob",
+    seasons: 1,
+    episodes: 12,
+  },
+  {
+    id: 38,
+    name: "Viral Hit",
+    category: "accion",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/a0ad4900ae610de44eb49dfc0881cc6a.jpe",
+    link: "https://all-anime.net/ver/Viral-Hit/tv",
+    description:
+      "Pero después de seguir algunos consejos de un misterioso canal de NewTube, Hobin pronto noquea a tipos más fuertes que él y recauda más dinero del que jamás hubiera soñado.",
+    type: "Subtitulado",
+    seasons: 1,
+    episodes: 12,
+  },
+  {
+    id: 39,
+    name: "Under Ninja",
+    category: "accion",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/39201a3e092424769aac68d0b8211dce.jpe",
+    link: "https://all-anime.net/ver/Under-ninja/tv",
+    description:
+      "Todavía existen unos 200'000 ninjas que llevan a cabo misiones mortales como organización secreta, la Inteligencia Nacional de NINJA, o NIN por sus siglas, hasta que surge un contrincante: UNDER NINJA, conocidos bajo las siglas UN, estos ninjas se oponen a NIN a cada paso que dan.",
+    type: "Subtitulado",
+    seasons: 1,
+    episodes: 12,
+  },
+  {
+    id: 39,
+    name: "Undead Murder Farce",
+    category: "sobrenatural",
+    image:
+      "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/e02ff0b76c447cbd0e512545bdf71e51.jpe",
+    link: "https://all-anime.net/ver/Undead-Murder-Farce/tv",
+    description:
+      "En el siglo XIX, en un mundo habitado por vampiros, gólems, hombres lobo y otras criaturas sobrenaturales, Aya Rindo es una belleza inmortal con cabeza pero sin cuerpo. Acompañada por Tsugaru Shinuchi, una cazadora de demonios mitad humana, mitad demonio, y su fiel sirvienta, Shizuku Hasei, viaja por Europa resolviendo misterios sobrenaturales mientras busca su cuerpo perdido.",
+    type: "Subtitulado",
+    seasons: 1,
+    episodes: 13,
   },
   // ... (resto de los animes)
 ];
