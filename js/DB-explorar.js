@@ -50,7 +50,7 @@ const animes = [
       "En un mundo donde la mayoría de la población tiene superpoderes, un joven sin poderes lucha por convertirse en un héroe.",
     type: "Sub | Dob",
     seasons: 7,
-    episodes: 150,
+    episodes: 151,
   },
   {
     id: 5,
@@ -141,7 +141,7 @@ const animes = [
       "Un ingeniero de control de calidad es transportado a un mundo de fantasía donde aplica sus habilidades.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 6,
+    episodes: 7,
   },
   {
     id: 12,
@@ -434,7 +434,7 @@ const animes = [
       "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 60,
+    episodes: 61,
   },
   {
     id: 35,
@@ -500,7 +500,7 @@ const animes = [
     episodes: 12,
   },
   {
-    id: 39,
+    id: 40,
     name: "Undead Murder Farce",
     category: "sobrenatural",
     image:
@@ -511,6 +511,81 @@ const animes = [
     type: "Subtitulado",
     seasons: 1,
     episodes: 13,
+  },
+  {
+    id: 41,
+    name: "Isekai Suicide Squad",
+    category: "accion",
+    image: "https://all-anime.net/image/Isekai-Suicide-Squad/p.jpg",
+    link: "https://all-anime.net/ver/Isekai-Suicide-Squad/tv",
+    description:
+      "Amanda Waller, responsable de A.R.G.U.S., envía al Escuadrón Suicida a una misión en otro planeta: ¡ISEKAI!.",
+    type: "Sub | Dob",
+    seasons: 1,
+    episodes: 10,
+  },
+  {
+    id: 42,
+    name: "NieR:Automata Ver1.1a",
+    category: "fantasia",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/60ae0b1c6c34b3ef0279f07481a3b983.jpg",
+    link: "https://all-anime.net/ver/Nier-automata-ver-1-1a/tv",
+    description:
+      "NieR: Automata narra la historia de los androides 2B, 9S y A2 luchando contra máquinas invadidas por seres mecánicos. La resistencia humana envía a soldados androides para destruir a los invasores, revelando una verdad potencialmente olfativa sobre el mundo.",
+    type: "Sub | Dob",
+    seasons: 1,
+    episodes: 18,
+  },
+  {
+    id: 43,
+    name: "Trigun Stampede",
+    category: "accion",
+    image: "https://all-anime.net/image/Trigun-stampede/p.jpe",
+    link: "https://all-anime.net/ver/Trigun-stampede/tv",
+    description:
+      "Una joven periodista y colega veterano se enfrenta al desafío de localizar Vash Estampida, el Huracán Humano, y cuestionar si hay alguien que causa el caos y el desastre.",
+    type: "Sub | Dob",
+    seasons: 1,
+    episodes: 12,
+  },
+  {
+    id: 44,
+    name: "Tokyo Magnitude 8.0",
+    category: "drama",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/cd003902aeb5c7439e5e9b5f52fbe33a.jpe",
+    link: "https://all-anime.net/ver/Tokyo-Magnitude-8-0/tv",
+    description:
+      "Mirai es una joven adolescente que está harta de su vida y se ve implicada en un accidente terrible junto a su hermano: un devastador terremoto. Ahora tendrán que recorrer una Tokio sumida en el caos para intentar sobrevivir y regresar a casa ellos dos solos.",
+    type: "Sub | Dob",
+    seasons: 1,
+    episodes: 11,
+  },
+  {
+    id: 45,
+    name: "Summer Time Render",
+    category: "sobrenatural",
+    image: "/image/Summer-time-render/p.jpg",
+    link: "https://all-anime.net/ver/Summer-time-render/tv",
+    description:
+      "La misteriosa historia de ciencia ficción de Shinpei Ajiro sigue la muerte de su amigo de la infancia Ushio Kofune, que lleva a una misteriosa sombra tres días antes de su muerte.",
+    type: "Sub | Dob",
+    seasons: 1,
+    episodes: 25,
+  },
+  {
+    id: 46,
+    name: "Mushoku Tensei",
+    category: "aventura",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/d458b9695157881b8b257226a2f68bb3.jpe",
+    link: "https://all-anime.net/ver/Mushoku-tensei/tv",
+    description:
+      "Un chico de 34 años es atropellado por un autobús, este reencarna en un niño llamado Rudy embarcándose en una aventura épica con la ayuda de sus amigos, habilidades mágicas, y un corazón para vivir la vida que siempre quiso.",
+    type: "Sub | Dob",
+    seasons: 2,
+    episodes: 47,
   },
   // ... (resto de los animes)
 ];

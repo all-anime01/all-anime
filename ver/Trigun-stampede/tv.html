@@ -12,6 +12,8 @@
   <title>Ver Trigun Stampede Online — All-Anime</title>
   <link rel="shortcut icon" href="/image/logo.ico">
   <link rel="stylesheet" href="/css/List_Episodios.css">
+  <link rel="stylesheet" href="/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="/js/jquery.js"></script>
   <script src="/js/jquery.dataTables.min.js"></script>
 </head>
@@ -160,16 +162,24 @@
 
     <div class="Body">
       <div>
-        <div class="Ficha fchlt" id="cambioimg">
-          <div class="Bg" id="imgchange" style="background-image:url(/image/Trigun-stampede/b.jpg)"></div>
+        <div class="Ficha fchlt">
+          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://i.redd.it/i-edited-the-trigun-stampede-poster-feel-free-to-use-as-a-v0-kkn1xnazzxda1.jpg?width=4096&format=pjpg&auto=webp&s=70e35edb194b3973dd9e27a6f0570d2867fa54f2); max-width: 100%; height: 105%; background-repeat: no-repeat;
+            background-attachment: fixed;">
+          </div>
           <div class="Container">
-            <h1 class="Title">Trigun Stampede</h1> <span class="Type tv">Anime</span>
+            <img
+              src="https://preview.redd.it/i-cant-find-the-font-they-use-in-the-trigun-stampede-logo-v0-om8vfjglg68c1.png?auto=webp&s=088493403ff3aaf747106ff22f46c7ee9e0dc022"
+              alt="" style="width: 300px;">
+            <span class="Type tv">Anime</span>
             <div>
-              <span class="TxtAlt">All-ANIME</span>
+              <span class="TxtAlt">all-anime</span>
+              <span class="TxtAlt">Crunchyroll</span>
+              <span class="TxtAlt">+14</span>
+              <span class="TxtAlt">Sub | Dob</span>
             </div>
             <div class="vtshr">
               <div class="Votes">
-                <span class="vtprmd" id="votes_prmd">4.2</span>
+                <span class="vtprmd" id="votes_prmd">4.5</span>
                 <div class="Strs RateIt" data-id="7">
                   <a href="#" class="fa-star-o Hf" data-value="5" title="5 Estrellas"></a>
                   <a href="#" class="fa-star-o On" data-value="4" title="4 Estrellas"></a>
@@ -177,7 +187,7 @@
                   <a href="#" class="fa-star-o On" data-value="2" title="2 Estrellas"></a>
                   <a href="#" class="fa-star-o On" data-value="1" title="1 Estrellas"></a>
                 </div>
-                <span class="Nmbr"><span id="votes_nmbr">5.5K</span> VOTOS</span>
+                <span class="Nmbr"><span id="votes_nmbr">28.2K</span> VOTOS</span>
               </div>
             </div>
           </div>
@@ -218,197 +228,237 @@
                 <span class="list-temp">Temporadas y Episodios</span>
                 <br>
                 <br>
-                <details open>
-                  <summary class="temp1">Temporada 1<img class="desplegar"
-                      src="https://img.icons8.com/ios-filled/50/000000/drag-list-down.png" width="20px"
-                      style="margin: -25px 175px;"></summary>
-                  <div id='linea1'>
-                    <div class="Top">
-                      <div class="Title">Lista de episodios</div>
-                      <div class="lstopt-frm">
-                        <span class="order-lst">
-                        </span>
+
+                <ul class="collapsible popout">
+                  <li class="active">
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">fiber_new</i>Temporada 1</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img src="/image/Trigun-stampede/T1/T1.avif" alt=""
+                                  style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p>Finalizado.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m {
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/12">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/12.jpe"
+                                  onmouseover="this.src='/image/Trigun-stampede/12.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/12.jpe'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">12. Mediodía en Julio.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">15/04/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/11">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/11.jpe"
+                                  onmouseover="this.src='/image/Trigun-stampede/11.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/11.jpe'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">11. Hacia un nuevo mundo.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">08/04/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/10">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/10.jpe"
+                                  onmouseover="this.src='/image/Trigun-stampede/10.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/10.jpe'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">10. Humanidad.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">01/04/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/9">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/9.jpg"
+                                  onmouseover="this.src='/image/Trigun-stampede/9.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/9.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">9. Millions Knives.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">25/03/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/8">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/8.jpg"
+                                  onmouseover="this.src='/image/Trigun-stampede/8.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/8.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">8. Hogar.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">18/03/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/7">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/7.jpg"
+                                  onmouseover="this.src='/image/Trigun-stampede/7.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/7.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">7. Wolfwood.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">11/03/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/6">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/6.jpg"
+                                  onmouseover="this.src='/image/Trigun-stampede/6.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/6.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">6. Érase una vez en la tierra de la esperanza.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">04/03/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/5">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/5.jpg"
+                                  onmouseover="this.src='/image/Trigun-stampede/5.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/5.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">5. Hijo de la bendición.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">25/02/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/4">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/4.jpg"
+                                  onmouseover="this.src='/image/Trigun-stampede/4.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/4.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">4. HUNGRY!.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">18/02/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/3">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/3.jpg"
+                                  onmouseover="this.src='/image/Trigun-stampede/3.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/3.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">3. Potente luz, ilumina la oscuridad.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">11/02/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/2">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/2.jpg"
+                                  onmouseover="this.src='/image/Trigun-stampede/2.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/2.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">2. Hombre a la fuga.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">04/02/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Trigun-stampede/1">
+                              <figure>
+                                <img class="lazy1" alt="" src="/image/Trigun-stampede/1.jpg"
+                                  onmouseover="this.src='/image/Trigun-stampede/1.webp';"
+                                  onmouseout="this.src='/image/Trigun-stampede/1.jpg'" style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">1. Tierra de nadie.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">28/01/23</p>
+                            </a>
+                          </li>
                       </div>
-                    </div>
-                    <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
-                      <li class="fa-play-circle Next">
-                        <a href="#">
-                          <figure>
-                            <img src="/image/Trigun-stampede/n.jpg" alt=""
-                              style="display: block; background-image: cover;">
-                          </figure>
-                          <h3 class="Title">Proximo Episodio</h3>
-                          <p>Finalizado.</p>
-                        </a>
-                      </li>
-                      <style>
-                        .time-m {
-                          z-index: 1000;
-                          background: #222;
-                          font-family: sans-serif;
-                          opacity: 0.8;
-                          height: 22px;
-                          width: 30px;
-                          margin: 44px 75px;
-                          text-align: center;
-                        }
-                      </style>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/12">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/12.jpe"
-                              onmouseover="this.src='/image/Trigun-stampede/12.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/12.jpe'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Mediodía en Julio.</h3>
-                          <p>Episodio 12</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/11">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/11.jpe"
-                              onmouseover="this.src='/image/Trigun-stampede/11.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/11.jpe'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Hacia un nuevo mundo.</h3>
-                          <p>Episodio 11</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/10">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/10.jpe"
-                              onmouseover="this.src='/image/Trigun-stampede/10.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/10.jpe'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Humanidad.</h3>
-                          <p>Episodio 10</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/9">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/9.jpg"
-                              onmouseover="this.src='/image/Trigun-stampede/9.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/9.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Millions Knives.</h3>
-                          <p>Episodio 9</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/8">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/8.jpg"
-                              onmouseover="this.src='/image/Trigun-stampede/8.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/8.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Hogar.</h3>
-                          <p>Episodio 8</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/7">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/7.jpg"
-                              onmouseover="this.src='/image/Trigun-stampede/7.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/7.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Wolfwood.</h3>
-                          <p>Episodio 7</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/6">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/6.jpg"
-                              onmouseover="this.src='/image/Trigun-stampede/6.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/6.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Érase una vez en la tierra de la esperanza.</h3>
-                          <p>Episodio 6</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/5">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/5.jpg"
-                              onmouseover="this.src='/image/Trigun-stampede/5.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/5.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Hijo de la bendición.</h3>
-                          <p>Episodio 5</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/4">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/4.jpg"
-                              onmouseover="this.src='/image/Trigun-stampede/4.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/4.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">HUNGRY!.</h3>
-                          <p>Episodio 4</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/3">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/3.jpg"
-                              onmouseover="this.src='/image/Trigun-stampede/3.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/3.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Potente luz, ilumina la oscuridad.</h3>
-                          <p>Episodio 3</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/2">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/2.jpg"
-                              onmouseover="this.src='/image/Trigun-stampede/2.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/2.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Hombre a la fuga.</h3>
-                          <p>Episodio 2</p>
-                        </a>
-                      </li>
-                      <li class="fa-play-circle">
-                        <a href="https://all-anime.net/ver/Trigun-stampede/1">
-                          <figure>
-                            <img class="lazy1" alt="" src="/image/Trigun-stampede/1.jpg"
-                              onmouseover="this.src='/image/Trigun-stampede/1.webp';"
-                              onmouseout="this.src='/image/Trigun-stampede/1.jpg'" style="display: block;">
-                            <p class="time-m" style="color: #fff;">23m</p>
-                          </figure>
-                          <h3 class="Title">Tierra de nadie.</h3>
-                          <p>Episodio 1</p>
-                        </a>
-                      </li>
-                  </div>
-                </details>
+                  </li>
+                </ul>
+
+                <script>
+                  //expandible
+
+                  document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.collapsible');
+                    var instances = M.Collapsible.init(elems, options);
+                  });
+
+                  // Or with jQuery
+
+                  $(document).ready(function () {
+                    $('.collapsible').collapsible();
+                  });
+                  var instance = M.Collapsible.getInstance(elem);
+
+                  /* jQuery Method Calls
+                    You can still use the old jQuery plugin method calls.
+                    But you won't be able to access instance properties.
+                
+                    $('.collapsible').collapsible('methodName');
+                    $('.collapsible').collapsible('methodName', paramName);
+                  */
+                  var elem = document.querySelector('.collapsible.expandable');
+                  var instance = M.Collapsible.init(elem, {
+                    accordion: false
+                  });
+                </script>
+                <br>
+                <br>
               </section>
-          </div>
-  </section>
-  </section>
   </section>
   </div>
+  </section>
   </main>
-
-
-
 
   <footer class="Footer">
     <div class="Container">
@@ -416,9 +466,9 @@
         <div>
           <p><span>Anime HD Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
           <nav class="mnftxt">
-            <a href="condiciones-de-uso.html">Términos y Condiciones</a>
-            <a href="politica-de-privacidad.html">Política de Privacidad</a>
-            <a href="sobre-all-anime.html">Sobre All-ANIME</a>
+            <a href="https://all-anime.net/condiciones-de-uso">Términos y Condiciones</a>
+            <a href="https://all-anime.net/politica-de-privacidad">Política de Privacidad</a>
+            <a href="https://all-anime.net/sobre-all-anime">Sobre All-ANIME</a>
           </nav>
         </div>
       </div>
@@ -428,6 +478,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="/js/script.js"></script>
   <script src="/js/idioma.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
