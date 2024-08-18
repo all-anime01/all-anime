@@ -37,7 +37,7 @@ const animes = [
       "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
     type: "Sub | Dob",
     seasons: 14,
-    episodes: 1115,
+    episodes: 1116,
   },
   {
     id: 4,
@@ -102,7 +102,7 @@ const animes = [
       "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 19,
+    episodes: 20,
   },
   {
     id: 9,
@@ -115,7 +115,7 @@ const animes = [
       "Natsu y sus amigos emprenden una misión que no ha sido completada en 100 años.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 6,
+    episodes: 7,
   },
   {
     id: 10,
