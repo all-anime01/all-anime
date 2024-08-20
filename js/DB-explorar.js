@@ -421,7 +421,7 @@ const animes = [
       "Una nueva serie de Kinnikuman está programada para celebrar el 40 aniversario del anime original, adaptando el manga Perfect Origin. Kinnikuman, un verdadero heredero al trono, ahora lucha contra otros cinco supervillanos en un Real Torneo Real de Supervivientes.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 6,
+    episodes: 7,
   },
   {
     id: 34,
@@ -586,6 +586,19 @@ const animes = [
     type: "Sub | Dob",
     seasons: 2,
     episodes: 47,
+  },
+  {
+    id: 47,
+    name: "Beyblade X",
+    category: "deporte",
+    image:
+      "https://m.media-amazon.com/images/M/MV5BMmJhNGQ4MjItMTBhMC00OWIxLTg5NjAtYjM5ZjE3NWM2ZjMzXkEyXkFqcGdeQXVyMTY2MjYzNzE2._V1_.jpg",
+    link: "https://all-anime.net/ver/Beyblade-x/tv",
+    description:
+      "Kazami Bird, que aspira a convertirse en profesional, conoce al antiguo campeón Kurosu Ex, también conocido como “Kamen X”, y forman un equipo para poder aspirar a la “cima” de la Torre X.",
+    type: "Sub | Dob",
+    seasons: 1,
+    episodes: 25,
   },
   // ... (resto de los animes)
 ];
