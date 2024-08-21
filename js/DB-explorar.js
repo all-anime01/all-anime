@@ -600,6 +600,18 @@ const animes = [
     seasons: 1,
     episodes: 25,
   },
+  {
+    id: 48,
+    name: "Blue Lock",
+    category: "deporte",
+    image: "https://all-anime.net/image/Blue-lock/p.jpe",
+    link: "https://all-anime.net/ver/Blue-lock/tv",
+    description:
+      "La federación japonesa está decidida a crear un jugador con una sed de gol única, alguien ‘‘egoísta‘‘ con el balón, un jugador que pueda ser capaz de dar la vuelta a un partido que está por perderse.",
+    type: "Sub | Dob",
+    seasons: 1,
+    episodes: 24,
+  },
   // ... (resto de los animes)
 ];
 
