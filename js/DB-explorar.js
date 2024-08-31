@@ -50,7 +50,7 @@ const animes = [
       "En un mundo donde la mayoría de la población tiene superpoderes, un joven sin poderes lucha por convertirse en un héroe.",
     type: "Sub | Dob",
     seasons: 7,
-    episodes: 152,
+    episodes: 153,
   },
   {
     id: 5,
@@ -141,7 +141,7 @@ const animes = [
       "Un ingeniero de control de calidad es transportado a un mundo de fantasía donde aplica sus habilidades.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 8,
+    episodes: 9,
   },
   {
     id: 12,
@@ -434,7 +434,7 @@ const animes = [
       "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 62,
+    episodes: 63,
   },
   {
     id: 35,
@@ -535,7 +535,7 @@ const animes = [
       "NieR: Automata narra la historia de los androides 2B, 9S y A2 luchando contra máquinas invadidas por seres mecánicos. La resistencia humana envía a soldados androides para destruir a los invasores, revelando una verdad potencialmente olfativa sobre el mundo.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 19,
+    episodes: 20,
   },
   {
     id: 43,
