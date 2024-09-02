@@ -37,7 +37,7 @@ const animes = [
       "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
     type: "Sub | Dob",
     seasons: 14,
-    episodes: 1116,
+    episodes: 1117,
   },
   {
     id: 4,
@@ -102,7 +102,7 @@ const animes = [
       "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 21,
+    episodes: 22,
   },
   {
     id: 9,
@@ -115,7 +115,7 @@ const animes = [
       "Natsu y sus amigos emprenden una misión que no ha sido completada en 100 años.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 8,
+    episodes: 9,
   },
   {
     id: 10,
@@ -421,7 +421,7 @@ const animes = [
       "Una nueva serie de Kinnikuman está programada para celebrar el 40 aniversario del anime original, adaptando el manga Perfect Origin. Kinnikuman, un verdadero heredero al trono, ahora lucha contra otros cinco supervillanos en un Real Torneo Real de Supervivientes.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 8,
+    episodes: 9,
   },
   {
     id: 34,

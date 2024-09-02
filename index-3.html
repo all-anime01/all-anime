@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crunchyroll Clone</title>
+    <style>
+        :root {
+            --orange: #f47521;
+            --dark-blue: #23252b;
+            --light-gray: #f1f1f1;
+            --text-gray: #7a7a7a;
+        }
+
+        body {
+            font-family: 'Lato', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: var(--dark-blue);
+        }
+
+        header {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 0.5rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 140px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .nav-button {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .premium-button {
+            background-color: var(--orange);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0;
+        }
+
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .search-container {
+            position: relative;
+            margin-left: auto;
+        }
+
+        .search-input {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            color: white;
+            width: 200px;
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .search-button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .banner {
+            position: relative;
+            height: 450px;
+            overflow: hidden;
+        }
+
+        .banner-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .banner-slide.active {
+            opacity: 1;
+        }
+
+        .banner-content {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+            color: white;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .banner-logo {
+            max-width: 300px;
+            max-height: 150px;
+            margin-bottom: 1rem;
+        }
+
+        .banner-description {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .banner-nav {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .banner-nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+        }
+
+        .banner-nav-dot.active {
+            background-color: white;
+        }
+
+        .content-section {
+            padding: 2rem;
+            background-color: white;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-blue);
+            font-weight: bold;
+        }
+
+        .anime-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .anime-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .anime-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .anime-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .anime-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+            color: white;
+            padding: 1rem;
+        }
+
+        .anime-title {
+            font-size: 0.9rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .anime-episode {
+            font-size: 0.8rem;
+            color: var(--orange);
+            margin-top: 0.5rem;
+        }
+
+        .button {
+            background-color: var(--orange);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--text-gray);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <img src="https://static.crunchyroll.com/cxweb/assets/img/logo-beta-orange.svg" alt="Crunchyroll"
+                class="logo">
+            <div class="nav-buttons">
+                <button class="nav-button">Iniciar sesión</button>
+                <button class="nav-button premium-button">Prueba gratuita premium</button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <a href="#">Explorar</a>
+            <a href="#">Manga</a>
+            <a href="#">Juegos</a>
+            <a href="#">Noticias</a>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar anime...">
+                <button class="search-button">🔍</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner" id="banner">
+            <!-- Banner slides will be inserted here by JavaScript -->
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Continuar viendo</h2>
+            <div class="anime-grid" id="continue-watching"></div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Nuevos episodios</h2>
+            <div class="anime-grid" id="new-episodes"></div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Populares en Crunchyroll</h2>
+            <div class="anime-grid" id="popular-anime"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Crunchyroll, LLC. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Datos de ejemplo para los animes
+        const animes = [
+            { title: "Naruto Shippuden", image: "https://static.crunchyroll.com/assets/images/naruto-shippuden.jpg", category: "continue", episode: "Episodio 123" },
+            { title: "One Piece", image: "https://static.crunchyroll.com/assets/images/one-piece.jpg", category: "continue", episode: "Episodio 1015" },
+            { title: "Attack on Titan", image: "https://static.crunchyroll.com/assets/images/attack-on-titan.jpg", category: "continue", episode: "Episodio 87" },
+            { title: "Demon Slayer", image: "https://static.crunchyroll.com/assets/images/demon-slayer.jpg", category: "new", episode: "Episodio 26" },
+            { title: "My Hero Academia", image: "https://static.crunchyroll.com/assets/images/my-hero-academia.jpg", category: "new", episode: "Episodio 113" },
+            { title: "Jujutsu Kaisen", image: "https://static.crunchyroll.com/assets/images/jujutsu-kaisen.jpg", category: "new", episode: "Episodio 24" },
+            { title: "Dragon Ball Super", image: "https://static.crunchyroll.com/assets/images/dragon-ball-super.jpg", category: "popular", episode: "Episodio 131" },
+            { title: "Fullmetal Alchemist", image: "https://static.crunchyroll.com/assets/images/fullmetal-alchemist.jpg", category: "popular", episode: "Episodio 64" },
+            { title: "Death Note", image: "https://static.crunchyroll.com/assets/images/death-note.jpg", category: "popular", episode: "Episodio 37" }
+        ];
+
+        // Datos para el banner rotativo
+        const bannerData = [
+            {
+                title: "Attack on Titan: Temporada Final",
+                description: "La batalla final comienza. ¿Quién sobrevivirá en este mundo cruel?",
+                image: "https://static.crunchyroll.com/assets/images/attack-on-titan-banner.jpg",
+                logo: "https://static.crunchyroll.com/assets/images/attack-on-titan-logo.png"
+            },
+            {
+                title: "Demon Slayer: Arco del Distrito del Entretenimiento",
+                description: "Tanjiro y sus amigos se enfrentan a nuevos desafíos en el bullicioso distrito.",
+                image: "https://static.crunchyroll.com/assets/images/demon-slayer-banner.jpg",
+                logo: "https://static.crunchyroll.com/assets/images/demon-slayer-logo.png"
+            },
+            {
+                title: "My Hero Academia: Temporada 6",
+                description: "Los héroes y villanos se enfrentan en una batalla épica que decidirá el futuro.",
+                image: "https://static.crunchyroll.com/assets/images/my-hero-academia-banner.jpg",
+                logo: "https://static.crunchyroll.com/assets/images/my-hero-academia-logo.png"
+            }
+        ];
+
+        // Función para cargar el banner rotativo
+        function loadBanner() {
+            const banner = document.getElementById('banner');
+            banner.innerHTML = '';
+            bannerData.forEach((slide, index) => {
+                const slideElement = document.createElement('div');
+                slideElement.className = `banner-slide ${index === 0 ? 'active' : ''}`;
+                slideElement.style.backgroundImage = `url(${slide.image})`;
+                slideElement.innerHTML = `
+                    <div class="banner-content">
+                        <img src="${slide.logo}" alt="${slide.title} Logo" class="banner-logo">
+                        <p class="banner-description">${slide.description}</p>
+                        <button class="button">Ver ahora</button>
+                    </div>
+                `;
+                banner.appendChild(slideElement);
+            });
+
+            // Agregar navegación de puntos
+            const nav = document.createElement('div');
+            nav.className = 'banner-nav';
+            bannerData.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.className = `banner-nav-dot ${index === 0 ? 'active' : ''}`;
+                dot.addEventListener('click', () => changeBannerSlide(index));
+                nav.appendChild(dot);
+            });
+            banner.appendChild(nav);
+        }
+
+        // Función para cambiar la diapositiva del banner
+        function changeBannerSlide(index) {
+            const slides = document.querySelectorAll('.banner-slide');
+            const dots = document.querySelectorAll('.banner-nav-dot');
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        // Función para rotar automáticamente el banner
+        function rotateBanner() {
+            const slides = document.querySelectorAll('.banner-slide');
+            let currentIndex = Array.from(slides).findIndex(slide => slide.classList.contains('active'));
+            let nextIndex = (currentIndex + 1) % slides.length;
+            changeBannerSlide(nextIndex);
+        }
+
+        // Iniciar rotación automática del banner
+        setInterval(rotateBanner, 5000); // Cambia cada 5 segundos
+
+        // Función para cargar los animes en la grilla
+        function loadAnimes(category, containerId) {
+            const grid = document.getElementById(containerId);
+            grid.innerHTML = ''; // Limpiar la grilla
+            animes.filter(anime => anime.category === category).forEach(anime => {
+                const card = document.createElement('div');
+                card.className = 'anime-card';
+                card.innerHTML = `
+                <img src="${anime.image}" alt="${anime.title}">
+                <div class="anime-info">
+                    <h3 class="anime-title">${anime.title}</h3>
+                    <p class="anime-episode">${anime.episode}</p>
+                </div>
+            `;
+                card.addEventListener('click', () => alert(`Has seleccionado ${anime.title}`));
+                grid.appendChild(card);
+            });
+        }
+
+        // Cargar banner y animes al iniciar la página
+        loadBanner();
+        loadAnimes('continue', 'continue-watching');
+        loadAnimes('new', 'new-episodes');
+        loadAnimes('popular', 'popular-anime');
+
+        // Funcionalidad para los botones de navegación
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                alert(`Has hecho clic en ${this.textContent}. Esta función aún no está implementada.`);
+            });
+        });
+
+        // Funcionalidad para los botones del header
+        document.querySelectorAll('.nav-button').forEach(button => {
+            button.addEventListener('click', function () {
+                alert(`Has hecho clic en ${this.textContent}. Esta función aún no está implementada.`);
+            });
+        });
+
+        // Funcionalidad para los botones "Ver ahora" en el banner
+        document.addEventListener('click', function (e) {
+            if (e.target.classList.contains('button') && e.target.textContent === 'Ver ahora') {
+                const title = e.target.closest('.banner-content').querySelector('img').alt.replace(' Logo', '');
+                alert(`¡Comenzando a reproducir ${title}!`);
+            }
+        });
+
+        // Funcionalidad para el buscador
+        const searchInput = document.querySelector('.search-input');
+        const searchButton = document.querySelector('.search-button');
+
+        function performSearch() {
+            const searchTerm = searchInput.value.toLowerCase();
+            if (searchTerm.trim() === '') {
+                alert('Por favor, ingresa un término de búsqueda.');
+                return;
+            }
+            const results = animes.filter(anime =>
+                anime.title.toLowerCase().includes(searchTerm)
+            );
+            if (results.length === 0) {
+                alert('No se encontraron resultados para tu búsqueda.');
+            } else {
+                alert(`Se encontraron ${results.length} resultados para "${searchTerm}"`);
+                // Aquí podrías implementar una función para mostrar los resultados en la página
+            }
+        }
+        searchButton.addEventListener('click', performSearch);
+        searchInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+</body>
+
+</html>
