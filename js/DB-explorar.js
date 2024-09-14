@@ -50,7 +50,7 @@ const animes = [
       "En un mundo donde la mayoría de la población tiene superpoderes, un joven sin poderes lucha por convertirse en un héroe.",
     type: "Sub | Dob",
     seasons: 7,
-    episodes: 154,
+    episodes: 155,
   },
   {
     id: 5,
@@ -434,7 +434,7 @@ const animes = [
       "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 64,
+    episodes: 65,
   },
   {
     id: 35,
