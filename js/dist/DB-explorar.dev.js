@@ -110,7 +110,7 @@ var animes = [{
   description: "Un ingeniero de control de calidad es transportado a un mundo de fantasía donde aplica sus habilidades.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 10
+  episodes: 11
 }, {
   id: 12,
   name: "Wind Breaker",
@@ -420,7 +420,7 @@ var animes = [{
   description: "NieR: Automata narra la historia de los androides 2B, 9S y A2 luchando contra máquinas invadidas por seres mecánicos. La resistencia humana envía a soldados androides para destruir a los invasores, revelando una verdad potencialmente olfativa sobre el mundo.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 21
+  episodes: 22
 }, {
   id: 43,
   name: "Trigun Stampede",
