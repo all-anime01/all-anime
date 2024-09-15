@@ -30,7 +30,7 @@ var animes = [{
   description: "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
   type: "Sub | Dob",
   seasons: 14,
-  episodes: 1118
+  episodes: 1119
 }, {
   id: 4,
   name: "My Hero Academia",
@@ -80,7 +80,7 @@ var animes = [{
   description: "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 23
+  episodes: 24
 }, {
   id: 9,
   name: "Fairy Tail 100 Years Quest",
@@ -90,7 +90,7 @@ var animes = [{
   description: "Natsu y sus amigos emprenden una misión que no ha sido completada en 100 años.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 10
+  episodes: 11
 }, {
   id: 10,
   name: "Kaiju No.8",
