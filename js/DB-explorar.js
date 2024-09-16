@@ -421,7 +421,7 @@ const animes = [
       "Una nueva serie de Kinnikuman está programada para celebrar el 40 aniversario del anime original, adaptando el manga Perfect Origin. Kinnikuman, un verdadero heredero al trono, ahora lucha contra otros cinco supervillanos en un Real Torneo Real de Supervivientes.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 9,
+    episodes: 10,
   },
   {
     id: 34,
