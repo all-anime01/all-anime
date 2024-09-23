@@ -629,6 +629,14 @@ const animes = [
     type: "ANIME",
   },
   {
+    id: 48,
+    name: "Wistoria: Wand of Sword",
+    link: "https://all-anime.net/ver/Wistoria-Wand-and-Sword/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/22ff4b731a5696364dc65d8d4a4627df.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Zom 100: The Bucket List of the Dead",
     link: "https://all-anime.net/ver/Zom-100-The-Bucket-List-of-the-Dead/tv",
     image: "/image/Zom-100-The-Bucket-List-of-the-Dead/p.jpe",

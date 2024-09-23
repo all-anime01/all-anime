@@ -30,7 +30,7 @@ var animes = [{
   description: "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
   type: "Sub | Dob",
   seasons: 14,
-  episodes: 1119
+  episodes: 1120
 }, {
   id: 4,
   name: "My Hero Academia",
@@ -80,7 +80,7 @@ var animes = [{
   description: "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 24
+  episodes: 25
 }, {
   id: 9,
   name: "Fairy Tail 100 Years Quest",
@@ -90,7 +90,7 @@ var animes = [{
   description: "Natsu y sus amigos emprenden una misión que no ha sido completada en 100 años.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 11
+  episodes: 12
 }, {
   id: 10,
   name: "Kaiju No.8",
@@ -330,7 +330,7 @@ var animes = [{
   description: "Una nueva serie de Kinnikuman está programada para celebrar el 40 aniversario del anime original, adaptando el manga Perfect Origin. Kinnikuman, un verdadero heredero al trono, ahora lucha contra otros cinco supervillanos en un Real Torneo Real de Supervivientes.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 10
+  episodes: 11
 }, {
   id: 34,
   name: "Pokémon: Horizons",
@@ -481,6 +481,16 @@ var animes = [{
   type: "Sub | Dob",
   seasons: 1,
   episodes: 24
+}, {
+  id: 48,
+  name: "Wistoria: Wand of Sword",
+  category: "accion",
+  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/22ff4b731a5696364dc65d8d4a4627df.jpg",
+  link: "https://all-anime.net/ver/Wistoria-Wand-and-Sword/tv",
+  description: "Will, un joven trabajador en una academia de magia, aspira a convertirse en un gran hechicero. Sin embargo, su plan se queda corto ya que le falta la habilidad de usar magia. A pesar de sus luchas, Will persiste con una voluntad inquebrantable, a pesar de su falta de varita.",
+  type: "Sub | Dob",
+  seasons: 1,
+  episodes: 11
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
