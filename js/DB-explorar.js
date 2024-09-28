@@ -50,7 +50,7 @@ const animes = [
       "En un mundo donde la mayoría de la población tiene superpoderes, un joven sin poderes lucha por convertirse en un héroe.",
     type: "Sub | Dob",
     seasons: 7,
-    episodes: 156,
+    episodes: 157,
   },
   {
     id: 5,
@@ -141,7 +141,7 @@ const animes = [
       "Un ingeniero de control de calidad es transportado a un mundo de fantasía donde aplica sus habilidades.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 12,
+    episodes: 13,
   },
   {
     id: 12,
@@ -535,7 +535,7 @@ const animes = [
       "NieR: Automata narra la historia de los androides 2B, 9S y A2 luchando contra máquinas invadidas por seres mecánicos. La resistencia humana envía a soldados androides para destruir a los invasores, revelando una verdad potencialmente olfativa sobre el mundo.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 23,
+    episodes: 24,
   },
   {
     id: 43,
