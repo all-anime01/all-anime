@@ -80,7 +80,7 @@ var animes = [{
   description: "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 25
+  episodes: 26
 }, {
   id: 9,
   name: "Fairy Tail 100 Years Quest",
@@ -90,7 +90,7 @@ var animes = [{
   description: "Natsu y sus amigos emprenden una misión que no ha sido completada en 100 años.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 12
+  episodes: 13
 }, {
   id: 10,
   name: "Kaiju No.8",
@@ -482,7 +482,7 @@ var animes = [{
   seasons: 1,
   episodes: 24
 }, {
-  id: 48,
+  id: 49,
   name: "Wistoria: Wand of Sword",
   category: "accion",
   image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/22ff4b731a5696364dc65d8d4a4627df.jpg",
@@ -490,7 +490,17 @@ var animes = [{
   description: "Will, un joven trabajador en una academia de magia, aspira a convertirse en un gran hechicero. Sin embargo, su plan se queda corto ya que le falta la habilidad de usar magia. A pesar de sus luchas, Will persiste con una voluntad inquebrantable, a pesar de su falta de varita.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 11
+  episodes: 12
+}, {
+  id: 50,
+  name: "Uzumaki",
+  category: "sobrenatural",
+  image: "/image/Uzumaki/T1/p.jpg",
+  link: "https://all-anime.net/ver/Uzumaki/tv",
+  description: "¡Todo en este pueblo se está convirtiendo en espirales! En un intento de escapar de las espirales Kirie, decide abandonar su pueblo ¿podrá lograrlo?.",
+  type: "Sub | Dob",
+  seasons: 1,
+  episodes: 1
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");

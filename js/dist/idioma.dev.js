@@ -486,6 +486,11 @@ var animes = [{
   image: "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/39201a3e092424769aac68d0b8211dce.jpe",
   type: "ANIME"
 }, {
+  name: "Uzumakli",
+  link: "https://all-anime.net/ver/Uzumaki/tv",
+  image: "/image/Uzumaki/T1/p.jpg",
+  type: "ANIME"
+}, {
   name: "Vinland saga",
   link: "https://all-anime.net/ver/Vinland-saga/tv",
   image: "/image/Vinland-Saga/T2/p.jpe",
@@ -501,7 +506,6 @@ var animes = [{
   image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/16d570ff136955438a3a5bfadbb66eb5.jpe",
   type: "ANIME"
 }, {
-  id: 48,
   name: "Wistoria: Wand of Sword",
   link: "https://all-anime.net/ver/Wistoria-Wand-and-Sword/tv",
   image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/22ff4b731a5696364dc65d8d4a4627df.jpg",

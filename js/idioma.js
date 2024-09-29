@@ -609,6 +609,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Uzumakli",
+    link: "https://all-anime.net/ver/Uzumaki/tv",
+    image: "/image/Uzumaki/T1/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Vinland saga",
     link: "https://all-anime.net/ver/Vinland-saga/tv",
     image: "/image/Vinland-Saga/T2/p.jpe",
@@ -629,7 +635,6 @@ const animes = [
     type: "ANIME",
   },
   {
-    id: 48,
     name: "Wistoria: Wand of Sword",
     link: "https://all-anime.net/ver/Wistoria-Wand-and-Sword/tv",
     image:
