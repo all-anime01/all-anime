@@ -161,6 +161,11 @@ var animes = [{
   image: "/image/Dead-mount-death-play/p.jpe",
   type: "ANIME"
 }, {
+  name: "Dandadan",
+  link: "https://all-anime.net/ver/Dandadan/tv",
+  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/13839ea2b48b0323417b23813a090c93.jpg",
+  type: "ANIME"
+}, {
   name: "Dragon Ball Z",
   link: "https://all-anime.net/ver/Dragon-ball-z/tv",
   image: "/image/Dragon-ball-Z/p.jpe",
@@ -264,6 +269,11 @@ var animes = [{
   name: "Mashle: magic and muscles",
   link: "https://all-anime.net/ver/Mashle-magic-and-muscles/tv",
   image: "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/f7dfe109de592c6dd9a78dc75ec1965b.jpe",
+  type: "ANIME"
+}, {
+  name: "Mecha-Ude: Mechanical Arms",
+  link: "https://all-anime.net/ver/Mecha-ude/tv",
+  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/36f48f5b71c56f980df00e86be0874fc.jpg",
   type: "ANIME"
 }, {
   name: "Mf Ghost",

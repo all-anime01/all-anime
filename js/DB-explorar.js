@@ -633,9 +633,48 @@ const animes = [
     link: "https://all-anime.net/ver/Uzumaki/tv",
     description:
       "¡Todo en este pueblo se está convirtiendo en espirales! En un intento de escapar de las espirales Kirie, decide abandonar su pueblo ¿podrá lograrlo?.",
+    type: "Sub | Cas",
+    seasons: 1,
+    episodes: 1,
+  },
+  {
+    id: 51,
+    name: "Dandadan",
+    category: "sobrenatural",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/13839ea2b48b0323417b23813a090c93.jpg",
+    link: "https://all-anime.net/ver/Dandadan/tv",
+    description:
+      "Momo, una estudiante espiritual, y Okarun, un friki del ocultismo, discuten sobre sus creencias. Cuando ambos fenómenos se hacen reales, Momo obtiene poder oculto y Okarun obtiene poder de maldición, ambos enfrentándose a fuerzas paranormales.",
     type: "Sub | Dob",
     seasons: 1,
     episodes: 1,
+  },
+  {
+    id: 52,
+    name: "Mecha-Ude: Mechanical Arms",
+    category: "accion",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/36f48f5b71c56f980df00e86be0874fc.jpg",
+    link: "https://all-anime.net/ver/Mecha-ude/tv",
+    description:
+      "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
+    type: "Subtitulado",
+    seasons: 1,
+    episodes: 1,
+  },
+  {
+    id: 52,
+    name: "Rurouni Kenshin (2023)",
+    category: "accion",
+    image:
+      "https://nekomitai.net/wp-content/uploads/2024/09/Rurouni-Kenshin-Meiji-Kenkaku-Romantan-Kyoto-Douran-3.png",
+    link: "https://all-anime.net/ver/Mecha-ude/tv",
+    description:
+      "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
+    type: "Sub | Dob",
+    seasons: 2,
+    episodes: 25,
   },
   // ... (resto de los animes)
 ];
