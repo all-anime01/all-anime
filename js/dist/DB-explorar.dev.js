@@ -40,7 +40,7 @@ var animes = [{
   description: "En un mundo donde la mayoría de la población tiene superpoderes, un joven sin poderes lucha por convertirse en un héroe.",
   type: "Sub | Dob",
   seasons: 7,
-  episodes: 157
+  episodes: 158
 }, {
   id: 5,
   name: "Death Note",
@@ -179,8 +179,8 @@ var animes = [{
   link: "https://all-anime.net/ver/Ao-no-exorcist/tv",
   description: "Assiah, el mundo humano, y Gehenna, el mundo demoníaco, rara vez se cruzan. Sin embargo, algunos humanos pueden exorcizar demonios: los exorcistas.",
   type: "Subtitulado",
-  seasons: 3,
-  episodes: 49
+  seasons: 4,
+  episodes: 50
 }, {
   id: 19,
   name: "Avatar: La leyenda de Aang",
@@ -279,8 +279,8 @@ var animes = [{
   link: "https://all-anime.net/ver/Bleach-sennen-kessen-hen/tv",
   description: "Finalmente el Seireitei, hogar de los Soul Reapers, es atacado por un grupo que se hace llamar Wandenreich la historia y la verdad que los Soul Reapers mantuvieron oculta durante mil largos años finalmente salen a la luz.",
   type: "Sub | Dob",
-  seasons: 1,
-  episodes: 26
+  seasons: 3,
+  episodes: 27
 }, {
   id: 29,
   name: "Pluto",
@@ -479,8 +479,8 @@ var animes = [{
   link: "https://all-anime.net/ver/Blue-lock/tv",
   description: "La federación japonesa está decidida a crear un jugador con una sed de gol única, alguien ‘‘egoísta‘‘ con el balón, un jugador que pueda ser capaz de dar la vuelta a un partido que está por perderse.",
   type: "Sub | Dob",
-  seasons: 1,
-  episodes: 24
+  seasons: 2,
+  episodes: 25
 }, {
   id: 49,
   name: "Wistoria: Wand of Sword",
