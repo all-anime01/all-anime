@@ -113,7 +113,7 @@ var animes = [{
 }, {
   name: "Bleach: Thousand-Year-blood-war",
   link: "https://all-anime.net/ver/Bleach-sennen-kessen-hen/tv",
-  image: "/image/Bleach-thousand-year-blood-war/P2/p.webp",
+  image: "/image/Bleach-thousand-year-blood-war/T3/p.jpg",
   type: "ANIME"
 }, {
   name: "Boku no hero academia",
@@ -123,7 +123,7 @@ var animes = [{
 }, {
   name: "Blue lock",
   link: "https://all-anime.net/ver/Blue-lock/tv",
-  image: "/image/Blue-lock/p.jpe",
+  image: "https://nekomitai.net/wp-content/uploads/2024/09/Blue-Lock-vs.-U-20-Japan-3.png",
   type: "ANIME"
 }, {
   name: "Captain Tsubasa",

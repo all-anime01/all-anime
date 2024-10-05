@@ -273,9 +273,9 @@ var animes = [{
   episodes: "Subiendo..."
 }, {
   id: 28,
-  name: "Bleach Thousand Year Blood War",
+  name: "Bleach: Thousand Year Blood War",
   category: "accion",
-  image: "https://all-anime.net/image/Bleach-thousand-year-blood-war/P2/p.webp",
+  image: "https://all-anime.net/image/Bleach-thousand-year-blood-war/T3/p.jpg",
   link: "https://all-anime.net/ver/Bleach-sennen-kessen-hen/tv",
   description: "Finalmente el Seireitei, hogar de los Soul Reapers, es atacado por un grupo que se hace llamar Wandenreich la historia y la verdad que los Soul Reapers mantuvieron oculta durante mil largos años finalmente salen a la luz.",
   type: "Sub | Dob",
@@ -475,7 +475,7 @@ var animes = [{
   id: 48,
   name: "Blue Lock",
   category: "deporte",
-  image: "https://all-anime.net/image/Blue-lock/p.jpe",
+  image: "https://nekomitai.net/wp-content/uploads/2024/09/Blue-Lock-vs.-U-20-Japan-3.png",
   link: "https://all-anime.net/ver/Blue-lock/tv",
   description: "La federación japonesa está decidida a crear un jugador con una sed de gol única, alguien ‘‘egoísta‘‘ con el balón, un jugador que pueda ser capaz de dar la vuelta a un partido que está por perderse.",
   type: "Sub | Dob",
