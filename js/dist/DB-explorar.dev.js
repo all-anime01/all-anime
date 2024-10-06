@@ -30,7 +30,7 @@ var animes = [{
   description: "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
   type: "Sub | Dob",
   seasons: 14,
-  episodes: 1120
+  episodes: 1121
 }, {
   id: 4,
   name: "My Hero Academia",
@@ -80,7 +80,7 @@ var animes = [{
   description: "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 26
+  episodes: 27
 }, {
   id: 9,
   name: "Fairy Tail 100 Years Quest",
@@ -500,7 +500,7 @@ var animes = [{
   description: "¡Todo en este pueblo se está convirtiendo en espirales! En un intento de escapar de las espirales Kirie, decide abandonar su pueblo ¿podrá lograrlo?.",
   type: "Sub | Cas",
   seasons: 1,
-  episodes: 1
+  episodes: 2
 }, {
   id: 51,
   name: "Dandadan",
