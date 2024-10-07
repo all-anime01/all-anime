@@ -382,7 +382,7 @@ const animes = [
   {
     name: "Nanatsu no Taizai: Mokushiroku no Yonkishi",
     link: "https://all-anime.net/ver/Nanatsu-no-taizai-mokushiroku-no-yonkishi/tv",
-    image: "https://cdn.myanimelist.net/images/anime/1389/134598l.jpg",
+    image: "/image/Nanatsu-no-taizai-mokushiroku-no-yonkishi/T2/p.jpg",
     type: "ANIME",
   },
   {

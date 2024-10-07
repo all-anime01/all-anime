@@ -522,12 +522,22 @@ var animes = [{
   seasons: 1,
   episodes: 1
 }, {
-  id: 52,
+  id: 53,
   name: "Rurouni Kenshin (2023)",
   category: "accion",
   image: "https://nekomitai.net/wp-content/uploads/2024/09/Rurouni-Kenshin-Meiji-Kenkaku-Romantan-Kyoto-Douran-3.png",
-  link: "https://all-anime.net/ver/Mecha-ude/tv",
+  link: "https://all-anime.net/ver/Rurouni-Kenshin-2023/tv",
   description: "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
+  type: "Sub | Dob",
+  seasons: 2,
+  episodes: 25
+}, {
+  id: 53,
+  name: "Nanatsu no Taizai: Mokushiroku no Yonkishi",
+  category: "accion",
+  image: "/image/Nanatsu-no-taizai-mokushiroku-no-yonkishi/T2/p.jpg",
+  link: "https://all-anime.net/ver/Nanatsu-no-taizai-mokushiroku-no-yonkishi/tv",
+  description: "Cuando una profecía apocalíptica se cierne sobre un país pacífico, un chico de gran corazón emprende un viaje de descubrimiento... y venganza.",
   type: "Sub | Dob",
   seasons: 2,
   episodes: 25
