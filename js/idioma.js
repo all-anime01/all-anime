@@ -484,7 +484,8 @@ const animes = [
   {
     name: "Rurouni Kenshin (2023)",
     link: "https://all-anime.net/ver/Rurouni-Kenshin-2023/tv",
-    image: "/image/Rurouni-kenshin-meiji-kenkaku-romantan-2023/p.jpe",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/c88f035c1ebb9922410bcf04e073a3d9.jpg",
     type: "ANIME",
   },
   {

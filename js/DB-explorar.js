@@ -669,13 +669,13 @@ const animes = [
     name: "Rurouni Kenshin (2023)",
     category: "accion",
     image:
-      "https://nekomitai.net/wp-content/uploads/2024/09/Rurouni-Kenshin-Meiji-Kenkaku-Romantan-Kyoto-Douran-3.png",
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/c88f035c1ebb9922410bcf04e073a3d9.jpg",
     link: "https://all-anime.net/ver/Rurouni-Kenshin-2023/tv",
     description:
       "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 25,
+    episodes: 26,
   },
   {
     id: 53,
