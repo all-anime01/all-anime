@@ -207,6 +207,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Dragon Ball: Daima",
+    link: "https://all-anime.net/ver/Dragon-Ball-Daima/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/298acc932735d9a731ea39a3db6a613c.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Dragon Quest: Dai no Daibouken",
     link: "https://all-anime.net/ver/Dragon-quest-dai-no-daibouken/tv",
     image: "/image/Dragon-quest/p.jpg",

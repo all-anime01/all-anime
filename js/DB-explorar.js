@@ -678,7 +678,7 @@ const animes = [
     episodes: 26,
   },
   {
-    id: 53,
+    id: 54,
     name: "Nanatsu no Taizai: Mokushiroku no Yonkishi",
     category: "accion",
     image: "/image/Nanatsu-no-taizai-mokushiroku-no-yonkishi/T2/p.jpg",
@@ -688,6 +688,19 @@ const animes = [
     type: "Sub | Dob",
     seasons: 2,
     episodes: 25,
+  },
+  {
+    id: 54,
+    name: "Dragon Ball: Daima",
+    category: "accion",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/298acc932735d9a731ea39a3db6a613c.jpg",
+    link: "https://all-anime.net/ver/Dragon-Ball-Daima/tv",
+    description:
+      "¡Goku comienza una gran aventura en la nueva serie de Dragon Ball!",
+    type: "Subtitulado",
+    seasons: 1,
+    episodes: 1,
   },
   // ... (resto de los animes)
 ];
