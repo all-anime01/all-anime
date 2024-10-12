@@ -40,7 +40,7 @@ var animes = [{
   description: "En un mundo donde la mayoría de la población tiene superpoderes, un joven sin poderes lucha por convertirse en un héroe.",
   type: "Sub | Dob",
   seasons: 7,
-  episodes: 158
+  episodes: 159
 }, {
   id: 5,
   name: "Death Note",
@@ -175,12 +175,12 @@ var animes = [{
   id: 18,
   name: "Blue Exorcist",
   category: "accion",
-  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/ff18ec2d3a400d17921ad9b3a03045ce.jpg",
+  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/cead08fd2ced6e6dbe056ce0381da6ff.jpg",
   link: "https://all-anime.net/ver/Ao-no-exorcist/tv",
   description: "Assiah, el mundo humano, y Gehenna, el mundo demoníaco, rara vez se cruzan. Sin embargo, algunos humanos pueden exorcizar demonios: los exorcistas.",
   type: "Subtitulado",
   seasons: 4,
-  episodes: 50
+  episodes: 51
 }, {
   id: 19,
   name: "Avatar: La leyenda de Aang",
@@ -280,7 +280,7 @@ var animes = [{
   description: "Finalmente el Seireitei, hogar de los Soul Reapers, es atacado por un grupo que se hace llamar Wandenreich la historia y la verdad que los Soul Reapers mantuvieron oculta durante mil largos años finalmente salen a la luz.",
   type: "Sub | Dob",
   seasons: 3,
-  episodes: 27
+  episodes: 28
 }, {
   id: 29,
   name: "Pluto",
@@ -310,7 +310,7 @@ var animes = [{
   description: "Ranma Saotome es un chico que sufre una peculiar maldición al caer en unos estanques malditos durante un entrenamiento de artes marciales.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 12
+  episodes: 2
 }, {
   id: 32,
   name: "Dragon Ball Z",
@@ -340,7 +340,7 @@ var animes = [{
   description: "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 67
+  episodes: 68
 }, {
   id: 35,
   name: "Pokémon: Viajes",
@@ -475,12 +475,12 @@ var animes = [{
   id: 48,
   name: "Blue Lock",
   category: "deporte",
-  image: "https://nekomitai.net/wp-content/uploads/2024/09/Blue-Lock-vs.-U-20-Japan-3.png",
+  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/b5621ff1277ed6ad1006b0c6f14900bb.jpg",
   link: "https://all-anime.net/ver/Blue-lock/tv",
   description: "La federación japonesa está decidida a crear un jugador con una sed de gol única, alguien ‘‘egoísta‘‘ con el balón, un jugador que pueda ser capaz de dar la vuelta a un partido que está por perderse.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 25
+  episodes: 26
 }, {
   id: 49,
   name: "Wistoria: Wand of Sword",

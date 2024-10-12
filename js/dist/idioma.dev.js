@@ -123,7 +123,7 @@ var animes = [{
 }, {
   name: "Blue lock",
   link: "https://all-anime.net/ver/Blue-lock/tv",
-  image: "https://nekomitai.net/wp-content/uploads/2024/09/Blue-Lock-vs.-U-20-Japan-3.png",
+  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/b5621ff1277ed6ad1006b0c6f14900bb.jpg",
   type: "ANIME"
 }, {
   name: "Captain Tsubasa",
