@@ -37,7 +37,7 @@ const animes = [
       "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
     type: "Sub | Dob",
     seasons: 14,
-    episodes: 1121,
+    episodes: 1122,
   },
   {
     id: 4,
@@ -102,7 +102,7 @@ const animes = [
       "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 27,
+    episodes: 28,
   },
   {
     id: 9,
@@ -115,7 +115,7 @@ const animes = [
       "Natsu y sus amigos emprenden una misión que no ha sido completada en 100 años.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 13,
+    episodes: 14,
   },
   {
     id: 10,
@@ -636,7 +636,7 @@ const animes = [
       "¡Todo en este pueblo se está convirtiendo en espirales! En un intento de escapar de las espirales Kirie, decide abandonar su pueblo ¿podrá lograrlo?.",
     type: "Sub | Cas",
     seasons: 1,
-    episodes: 2,
+    episodes: 3,
   },
   {
     id: 51,
@@ -649,7 +649,7 @@ const animes = [
       "Momo, una estudiante espiritual, y Okarun, un friki del ocultismo, discuten sobre sus creencias. Cuando ambos fenómenos se hacen reales, Momo obtiene poder oculto y Okarun obtiene poder de maldición, ambos enfrentándose a fuerzas paranormales.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 2,
+    episodes: 3,
   },
   {
     id: 52,
@@ -690,7 +690,7 @@ const animes = [
     episodes: 25,
   },
   {
-    id: 54,
+    id: 55,
     name: "Dragon Ball: Daima",
     category: "accion",
     image:
@@ -701,6 +701,19 @@ const animes = [
     type: "Subtitulado",
     seasons: 1,
     episodes: 1,
+  },
+  {
+    id: 56,
+    name: "Shangri-La Frontier",
+    category: "accion",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/2995bef133df4020b3acbfe7a694cbdf.jpg",
+    link: "https://all-anime.net/ver/Shangri-La-Frontier/tv",
+    description:
+      "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
+    type: "Sub | Dob",
+    seasons: 2,
+    episodes: 26,
   },
   // ... (resto de los animes)
 ];
