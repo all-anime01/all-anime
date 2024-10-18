@@ -595,7 +595,7 @@ const animes = [
     name: "Tower of God",
     link: "https://all-anime.net/ver/Tower-of-god/tv",
     image:
-      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/eca729e2c2ae8ab45631c3bd11b81653.jpg",
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/5d5e5f5263126fcaa27c63c5306dbdcc.jpg",
     type: "ANIME",
   },
   {

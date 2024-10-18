@@ -96,7 +96,7 @@ const animes = [
     name: "Tower of God",
     category: "fantasia",
     image:
-      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/eca729e2c2ae8ab45631c3bd11b81653.jpg",
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/5d5e5f5263126fcaa27c63c5306dbdcc.jpg",
     link: "https://all-anime.net/ver/Tower-of-god/tv",
     description:
       "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
@@ -662,7 +662,7 @@ const animes = [
       "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 2,
+    episodes: 3,
   },
   {
     id: 53,
@@ -675,7 +675,7 @@ const animes = [
       "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 26,
+    episodes: 27,
   },
   {
     id: 54,
