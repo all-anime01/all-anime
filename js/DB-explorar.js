@@ -231,7 +231,7 @@ const animes = [
       "Assiah, el mundo humano, y Gehenna, el mundo demoníaco, rara vez se cruzan. Sin embargo, algunos humanos pueden exorcizar demonios: los exorcistas.",
     type: "Subtitulado",
     seasons: 4,
-    episodes: 51,
+    episodes: 52,
   },
   {
     id: 19,
@@ -358,7 +358,7 @@ const animes = [
       "Finalmente el Seireitei, hogar de los Soul Reapers, es atacado por un grupo que se hace llamar Wandenreich la historia y la verdad que los Soul Reapers mantuvieron oculta durante mil largos años finalmente salen a la luz.",
     type: "Sub | Dob",
     seasons: 3,
-    episodes: 28,
+    episodes: 29,
   },
   {
     id: 29,
@@ -434,7 +434,7 @@ const animes = [
       "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 68,
+    episodes: 69,
   },
   {
     id: 35,
@@ -611,7 +611,7 @@ const animes = [
       "La federación japonesa está decidida a crear un jugador con una sed de gol única, alguien ‘‘egoísta‘‘ con el balón, un jugador que pueda ser capaz de dar la vuelta a un partido que está por perderse.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 26,
+    episodes: 27,
   },
   {
     id: 49,
