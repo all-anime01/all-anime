@@ -80,7 +80,7 @@ var animes = [{
   description: "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 28
+  episodes: 29
 }, {
   id: 9,
   name: "Fairy Tail 100 Years Quest",
@@ -90,7 +90,7 @@ var animes = [{
   description: "Natsu y sus amigos emprenden una misión que no ha sido completada en 100 años.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 14
+  episodes: 15
 }, {
   id: 10,
   name: "Kaiju No.8",
@@ -500,7 +500,7 @@ var animes = [{
   description: "¡Todo en este pueblo se está convirtiendo en espirales! En un intento de escapar de las espirales Kirie, decide abandonar su pueblo ¿podrá lograrlo?.",
   type: "Sub | Cas",
   seasons: 1,
-  episodes: 3
+  episodes: 4
 }, {
   id: 51,
   name: "Dandadan",
@@ -560,7 +560,7 @@ var animes = [{
   description: "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 26
+  episodes: 27
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
