@@ -715,6 +715,19 @@ const animes = [
     seasons: 2,
     episodes: 28,
   },
+  {
+    id: 57,
+    name: "Haikyu!!",
+    category: "deporte",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/be304f43b41b60ce2f04c2f9629b0adf.jpg",
+    link: "https://all-anime.net/ver/Haikyu/tv",
+    description:
+      "Haikyu!!, based on an original manga by Haruichi Furudate, is a sports anime about volleyball. Starring Shoyo Hinata, the protagonist inspires a player called 'Little Giant' and plays in his first official match, but is defeated by Tobio Kageyama.",
+    type: "Sub | Dob",
+    seasons: 4,
+    episodes: 94,
+  },
   // ... (resto de los animes)
 ];
 

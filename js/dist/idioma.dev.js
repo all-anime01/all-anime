@@ -206,6 +206,11 @@ var animes = [{
   image: "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/52e6e1fa11290f2b78df02bd694f89a4.jpe",
   type: "ANIME"
 }, {
+  name: "Haikyu!!",
+  link: "https://all-anime.net/ver/Haikyu/tv",
+  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/be304f43b41b60ce2f04c2f9629b0adf.jpg",
+  type: "ANIME"
+}, {
   name: "Hanma Baki: Son of Ogre",
   link: "https://all-anime.net/ver/Hanma-Baki-Son-of-Ogre/tv",
   image: "https://i3.wp.com/animeyt.es/wp-content/uploads/2023/07/gBOcSBvzRZfx.jpg",
@@ -566,6 +571,11 @@ var animes = [{
   link: "https://all-anime.net/peliculas/Digimon-adventure-the-beginning-2/1",
   image: "https://a.storyblok.com/f/178900/900x1272/c465eca008/digimon-adventure-02-the-beginning-character-poster.jpg/m/filters:quality(95)format(webp)",
   type: "ANIME"
+}, {
+  name: "Haikyu!! La Batalla del Basurero",
+  link: "https://all-anime.net/ver/Haikyu/tv",
+  image: "/image/Haikyu/La-batalla-del-basurero/p.jpg",
+  type: "PELICULA"
 }, {
   name: "Hanma Baki vs Kengan Ashura",
   link: "https://all-anime.net/peliculas/Hanma-baki-vs-Kengan-ashura/movie",

@@ -253,6 +253,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Haikyu!!",
+    link: "https://all-anime.net/ver/Haikyu/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/be304f43b41b60ce2f04c2f9629b0adf.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Hanma Baki: Son of Ogre",
     link: "https://all-anime.net/ver/Hanma-Baki-Son-of-Ogre/tv",
     image:
@@ -714,6 +721,12 @@ const animes = [
     image:
       "https://a.storyblok.com/f/178900/900x1272/c465eca008/digimon-adventure-02-the-beginning-character-poster.jpg/m/filters:quality(95)format(webp)",
     type: "ANIME",
+  },
+  {
+    name: "Haikyu!! La Batalla del Basurero",
+    link: "https://all-anime.net/ver/Haikyu/tv",
+    image: "/image/Haikyu/La-batalla-del-basurero/p.jpg",
+    type: "PELICULA",
   },
   {
     name: "Hanma Baki vs Kengan Ashura",
