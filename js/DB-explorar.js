@@ -231,7 +231,7 @@ const animes = [
       "Assiah, el mundo humano, y Gehenna, el mundo demoníaco, rara vez se cruzan. Sin embargo, algunos humanos pueden exorcizar demonios: los exorcistas.",
     type: "Subtitulado",
     seasons: 4,
-    episodes: 53,
+    episodes: 54,
   },
   {
     id: 19,
@@ -358,7 +358,7 @@ const animes = [
       "Finalmente el Seireitei, hogar de los Soul Reapers, es atacado por un grupo que se hace llamar Wandenreich la historia y la verdad que los Soul Reapers mantuvieron oculta durante mil largos años finalmente salen a la luz.",
     type: "Sub | Dob",
     seasons: 3,
-    episodes: 30,
+    episodes: 31,
   },
   {
     id: 29,
@@ -396,7 +396,7 @@ const animes = [
       "Ranma Saotome es un chico que sufre una peculiar maldición al caer en unos estanques malditos durante un entrenamiento de artes marciales.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 2,
+    episodes: 5,
   },
   {
     id: 32,
@@ -611,7 +611,7 @@ const animes = [
       "La federación japonesa está decidida a crear un jugador con una sed de gol única, alguien ‘‘egoísta‘‘ con el balón, un jugador que pueda ser capaz de dar la vuelta a un partido que está por perderse.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 28,
+    episodes: 29,
   },
   {
     id: 49,
