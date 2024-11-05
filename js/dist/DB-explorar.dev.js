@@ -80,7 +80,7 @@ var animes = [{
   description: "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 30
+  episodes: 31
 }, {
   id: 9,
   name: "Fairy Tail 100 Years Quest",
@@ -90,7 +90,7 @@ var animes = [{
   description: "Natsu y sus amigos emprenden una misión que no ha sido completada en 100 años.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 16
+  episodes: 17
 }, {
   id: 10,
   name: "Kaiju No.8",
@@ -560,7 +560,7 @@ var animes = [{
   description: "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 28
+  episodes: 29
 }, {
   id: 57,
   name: "Haikyu!!",
