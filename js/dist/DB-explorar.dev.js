@@ -180,7 +180,7 @@ var animes = [{
   description: "Assiah, el mundo humano, y Gehenna, el mundo demoníaco, rara vez se cruzan. Sin embargo, algunos humanos pueden exorcizar demonios: los exorcistas.",
   type: "Subtitulado",
   seasons: 4,
-  episodes: 54
+  episodes: 55
 }, {
   id: 19,
   name: "Avatar: La leyenda de Aang",
@@ -280,7 +280,7 @@ var animes = [{
   description: "Finalmente el Seireitei, hogar de los Soul Reapers, es atacado por un grupo que se hace llamar Wandenreich la historia y la verdad que los Soul Reapers mantuvieron oculta durante mil largos años finalmente salen a la luz.",
   type: "Sub | Dob",
   seasons: 3,
-  episodes: 31
+  episodes: 32
 }, {
   id: 29,
   name: "Pluto",
@@ -310,7 +310,7 @@ var animes = [{
   description: "Ranma Saotome es un chico que sufre una peculiar maldición al caer en unos estanques malditos durante un entrenamiento de artes marciales.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 5
+  episodes: 6
 }, {
   id: 32,
   name: "Dragon Ball Z",
@@ -340,7 +340,7 @@ var animes = [{
   description: "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 70
+  episodes: 72
 }, {
   id: 35,
   name: "Pokémon: Viajes",
@@ -480,7 +480,7 @@ var animes = [{
   description: "La federación japonesa está decidida a crear un jugador con una sed de gol única, alguien ‘‘egoísta‘‘ con el balón, un jugador que pueda ser capaz de dar la vuelta a un partido que está por perderse.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 29
+  episodes: 30
 }, {
   id: 49,
   name: "Wistoria: Wand of Sword",
@@ -540,7 +540,7 @@ var animes = [{
   description: "Cuando una profecía apocalíptica se cierne sobre un país pacífico, un chico de gran corazón emprende un viaje de descubrimiento... y venganza.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 27
+  episodes: 29
 }, {
   id: 55,
   name: "Dragon Ball: Daima",
