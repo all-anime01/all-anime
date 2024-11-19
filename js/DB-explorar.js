@@ -358,7 +358,7 @@ const animes = [
       "Finalmente el Seireitei, hogar de los Soul Reapers, es atacado por un grupo que se hace llamar Wandenreich la historia y la verdad que los Soul Reapers mantuvieron oculta durante mil largos años finalmente salen a la luz.",
     type: "Sub | Dob",
     seasons: 3,
-    episodes: 32,
+    episodes: 33,
   },
   {
     id: 29,
@@ -396,7 +396,7 @@ const animes = [
       "Ranma Saotome es un chico que sufre una peculiar maldición al caer en unos estanques malditos durante un entrenamiento de artes marciales.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 6,
+    episodes: 7,
   },
   {
     id: 32,
@@ -434,7 +434,7 @@ const animes = [
       "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 72,
+    episodes: 73,
   },
   {
     id: 35,
@@ -611,7 +611,7 @@ const animes = [
       "La federación japonesa está decidida a crear un jugador con una sed de gol única, alguien ‘‘egoísta‘‘ con el balón, un jugador que pueda ser capaz de dar la vuelta a un partido que está por perderse.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 30,
+    episodes: 31,
   },
   {
     id: 49,
@@ -649,7 +649,7 @@ const animes = [
       "Momo, una estudiante espiritual, y Okarun, un friki del ocultismo, discuten sobre sus creencias. Cuando ambos fenómenos se hacen reales, Momo obtiene poder oculto y Okarun obtiene poder de maldición, ambos enfrentándose a fuerzas paranormales.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 6,
+    episodes: 7,
   },
   {
     id: 52,
@@ -662,7 +662,7 @@ const animes = [
       "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 6,
+    episodes: 7,
   },
   {
     id: 53,
@@ -675,7 +675,7 @@ const animes = [
       "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 30,
+    episodes: 31,
   },
   {
     id: 54,
@@ -687,7 +687,7 @@ const animes = [
       "Cuando una profecía apocalíptica se cierne sobre un país pacífico, un chico de gran corazón emprende un viaje de descubrimiento... y venganza.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 29,
+    episodes: 31,
   },
   {
     id: 55,
@@ -700,7 +700,7 @@ const animes = [
       "¡Goku comienza una gran aventura en la nueva serie de Dragon Ball!",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 5,
+    episodes: 6,
   },
   {
     id: 56,
