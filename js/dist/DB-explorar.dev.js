@@ -510,7 +510,7 @@ var animes = [{
   description: "Momo, una estudiante espiritual, y Okarun, un friki del ocultismo, discuten sobre sus creencias. Cuando ambos fenómenos se hacen reales, Momo obtiene poder oculto y Okarun obtiene poder de maldición, ambos enfrentándose a fuerzas paranormales.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 7
+  episodes: 8
 }, {
   id: 52,
   name: "Mecha-Ude: Mechanical Arms",
@@ -520,7 +520,7 @@ var animes = [{
   description: "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 7
+  episodes: 8
 }, {
   id: 53,
   name: "Rurouni Kenshin (2023)",
@@ -530,7 +530,7 @@ var animes = [{
   description: "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 31
+  episodes: 32
 }, {
   id: 54,
   name: "Nanatsu no Taizai: Mokushiroku no Yonkishi",
@@ -540,7 +540,7 @@ var animes = [{
   description: "Cuando una profecía apocalíptica se cierne sobre un país pacífico, un chico de gran corazón emprende un viaje de descubrimiento... y venganza.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 31
+  episodes: 30
 }, {
   id: 55,
   name: "Dragon Ball: Daima",
@@ -560,7 +560,7 @@ var animes = [{
   description: "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 29
+  episodes: 31
 }, {
   id: 57,
   name: "Haikyu!!",
