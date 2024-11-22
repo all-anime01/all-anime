@@ -700,7 +700,7 @@ const animes = [
       "¡Goku comienza una gran aventura en la nueva serie de Dragon Ball!",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 6,
+    episodes: 7,
   },
   {
     id: 56,
