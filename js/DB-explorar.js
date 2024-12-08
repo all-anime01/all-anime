@@ -687,7 +687,7 @@ const animes = [
       "Cuando una profecía apocalíptica se cierne sobre un país pacífico, un chico de gran corazón emprende un viaje de descubrimiento... y venganza.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 31,
+    episodes: 33,
   },
   {
     id: 55,
