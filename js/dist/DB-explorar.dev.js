@@ -520,7 +520,7 @@ var animes = [{
   description: "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 10
+  episodes: 11
 }, {
   id: 53,
   name: "Rurouni Kenshin (2023)",
@@ -530,7 +530,7 @@ var animes = [{
   description: "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 34
+  episodes: 35
 }, {
   id: 54,
   name: "Nanatsu no Taizai: Mokushiroku no Yonkishi",
@@ -550,7 +550,7 @@ var animes = [{
   description: "¡Goku comienza una gran aventura en la nueva serie de Dragon Ball!",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 9
+  episodes: 10
 }, {
   id: 56,
   name: "Shangri-La Frontier",
