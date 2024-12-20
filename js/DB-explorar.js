@@ -649,7 +649,7 @@ const animes = [
       "Momo, una estudiante espiritual, y Okarun, un friki del ocultismo, discuten sobre sus creencias. Cuando ambos fenómenos se hacen reales, Momo obtiene poder oculto y Okarun obtiene poder de maldición, ambos enfrentándose a fuerzas paranormales.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 11,
+    episodes: 12,
   },
   {
     id: 52,
@@ -662,7 +662,7 @@ const animes = [
       "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 11,
+    episodes: 12,
   },
   {
     id: 53,
@@ -675,7 +675,7 @@ const animes = [
       "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 35,
+    episodes: 36,
   },
   {
     id: 54,
