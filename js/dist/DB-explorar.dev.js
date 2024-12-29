@@ -280,7 +280,7 @@ var animes = [{
   description: "Finalmente el Seireitei, hogar de los Soul Reapers, es atacado por un grupo que se hace llamar Wandenreich la historia y la verdad que los Soul Reapers mantuvieron oculta durante mil largos años finalmente salen a la luz.",
   type: "Sub | Dob",
   seasons: 3,
-  episodes: 38
+  episodes: 40
 }, {
   id: 29,
   name: "Pluto",
@@ -480,7 +480,7 @@ var animes = [{
   description: "La federación japonesa está decidida a crear un jugador con una sed de gol única, alguien ‘‘egoísta‘‘ con el balón, un jugador que pueda ser capaz de dar la vuelta a un partido que está por perderse.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 36
+  episodes: 38
 }, {
   id: 49,
   name: "Wistoria: Wand of Sword",
