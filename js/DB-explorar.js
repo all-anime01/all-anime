@@ -102,7 +102,7 @@ const animes = [
       "Un joven entra en una misteriosa torre en busca de una chica que lo abandonó.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 37,
+    episodes: 38,
   },
   {
     id: 9,
@@ -687,7 +687,7 @@ const animes = [
       "Cuando una profecía apocalíptica se cierne sobre un país pacífico, un chico de gran corazón emprende un viaje de descubrimiento... y venganza.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 35,
+    episodes: 36,
   },
   {
     id: 55,
@@ -713,7 +713,7 @@ const animes = [
       "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 36,
+    episodes: 37,
   },
   {
     id: 57,
