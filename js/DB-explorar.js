@@ -230,8 +230,8 @@ const animes = [
     description:
       "Assiah, el mundo humano, y Gehenna, el mundo demoníaco, rara vez se cruzan. Sin embargo, algunos humanos pueden exorcizar demonios: los exorcistas.",
     type: "Subtitulado",
-    seasons: 4,
-    episodes: 60,
+    seasons: 3,
+    episodes: 62,
   },
   {
     id: 19,
@@ -326,8 +326,7 @@ const animes = [
     id: 26,
     name: "Shaman King: Flowers",
     category: "accion",
-    image:
-      "https://hanapop.com.co/wp-content/uploads/2023/10/POSTER-Shaman-King-Flowers-731x1024.jpg",
+    image: "https://all-anime.net/image/Shaman-king-flowers/p.jpg",
     link: "https://all-anime.net/ver/Shaman-king-flowers/tv",
     description:
       "La continuación de Shaman King, siguiendo las aventuras de la siguiente generación de chamanes.",
@@ -727,6 +726,32 @@ const animes = [
     type: "Sub | Dob",
     seasons: 4,
     episodes: 94,
+  },
+  {
+    id: 58,
+    name: "Link Click",
+    category: "drama",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/59a606bb77e39a4935435962ee8d6c4d.jpg",
+    link: "https://all-anime.net/ver/Link-click/tv",
+    description:
+      "Cheng Xiaoshi entra en el mundo de las fotos de Emma, una empleada de Quede Games, bajo el mando de Lu Guang con el fin de obtener pruebas sobre unos informes financieros falsificados.",
+    type: "Sub | Dob",
+    seasons: 3,
+    episodes: 26,
+  },
+  {
+    id: 58,
+    name: "Solo Leveling",
+    category: "accion",
+    image:
+      "https://a.storyblok.com/f/178900/1067x1601/0090e9bf15/solo-leveling-season-2-key-visual.png/m/filters:quality(95)format(webp)",
+    link: "https://all-anime.net/ver/Solo-Leveling/tv",
+    description:
+      "Para dominar sus nuevas habilidades en secreto, Jinwoo debe luchar contra los enemigos más duros de la humanidad para salvar a su madre.",
+    type: "Sub | Dob",
+    seasons: 2,
+    episodes: 13,
   },
   // ... (resto de los animes)
 ];
