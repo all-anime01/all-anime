@@ -115,7 +115,7 @@ const animes = [
       "Natsu y sus amigos emprenden una misión que no ha sido completada en 100 años.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 24,
+    episodes: 25,
   },
   {
     id: 10,
@@ -712,7 +712,7 @@ const animes = [
       "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 37,
+    episodes: 38,
   },
   {
     id: 57,
