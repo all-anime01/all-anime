@@ -582,7 +582,7 @@ var animes = [{
   seasons: 3,
   episodes: 26
 }, {
-  id: 58,
+  id: 59,
   name: "Solo Leveling",
   category: "accion",
   image: "https://a.storyblok.com/f/178900/1067x1601/0090e9bf15/solo-leveling-season-2-key-visual.png/m/filters:quality(95)format(webp)",
@@ -591,6 +591,16 @@ var animes = [{
   type: "Sub | Dob",
   seasons: 2,
   episodes: 13
+}, {
+  id: 60,
+  name: "Dr. Stone",
+  category: "accion",
+  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/29e0d306dbff3a163acadf66a35b3cf5.jpg",
+  link: "https://all-anime.net/ver/Dr-stone/tv",
+  description: "Senku es un joven extremadamente inteligente con un gran don para la ciencia y una ácida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero más apto para usar los músculos que para pensar.",
+  type: "Sub | Dob",
+  seasons: 4,
+  episodes: 60
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
