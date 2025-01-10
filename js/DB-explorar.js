@@ -674,7 +674,7 @@ const animes = [
       "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 36,
+    episodes: 37,
   },
   {
     id: 54,
