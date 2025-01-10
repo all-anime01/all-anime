@@ -550,7 +550,7 @@ var animes = [{
   description: "¡Goku comienza una gran aventura en la nueva serie de Dragon Ball!",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 12
+  episodes: 13
 }, {
   id: 56,
   name: "Shangri-La Frontier",
@@ -580,7 +580,7 @@ var animes = [{
   description: "Cheng Xiaoshi entra en el mundo de las fotos de Emma, una empleada de Quede Games, bajo el mando de Lu Guang con el fin de obtener pruebas sobre unos informes financieros falsificados.",
   type: "Sub | Dob",
   seasons: 3,
-  episodes: 26
+  episodes: 27
 }, {
   id: 59,
   name: "Solo Leveling",
