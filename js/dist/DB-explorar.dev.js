@@ -180,7 +180,7 @@ var animes = [{
   description: "Assiah, el mundo humano, y Gehenna, el mundo demoníaco, rara vez se cruzan. Sin embargo, algunos humanos pueden exorcizar demonios: los exorcistas.",
   type: "Subtitulado",
   seasons: 3,
-  episodes: 62
+  episodes: 63
 }, {
   id: 19,
   name: "Avatar: La leyenda de Aang",
@@ -340,7 +340,7 @@ var animes = [{
   description: "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 78
+  episodes: 79
 }, {
   id: 35,
   name: "Pokémon: Viajes",
@@ -590,17 +590,27 @@ var animes = [{
   description: "Para dominar sus nuevas habilidades en secreto, Jinwoo debe luchar contra los enemigos más duros de la humanidad para salvar a su madre.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 13
+  episodes: 14
 }, {
   id: 60,
   name: "Dr. Stone",
-  category: "accion",
+  category: "aventura",
   image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/29e0d306dbff3a163acadf66a35b3cf5.jpg",
   link: "https://all-anime.net/ver/Dr-stone/tv",
   description: "Senku es un joven extremadamente inteligente con un gran don para la ciencia y una ácida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero más apto para usar los músculos que para pensar.",
   type: "Sub | Dob",
   seasons: 4,
   episodes: 60
+}, {
+  id: 61,
+  name: "Sakamoto Days",
+  category: "accion",
+  image: "https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQTA0WH6Znc8it-5EP5hduuMVjwyhhGlAt6E33RgLTxjpJDShUnvsirIEq9-fjG1G0Fnf95nVmpDSNZTjLnIrEHwYzwb-wx453ISGixLcJjo_oC5v3Obk8y1n_HhX7Zka8eXqLW5YewPssqDcN2LlEyXX.jpg?r=1f3",
+  link: "https://all-anime.net/ver/Sakamoto-days/tv",
+  description: "Taro Sakamoto, célebre asesino a sueldo, decidió retirarse de la acción cuando se enamoró. Pero el pasado vuelve por él y ahora debe dar pelea para proteger a su familia.",
+  type: "Sub | Dob",
+  seasons: 1,
+  episodes: 2
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
