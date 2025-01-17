@@ -530,7 +530,7 @@ var animes = [{
   description: "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 37
+  episodes: 38
 }, {
   id: 54,
   name: "Nanatsu no Taizai: Mokushiroku no Yonkishi",
@@ -595,12 +595,12 @@ var animes = [{
   id: 60,
   name: "Dr. Stone",
   category: "aventura",
-  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/29e0d306dbff3a163acadf66a35b3cf5.jpg",
+  image: "https://a.storyblok.com/f/178900/960x1357/d42021c586/dr-stone-science-future-kv.jpeg/m/filters:quality(95)format(webp)",
   link: "https://all-anime.net/ver/Dr-stone/tv",
   description: "Senku es un joven extremadamente inteligente con un gran don para la ciencia y una ácida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero más apto para usar los músculos que para pensar.",
   type: "Sub | Dob",
   seasons: 4,
-  episodes: 60
+  episodes: 61
 }, {
   id: 61,
   name: "Sakamoto Days",
