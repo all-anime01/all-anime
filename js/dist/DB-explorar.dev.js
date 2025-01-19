@@ -330,7 +330,7 @@ var animes = [{
   description: "Una nueva serie de Kinnikuman está programada para celebrar el 40 aniversario del anime original, adaptando el manga Perfect Origin. Kinnikuman, un verdadero heredero al trono, ahora lucha contra otros cinco supervillanos en un Real Torneo Real de Supervivientes.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 12
+  episodes: 13
 }, {
   id: 34,
   name: "Pokémon: Horizons",
@@ -560,7 +560,7 @@ var animes = [{
   description: "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 39
+  episodes: 40
 }, {
   id: 57,
   name: "Haikyu!!",
