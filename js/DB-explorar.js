@@ -674,7 +674,7 @@ const animes = [
       "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 38,
+    episodes: 39,
   },
   {
     id: 54,
@@ -764,7 +764,7 @@ const animes = [
       "Senku es un joven extremadamente inteligente con un gran don para la ciencia y una ácida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero más apto para usar los músculos que para pensar.",
     type: "Sub | Dob",
     seasons: 4,
-    episodes: 61,
+    episodes: 62,
   },
   {
     id: 61,
