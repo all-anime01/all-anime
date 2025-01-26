@@ -180,7 +180,7 @@ var animes = [{
   description: "Assiah, el mundo humano, y Gehenna, el mundo demoníaco, rara vez se cruzan. Sin embargo, algunos humanos pueden exorcizar demonios: los exorcistas.",
   type: "Subtitulado",
   seasons: 3,
-  episodes: 64
+  episodes: 65
 }, {
   id: 19,
   name: "Avatar: La leyenda de Aang",
@@ -590,7 +590,7 @@ var animes = [{
   description: "Para dominar sus nuevas habilidades en secreto, Jinwoo debe luchar contra los enemigos más duros de la humanidad para salvar a su madre.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 15
+  episodes: 16
 }, {
   id: 60,
   name: "Dr. Stone",
@@ -610,7 +610,7 @@ var animes = [{
   description: "Taro Sakamoto, célebre asesino a sueldo, decidió retirarse de la acción cuando se enamoró. Pero el pasado vuelve por él y ahora debe dar pelea para proteger a su familia.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 3
+  episodes: 4
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
