@@ -420,7 +420,7 @@ const animes = [
       "Una nueva serie de Kinnikuman está programada para celebrar el 40 aniversario del anime original, adaptando el manga Perfect Origin. Kinnikuman, un verdadero heredero al trono, ahora lucha contra otros cinco supervillanos en un Real Torneo Real de Supervivientes.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 13,
+    episodes: 14,
   },
   {
     id: 34,
@@ -712,7 +712,7 @@ const animes = [
       "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 40,
+    episodes: 41,
   },
   {
     id: 57,
