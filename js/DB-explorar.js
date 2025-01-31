@@ -699,7 +699,7 @@ const animes = [
       "¡Goku comienza una gran aventura en la nueva serie de Dragon Ball!",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 15,
+    episodes: 16,
   },
   {
     id: 56,
@@ -738,7 +738,7 @@ const animes = [
       "Cheng Xiaoshi entra en el mundo de las fotos de Emma, una empleada de Quede Games, bajo el mando de Lu Guang con el fin de obtener pruebas sobre unos informes financieros falsificados.",
     type: "Sub | Dob",
     seasons: 3,
-    episodes: 29,
+    episodes: 30,
   },
   {
     id: 59,
