@@ -712,7 +712,7 @@ const animes = [
       "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 41,
+    episodes: 42,
   },
   {
     id: 57,
