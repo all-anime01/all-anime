@@ -530,7 +530,7 @@ var animes = [{
   description: "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 40
+  episodes: 41
 }, {
   id: 54,
   name: "Nanatsu no Taizai: Mokushiroku no Yonkishi",
@@ -600,7 +600,7 @@ var animes = [{
   description: "Senku es un joven extremadamente inteligente con un gran don para la ciencia y una ácida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero más apto para usar los músculos que para pensar.",
   type: "Sub | Dob",
   seasons: 4,
-  episodes: 63
+  episodes: 64
 }, {
   id: 61,
   name: "Sakamoto Days",
