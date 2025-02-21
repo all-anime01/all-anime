@@ -550,7 +550,7 @@ var animes = [{
   description: "¡Goku comienza una gran aventura en la nueva serie de Dragon Ball!",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 18
+  episodes: 19
 }, {
   id: 56,
   name: "Shangri-La Frontier",
