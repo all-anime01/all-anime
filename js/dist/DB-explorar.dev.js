@@ -610,7 +610,7 @@ var animes = [{
   description: "Taro Sakamoto, célebre asesino a sueldo, decidió retirarse de la acción cuando se enamoró. Pero el pasado vuelve por él y ahora debe dar pelea para proteger a su familia.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 7
+  episodes: 8
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
