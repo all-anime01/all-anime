@@ -401,6 +401,11 @@ var animes = [{
   image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/c88f035c1ebb9922410bcf04e073a3d9.jpg",
   type: "ANIME"
 }, {
+  name: "Sakamoto Days",
+  link: "https://all-anime.net/ver/Sakamoto-days/tv",
+  image: "https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQTA0WH6Znc8it-5EP5hduuMVjwyhhGlAt6E33RgLTxjpJDShUnvsirIEq9-fjG1G0Fnf95nVmpDSNZTjLnIrEHwYzwb-wx453ISGixLcJjo_oC5v3Obk8y1n_HhX7Zka8eXqLW5YewPssqDcN2LlEyXX.jpg?r=1f3",
+  type: "ANIME"
+}, {
   name: "Sand Land: The series",
   link: "https://all-anime.net/ver/Sand-Land/tv",
   image: "/image/Sand-Land/p.jpg",
