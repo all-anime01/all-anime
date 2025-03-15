@@ -180,7 +180,7 @@ var animes = [{
   description: "Assiah, el mundo humano, y Gehenna, el mundo demoníaco, rara vez se cruzan. Sin embargo, algunos humanos pueden exorcizar demonios: los exorcistas.",
   type: "Subtitulado",
   seasons: 3,
-  episodes: 71
+  episodes: 72
 }, {
   id: 19,
   name: "Avatar: La leyenda de Aang",
@@ -340,7 +340,7 @@ var animes = [{
   description: "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 87
+  episodes: 88
 }, {
   id: 35,
   name: "Pokémon: Viajes",
@@ -590,7 +590,7 @@ var animes = [{
   description: "Para dominar sus nuevas habilidades en secreto, Jinwoo debe luchar contra los enemigos más duros de la humanidad para salvar a su madre.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 22
+  episodes: 23
 }, {
   id: 60,
   name: "Dr. Stone",
@@ -610,7 +610,7 @@ var animes = [{
   description: "Taro Sakamoto, célebre asesino a sueldo, decidió retirarse de la acción cuando se enamoró. Pero el pasado vuelve por él y ahora debe dar pelea para proteger a su familia.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 10
+  episodes: 11
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
