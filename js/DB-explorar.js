@@ -420,7 +420,7 @@ const animes = [
       "Una nueva serie de Kinnikuman está programada para celebrar el 40 aniversario del anime original, adaptando el manga Perfect Origin. Kinnikuman, un verdadero heredero al trono, ahora lucha contra otros cinco supervillanos en un Real Torneo Real de Supervivientes.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 20,
+    episodes: 21,
   },
   {
     id: 34,
@@ -674,7 +674,7 @@ const animes = [
       "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 46,
+    episodes: 47,
   },
   {
     id: 54,
@@ -712,7 +712,7 @@ const animes = [
       "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 47,
+    episodes: 48,
   },
   {
     id: 57,
@@ -764,7 +764,7 @@ const animes = [
       "Senku es un joven extremadamente inteligente con un gran don para la ciencia y una ácida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero más apto para usar los músculos que para pensar.",
     type: "Sub | Dob",
     seasons: 4,
-    episodes: 68,
+    episodes: 69,
   },
   {
     id: 61,

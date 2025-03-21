@@ -330,7 +330,7 @@ var animes = [{
   description: "Una nueva serie de Kinnikuman está programada para celebrar el 40 aniversario del anime original, adaptando el manga Perfect Origin. Kinnikuman, un verdadero heredero al trono, ahora lucha contra otros cinco supervillanos en un Real Torneo Real de Supervivientes.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 20
+  episodes: 21
 }, {
   id: 34,
   name: "Pokémon: Horizons",
@@ -530,7 +530,7 @@ var animes = [{
   description: "La vida secundaria de Hikaru se transforma cuando conoce a Alma, una entidad alienígena vinculada a Mecha-Ude, un grupo misterioso que busca poder. Alma, a petición de ARMS, emprende un peligroso viaje para salvarlos.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 46
+  episodes: 47
 }, {
   id: 54,
   name: "Nanatsu no Taizai: Mokushiroku no Yonkishi",
@@ -560,7 +560,7 @@ var animes = [{
   description: "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 47
+  episodes: 48
 }, {
   id: 57,
   name: "Haikyu!!",
@@ -600,7 +600,7 @@ var animes = [{
   description: "Senku es un joven extremadamente inteligente con un gran don para la ciencia y una ácida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero más apto para usar los músculos que para pensar.",
   type: "Sub | Dob",
   seasons: 4,
-  episodes: 68
+  episodes: 69
 }, {
   id: 61,
   name: "Sakamoto Days",
