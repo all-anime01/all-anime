@@ -231,7 +231,7 @@ const animes = [
       "Assiah, el mundo humano, y Gehenna, el mundo demoníaco, rara vez se cruzan. Sin embargo, algunos humanos pueden exorcizar demonios: los exorcistas.",
     type: "Subtitulado",
     seasons: 3,
-    episodes: 72,
+    episodes: 73,
   },
   {
     id: 19,
@@ -433,7 +433,7 @@ const animes = [
       "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 88,
+    episodes: 89,
   },
   {
     id: 35,
@@ -751,7 +751,7 @@ const animes = [
       "Para dominar sus nuevas habilidades en secreto, Jinwoo debe luchar contra los enemigos más duros de la humanidad para salvar a su madre.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 23,
+    episodes: 24,
   },
   {
     id: 60,
