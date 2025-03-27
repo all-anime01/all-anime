@@ -420,7 +420,7 @@ const animes = [
       "Una nueva serie de Kinnikuman está programada para celebrar el 40 aniversario del anime original, adaptando el manga Perfect Origin. Kinnikuman, un verdadero heredero al trono, ahora lucha contra otros cinco supervillanos en un Real Torneo Real de Supervivientes.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 21,
+    episodes: 22,
   },
   {
     id: 34,
@@ -712,7 +712,7 @@ const animes = [
       "El futuro en el futuro cercano es llamado ´juegos basura´, juegos virtuales de realidad no llegan a un mínimo de calidad.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 48,
+    episodes: 49,
   },
   {
     id: 57,
@@ -764,7 +764,7 @@ const animes = [
       "Senku es un joven extremadamente inteligente con un gran don para la ciencia y una ácida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero más apto para usar los músculos que para pensar.",
     type: "Sub | Dob",
     seasons: 4,
-    episodes: 69,
+    episodes: 70,
   },
   {
     id: 61,
