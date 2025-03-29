@@ -751,7 +751,7 @@ const animes = [
       "Para dominar sus nuevas habilidades en secreto, Jinwoo debe luchar contra los enemigos más duros de la humanidad para salvar a su madre.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 24,
+    episodes: 25,
   },
   {
     id: 60,
