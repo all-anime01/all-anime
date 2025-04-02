@@ -311,6 +311,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Kijin Gentoushou",
+    link: "https://all-anime.net/ver/kijin-gentoushou/tv",
+    image:
+      "https://a.storyblok.com/f/178900/750x1061/ac0401ebaa/sword_of_the_demon_hunter_key_visual.jpg/m/filters:quality(95)format(webp)",
+    type: "ANIME",
+  },
+  {
     name: "Kimetsu no Yaiba",
     link: "https://all-anime.net/ver/Kimetsu-no-yaiba/tv",
     image: "/image/Kimetsu-no-yaiba-katanakaji-no-sato-T3/p.jpe",

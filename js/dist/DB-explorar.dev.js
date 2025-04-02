@@ -611,6 +611,16 @@ var animes = [{
   type: "Sub | Dob",
   seasons: 1,
   episodes: 11
+}, {
+  id: 61,
+  name: "Kijin Gentoushou",
+  category: "accion, fantasía, drama, sobrenatural",
+  image: "https://a.storyblok.com/f/178900/750x1061/ac0401ebaa/sword_of_the_demon_hunter_key_visual.jpg/m/filters:quality(95)format(webp)",
+  link: "https://all-anime.net/ver/kijin-gentoushou/tv",
+  description: "Durante el período Edo, un joven llamado Jinta protege la ciudad y a Itsukihime. Cuando se enfrenta a un extraño demonio en el bosque cercano",
+  type: "Subtitulado",
+  seasons: 1,
+  episodes: 11
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
