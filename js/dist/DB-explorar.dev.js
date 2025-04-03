@@ -612,15 +612,25 @@ var animes = [{
   seasons: 1,
   episodes: 11
 }, {
-  id: 61,
+  id: 62,
   name: "Kijin Gentoushou",
   category: "accion, fantasía, drama, sobrenatural",
   image: "https://a.storyblok.com/f/178900/750x1061/ac0401ebaa/sword_of_the_demon_hunter_key_visual.jpg/m/filters:quality(95)format(webp)",
   link: "https://all-anime.net/ver/kijin-gentoushou/tv",
-  description: "Durante el período Edo, un joven llamado Jinta protege la ciudad y a Itsukihime. Cuando se enfrenta a un extraño demonio en el bosque cercano",
+  description: "Durante el período Edo, un joven llamado Jinta protege la ciudad y a Itsukihime. Cuando se enfrenta a un extraño demonio en el bosque cercano.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 11
+  episodes: 1
+}, {
+  id: 63,
+  name: "The Beginning After the End",
+  category: "accion, fantasía",
+  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/6e0a6199a24a6c773d68c54dc5449610.jpg",
+  link: "https://all-anime.net/ver/The-beginning-after-the-end/tv",
+  description: "Después de una muerte misteriosa, el Rey Grey renace como Arthur Leywin en el continente mágico de Dicathen. Aunque comienza su segunda vida como un bebé, conserva su sabiduría pasada.",
+  type: "Subtitulado",
+  seasons: 1,
+  episodes: 1
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");

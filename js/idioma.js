@@ -595,6 +595,13 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "The Beginning After the End",
+    link: "https://all-anime.net/ver/The-beginning-after-the-end/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/6e0a6199a24a6c773d68c54dc5449610.jpg",
+    type: "ANIME",
+  },
+  {
     name: "The Marginal Service",
     link: "https://all-anime.net/ver/The-marginal-service/tv",
     image: "/image/The-marginal-service/p.jpe",
