@@ -538,7 +538,7 @@ var animes = [{
 }, {
   name: "Wind Breaker",
   link: "https://all-anime.net/ver/Wind-Breaker/tv",
-  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/16d570ff136955438a3a5bfadbb66eb5.jpe",
+  image: "https://a.storyblok.com/f/178900/1064x1506/f3ef268371/wind-breaker-season-2-key-visual-en.jpg/m/filters:quality(95)format(webp)",
   type: "ANIME"
 }, {
   name: "Wistoria: Wand of Sword",

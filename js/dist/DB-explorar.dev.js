@@ -115,7 +115,7 @@ var animes = [{
   id: 12,
   name: "Wind Breaker",
   category: "accion",
-  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/16d570ff136955438a3a5bfadbb66eb5.jpg",
+  image: "https://a.storyblok.com/f/178900/1064x1506/f3ef268371/wind-breaker-season-2-key-visual-en.jpg/m/filters:quality(95)format(webp)",
   link: "https://all-anime.net/ver/Wind-Breaker/tv",
   description: "Haruka Sakura, un novato en la delincuente Preparatoria Furin, busca abrirse paso luchando. La escuela ahora tiene un grupo protector llamado Wind Breaker. Comienza su leyenda.",
   type: "Sub | Dob",
