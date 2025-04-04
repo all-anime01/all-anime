@@ -161,6 +161,11 @@ var animes = [{
   image: "/image/Dead-mount-death-play/p.jpe",
   type: "ANIME"
 }, {
+  name: "Devil May Cry 2025",
+  link: "https://all-anime.net/ver/Devil-may-Cry-2026/tv",
+  image: "/image/Devil-may-Cry-2025/T1/p.jpg",
+  type: "ANIME"
+}, {
   name: "Dandadan",
   link: "https://all-anime.net/ver/Dandadan/tv",
   image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/13839ea2b48b0323417b23813a090c93.jpg",

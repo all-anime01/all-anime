@@ -194,6 +194,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Devil May Cry 2025",
+    link: "https://all-anime.net/ver/Devil-may-Cry-2026/tv",
+    image: "/image/Devil-may-Cry-2025/T1/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Dandadan",
     link: "https://all-anime.net/ver/Dandadan/tv",
     image:

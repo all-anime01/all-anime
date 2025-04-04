@@ -631,6 +631,16 @@ var animes = [{
   type: "Subtitulado",
   seasons: 1,
   episodes: 1
+}, {
+  id: 63,
+  name: "Devil May Cry 2025",
+  category: "accion, fantasía",
+  image: "/image/Devil-may-Cry-2025/T1/p.jpg",
+  link: "https://all-anime.net/ver/Devil-may-Cry-2025/tv",
+  description: "Ante la amenaza de un misterioso villano de abrir las puertas del infierno, un cazador de demonios endiabladamente guapo podría ser la mejor opción para salvar el mundo.",
+  type: "Doblado",
+  seasons: 1,
+  episodes: 8
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
