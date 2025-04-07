@@ -641,6 +641,26 @@ var animes = [{
   type: "Doblado",
   seasons: 1,
   episodes: 8
+}, {
+  id: 64,
+  name: "YAIBA: Samurai Legend (Shin Samurai-den Yaiba)",
+  category: "accion, shounen",
+  image: "https://a.storyblok.com/f/178900/905x1280/c980117c57/yaiba-samurai-legend-main-visual.jpg/m/filters:quality(95)format(webp)",
+  link: "https://all-anime.net/ver/Shin-Samurai-den-Yaiba/tv",
+  description: "Ante la amenaza de un misterioso villano de abrir las puertas del infierno, un cazador de demonios endiabladamente guapo podría ser la mejor opción para salvar el mundo.",
+  type: "Doblado",
+  seasons: 1,
+  episodes: 8
+}, {
+  id: 65,
+  name: "Devil May Cry 2025",
+  category: "accion, fantasía",
+  image: "/image/Devil-may-Cry-2025/T1/p.jpg",
+  link: "https://all-anime.net/ver/Devil-may-Cry-2025/tv",
+  description: "Ante la amenaza de un misterioso villano de abrir las puertas del infierno, un cazador de demonios endiabladamente guapo podría ser la mejor opción para salvar el mundo.",
+  type: "Doblado",
+  seasons: 1,
+  episodes: 8
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
