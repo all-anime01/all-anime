@@ -317,7 +317,7 @@ const animes = [
     type: "ANIME",
   },
   {
-    name: "Kijin Gentoushou",
+    name: "Sword of the Demon Hunter (Kijin Gentoushou)",
     link: "https://all-anime.net/ver/kijin-gentoushou/tv",
     image:
       "https://a.storyblok.com/f/178900/750x1061/ac0401ebaa/sword_of_the_demon_hunter_key_visual.jpg/m/filters:quality(95)format(webp)",
@@ -353,6 +353,13 @@ const animes = [
     name: "My hero academia",
     link: "https://all-anime.net/ver/My-hero-academia/tv",
     image: "/image/Boku-no-hero-academia-season-6/p.jpe",
+    type: "ANIME",
+  },
+  {
+    name: "My hero academia: Vigilantes",
+    link: "https://all-anime.net/ver/My-hero-academia-vigilantes/tv",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/aaddcbe723d430e97bed8c1b133de38f.jpg",
     type: "ANIME",
   },
   {
@@ -696,6 +703,13 @@ const animes = [
     link: "https://all-anime.net/ver/Wistoria-Wand-and-Sword/tv",
     image:
       "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/22ff4b731a5696364dc65d8d4a4627df.jpg",
+    type: "ANIME",
+  },
+  {
+    name: "YAIBA: Samurai Legend (Shin Samurai-den Yaiba)",
+    link: "https://all-anime.net/ver/Shin-Samurai-den-Yaiba/tv",
+    image:
+      "https://a.storyblok.com/f/178900/905x1280/c980117c57/yaiba-samurai-legend-main-visual.jpg/m/filters:quality(95)format(webp)",
     type: "ANIME",
   },
   {

@@ -153,8 +153,8 @@ const animes = [
     description:
       "Haruka Sakura, un novato en la delincuente Preparatoria Furin, busca abrirse paso luchando. La escuela ahora tiene un grupo protector llamado Wind Breaker. Comienza su leyenda.",
     type: "Sub | Dob",
-    seasons: 1,
-    episodes: 13,
+    seasons: 2,
+    episodes: 14,
   },
   {
     id: 13,
@@ -781,7 +781,7 @@ const animes = [
   },
   {
     id: 62,
-    name: "Kijin Gentoushou",
+    name: "Sword of the Demon Hunter (Kijin Gentoushou)",
     category: "accion, fantasía, drama, sobrenatural",
     image:
       "https://a.storyblok.com/f/178900/750x1061/ac0401ebaa/sword_of_the_demon_hunter_key_visual.jpg/m/filters:quality(95)format(webp)",
@@ -806,41 +806,42 @@ const animes = [
     episodes: 1,
   },
   {
-    id: 63,
+    id: 64,
     name: "Devil May Cry 2025",
     category: "accion, fantasía",
     image: "/image/Devil-may-Cry-2025/T1/p.jpg",
     link: "https://all-anime.net/ver/Devil-may-Cry-2025/tv",
     description:
       "Ante la amenaza de un misterioso villano de abrir las puertas del infierno, un cazador de demonios endiabladamente guapo podría ser la mejor opción para salvar el mundo.",
-    type: "Doblado",
+    type: "Sub | Dob",
     seasons: 1,
     episodes: 8,
   },
   {
-    id: 64,
+    id: 65,
     name: "YAIBA: Samurai Legend (Shin Samurai-den Yaiba)",
     category: "accion, shounen",
     image:
       "https://a.storyblok.com/f/178900/905x1280/c980117c57/yaiba-samurai-legend-main-visual.jpg/m/filters:quality(95)format(webp)",
     link: "https://all-anime.net/ver/Shin-Samurai-den-Yaiba/tv",
     description:
-      "Ante la amenaza de un misterioso villano de abrir las puertas del infierno, un cazador de demonios endiabladamente guapo podría ser la mejor opción para salvar el mundo.",
-    type: "Doblado",
+      "El viaje de Yaiba para convertirse en un verdadero samurái lo lleva desde su hogar en el bosque hasta una ajetreada ciudad llena de rivales, amistades y poderes ancestrales.",
+    type: "Subtitulado",
     seasons: 1,
-    episodes: 8,
+    episodes: 1,
   },
   {
-    id: 65,
-    name: "Devil May Cry 2025",
-    category: "accion, fantasía",
-    image: "/image/Devil-may-Cry-2025/T1/p.jpg",
-    link: "https://all-anime.net/ver/Devil-may-Cry-2025/tv",
+    id: 66,
+    name: "My Hero Academia: Vigilantes",
+    category: "accion, aventura, fantasía",
+    image:
+      "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/aaddcbe723d430e97bed8c1b133de38f.jpg",
+    link: "https://all-anime.net/ver/My-hero-academia-vigilantes/tv",
     description:
-      "Ante la amenaza de un misterioso villano de abrir las puertas del infierno, un cazador de demonios endiabladamente guapo podría ser la mejor opción para salvar el mundo.",
-    type: "Doblado",
+      "Koichi Haimawari es un estudiante aburrido que aspiraba a ser un héroe pero abandonó su sueño. Aunque el 80% de la población mundial tenga poderes sobrehumanos llamados Dones, pocos son elegidos para convertirse en héroes y proteger a las personas.",
+    type: "Sub | Dob",
     seasons: 1,
-    episodes: 8,
+    episodes: 1,
   },
   // ... (resto de los animes)
 ];
