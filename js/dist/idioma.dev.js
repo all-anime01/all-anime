@@ -203,7 +203,7 @@ var animes = [{
 }, {
   name: "Fire Force",
   link: "https://all-anime.net/ver/Fire-force/tv",
-  image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/da1db9f24b365129646e8b4508858217.jpg",
+  image: "https://a.storyblok.com/f/178900/1064x1596/7394dd442d/fire-force-season-3-key-art.png/m/filters:quality(95)format(webp)",
   type: "ANIME"
 }, {
   name: "Firefighter Daigo Rescuer in Orange",

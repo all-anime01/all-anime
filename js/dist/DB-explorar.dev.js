@@ -661,6 +661,16 @@ var animes = [{
   type: "Sub | Dob",
   seasons: 1,
   episodes: 1
+}, {
+  id: 67,
+  name: "Fire Force (Ennen no Shouboutai)",
+  category: "accion, ciencia ficción , shounen",
+  image: "https://a.storyblok.com/f/178900/1064x1596/7394dd442d/fire-force-season-3-key-art.png/m/filters:quality(95)format(webp)",
+  link: "https://all-anime.net/ver/Fire-force/tv",
+  description: "Tokio está ardiendo y los ciudadanos sufren misteriosas combustiones espontáneas por toda la ciudad. La responsable de apagar este infierno es la Brigada Especial Antiincendios y Shinra está listo para unirse a su lucha.",
+  type: "Sub | Dob",
+  seasons: 3,
+  episodes: 49
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
