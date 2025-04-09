@@ -337,6 +337,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "Lazarus",
+    link: "https://all-anime.net/ver/Lazarus/tv",
+    image: "/image/Lazarus/T1/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "Link Click",
     link: "https://all-anime.net/ver/Link-click/tv",
     image:

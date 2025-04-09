@@ -856,6 +856,18 @@ const animes = [
     seasons: 3,
     episodes: 49,
   },
+  {
+    id: 67,
+    name: "Lazarus",
+    category: "ciencia ficción",
+    image: "/image/Lazarus/T1/p.jpg",
+    link: "https://all-anime.net/ver/Lazarus/tv",
+    description:
+      "Es el año 2052 y una milagrosa droga sin efectos secundarios que iba a liberar a la humanidad del dolor se vuelve mortal. Ahora queda en manos de grupo de forajidos llamado Lazarus la tarea de salvar al mundo. ¡Y sólo tienen 30 días!",
+    type: "Sub | Dob",
+    seasons: 1,
+    episodes: 1,
+  },
   // ... (resto de los animes)
 ];
 

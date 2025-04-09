@@ -271,6 +271,11 @@ var animes = [{
   image: "https://i0.wp.com/animeyt.es/wp-content/uploads/2022/04/ZWHsrVSyVHzr.jpg?resize=247,350",
   type: "ANIME"
 }, {
+  name: "Lazarus",
+  link: "https://all-anime.net/ver/Lazarus/tv",
+  image: "/image/Lazarus/T1/p.jpg",
+  type: "ANIME"
+}, {
   name: "Link Click",
   link: "https://all-anime.net/ver/Link-click/tv",
   image: "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/7d142e198546b9a0758754479a43c649.jpe",
