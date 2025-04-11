@@ -120,7 +120,7 @@ var animes = [{
   description: "Haruka Sakura, un novato en la delincuente Preparatoria Furin, busca abrirse paso luchando. La escuela ahora tiene un grupo protector llamado Wind Breaker. Comienza su leyenda.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 14
+  episodes: 15
 }, {
   id: 13,
   name: "Tokyo Revenger",
@@ -620,7 +620,7 @@ var animes = [{
   description: "Durante el período Edo, un joven llamado Jinta protege la ciudad y a Itsukihime. Cuando se enfrenta a un extraño demonio en el bosque cercano.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 1
+  episodes: 2
 }, {
   id: 63,
   name: "The Beginning After the End",
@@ -630,7 +630,7 @@ var animes = [{
   description: "Después de una muerte misteriosa, el Rey Grey renace como Arthur Leywin en el continente mágico de Dicathen. Aunque comienza su segunda vida como un bebé, conserva su sabiduría pasada.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 1
+  episodes: 2
 }, {
   id: 64,
   name: "Devil May Cry 2025",
