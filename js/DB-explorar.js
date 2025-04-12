@@ -828,7 +828,7 @@ const animes = [
       "El viaje de Yaiba para convertirse en un verdadero samurái lo lleva desde su hogar en el bosque hasta una ajetreada ciudad llena de rivales, amistades y poderes ancestrales.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 1,
+    episodes: 2,
   },
   {
     id: 66,
