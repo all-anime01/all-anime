@@ -620,7 +620,7 @@ var animes = [{
   description: "Durante el período Edo, un joven llamado Jinta protege la ciudad y a Itsukihime. Cuando se enfrenta a un extraño demonio en el bosque cercano.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 2
+  episodes: 3
 }, {
   id: 63,
   name: "The Beginning After the End",
@@ -660,7 +660,7 @@ var animes = [{
   description: "Koichi Haimawari es un estudiante aburrido que aspiraba a ser un héroe pero abandonó su sueño. Aunque el 80% de la población mundial tenga poderes sobrehumanos llamados Dones, pocos son elegidos para convertirse en héroes y proteger a las personas.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 1
+  episodes: 2
 }, {
   id: 67,
   name: "Fire Force (Ennen no Shouboutai)",
