@@ -30,7 +30,7 @@ var animes = [{
   description: "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
   type: "Sub | Dob",
   seasons: 14,
-  episodes: 1122
+  episodes: 1125
 }, {
   id: 4,
   name: "My Hero Academia",
@@ -340,7 +340,7 @@ var animes = [{
   description: "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 89
+  episodes: 91
 }, {
   id: 35,
   name: "Pokémon: Viajes",
@@ -353,14 +353,14 @@ var animes = [{
   episodes: 1223
 }, {
   id: 36,
-  name: "Ranger Reject",
+  name: "Ranger Reject (Sentai Daishikkaku)",
   category: "accion",
-  image: "https://all-anime.net/image/Ranger-reject/p.webp",
+  image: "https://all-anime.net/image/Ranger-reject/T2/p.webp",
   link: "https://all-anime.net/ver/Ranger-reject/tv",
   description: "Con su antiguo escondite y sus jefes aniquilados, los Dusters supervivientes llegan a un acuerdo secreto con el equipo Ranger para participar en el enfrentamiento dominical, uno en el que siempre serán derrotados. ¡Cansado de esta farsa, el Luchador D finalmente da un paso al frente para hacer un cambio de una vez por todas!.",
   type: "Sub | Dob",
-  seasons: 1,
-  episodes: 12
+  seasons: 2,
+  episodes: 13
 }, {
   id: 37,
   name: "Zom 100: The Bucket List of the Dead",
@@ -680,7 +680,7 @@ var animes = [{
   description: "Es el año 2052 y una milagrosa droga sin efectos secundarios que iba a liberar a la humanidad del dolor se vuelve mortal. Ahora queda en manos de grupo de forajidos llamado Lazarus la tarea de salvar al mundo. ¡Y sólo tienen 30 días!",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 1
+  episodes: 2
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");

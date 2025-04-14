@@ -509,9 +509,9 @@ const animes = [
     type: "ANIME",
   },
   {
-    name: "Ranger Reject",
+    name: "Ranger Reject (Sentai Daishikkaku)",
     link: "https://all-anime.net/ver/Ranger-reject/tv",
-    image: "/image/Ranger-reject/p.webp",
+    image: "/image/Ranger-reject/T2/p.webp",
     type: "ANIME",
   },
   {

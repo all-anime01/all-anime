@@ -406,9 +406,9 @@ var animes = [{
   image: "https://cdn.anisabi.com/assets/anime/ragna-crimson/ragna-crimson-1696133427.jpg?t=4.0.11",
   type: "ANIME"
 }, {
-  name: "Ranger Reject",
+  name: "Ranger Reject (Sentai Daishikkaku)",
   link: "https://all-anime.net/ver/Ranger-reject/tv",
-  image: "/image/Ranger-reject/p.webp",
+  image: "/image/Ranger-reject/T2/p.webp",
   type: "ANIME"
 }, {
   name: "Record of Ragnarok",
