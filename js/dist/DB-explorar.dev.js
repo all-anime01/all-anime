@@ -120,7 +120,7 @@ var animes = [{
   description: "Haruka Sakura, un novato en la delincuente Preparatoria Furin, busca abrirse paso luchando. La escuela ahora tiene un grupo protector llamado Wind Breaker. Comienza su leyenda.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 15
+  episodes: 16
 }, {
   id: 13,
   name: "Tokyo Revenger",
