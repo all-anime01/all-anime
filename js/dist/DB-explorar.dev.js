@@ -30,7 +30,7 @@ var animes = [{
   description: "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
   type: "Sub | Dob",
   seasons: 14,
-  episodes: 1125
+  episodes: 1126
 }, {
   id: 4,
   name: "My Hero Academia",
@@ -360,7 +360,7 @@ var animes = [{
   description: "Con su antiguo escondite y sus jefes aniquilados, los Dusters supervivientes llegan a un acuerdo secreto con el equipo Ranger para participar en el enfrentamiento dominical, uno en el que siempre serán derrotados. ¡Cansado de esta farsa, el Luchador D finalmente da un paso al frente para hacer un cambio de una vez por todas!.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 13
+  episodes: 14
 }, {
   id: 37,
   name: "Zom 100: The Bucket List of the Dead",
@@ -680,7 +680,7 @@ var animes = [{
   description: "Es el año 2052 y una milagrosa droga sin efectos secundarios que iba a liberar a la humanidad del dolor se vuelve mortal. Ahora queda en manos de grupo de forajidos llamado Lazarus la tarea de salvar al mundo. ¡Y sólo tienen 30 días!",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 2
+  episodes: 3
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
