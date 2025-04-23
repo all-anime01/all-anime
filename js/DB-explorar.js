@@ -794,7 +794,7 @@ const animes = [
   },
   {
     id: 63,
-    name: "The Beginning After the End",
+    name: "The Beginning After the End (Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?)",
     category: "accion, fantasía",
     image:
       "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/6e0a6199a24a6c773d68c54dc5449610.jpg",
@@ -803,7 +803,7 @@ const animes = [
       "Después de una muerte misteriosa, el Rey Grey renace como Arthur Leywin en el continente mágico de Dicathen. Aunque comienza su segunda vida como un bebé, conserva su sabiduría pasada.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 3,
+    episodes: 4,
   },
   {
     id: 64,
