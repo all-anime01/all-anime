@@ -857,7 +857,7 @@ const animes = [
     episodes: 51,
   },
   {
-    id: 67,
+    id: 68,
     name: "Lazarus",
     category: "ciencia ficción",
     image: "/image/Lazarus/T1/p.jpg",
@@ -867,6 +867,18 @@ const animes = [
     type: "Sub | Dob",
     seasons: 1,
     episodes: 3,
+  },
+  {
+    id: 69,
+    name: "The Super Cube (Chao Neng Lifang: Chaofan Pian)",
+    category: "acción, aventura, fantasía",
+    image: "/image/The-super-cube/T1/p.jpg",
+    link: "https://all-anime.net/ver/The-super-cube/tv",
+    description:
+      "Tras obtener el «Super Power Cube» de una civilización avanzada, Wang Xiaoxiu adquiere habilidades extraordinarias. Sin embargo, tras enfrentarse a conflictos con Sun Jun y la desaparición de Shen Yao, Xiaoxiu emprende un viaje para rescatarla.",
+    type: "Subtitulado",
+    seasons: 1,
+    episodes: 7,
   },
   // ... (resto de los animes)
 ];

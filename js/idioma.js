@@ -621,6 +621,12 @@ const animes = [
     type: "ANIME",
   },
   {
+    name: "The Super Cube (Chao Neng Lifang: Chaofan Pian)",
+    link: "https://all-anime.net/ver/The-super-cube/tv",
+    image: "/image/The-super-cube/T1/p.jpg",
+    type: "ANIME",
+  },
+  {
     name: "The Marginal Service",
     link: "https://all-anime.net/ver/The-marginal-service/tv",
     image: "/image/The-marginal-service/p.jpe",
@@ -803,6 +809,13 @@ const animes = [
     name: "Kuroko no basket: Movie 4 Last game",
     link: "https://all-anime.net/peliculas/Kuroko-no-basket-movie-4-last-game/movie",
     image: "/image/Kuroko-no-basket-last-game/p.jpg",
+    type: "PELICULA",
+  },
+  {
+    name: "My Hero Academia movie 4: You're Next",
+    link: "https://all-anime.net/peliculas/My-hero-academia-4-you-re-next/movie",
+    image:
+      "https://a.storyblok.com/f/178900/940x1410/082b17c2c1/myheroacademia-you-renext_kv.jpg/m/filters:quality(95)format(webp)",
     type: "PELICULA",
   },
   {
