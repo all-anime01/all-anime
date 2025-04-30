@@ -803,7 +803,7 @@ const animes = [
       "Después de una muerte misteriosa, el Rey Grey renace como Arthur Leywin en el continente mágico de Dicathen. Aunque comienza su segunda vida como un bebé, conserva su sabiduría pasada.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 4,
+    episodes: 5,
   },
   {
     id: 64,
