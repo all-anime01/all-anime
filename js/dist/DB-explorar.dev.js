@@ -340,7 +340,7 @@ var animes = [{
   description: "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 91
+  episodes: 94
 }, {
   id: 35,
   name: "Pokémon: Viajes",
@@ -650,7 +650,7 @@ var animes = [{
   description: "El viaje de Yaiba para convertirse en un verdadero samurái lo lleva desde su hogar en el bosque hasta una ajetreada ciudad llena de rivales, amistades y poderes ancestrales.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 3
+  episodes: 5
 }, {
   id: 66,
   name: "My Hero Academia: Vigilantes",
@@ -690,7 +690,7 @@ var animes = [{
   description: "Tras obtener el «Super Power Cube» de una civilización avanzada, Wang Xiaoxiu adquiere habilidades extraordinarias. Sin embargo, tras enfrentarse a conflictos con Sun Jun y la desaparición de Shen Yao, Xiaoxiu emprende un viaje para rescatarla.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 7
+  episodes: 9
 } // ... (resto de los animes)
 ];
 var animeGrid = document.getElementById("animeGrid");
