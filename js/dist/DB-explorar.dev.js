@@ -630,7 +630,7 @@ var animes = [{
   description: "Después de una muerte misteriosa, el Rey Grey renace como Arthur Leywin en el continente mágico de Dicathen. Aunque comienza su segunda vida como un bebé, conserva su sabiduría pasada.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 6
+  episodes: 7
 }, {
   id: 64,
   name: "Devil May Cry 2025",
