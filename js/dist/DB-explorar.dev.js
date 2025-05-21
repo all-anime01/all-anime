@@ -30,7 +30,7 @@ var animes = [{
   description: "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
   type: "Sub | Dob",
   seasons: 14,
-  episodes: 1128
+  episodes: 1129
 }, {
   id: 4,
   name: "My Hero Academia",
@@ -340,7 +340,7 @@ var animes = [{
   description: "Pocket Mosnters es una historia sobre dos misteriosos personajes de Pokémon, Liko y Roy, que están enredados en el mundo de Pokémon. Sus aventuras y destinos cambiarán a medida que se encuentren con nuevas criaturas y encuentros.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 95
+  episodes: 96
 }, {
   id: 35,
   name: "Pokémon: Viajes",
@@ -360,7 +360,7 @@ var animes = [{
   description: "Con su antiguo escondite y sus jefes aniquilados, los Dusters supervivientes llegan a un acuerdo secreto con el equipo Ranger para participar en el enfrentamiento dominical, uno en el que siempre serán derrotados. ¡Cansado de esta farsa, el Luchador D finalmente da un paso al frente para hacer un cambio de una vez por todas!.",
   type: "Sub | Dob",
   seasons: 2,
-  episodes: 16
+  episodes: 17
 }, {
   id: 37,
   name: "Zom 100: The Bucket List of the Dead",
@@ -620,7 +620,7 @@ var animes = [{
   description: "Durante el período Edo, un joven llamado Jinta protege la ciudad y a Itsukihime. Cuando se enfrenta a un extraño demonio en el bosque cercano.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 7
+  episodes: 8
 }, {
   id: 63,
   name: "The Beginning After the End (Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?)",
@@ -660,7 +660,7 @@ var animes = [{
   description: "Koichi Haimawari es un estudiante aburrido que aspiraba a ser un héroe pero abandonó su sueño. Aunque el 80% de la población mundial tenga poderes sobrehumanos llamados Dones, pocos son elegidos para convertirse en héroes y proteger a las personas.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 6
+  episodes: 7
 }, {
   id: 67,
   name: "Fire Force (Ennen no Shouboutai)",
@@ -680,7 +680,7 @@ var animes = [{
   description: "Es el año 2052 y una milagrosa droga sin efectos secundarios que iba a liberar a la humanidad del dolor se vuelve mortal. Ahora queda en manos de grupo de forajidos llamado Lazarus la tarea de salvar al mundo. ¡Y sólo tienen 30 días!",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 6
+  episodes: 7
 }, {
   id: 69,
   name: "The Super Cube (Chao Neng Lifang: Chaofan Pian)",
