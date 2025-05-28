@@ -30,7 +30,7 @@ var animes = [{
   description: "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
   type: "Sub | Dob",
   seasons: 14,
-  episodes: 1129
+  episodes: 1130
 }, {
   id: 4,
   name: "My Hero Academia",
@@ -620,7 +620,7 @@ var animes = [{
   description: "Durante el período Edo, un joven llamado Jinta protege la ciudad y a Itsukihime. Cuando se enfrenta a un extraño demonio en el bosque cercano.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 8
+  episodes: 9
 }, {
   id: 63,
   name: "The Beginning After the End (Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?)",
@@ -660,7 +660,7 @@ var animes = [{
   description: "Koichi Haimawari es un estudiante aburrido que aspiraba a ser un héroe pero abandonó su sueño. Aunque el 80% de la población mundial tenga poderes sobrehumanos llamados Dones, pocos son elegidos para convertirse en héroes y proteger a las personas.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 7
+  episodes: 8
 }, {
   id: 67,
   name: "Fire Force (Ennen no Shouboutai)",
@@ -680,7 +680,7 @@ var animes = [{
   description: "Es el año 2052 y una milagrosa droga sin efectos secundarios que iba a liberar a la humanidad del dolor se vuelve mortal. Ahora queda en manos de grupo de forajidos llamado Lazarus la tarea de salvar al mundo. ¡Y sólo tienen 30 días!",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 7
+  episodes: 8
 }, {
   id: 69,
   name: "The Super Cube (Chao Neng Lifang: Chaofan Pian)",

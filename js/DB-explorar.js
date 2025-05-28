@@ -37,7 +37,7 @@ const animes = [
       "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro conocido como One Piece.",
     type: "Sub | Dob",
     seasons: 14,
-    episodes: 1129,
+    episodes: 1130,
   },
   {
     id: 4,
@@ -790,7 +790,7 @@ const animes = [
       "Durante el período Edo, un joven llamado Jinta protege la ciudad y a Itsukihime. Cuando se enfrenta a un extraño demonio en el bosque cercano.",
     type: "Subtitulado",
     seasons: 1,
-    episodes: 8,
+    episodes: 9,
   },
   {
     id: 63,
@@ -841,7 +841,7 @@ const animes = [
       "Koichi Haimawari es un estudiante aburrido que aspiraba a ser un héroe pero abandonó su sueño. Aunque el 80% de la población mundial tenga poderes sobrehumanos llamados Dones, pocos son elegidos para convertirse en héroes y proteger a las personas.",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 7,
+    episodes: 8,
   },
   {
     id: 67,
@@ -866,7 +866,7 @@ const animes = [
       "Es el año 2052 y una milagrosa droga sin efectos secundarios que iba a liberar a la humanidad del dolor se vuelve mortal. Ahora queda en manos de grupo de forajidos llamado Lazarus la tarea de salvar al mundo. ¡Y sólo tienen 30 días!",
     type: "Sub | Dob",
     seasons: 1,
-    episodes: 7,
+    episodes: 8,
   },
   {
     id: 69,
