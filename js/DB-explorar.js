@@ -154,7 +154,7 @@ const animes = [
       "Haruka Sakura, un novato en la delincuente Preparatoria Furin, busca abrirse paso luchando. La escuela ahora tiene un grupo protector llamado Wind Breaker. Comienza su leyenda.",
     type: "Sub | Dob",
     seasons: 2,
-    episodes: 21,
+    episodes: 22,
   },
   {
     id: 13,
