@@ -854,7 +854,7 @@ const animes = [
       "Tokio está ardiendo y los ciudadanos sufren misteriosas combustiones espontáneas por toda la ciudad. La responsable de apagar este infierno es la Brigada Especial Antiincendios y Shinra está listo para unirse a su lucha.",
     type: "Sub | Dob",
     seasons: 3,
-    episodes: 55,
+    episodes: 56,
   },
   {
     id: 68,
