@@ -650,7 +650,7 @@ var animes = [{
   description: "El viaje de Yaiba para convertirse en un verdadero samurái lo lleva desde su hogar en el bosque hasta una ajetreada ciudad llena de rivales, amistades y poderes ancestrales.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 8
+  episodes: 9
 }, {
   id: 66,
   name: "My Hero Academia: Vigilantes",
