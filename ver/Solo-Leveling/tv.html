@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="http://www.class.pm/projects/jquery/classysocial">
+  <title>Ver Solo Leveling Online — All-Anime</title>
+  <link rel="shortcut icon" href="/image/logo.ico">
+  <link rel="stylesheet" href="/css/List_Episodios.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="https://all-anime.net/" class="logo">
+      <img src="https://all-anime.net/image/Logo/logo-all-anime-min.svg" alt="">
+    </a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="https://all-anime.net/">INICIO</a></li>
+        <li><a href="https://all-anime.net/explorar">EXPLORAR</a></li>
+        <li><a href="https://all-anime.net/peliculas">PELÍCULAS</a></li>
+
+        <div class="search">
+          <div class="search-container">
+            <input type="text" placeholder="Buscar..." id="search-input" oninput="hideResults()">
+            <!-- <div class="icon-search">
+                            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-t="search-svg" aria-labelledby="search-svg" aria-hidden="false" role="img"><title id="search-svg">Buscar</title><path d="M15.474 14.035l6.235 6.26a1 1 0 1 1-1.418 1.41l-6.228-6.253a7.5 7.5 0 1 1 1.41-1.418zM9.5 15a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z"/></svg>
+                        </div> -->
+            <div id="search-results"></div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <style>
+      .search-container {
+        position: relative;
+        top: 5px;
+        left: 100%;
+        transform: translateX(-95%);
+        width: 185px;
+        z-index: 2000;
+        border-radius: 2.5px;
+        opacity: 2;
+      }
+
+      #search-input {
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      #search-results {
+        position: absolute;
+        width: 100%;
+        background-color: #f2f2f2;
+        z-index: 1;
+      }
+
+      #search-results div {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+      }
+
+      #search-results div a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+      }
+
+      #search-results img {
+        height: 70px;
+        margin-right: 10px;
+      }
+
+      #search-results .title {
+        font-weight: bold;
+      }
+
+      .title:hover {
+        color: rgb(7, 247, 59);
+      }
+
+      #search-results .Type {
+        margin-left: auto;
+      }
+
+      .Type {
+        background-color: rgb(7, 247, 59);
+        border-color: rgb(7, 247, 59);
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 16px;
+        width: 60px;
+        color: #fff;
+        height: 16px;
+        border-radius: 8px;
+      }
+
+      .Type:hover {
+        background-color: rgb(32, 106, 243);
+        border-color: rgb(32, 106, 243);
+      }
+    </style>
+  </header>
+
+  <section class="Inicio" id="Inicio">
+
+    <div class="Body">
+      <div>
+        <div class="Ficha fchlt">
+          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=94,width=1920/CurationAssets/Solo%20Leveling/SEASON%202/ULTRA-WIDE/SoloLeveling-S2-KV1-UW-LTR.png); background-size: 100% 95%; background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;">
+          </div>
+          <div class="Container">
+            <img
+              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480/CurationAssets/Solo%20Leveling/SEASON%202/ULTRA-WIDE/SoloLeveling-S2-KV1-UW-Logo.png"
+              alt="" style="width: 300px;">
+            <span class="Type tv">Anime</span>
+            <div>
+              <span class="TxtAlt">All-ANIME</span>
+            </div>
+            <div class="vtshr">
+              <div class="Votes">
+                <span class="vtprmd" id="votes_prmd">4.9</span>
+                <div class="Strs RateIt" data-id="7">
+                  <a href="#" class="fa-star-o Hf" data-value="5" title="5 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="4" title="4 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="3" title="3 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="2" title="2 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="1" title="1 Estrellas"></a>
+                </div>
+                <span class="Nmbr"><span id="votes_nmbr">(58.8K)</span> VOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Container">
+          <div class="BX Row BFluid Sp20">
+
+            <aside class="SidebarA BFixed">
+              <div class="AnimeCover">
+                <div class="Image">
+                  <figure><img
+                      src="https://a.storyblok.com/f/178900/1067x1601/0090e9bf15/solo-leveling-season-2-key-visual.png/m/filters:quality(95)format(webp)"
+                      alt="One Piece" itemprop="image">
+                  </figure>
+                </div>
+              </div>
+              <p class="AnmStts"><span class="fa-tv">Finalizado.</span></p>
+              <ul class="ListAnmBnts ClFx">
+
+            </aside>
+
+
+            <main class="Main">
+
+              <section class="WdgtCn">
+                <div class="Top">
+                  <div class="Title">Sinopsis</div>
+                </div>
+                <nav class="Nvgnrs">
+                  <a href="#">Acción</a>
+                  <a href="#">Fantasía</a>
+                  <a href="#">Aventura</a>
+                </nav>
+                <div class="Description">
+                  <p>Lo que no te mata te hace más fuerte, pero en el caso de Sung Jinwoo, lo que lo mató lo hizo más
+                    fuerte. Después de ser brutalmente asesinado por monstruos en una mazmorra de alto rango, Jinwoo
+                    regresó con el Sistema, un programa que solo él puede ver y que eleva su nivel en todos los
+                    sentidos. Ahora, está decidido a descubrir los secretos detrás de sus poderes y la mazmorra que los
+                    engendró.</p>
+                </div>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TceDFwPXCuI?si=Pwe8qBK_wKzIZ6a7"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+
+              </section>
+
+              <section class="WdgtCn">
+                <br>
+                <span class="list-temp">Temporadas y Episodios</span>
+                <br>
+                <br>
+                <ul class="collapsible popout">
+                  <li class="active">
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">fiber_new</i>Temporada 2</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://a.storyblok.com/f/178900/1920x1080/cdf83a3e19/solo-leveling-season-2-key-visual-wide.png/m/1200x0/filters:quality(95)format(webp)"
+                                  alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                                  alt="calendar" />Finalizado.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m {
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
+
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/25">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/5f581a5a1659cd92fa40fe530206b7f4.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/dsXC84kGPEbHWkSKSWOIYodjMVv.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/5f581a5a1659cd92fa40fe530206b7f4.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">25. Al siguiente objetivo.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">29/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/24">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/58a7fe907f22d3001e3afea92c7cb6a0.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/7GtWwrxlrQAyipgbKm6XO6daROu.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/58a7fe907f22d3001e3afea92c7cb6a0.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">24. ¿Eres el rey de los humanos?.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">22/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/23">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/498a19937f80f45b460db38226731b2e.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/7GtWwrxlrQAyipgbKm6XO6daROu.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/498a19937f80f45b460db38226731b2e.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">23. Se va a poner aún más intenso.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">15/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/22">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/d909160a8e78313e1530ed881d57831d.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/iTx8x2eH79xFGRQAs1Q7nIzbQK4.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/d909160a8e78313e1530ed881d57831d.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">22. Necesitamos un héroe.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">08/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/21">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/8be7a55bbacc671d73a2efa0531dfeba.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/mYvKcjF0LXlo1H3MOb278SsGgow.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/8be7a55bbacc671d73a2efa0531dfeba.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">21. Valió la pena.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">01/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/20">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/29945b927a6c4d2dc4cd23c3360e7d28.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_e3bba492b291e670dd0b0465dadff3b8.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/29945b927a6c4d2dc4cd23c3360e7d28.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">20. Mirar hacia arriba me estaba cansando
+                                .</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">22/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/19">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ad0478978006763a1df8cd8b2cbf4f0d.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/jLEFR1H89LJlgSE57PmpMujE608.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ad0478978006763a1df8cd8b2cbf4f0d.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">19. El décimo Cazador de rango S
+                                .</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">15/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/18">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/9ab321592ad21bb42b9c746e8057239a.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/2i5MVDxqDS9pfb1MIT8mWUXuNlL.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/9ab321592ad21bb42b9c746e8057239a.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">18. No menosprecies a los míos
+                                .</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">08/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/17">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/1a46858f76a4b9cb80d60f59e69318b0.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/o8cccNR6J3dSuh00elhZgd4Glmu.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/1a46858f76a4b9cb80d60f59e69318b0.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">17. Estamos entrenados para esto.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">01/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/16">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/9b05cfa6ea5183e13a8456fed1908357.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/yaaTlWhfJOJjKDbZZRTabnb6Mxm.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/9b05cfa6ea5183e13a8456fed1908357.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">16. Tengo que dejar de fingir.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">25/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/15">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/707acde43312c043b135a8d8d12f0372.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/ksoMkIBX9HxzvShzOxUvi4WhlFj.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/707acde43312c043b135a8d8d12f0372.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">15. Aún queda mucho camino.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">18/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/14">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/e1a8566071311d4a6720540b0d02a623.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/mUa5CdHS3IBbYPlXNqSATKZY5gV.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/e1a8566071311d4a6720540b0d02a623.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">14. Parece que tú mismo no lo sabes.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">11/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T2/13">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/b27889eed12a1c5c1c5765eb0d8f82dc.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/frSnFbURT5Ge3G2q0feAGeEwiTx.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/b27889eed12a1c5c1c5765eb0d8f82dc.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">13. Tú no eres nivel E, ¿verdad?.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">04/01/25</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">ondemand_video</i>Temporada 1</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/4305090653ee4239dd0d797f1a4a6bdf.jpg"
+                                  alt="" style="display: block;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p>Finalizado.</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/12">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/cda77a98de7021522ebb5f0cc9bebd7d.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/6kjROrp76VDJyfImdqUzmL7zdJM.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/cda77a98de7021522ebb5f0cc9bebd7d.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">12. Surge.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">30/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/11">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/66e3cabc8e0557f77c93c24178e7a5cd.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/xzpmAZTcFO5hTFopn8Idu7BRsl3.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/66e3cabc8e0557f77c93c24178e7a5cd.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">11. Un caballero
+                                defendiendo un trono vacío.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">23/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/10">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/9833d2909af5311139e79b32a44d9605.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/9JvpRBQLzrxwoETMkY2mpIuM6zL.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/9833d2909af5311139e79b32a44d9605.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">10. ¿Qué es esto, un
+                                picnic?.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">16/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/9">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/08ade842ca3ae544ccc5e4f6a207b529.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/7qqZfujgsWgLWY3KtefvfH7pHb0.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/08ade842ca3ae544ccc5e4f6a207b529.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">9. Has estado ocultando
+                                tus habilidades.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">09/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/8">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/ba4454c313d44737a3a72fc390bd2159.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/mYoah2DtfKVqGMtuCBmgeZYCQoM.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/ba4454c313d44737a3a72fc390bd2159.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">8. Esto es frustrante.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">02/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/7.5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/693c3c2259bf67d2afd151453ff15e1d.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/3UGTVLFHcAIQgjolx6rQpCottRj.jpg';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/693c3c2259bf67d2afd151453ff15e1d.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">7.5. Episodio Especial.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">24/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/7">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/018425874ef4c1b18b32c26645d6c848.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/3UGTVLFHcAIQgjolx6rQpCottRj.jpg';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/018425874ef4c1b18b32c26645d6c848.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">7. Veamos hasta dónde puedo llegar.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">17/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/6">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4622fd0dd6f0072211526a8ae67f0c5c.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/jeyh5o40BjSmkYxv1FV7OMqJn9m.jpg';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4622fd0dd6f0072211526a8ae67f0c5c.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">6. Comienza la verdadera caza.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">10/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/403416c5837765866f3b19ac27932777.jpe"
+                                  onmouseover="this.src='/image/Solo-Leveling/T1/5.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/403416c5837765866f3b19ac27932777.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">5. Un muy buen trato.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">03/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/4">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/78de61960488c9f16f960dae0b554eca.jpe"
+                                  onmouseover="this.src='/image/Solo-Leveling/T1/4.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/78de61960488c9f16f960dae0b554eca.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">4. Tengo que hacerme más fuerte.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">27/01/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/3">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c6adceca173ff32ae979af193a476fb2.jpe"
+                                  onmouseover="this.src='/image/Solo-Leveling/T1/3.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c6adceca173ff32ae979af193a476fb2.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">3. Es como un videojuego.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">20/01/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/2">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/50a0eb40c919b8efea01fd4799df08ff.jpe"
+                                  onmouseover="this.src='/image/Solo-Leveling/T1/2.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/50a0eb40c919b8efea01fd4799df08ff.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">2. Si tuviera otra
+                                oportunidad.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">13/01/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Solo-Leveling/T1/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9685e02cab2b3d22296e7c7e46d78aa8.jpe"
+                                  onmouseover="this.src='/image/Solo-Leveling/T1/1.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9685e02cab2b3d22296e7c7e46d78aa8.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">1. Ya estoy acostumbrado.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">06/01/24</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <!-- <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                  </li> -->
+                </ul>
+                <script>
+                  //expandible
+
+                  document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.collapsible');
+                    var instances = M.Collapsible.init(elems, options);
+                  });
+
+                  // Or with jQuery
+
+                  $(document).ready(function () {
+                    $('.collapsible').collapsible();
+                  });
+                  var instance = M.Collapsible.getInstance(elem);
+
+                  /* jQuery Method Calls
+                    You can still use the old jQuery plugin method calls.
+                    But you won't be able to access instance properties.
+                
+                    $('.collapsible').collapsible('methodName');
+                    $('.collapsible').collapsible('methodName', paramName);
+                  */
+                  var elem = document.querySelector('.collapsible.expandable');
+                  var instance = M.Collapsible.init(elem, {
+                    accordion: false
+                  });
+                </script>
+                <br>
+                <br>
+              </section>
+  </section>
+  </div>
+  </section>
+  </main>
+
+
+
+  <footer class="Footer">
+    <div class="Container">
+      <div class="BX Row BFluid Sp20 NMb">
+        <div>
+          <p><span>Anime HD Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+          <nav class="mnftxt">
+            <a href="https://all-anime.net/condiciones-de-uso">Términos y Condiciones</a>
+            <a href="https://all-anime.net/politica-de-privacidad">Política de Privacidad</a>
+            <a href="https://all-anime.net/sobre-all-anime">Sobre All-ANIME</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/idioma.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

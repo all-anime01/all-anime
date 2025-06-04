@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="http://www.class.pm/projects/jquery/classysocial">
+  <title>Ver My Hero Academia: Vigilantes Online — All-Anime</title>
+  <link rel="shortcut icon" href="/image/logo.ico">
+  <link rel="stylesheet" href="/css/List_Episodios.css">
+  <link rel="stylesheet" href="/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="https://all-anime.net/" class="logo">
+      <img src="https://all-anime.net/image/Logo/logo-all-anime-min.svg" alt="">
+    </a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="https://all-anime.net/">INICIO</a></li>
+        <li><a href="https://all-anime.net/explorar">EXPLORAR</a></li>
+        <li><a href="https://all-anime.net/peliculas">PELÍCULAS</a></li>
+
+        <div class="search">
+          <div class="search-container">
+            <input type="text" placeholder="Buscar..." id="search-input" oninput="hideResults()">
+            <!-- <div class="icon-search">
+                            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-t="search-svg" aria-labelledby="search-svg" aria-hidden="false" role="img"><title id="search-svg">Buscar</title><path d="M15.474 14.035l6.235 6.26a1 1 0 1 1-1.418 1.41l-6.228-6.253a7.5 7.5 0 1 1 1.41-1.418zM9.5 15a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z"/></svg>
+                        </div> -->
+            <div id="search-results"></div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <style>
+      .search-container {
+        position: relative;
+        top: 5px;
+        left: 100%;
+        transform: translateX(-95%);
+        width: 185px;
+        z-index: 2000;
+        border-radius: 2.5px;
+        opacity: 2;
+      }
+
+      #search-input {
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      #search-results {
+        position: absolute;
+        width: 100%;
+        background-color: #f2f2f2;
+        z-index: 1;
+      }
+
+      #search-results div {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+      }
+
+      #search-results div a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+      }
+
+      #search-results img {
+        height: 70px;
+        margin-right: 10px;
+      }
+
+      #search-results .title {
+        font-weight: bold;
+      }
+
+      .title:hover {
+        color: rgb(7, 247, 59);
+      }
+
+      #search-results .Type {
+        margin-left: auto;
+      }
+
+      .Type {
+        background-color: rgb(7, 247, 59);
+        border-color: rgb(7, 247, 59);
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 16px;
+        width: 60px;
+        color: #fff;
+        height: 16px;
+        border-radius: 8px;
+      }
+
+      .Type:hover {
+        background-color: rgb(32, 106, 243);
+        border-color: rgb(32, 106, 243);
+      }
+    </style>
+  </header>
+
+  <section class="Inicio" id="Inicio">
+
+    <div class="Body">
+      <div>
+        <div class="Ficha fchlt">
+          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=85,width=1920/keyart/G79H23ZQ3-backdrop_wide); max-width: 100%; height: 105%; background-repeat: no-repeat;
+            background-attachment: fixed;">
+          </div>
+          <div class="Container">
+            <img src="/image/My-hero-academia-vigilantes/logo.webp" alt="" style="width: 300px;">
+            <span class="Type tv">Anime</span>
+            <div>
+              <span class="TxtAlt">all-anime</span>
+              <span class="TxtAlt">crunchyroll</span>
+              <span class="TxtAlt">+14</span>
+              <span class="TxtAlt">Sub | Dob</span>
+            </div>
+            <div class="vtshr">
+              <div class="Votes">
+                <span class="vtprmd" id="votes_prmd">4.7</span>
+                <div class="Strs RateIt" data-id="7">
+                  <a href="#" class="fa-star-o Hf" data-value="5" title="5 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="4" title="4 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="3" title="3 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="2" title="2 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="1" title="1 Estrellas"></a>
+                </div>
+                <span class="Nmbr"><span id="votes_nmbr">(5.1 K)</span> VOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Container">
+          <div class="BX Row BFluid Sp20">
+
+            <aside class="SidebarA BFixed">
+              <div class="AnimeCover">
+                <div class="Image">
+                  <figure><img
+                      src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/aaddcbe723d430e97bed8c1b133de38f.jpg"
+                      alt="One Piece" itemprop="image">
+                  </figure>
+                </div>
+              </div>
+              <p class="AnmStts"><span class="fa-tv">En Emisión</span></p>
+              <ul class="ListAnmBnts ClFx">
+
+            </aside>
+
+
+            <main class="Main">
+
+              <section class="WdgtCn">
+                <div class="Top">
+                  <div class="Title">Sinopsis</div>
+                </div>
+                <nav class="Nvgnrs">
+                  <a href="#">Acción</a>
+                  <a href="#">Aventura</a>
+                  <a href="#">Fantasía</a>
+                </nav>
+                <div class="Description">
+                  <p>Koichi Haimawari es un estudiante aburrido que aspiraba a ser un héroe pero abandonó su sueño.
+                    Aunque el 80% de la población mundial tenga poderes sobrehumanos llamados Dones, pocos son elegidos
+                    para convertirse en héroes y proteger a las personas. ¡Todo cambia para Koichi cuando él y Pop☆Step
+                    son salvados por el vigilante Knuckleduster y son reclutados para convertirse en vigilantes!.
+                  </p>
+                </div>
+                <br>
+                <div class="relative w-full" style="display: flex; position: relative;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/9zdRwFdPqxE?si=cMOOn9fO-xDhY7e2"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+              </section>
+
+
+              <section class="WdgtCn">
+                <br>
+                <span class="list-temp">Temporadas y Episodios</span>
+                <br>
+                <br>
+
+                <ul class="collapsible popout">
+                  <li class="active">
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">fiber_new</i>Temporada 1</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=320,height=180/catalog/crunchyroll/512eac9b260bf9506f99f5460d061423.jpg"
+                                  alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio Lunes</h3>
+                              <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                                  alt="calendar" />Estreno 09/06/25.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m {
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
+
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/My-hero-academia-vigilantes/T1/9">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/74ab1d1ee72c5288b9462495edf4ad01.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/rFTbLJivonUMs7p4QVF3vr4epw.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/74ab1d1ee72c5288b9462495edf4ad01.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">9. Incursión materna.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">02/06/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/My-hero-academia-vigilantes/T1/8">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/11e90c55c760b2dd9c3288624455da97.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/uc5Ge2jDVI6Ztk3OCqLWVRXExnF.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/11e90c55c760b2dd9c3288624455da97.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">8. Un grande.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">26/05/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/My-hero-academia-vigilantes/T1/7">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/8f14b6b0c4361c92ba2e2596020c1118.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/jIwRFooVpzBzL3qQMiLl2QzL4r3.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/8f14b6b0c4361c92ba2e2596020c1118.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">7. Verdad.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">19/05/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/My-hero-academia-vigilantes/T1/6">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/891ff7c96d53a5387536ae594483b99d.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/1PsuBKMzHVYfjfMYFftJ3S9eDb1.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/891ff7c96d53a5387536ae594483b99d.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">6. Una línea.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">12/05/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/My-hero-academia-vigilantes/T1/5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/15823099d5b012ff01725b3ff2b8f61d.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_141dbf7a5866afc7d267eddd91bfd21a.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/15823099d5b012ff01725b3ff2b8f61d.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">5. Condena.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">05/05/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/My-hero-academia-vigilantes/T1/4">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/5a64fa11b978dc838a5df3eda7dfcf60.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_e7384e3f829a4b86cda451ee688d290c.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/5a64fa11b978dc838a5df3eda7dfcf60.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">4. El mejor corredor.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">28/04/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/My-hero-academia-vigilantes/T1/3">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/60fdb0a3981bdb01fbf14493bae5f506.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/cxXa80ExiSAvcClJRWYyxRlVwCt.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/60fdb0a3981bdb01fbf14493bae5f506.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">3. Abejas.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">21/04/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/My-hero-academia-vigilantes/T1/2">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ae1744de68a8c567f4c1c3fd8bc47a8e.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/kveOWw2d13KkPsjMOiYJrgOTrQi.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ae1744de68a8c567f4c1c3fd8bc47a8e.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">2. Despegue.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">14/04/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/My-hero-academia-vigilantes/T1/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/1d36394abeda94a298500aca8243b8d8.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/by6mOFlmTK6jKYKgk2YFaMvjlSx.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/1d36394abeda94a298500aca8243b8d8.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">1. Aquí me tienen.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">07/04/25</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <!-- <li>
+                    <div class="collapsible-header"><i class="material-icons">place</i>Temporada 2</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                  </li> -->
+                </ul>
+
+                <script>
+                  //expandible
+
+                  document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.collapsible');
+                    var instances = M.Collapsible.init(elems, options);
+                  });
+
+                  // Or with jQuery
+
+                  $(document).ready(function () {
+                    $('.collapsible').collapsible();
+                  });
+                  var instance = M.Collapsible.getInstance(elem);
+
+                  /* jQuery Method Calls
+                    You can still use the old jQuery plugin method calls.
+                    But you won't be able to access instance properties.
+                
+                    $('.collapsible').collapsible('methodName');
+                    $('.collapsible').collapsible('methodName', paramName);
+                  */
+                  var elem = document.querySelector('.collapsible.expandable');
+                  var instance = M.Collapsible.init(elem, {
+                    accordion: false
+                  });
+                </script>
+
+                <!-- <details open>
+                  <summary class="temp1 btn-floating btn-large pulse">Temporada 1<i class="material-icons"
+                      style="margin: -25px 175px; font-size: 28px;">fiber_new</i></summary>
+                  <div id='linea1'>
+                    <div class="Top">
+                      <div class="Title">Lista de episodios</div>
+                      <div class="lstopt-frm">
+                        <span class="order-lst">
+                        </span>
+                      </div>
+                    </div>
+                    <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                      <li class="fa-play-circle Next">
+                        <a href="#">
+                          <figure>
+                            <img
+                              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/397409971ee95b61bcaaa65b598280e7.jpe"
+                              alt="" style="display: block; background-image: cover;">
+                          </figure>
+                          <h3 class="Title">Proximo Episodio Miércoles</h3>
+                          <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                              alt="calendar" />Estreno 08/05/24.</p>
+                        </a>
+                      </li>
+                      <style>
+                        .time-m {
+                          z-index: 1000;
+                          background: #222;
+                          font-family: sans-serif;
+                          opacity: 0.8;
+                          height: 22px;
+                          width: 30px;
+                          margin: 44px 75px;
+                          text-align: center;
+                        }
+                      </style>
+
+                      
+                      <li class="fa-play-circle">
+                        <a href="https://all-anime.net/ver/Ranma-1-2-2024/T1/1">
+                          <figure>
+                            <img class="lazy1" alt=""
+                              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/b8bf242593f0f0fa1abee4f1d1aed7f8.jpe"
+                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/xG54T2JtsnR9qSg2nLQMoLghkRs.jpg';"
+                              onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/b8bf242593f0f0fa1abee4f1d1aed7f8.jpe'"
+                              style="display: block;">
+                            <p class="time-m" style="color: #fff;">22m</p>
+                          </figure>
+                          <h3 class="Title">1. Primer post.</h3>
+                          <p>Subtitulado</p>
+                          <p style="color: rgb(7, 247, 59)">10/04/24</p>
+                        </a>
+                      </li>
+                </details> -->
+                <br>
+                <br>
+              </section>
+  </section>
+  </div>
+  </section>
+  </main>
+
+
+
+  <footer class="Footer">
+    <div class="Container">
+      <div class="BX Row BFluid Sp20 NMb">
+        <div>
+          <p><span>Anime HD Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+          <nav class="mnftxt">
+            <a href="https://all-anime.net/condiciones-de-uso">Términos y Condiciones</a>
+            <a href="https://all-anime.net/politica-de-privacidad">Política de Privacidad</a>
+            <a href="https://all-anime.net/sobre-all-anime">Sobre All-ANIME</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/idioma.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

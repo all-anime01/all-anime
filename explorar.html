@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series de anime para Explorar - All-anime</title>
+    <link rel="shortcut icon" href="/image/logo.ico">
+    <link rel="stylesheet" href="/css/explorer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="https://all-anime.net/" class="logo">
+                <img src="/image/Logo/logo-all-anime-min.svg" alt="">
+            </a>
+            <nav class="main-nav">
+                <a href="https://all-anime.net/">Inicio</a>
+                <a href="https://all-anime.net/explorar">Explorar</a>
+                <a href="https://all-anime.net/peliculas">Películas</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="navSearchInput" placeholder="Buscar...">
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        </div>
+    </header>
+    <section id="inicio">
+        <nav class="filter-nav">
+            <input type="text" id="searchInput" placeholder="Buscar por nombre...">
+            <select id="categoryFilter">
+                <option value="">Todas las categorías</option>
+                <option value="accion">Acción</option>
+                <option value="aventura">Aventura</option>
+                <option value="comedia">Comedia</option>
+                <option value="deporte">Deporte</option>
+                <option value="drama">Drama</option>
+                <option value="fantasia">Fantasía</option>
+                <option value="sobrenatural">Sobrenatural</option>
+            </select>
+        </nav>
+        <main id="animeGrid">
+            <!-- Las tarjetas de anime se generarán dinámicamente aquí -->
+        </main>
+    </section>
+    <footer class="Footer">
+        <div class="Container">
+            <div class="BX Row BFluid Sp20 NMb">
+                <div>
+                    <p><span>Anime HD Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+                    <nav class="mnftxt">
+                        <a href="https://all-anime.net/condiciones-de-uso">Términos y Condiciones</a>
+                        <a href="https://all-anime.net/politica-de-privacidad">Política de
+                            Privacidad</a>
+                        <a href="https://all-anime.net/sobre-all-anime">Sobre All-ANIME</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/DB-explorar.js"></script>
+</body>
+
+</html>

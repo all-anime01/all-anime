@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video Clone 2024</title>
+    <style>
+        :root {
+            --primary-blue: #00A8E1;
+            --dark-blue: #0F171E;
+            --light-gray: #1A242F;
+            --text-gray: #8197A4;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Amazon Ember', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-blue);
+            color: var(--white);
+        }
+
+        header {
+            background-color: transparent;
+            padding: 1rem 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        header.scrolled {
+            background-color: var(--dark-blue);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 100px;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .main-nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .main-nav a:hover {
+            opacity: 1;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+        }
+
+        #search-input {
+            background-color: var(--light-gray);
+            border: none;
+            padding: 0.5rem 1rem;
+            color: var(--white);
+            border-radius: 4px 0 0 4px;
+        }
+
+        #search-button {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+
+        .banner {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .banner-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .banner-slide.active {
+            opacity: 1;
+        }
+
+        .banner-content {
+            background: linear-gradient(to top, rgba(15, 23, 30, 1) 0%, rgba(15, 23, 30, 0) 100%);
+            padding: 4rem 2rem;
+            width: 100%;
+        }
+
+        .banner-logo {
+            max-width: 300px;
+            margin-bottom: 1rem;
+        }
+
+        .banner-description {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            max-width: 50%;
+        }
+
+        .banner-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .button {
+            background-color: var(--white);
+            color: var(--dark-blue);
+            border: none;
+            padding: 0.8rem 2rem;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 2px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .button.secondary {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: var(--white);
+        }
+
+        .button.secondary:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .content-section {
+            padding: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .anime-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .anime-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .anime-card:hover {
+            transform: scale(1.05);
+        }
+
+        .anime-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--text-gray);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            background-color: var(--light-gray);
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .close {
+            color: var(--text-gray);
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: var(--white);
+        }
+
+        .modal-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .modal-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .modal-description {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .modal-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        .banner-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .banner-nav-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .banner-nav-dot.active {
+            background-color: var(--white);
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main-nav {
+                margin-top: 1rem;
+                width: 100%;
+            }
+
+            .search-container {
+                margin-top: 1rem;
+                width: 100%;
+            }
+
+            #search-input {
+                width: 100%;
+            }
+
+            .banner-description {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-content">
+            <img src="https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png" alt="Prime Video"
+                class="logo">
+            <nav class="main-nav">
+                <a href="#">Inicio</a>
+                <a href="#">Tienda</a>
+                <a href="#">TV en vivo</a>
+                <a href="#">Categorías</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar...">
+                <button id="search-button">Buscar</button>
+            </div>
+            <div class="user-menu">
+                <div class="user-icon">👤</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner" id="banner">
+            <!-- Banner slides will be inserted here by JavaScript -->
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Continuar viendo</h2>
+            <div class="anime-grid" id="continue-watching"></div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Amazon Originals y Exclusivos</h2>
+            <div class="anime-grid" id="originals"></div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Películas que podrían gustarte</h2>
+            <div class="anime-grid" id="movies"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Prime Video, Inc. o sus filiales</p>
+    </footer>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="" class="modal-image">
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <p id="modalDescription" class="modal-description"></p>
+            <div class="modal-info">
+                <span id="modalYear"></span>
+                <span id="modalRating"></span>
+                <span id="modalDuration"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Datos de ejemplo para los contenidos
+        const contents = [
+            { title: "The Boys", image: "https://m.media-amazon.com/images/M/MV5BOTEyNDJhMDAtY2U5ZS00OTMzLTkwODktMjU3MjFkZWVlMGYyXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg", category: "continue", description: "En un mundo donde los superhéroes abrazan el lado oscuro de su celebridad, un grupo de vigilantes emprende una heroica misión para derribar a los superhéroes corruptos.", year: "2019", rating: "18+", duration: "60m", videoUrl: "https://www.primevideo.com/detail/0KRGHGZCHKS920ZQGY5LBRF7MA/ref=atv_dp_season_select_s1" },
+            { title: "The Marvelous Mrs. Maisel", image: "https://m.media-amazon.com/images/M/MV5BMzk2ZmFhNjMtOWM2YS00NmE3LWE5NGUtZTMxYWZjYWNiNmMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg", category: "continue", description: "Una ama de casa de los años 50 decide convertirse en comediante de stand-up.", year: "2017", rating: "16+", duration: "57m", videoUrl: "https://www.primevideo.com/detail/0G0W6bjYJPWYK6UGT0U6BO8OU/ref=atv_dp_season_select_s1" },
+            { title: "Invincible", image: "https://m.media-amazon.com/images/M/MV5BNWYwYjAyMzgtNzQyNC00M2JiLWI2ZTQtNzRmZThmOTk4NmRmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg", category: "continue", description: "Un adolescente se transforma en un superhéroe bajo la tutela de su padre, el superhéroe más poderoso del planeta.", year: "2021", rating: "18+", duration: "45m", videoUrl: "https://www.primevideo.com/detail/0K677J96WQ96K6UY6BL15O70CO/ref=atv_dp_season_select_s1" },
+            { title: "The Wheel of Time", image: "https://m.media-amazon.com/images/M/MV5BYzA2Nzk5M2EtNWY4Yi00ZDY4LThkZTgtYjhhNWEyMGY0MjFjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg", category: "originals", description: "Ambientada en un mundo épico y de alta fantasía donde la magia existe, pero solo algunas mujeres pueden acceder a ella.", year: "2021", rating: "16+", duration: "60m", videoUrl: "https://www.primevideo.com/detail/0U3073DE9J38JXZ5WLZW5O8MH3/ref=atv_dp_season_select_s1" },
+            {
+                title: "Good Omens", image: "", category: "originals", description: "Un ángel y un demonio unen fuerzas para evitar el Apocalipsis.", year: "2019", rating: "16 + ", duration: "55m", videoUrl: "https://www.primevideo.com/detail/0SXLOIKGXHC8STWRV7JZGWBDZ5/ref=atv_dp_season_select_s1"
+            },
+            { title: "The Lord of the Rings: The Rings of Power", image: "https://m.media-amazon.com/images/M/MV5BNTg3NjcxYzgtYjljNC00Y2I2LWE3YmMtOTliZTkwYTE1MmZiXkEyXkFqcGdeQXVyNTY4NDc5MDE@._V1_.jpg", category: "originals", description: "Épica aventura que se desarrolla miles de años antes de los eventos de J.R.R. Tolkien's The Hobbit y The Lord of the Rings.", year: "2022", rating: "13+", duration: "60m", videoUrl: "https://www.primevideo.com/detail/0TUVXIO58IUNEPNBF8363Z7YGL/ref=atv_dp_season_select_s1" },
+            { title: "Reacher", image: "https://m.media-amazon.com/images/M/MV5BNzQ4MGYzYzAtNjJlOC00NTdkLTlmNTAtMmZjMzZmZTg3YWEzXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg", category: "movies", description: "Jack Reacher, un investigador y ex policía militar, se ve envuelto en una peligrosa conspiración.", year: "2022", rating: "18+", duration: "49m", videoUrl: "https://www.primevideo.com/detail/0JTMJ0XXEENQFHVL7P3AQBH7QO/ref=atv_dp_season_select_s1" },
+            { title: "The Terminal List", image: "https://m.media-amazon.com/images/M/MV5BYThjODZmYTItOWU0Ny00NGE4LWE4NDYtMTNjMDY3ZmYyNDQ4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg", category: "movies", description: "Un Navy SEAL busca venganza después de que su unidad es emboscada durante una misión encubierta.", year: "2022", rating: "18+", duration: "60m", videoUrl: "https://www.primevideo.com/detail/0NNUIQDQ9N8NR0GZQE8IUQX2GS/ref=atv_dp_season_select_s1" },
+            { title: "Citadel", image: "https://m.media-amazon.com/images/M/MV5BZGVmNTNhNjYtNmVjNy00YTY5LTg1MDQtZTJhNjA5MDJlODBhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg", category: "movies", description: "Dos espías de élite deben recuperar sus memorias y salvar al mundo de una nueva amenaza global.", year: "2023", rating: "18+", duration: "40m", videoUrl: "https://www.primevideo.com/detail/0TVXHX8ZDO4NCLP9VE9NXHM0HO/ref=atv_dp_season_select_s1" }
+        ];
+
+        // Datos para el banner rotativo
+        const bannerData = [
+            {
+                title: "The Boys",
+                description: "En un mundo donde los superhéroes abrazan el lado oscuro de su celebridad, un grupo de vigilantes emprende una heroica misión para derribar a los superhéroes corruptos.",
+                image: "https://m.media-amazon.com/images/M/MV5BOTEyNDJhMDAtY2U5ZS00OTMzLTkwODktMjU3MjFkZWVlMGYyXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg",
+                logo: "https://m.media-amazon.com/images/M/MV5BMmM2YWQ0NTgtN2FjYy00NTgwLWJlZWMtNzAxOGExMjRmZjhmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.png",
+                year: "2019",
+                rating: "18+",
+                duration: "60m",
+                videoUrl: "https://www.primevideo.com/detail/0KRGHGZCHKS920ZQGY5LBRF7MA/ref=atv_dp_season_select_s1"
+            },
+            {
+                title: "The Wheel of Time",
+                description: "Ambientada en un mundo épico y de alta fantasía donde la magia existe, pero solo algunas mujeres pueden acceder a ella.",
+                image: "https://m.media-amazon.com/images/M/MV5BYzA2Nzk5M2EtNWY4Yi00ZDY4LThkZTgtYjhhNWEyMGY0MjFjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+                logo: "https://m.media-amazon.com/images/M/MV5BZjIyNjcxN2QtNzBkNS00ZGUyLWE3ZjMtMzUwMWYyOTk3ZDk2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.png",
+                year: "2021",
+                rating: "16+",
+                duration: "60m",
+                videoUrl: "https://www.primevideo.com/detail/0U3073DE9J38JXZ5WLZW5O8MH3/ref=atv_dp_season_select_s1"
+            },
+            {
+                title: "The Lord of the Rings: The Rings of Power",
+                description: "Épica aventura que se desarrolla miles de años antes de los eventos de J.R.R. Tolkien's The Hobbit y The Lord of the Rings.",
+                image: "https://m.media-amazon.com/images/M/MV5BNTg3NjcxYzgtYjljNC00Y2I2LWE3YmMtOTliZTkwYTE1MmZiXkEyXkFqcGdeQXVyNTY4NDc5MDE@._V1_.jpg",
+                logo: "https://m.media-amazon.com/images/M/MV5BNzRlZTRkYzAtNzNhNC00Y2Y1LTkxYmEtZWM5NzA5YWQxZTBkXkEyXkFqcGdeQXVyMTEwNDU1MzEy._V1_.png",
+                year: "2022",
+                rating: "13+",
+                duration: "60m",
+                videoUrl: "https://www.primevideo.com/detail/0TUVXIO58IUNEPNBF8363Z7YGL/ref=atv_dp_season_select_s1"
+            }
+        ];
+
+        // Función para cargar el banner rotativo
+        function loadBanner() {
+            const banner = document.getElementById('banner');
+            banner.innerHTML = '';
+            bannerData.forEach((slide, index) => {
+                const slideElement = document.createElement('div');
+                slideElement.className = `banner-slide ${index === 0 ? 'active' : ''}`;
+                slideElement.style.backgroundImage = `url(${slide.image})`;
+                slideElement.innerHTML = `
+                    <div class="banner-content">
+                        <img src="${slide.logo}" alt="${slide.title}" class="banner-logo">
+                        <p class="banner-description">${slide.description}</p>
+                        <div class="banner-buttons">
+                            <a href="${slide.videoUrl}" class="button">Reproducir</a>
+                            <button class="button secondary" onclick="showModal('${slide.title}', '${slide.description}', '${slide.image}', '${slide.year}', '${slide.rating}', '${slide.duration}')">Más información</button>
+                        </div>
+                    </div>
+                `;
+                banner.appendChild(slideElement);
+            });
+
+            // Agregar navegación de puntos
+            const nav = document.createElement('div');
+            nav.className = 'banner-nav';
+            bannerData.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.className = `banner-nav-dot ${index === 0 ? 'active' : ''}`;
+                dot.addEventListener('click', () => changeBannerSlide(index));
+                nav.appendChild(dot);
+            });
+            banner.appendChild(nav);
+        }
+
+        // Función para cambiar la diapositiva del banner
+        function changeBannerSlide(index) {
+            const slides = document.querySelectorAll('.banner-slide');
+            const dots = document.querySelectorAll('.banner-nav-dot');
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        // Iniciar rotación automática del banner
+        let currentSlideIndex = 0;
+        setInterval(() => {
+            currentSlideIndex = (currentSlideIndex + 1) % bannerData.length;
+            changeBannerSlide(currentSlideIndex);
+        }, 8000); // Cambia cada 8 segundos
+
+        // Función para cargar los contenidos en la grilla
+        function loadContents(category, containerId) {
+            const grid = document.getElementById(containerId);
+            grid.innerHTML = ''; // Limpiar la grilla
+            contents.filter(content => content.category === category).forEach(content => {
+                const card = document.createElement('div');
+                card.className = 'anime-card';
+                card.innerHTML = `
+                    <img src="${content.image}" alt="${content.title}">
+                `;
+                card.addEventListener('click', () => showModal(content.title, content.description, content.image, content.year, content.rating, content.duration));
+                grid.appendChild(card);
+            });
+        }
+
+        // Función para mostrar el modal con información detallada
+        function showModal(title, description, image, year, rating, duration) {
+            const modal = document.getElementById('infoModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDescription = document.getElementById('modalDescription');
+            const modalYear = document.getElementById('modalYear');
+            const modalRating = document.getElementById('modalRating');
+            const modalDuration = document.getElementById('modalDuration');
+
+            modalImage.src = image;
+            modalImage.alt = title;
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modalYear.textContent = year;
+            modalRating.textContent = rating;
+            modalDuration.textContent = duration;
+
+            modal.style.display = 'block';
+        }
+
+        // Cerrar el modal cuando se hace clic en la X
+        document.querySelector('.close').addEventListener('click', function () {
+            document.getElementById('infoModal').style.display = 'none';
+        });
+
+        // Cerrar el modal cuando se hace clic fuera de él
+        window.addEventListener('click', function (event) {
+            if (event.target == document.getElementById('infoModal')) {
+                document.getElementById('infoModal').style.display = 'none';
+            }
+        });
+
+        // Función de búsqueda
+        function searchContents() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const allGrids = document.querySelectorAll('.anime-grid');
+            const searchResults = contents.filter(content =>
+                content.title.toLowerCase().includes(searchTerm) ||
+                content.description.toLowerCase().includes(searchTerm)
+            );
+
+            allGrids.forEach(grid => {
+                grid.innerHTML = '';
+                if (grid.id === 'continue-watching') {
+                    searchResults.forEach(content => {
+                        const card = document.createElement('div');
+                        card.className = 'anime-card';
+                        card.innerHTML = `<img src="${content.image}" alt="${content.title}">`;
+                        card.addEventListener('click', () => showModal(content.title, content.description, content.image, content.year, content.rating, content.duration));
+                        grid.appendChild(card);
+                    });
+                } else {
+                    grid.style.display = 'none';
+                }
+            });
+
+            document.querySelectorAll('.section-title').forEach(title => {
+                if (title.nextElementSibling.id !== 'continue-watching') {
+                    title.style.display = 'none';
+                } else {
+                    title.textContent = `Resultados de búsqueda para "${searchTerm}"`;
+                }
+            });
+        }
+
+        // Event listener para el botón de búsqueda
+        document.getElementById('search-button').addEventListener('click', searchContents);
+
+        // Event listener para la tecla Enter en el campo de búsqueda
+        document.getElementById('search-input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                searchContents();
+            }
+        });
+
+        // Cargar banner y contenidos al iniciar la página
+        loadBanner();
+        loadContents('continue', 'continue-watching');
+        loadContents('originals', 'originals');
+        loadContents('movies', 'movies');
+
+        // Funcionalidad para los botones de navegación
+        document.querySelectorAll('.main-nav a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                alert(`Has hecho clic en ${this.textContent}. Esta función aún no está implementada.`);
+            });
+        });
+
+        // Funcionalidad para el icono de usuario
+        document.querySelector('.user-icon').addEventListener('click', function () {
+            alert('Has hecho clic en el icono de usuario. Esta función aún no está implementada.');
+        });
+
+        // Cambiar el fondo del header al hacer scroll
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

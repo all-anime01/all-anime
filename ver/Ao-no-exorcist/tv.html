@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="http://www.class.pm/projects/jquery/classysocial">
+  <title>Ver Blue Exorcist: The Blue Night Saga Online — All-Anime</title>
+  <link rel="shortcut icon" href="/image/logo.ico">
+  <link rel="stylesheet" href="/css/List_Episodios.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="https://all-anime.net/" class="logo">
+      <img src="https://all-anime.net/image/Logo/logo-all-anime-min.svg" alt="">
+    </a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="https://all-anime.net/">INICIO</a></li>
+        <li><a href="https://all-anime.net/explorar">EXPLORAR</a></li>
+        <li><a href="https://all-anime.net/peliculas">PELÍCULAS</a></li>
+
+        <div class="search">
+          <div class="search-container">
+            <input type="text" placeholder="Buscar..." id="search-input" oninput="hideResults()">
+            <!-- <div class="icon-search">
+                            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-t="search-svg" aria-labelledby="search-svg" aria-hidden="false" role="img"><title id="search-svg">Buscar</title><path d="M15.474 14.035l6.235 6.26a1 1 0 1 1-1.418 1.41l-6.228-6.253a7.5 7.5 0 1 1 1.41-1.418zM9.5 15a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z"/></svg>
+                        </div> -->
+            <div id="search-results"></div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <style>
+      .search-container {
+        position: relative;
+        top: 5px;
+        left: 100%;
+        transform: translateX(-95%);
+        width: 185px;
+        z-index: 2000;
+        border-radius: 2.5px;
+        opacity: 2;
+      }
+
+      #search-input {
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      #search-results {
+        position: absolute;
+        width: 100%;
+        background-color: #f2f2f2;
+        z-index: 1;
+      }
+
+      #search-results div {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+      }
+
+      #search-results div a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+      }
+
+      #search-results img {
+        height: 70px;
+        margin-right: 10px;
+      }
+
+      #search-results .title {
+        font-weight: bold;
+      }
+
+      .title:hover {
+        color: rgb(7, 247, 59);
+      }
+
+      #search-results .Type {
+        margin-left: auto;
+      }
+
+      .Type {
+        background-color: rgb(7, 247, 59);
+        border-color: rgb(7, 247, 59);
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 16px;
+        width: 60px;
+        color: #fff;
+        height: 16px;
+        border-radius: 8px;
+      }
+
+      .Type:hover {
+        background-color: rgb(32, 106, 243);
+        border-color: rgb(32, 106, 243);
+      }
+    </style>
+  </header>
+
+  <section class="Inicio" id="Inicio">
+
+    <div class="Body">
+      <div>
+        <div class="Ficha fchlt">
+          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=94,width=1920/keyart/G649PJ0JY-backdrop_wide); background-size: 100% 100%; background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;">
+          </div>
+          <div class="Container">
+            <img
+              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=600/keyart/G649PJ0JY-title_logo-en-us"
+              alt="" style="width: 350px;">
+            <span class="Type tv">Anime</span>
+            <div>
+              <span class="TxtAlt">all-anime</span>
+              <span class="TxtAlt">Crunchyroll</span>
+              <span class="TxtAlt">+14</span>
+              <span class="TxtAlt">Subtitulado</span>
+            </div>
+            <div class="vtshr">
+              <div class="Votes">
+                <span class="vtprmd" id="votes_prmd">4.6</span>
+                <div class="Strs RateIt" data-id="7">
+                  <a href="#" class="fa-star-o Hf" data-value="5" title="5 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="4" title="4 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="3" title="3 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="2" title="2 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="1" title="1 Estrellas"></a>
+                </div>
+                <span class="Nmbr"><span id="votes_nmbr">(3.6K)</span> VOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Container">
+          <div class="BX Row BFluid Sp20">
+
+            <aside class="SidebarA BFixed">
+              <div class="AnimeCover">
+                <div class="Image">
+                  <figure><img
+                      src="https://a.storyblok.com/f/178900/722x1022/eb9e5bdffe/blue_exorcist_the_blue_night_saga_key_art.jpg/m/filters:quality(95)format(webp)"
+                      alt="One Piece" itemprop="image">
+                  </figure>
+                </div>
+              </div>
+              <p class="AnmStts"><span class="fa-tv">Finalizado</span></p>
+              <ul class="ListAnmBnts ClFx">
+
+            </aside>
+
+
+            <main class="Main">
+
+              <section class="WdgtCn">
+                <div class="Top">
+                  <div class="Title">Sinopsis</div>
+                </div>
+                <nav class="Nvgnrs">
+                  <a href="#">Acción</a>
+                  <a href="#">Escolar</a>
+                  <a href="#">Fantasía</a>
+                  <a href="#">Mitología</a>
+                  <a href="#">Shounen</a>
+                </nav>
+                <div class="Description">
+                  <p>En el mundo existen Assiah, el territorio de los humanos, y Gehenna, el territorio de los demonios.
+                    Aunque normalmente estas dos dimensiones no suelen cruzarse, el que los humanos hayan conseguido
+                    poseer sustancias materiales hace que estos se adentren en el mundo material. Pero entre los humanos
+                    hay quienes pueden exorcizar a dichos demonios: los exorcistas.</p>
+                </div>
+                <br>
+                <div class="relative w-full" style="display: flex; position: relative;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/xYJXJMM2KU8?si=of_aOghmgZy-q87B"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+
+              </section>
+
+
+              <section class="WdgtCn">
+                <br>
+                <span class="list-temp">Temporadas y Episodios</span>
+                <br>
+                <br>
+                <ul class="collapsible popout">
+                  <li class="active">
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">fiber_new</i>Temporada 3: The Blue Night Saga
+                    </div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=640,height=360/catalog/crunchyroll/d172ce6deaf012f5e45863d3478854dd.jpg"
+                                  alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                                  alt="calendar" />Finalizado.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m {
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
+
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/24">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/221f9ff450832aa44945ba0da48757f2.jpg"
+                                  onmouseover="this.src='/image/Ao-no-exorcist/T3/P3/12.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/221f9ff450832aa44945ba0da48757f2.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">24. Gracias.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">22/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/23">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/0bff48545fd7f2f60464ee94a1ccad2f.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/vxkRjxo9GAY9WQkQUhgKKTZaAXz.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/0bff48545fd7f2f60464ee94a1ccad2f.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">23. Promesa.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">15/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/22">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/d94bd223b60c64432eec027599917520.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_966f47a712b28bc8576abc4f2d54ac4d.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/d94bd223b60c64432eec027599917520.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">22. Luz.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">08/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/21">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/0c1967c212b2c5b533b713d5d58e61f5.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_82338161939bc50946353671b4051c14.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/0c1967c212b2c5b533b713d5d58e61f5.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">21. Combate a muerte.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">01/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/20">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/b288db8acca6d1b5b5aff63f932d6438.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/phCylzSdS9F6Fgrgon97LVZqhe.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/b288db8acca6d1b5b5aff63f932d6438.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">20. La Noche Azul.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">22/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/19">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/245264c391b1ef7a28d1398af7c87ec8.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_e3726f0e32364c5a22ce13cae48ad2ec.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/245264c391b1ef7a28d1398af7c87ec8.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">19. Víspera.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">15/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/18">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/7cee16f3f860666e4a6f8c1188e5f6fc.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/cRXKlb6PPYythM33Pp0BIQsYNkR.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/7cee16f3f860666e4a6f8c1188e5f6fc.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">18. Si yo no existiera.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">08/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/17">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/bb300905f8017cfa58fd127770aa2c8a.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/62Pj18X0rxCVoyByGmwysF9apD4.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/bb300905f8017cfa58fd127770aa2c8a.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">17. Algo más importante que el cuerpo.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">01/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/16">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/8c0554166e2484309490e749a6c96e57.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/btpbsCvPLwwQf0RPYR7twxYaMAE.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/8c0554166e2484309490e749a6c96e57.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">16. El despertar de Satán.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">25/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/15">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/31f184caabda8a928c3d00fe577d87f8.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/w1ldgcarBYFFhEJgbKdB62JN5iy.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/31f184caabda8a928c3d00fe577d87f8.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">15. Solo.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">18/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/14">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/6ee6f4793e670ba71f58b12d77404dea.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_c6d292a253126b4b4b343faf2c1e1e4b.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/6ee6f4793e670ba71f58b12d77404dea.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">14. La verdad.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">11/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P3/13">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/0ea3b4ee46ebf0fcd19f7f4daf97e1bb.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/aEHvJE5aiLcmiqYPoMyr6I9cv5V.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/0ea3b4ee46ebf0fcd19f7f4daf97e1bb.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">13. Shiro y Yuri.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">04/01/25</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">ondemand_video</i>Temporada 3: Beyond the Snow
+                      Saga</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/d172ce6deaf012f5e45863d3478854dd.jpg"
+                                  alt="" style="display: block;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p>Finalizado.</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/12">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ab7e098531d09dd3cb373ed78cd7b7b3.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_e4047c938aeda5109d931a92bdc05d7b.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ab7e098531d09dd3cb373ed78cd7b7b3.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">12. Separación.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">21/12/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/11">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/082ab444c0ad48f0b523d06d6c2be8a4.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_bb4abecddcd0e3ab2638d5385b03ba42.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/082ab444c0ad48f0b523d06d6c2be8a4.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">11. Más allá de la nieve.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">14/12/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/10">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/770b4a35184b971a8ecc086b4cb1610a.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/original/nzA61L8IeBrz5OUPBYq7lN8ZtPr.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/770b4a35184b971a8ecc086b4cb1610a.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">10. Entre la nieve que cae.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">07/12/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/9">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ecc9a6af52806143fd6e7db937a3982b.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_25850e53eba8d31a397f79ad287d66c5.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ecc9a6af52806143fd6e7db937a3982b.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">9. Felicitaciones.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">30/11/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/8">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/d83a9ffb5ddda208b2f9fcde9398ebd3.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_f15c1893a6820737e3d29514e957180e.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/d83a9ffb5ddda208b2f9fcde9398ebd3.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">8. ¡Feliz (Navidad) cumpleaños!.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">23/11/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/7">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/387075490ee88e11bc9372a927b22789.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_d5a279a6be77a8caf89491d2fda0b31d.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/387075490ee88e11bc9372a927b22789.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">7. Heterofilia foliar.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">16/11/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/6">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/de4540719dc72665cf073c04ea604e8e.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/6qig0K8ywmwWrhiEYWH3beTgJqm.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/de4540719dc72665cf073c04ea604e8e.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">6. Despertar.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">09/11/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/53849a10e2807d7f5c9c42fe7a5eaf15.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_2f64df16f58f0a7a69c45c350b86c557.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/53849a10e2807d7f5c9c42fe7a5eaf15.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">5. Como reclamando un llanto.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">02/11/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/4">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/93d21f96e12917a10f4afc68a321a02c.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/9WvCVGSOlWcL1sG7zdrWd9KNvBq.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/93d21f96e12917a10f4afc68a321a02c.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">4. Adiós, mi amor.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">26/10/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/3">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ac9211568b7c983b3b37f741806a379b.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/ySJKdKsgl00y2I3G4MhrKwRKpTD.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ac9211568b7c983b3b37f741806a379b.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">3. Hogar.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">19/10/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/2">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/25a7782f8b000cfe552766a51a233637.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/6k8ehubn2LHA0BvEc8UR0ut7dwY.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/25a7782f8b000cfe552766a51a233637.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">2. Angustia.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">12/10/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-no-exorcist/T3-P2/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/6db36f32bbe5d291610f3301d80e34e5.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/xzsfnVfeRqvknbeTUQdC27AntAq.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/6db36f32bbe5d291610f3301d80e34e5.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">1. Aspiraciones.</h3>
+                              <p>Subtitulado</p>
+                              <p style="color: rgb(7, 247, 59)">05/10/24</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">ondemand_video</i>Temporada 3: Shimane
+                      Illuminati</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/d8f2cfbd1a97d16e45caf0bbc5e64cb1.jpg"
+                                  alt="" style="display: block;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p>Finalizado.</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/12">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/ff2c6dea8878f003ef405a4e56295533.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/r3QItpptBuP5pso1T5OksHZGYuD.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/ff2c6dea8878f003ef405a4e56295533.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Verdades ocultas.</h3>
+                              <p>Episodio 12</p>
+                              <p style="color: rgb(7, 247, 59)">23/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/11">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/ac49d5632263d304219406c81c2224f0.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/g11MLHkZ1RAkgPXzEl62WM6HLlg.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/ac49d5632263d304219406c81c2224f0.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Araña rosa.</h3>
+                              <p>Episodio 11</p>
+                              <p style="color: rgb(7, 247, 59)">16/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/10">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ba64d9cb0bd0a9df30390ca744e5c4b4.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/i3Lx6Zf0WLEojJWlfp4bajr0D6r.jpg';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ba64d9cb0bd0a9df30390ca744e5c4b4.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Compañeros.</h3>
+                              <p>Episodio 10</p>
+                              <p style="color: rgb(7, 247, 59)">09/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/9">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/19c58006ed76d32bcd9645e2047287f8.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/iIRS7D1XEinRuGyd9dk4erFhiHP.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/19c58006ed76d32bcd9645e2047287f8.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Ayuda.</h3>
+                              <p>Episodio 9</p>
+                              <p style="color: rgb(7, 247, 59)">02/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/8">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d0c722faf22a0d8365247eb1205b3eb7.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/xhWL85DPzX4kjMylNPl5ZZzs0hO.jpg';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d0c722faf22a0d8365247eb1205b3eb7.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Determinación.</h3>
+                              <p>Episodio 8</p>
+                              <p style="color: rgb(7, 247, 59)">24/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/7">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/76717b644f28cf430fc23b9a754b35cc.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/hwaqAeLk9RgVxZ6iMmLePeQ471l.jpg';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/76717b644f28cf430fc23b9a754b35cc.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Dudas.</h3>
+                              <p>Episodio 7</p>
+                              <p style="color: rgb(7, 247, 59)">17/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/6">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/aecc77ec8995749d6eb10cd615e06f05.jpe"
+                                  onmouseover="this.src='/image/Ao-no-exorcist/T3/6.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/aecc77ec8995749d6eb10cd615e06f05.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">No puedo depender de nadie.</h3>
+                              <p>Episodio 6</p>
+                              <p style="color: rgb(7, 247, 59)">10/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c568e8daffe767d3b8f419f77479541c.jpe"
+                                  onmouseover="this.src='/image/Ao-no-exorcist/T3/5.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c568e8daffe767d3b8f419f77479541c.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Destino.</h3>
+                              <p>Episodio 5</p>
+                              <p style="color: rgb(7, 247, 59)">03/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/4">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/992e47708bcd00b5155d5e6880a06796.jpe"
+                                  onmouseover="this.src='/image/Ao-no-exorcist/T3/4.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/992e47708bcd00b5155d5e6880a06796.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Topo.</h3>
+                              <p>Episodio 4</p>
+                              <p style="color: rgb(7, 247, 59)">27/01/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/3">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f5721512f172b55dfdb607f6b8aaa854.jpe"
+                                  onmouseover="this.src='/image/Ao-no-exorcist/T3/3.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f5721512f172b55dfdb607f6b8aaa854.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Festival de la Academia de la Vera Cruz.</h3>
+                              <p>Episodio 3</p>
+                              <p style="color: rgb(7, 247, 59)">20/01/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/2">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ffe05b2eb1550f7d13c3daaf55da99d9.jpe"
+                                  onmouseover="this.src='/image/Ao-no-exorcist/T3/2.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ffe05b2eb1550f7d13c3daaf55da99d9.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">El paradero de los secretos.</h3>
+                              <p>Episodio 2</p>
+                              <p style="color: rgb(7, 247, 59)">13/01/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T3/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2866d7184ae1d368934a74ac40e778ef.jpe"
+                                  onmouseover="this.src='/image/Ao-no-exorcist/T3/1.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2866d7184ae1d368934a74ac40e778ef.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">El mundo se moviliza.</h3>
+                              <p>Episodio 1</p>
+                              <p style="color: rgb(7, 247, 59)">06/01/24</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">ondemand_video</i>Temporada 2</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/8556c77c0a761513759c9cc32f69337c17ca8ebd02ef49da413337144f31fd7c.jpg"
+                                  alt="" style="display: block;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p>Finalizado.</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T2/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/cbe57a0d3852e98c5fd6d2fb43499c98.jpe"
+                                  onmouseover="this.src='/image/Ao-no-exorcist/T2/1.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/cbe57a0d3852e98c5fd6d2fb43499c98.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">El comienzo.</h3>
+                              <p>Episodio 1</p>
+                              <p style="color: rgb(7, 247, 59)">06/01/17</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">ondemand_video</i>Temporada 1</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/666316bf628eadffc73a795bb519cfc4d419fe55d1d2ada5c501a72505a85861._BR-6_AC_SX720_FMjpg_.jpg"
+                                  alt="" style="display: block;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p>Finalizado.</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Ao-noexorcist/T1/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c3a35c406b62535145dd30fb9474af17.jpe"
+                                  onmouseover="this.src='/image/Ao-no-exorcist/T1/1.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c3a35c406b62535145dd30fb9474af17.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">The Devil Resides in Human Souls.</h3>
+                              <p>Episodio 1</p>
+                              <p style="color: rgb(7, 247, 59)">20/04/11</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <!-- <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                          </li> -->
+                </ul>
+                <script>
+                  //expandible
+
+                  document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.collapsible');
+                    var instances = M.Collapsible.init(elems, options);
+                  });
+
+                  // Or with jQuery
+
+                  $(document).ready(function () {
+                    $('.collapsible').collapsible();
+                  });
+                  var instance = M.Collapsible.getInstance(elem);
+
+                  /* jQuery Method Calls
+                    You can still use the old jQuery plugin method calls.
+                    But you won't be able to access instance properties.
+                
+                    $('.collapsible').collapsible('methodName');
+                    $('.collapsible').collapsible('methodName', paramName);
+                  */
+                  var elem = document.querySelector('.collapsible.expandable');
+                  var instance = M.Collapsible.init(elem, {
+                    accordion: false
+                  });
+                </script>
+                <br>
+                <br>
+              </section>
+  </section>
+  </div>
+  </section>
+  </main>
+
+
+
+  <footer class="Footer">
+    <div class="Container">
+      <div class="BX Row BFluid Sp20 NMb">
+        <div>
+          <p><span>Anime HD Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+          <nav class="mnftxt">
+            <a href="https://all-anime.net/condiciones-de-uso">Términos y Condiciones</a>
+            <a href="https://all-anime.net/politica-de-privacidad">Política de Privacidad</a>
+            <a href="https://all-anime.net/sobre-all-anime">Sobre All-ANIME</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/idioma.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

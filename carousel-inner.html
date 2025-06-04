@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="carousel-size">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe"
+                    alt="Imagen 1">
+                <div class="info-view">
+                    <h3>Título 1</h3>
+                    <p>Descripción 1</p>
+                </div>
+                <div class="overlay">
+                    <div class="overlay-info-view">
+                        <h3>Más Información 1</h3>
+                        <p>Detalle adicional 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe"
+                    alt="Imagen 2">
+                <div class="info-view">
+                    <h3>Título 2</h3>
+                    <p>Descripción 2</p>
+                </div>
+                <div class="overlay">
+                    <div class="overlay-info-view">
+                        <h3>Más Información 2</h3>
+                        <p>Detalle adicional 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/2e7bda4ba44aa751944234541f49b790.jpe"
+                    alt="Imagen 2">
+                <div class="info-view">
+                    <h3>Título 3</h3>
+                    <p>Descripción 3</p>
+                </div>
+                <div class="overlay">
+                    <div class="overlay-info-view">
+                        <h3>Más Información 3</h3>
+                        <p>Detalle adicional 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/5e7f533c3b4f46244ca228af62e83dfa.jpe"
+                    alt="Imagen 2">
+                <div class="info-view">
+                    <h3>Título 4</h3>
+                    <p>Descripción 4</p>
+                </div>
+                <div class="overlay">
+                    <div class="overlay-info">
+                        <h3>Más Información 4</h3>
+                        <p>Detalle adicional 4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/a30d7186097866e311f55708caf90038.jpe"
+                    alt="Imagen 2">
+                <div class="info">
+                    <h3>Título 5</h3>
+                    <p>Descripción 5</p>
+                </div>
+                <div class="overlay">
+                    <div class="overlay-info">
+                        <h3>Más Información 5</h3>
+                        <p>Detalle adicional 5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe"
+                    alt="Imagen 2">
+                <div class="info">
+                    <h3>Título 2</h3>
+                    <p>Descripción 2</p>
+                </div>
+                <div class="overlay">
+                    <div class="overlay-info">
+                        <h3>Más Información 2</h3>
+                        <p>Detalle adicional 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe"
+                    alt="Imagen 2">
+                <div class="info">
+                    <h3>Título 2</h3>
+                    <p>Descripción 2</p>
+                </div>
+                <div class="overlay">
+                    <div class="overlay-info">
+                        <h3>Más Información 2</h3>
+                        <p>Detalle adicional 2</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Añade más items según sea necesario -->
+        </div>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+            }
+
+            .carousel-size {
+                position: relative;
+                width: 100%;
+                max-width: 1400px;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+
+            .carousel-inner {
+                display: flex;
+                transition: transform 0.5s ease;
+                cursor: grab;
+            }
+
+            .carousel-item {
+                min-width: calc(20% - 30px);
+                /* Ajusta esto según el número de imágenes visibles y el margen */
+                margin: 0 15px;
+                /* Espacio entre imágenes */
+                box-sizing: border-box;
+                position: relative;
+            }
+
+            .carousel-item img {
+                width: 100%;
+                display: block;
+            }
+
+            .carousel-item .info {
+                text-align: start;
+                padding: 10px 0;
+            }
+
+            .carousel-item .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.6);
+                color: white;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                display: flex;
+                justify-content: start;
+                align-items: start;
+                text-align: start;
+            }
+
+            .carousel-item .overlay-info {
+                display: none;
+            }
+
+            .carousel-item:hover .overlay {
+                opacity: 1;
+            }
+
+            .carousel-item:hover .overlay-info {
+                display: block;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                border: none;
+                color: white;
+                font-size: 24px;
+                padding: 10px;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .carousel-control-prev {
+                left: 10px;
+            }
+
+            .carousel-control-next {
+                right: 10px;
+            }
+
+            /* Media Queries for Responsive Design */
+            @media (max-width: 768px) {
+                .carousel-item {
+                    min-width: calc(50% - 10px);
+                    /* 2 imágenes visibles en pantallas pequeñas */
+                }
+            }
+        </style>
+        <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.carousel-item');
+            const carouselInner = document.querySelector('.carousel-inner');
+            let isDragging = false;
+            let startPos = 0;
+            let currentTranslate = 0;
+            let prevTranslate = 0;
+            let animationID;
+            const visibleSlides = 5; // Número de imágenes visibles al mismo tiempo
+
+            function showSlide(index) {
+                const totalSlides = slides.length;
+                const maxSlideIndex = totalSlides - visibleSlides;
+
+                currentSlide = Math.max(0, Math.min(index, maxSlideIndex));
+                const newTransform = -currentSlide * (100 / visibleSlides) + '%';
+                carouselInner.style.transform = `translateX(${newTransform})`;
+
+                // Mostrar/ocultar botones según el índice actual
+                document.querySelector('.carousel-control-prev').style.display = currentSlide === 0 ? 'none' : 'block';
+                document.querySelector('.carousel-control-next').style.display = currentSlide === maxSlideIndex ? 'none' : 'block';
+            }
+
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+
+            carouselInner.addEventListener('touchstart', touchStart);
+            carouselInner.addEventListener('touchend', touchEnd);
+            carouselInner.addEventListener('touchmove', touchMove);
+
+            carouselInner.addEventListener('mousedown', touchStart);
+            carouselInner.addEventListener('mouseup', touchEnd);
+            carouselInner.addEventListener('mouseleave', touchEnd);
+            carouselInner.addEventListener('mousemove', touchMove);
+
+            function touchStart(event) {
+                isDragging = true;
+                startPos = getPositionX(event);
+                carouselInner.style.cursor = 'grabbing';
+                animationID = requestAnimationFrame(animation);
+            }
+
+            function touchEnd() {
+                isDragging = false;
+                cancelAnimationFrame(animationID);
+                const movedBy = currentTranslate - prevTranslate;
+
+                if (movedBy < -100) nextSlide();
+                if (movedBy > 100) prevSlide();
+
+                carouselInner.style.cursor = 'grab';
+                prevTranslate = currentTranslate;
+            }
+
+            function touchMove(event) {
+                if (isDragging) {
+                    const currentPosition = getPositionX(event);
+                    currentTranslate = prevTranslate + currentPosition - startPos;
+                }
+            }
+
+            function getPositionX(event) {
+                return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+            }
+
+            function animation() {
+                setSliderPosition();
+                if (isDragging) requestAnimationFrame(animation);
+            }
+
+            function setSliderPosition() {
+                carouselInner.style.transform = `translateX(${currentTranslate}px)`;
+            }
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth <= 768) {
+                    visibleSlides = 2; // Cambiar número de imágenes visibles en pantallas pequeñas
+                } else {
+                    visibleSlides = 5; // Número de imágenes visibles en pantallas grandes
+                }
+                showSlide(currentSlide);
+            });
+
+            showSlide(currentSlide); // Inicializar la visualización de las diapositivas
+
+        </script>
+        <button class="carousel-control-prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control-next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

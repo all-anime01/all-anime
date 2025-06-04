@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-Anime</title>
+    <link rel="stylesheet" href="/css/index-css.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="logo">All-Anime</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#series">Series</a></li>
+                    <li><a href="#movies">Películas</a></li>
+                    <li><a href="#kids">Niños</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Buscar">
+                    <i class="fas fa-search search-icon"></i>
+                    <div id="search-results" class="search-results"></div>
+                </div>
+                <div class="user-icon">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-carousel" id="hero-carousel">
+                <!-- Las imágenes y contenido se agregarán dinámicamente con JavaScript -->
+            </div>
+            <div class="carousel-buttons">
+                <button id="prevBtn" class="carousel-btn">&lt;</button>
+                <button id="nextBtn" class="carousel-btn">&gt;</button>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Destacados</h2>
+            <div class="anime-carousel" id="featured-anime"></div>
+        </section>
+
+        <section class="categories">
+            <h2>Explora por género</h2>
+            <div class="category-carousel" id="category-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 All-Anime. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Datos de ejemplo más completos (en una aplicación real, estos datos vendrían de una API o base de datos)
+        const animeData = [
+            {
+                id: 1,
+                title: "Naruto",
+                description:
+                    "Un joven ninja busca reconocimiento y aspira a convertirse en Hokage.",
+                image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/8532171bec0d05bfe45769a330fbab82.jpe",
+                category: "Acción",
+                episodes: 220,
+            },
+            {
+                id: 2,
+                title: "Death Note",
+                description:
+                    "Un estudiante encuentra un cuaderno sobrenatural que le permite matar a cualquiera escribiendo su nombre.",
+                image: "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/697c8b5ff2f49a97348b5507c06e1183.jpg",
+                category: "Misterio",
+                episodes: 37,
+            },
+            {
+                id: 3,
+                title: "One Piece",
+                description:
+                    "Un joven pirata se embarca en un viaje para encontrar el tesoro definitivo y convertirse en el Rey de los Piratas.",
+                image: "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe",
+                category: "Aventura",
+                episodes: 1000,
+            },
+            // Añade más animes aquí
+        ];
+
+        // Función para buscar animes
+        function searchAnime() {
+            const searchTerm = document
+                .getElementById("search-input")
+                .value.toLowerCase();
+            if (searchTerm.length < 2) {
+                hideSearchResults();
+                return;
+            }
+
+            const searchResults = animeData.filter(
+                (anime) =>
+                    anime.title.toLowerCase().includes(searchTerm) ||
+                    anime.description.toLowerCase().includes(searchTerm) ||
+                    anime.category.toLowerCase().includes(searchTerm)
+            );
+
+            displaySearchResults(searchResults);
+        }
+
+        // Función para mostrar los resultados de búsqueda
+        function displaySearchResults(results) {
+            const searchResultsContainer = document.getElementById("search-results");
+            searchResultsContainer.innerHTML = "";
+
+            if (results.length > 0) {
+                results.forEach((anime) => {
+                    const resultItem = document.createElement("div");
+                    resultItem.classList.add("search-result-item");
+                    resultItem.innerHTML = `
+              <img src="${anime.image}" alt="${anime.title}">
+              <div class="result-info">
+                  <div class="result-title">${anime.title}</div>
+                  <div class="result-category">${anime.category}</div>
+              </div>
+          `;
+                    resultItem.addEventListener("click", () => redirectToAnime(anime.id));
+                    searchResultsContainer.appendChild(resultItem);
+                });
+                searchResultsContainer.style.display = "block";
+            } else {
+                hideSearchResults();
+            }
+        }
+
+        // Función para ocultar los resultados de búsqueda
+        function hideSearchResults() {
+            document.getElementById("search-results").style.display = "none";
+        }
+
+        // Función para redireccionar al contenido del anime (simulada)
+        function redirectToAnime(animeId) {
+            console.log(`Redirigiendo al anime con ID: ${animeId}`);
+            // Aquí implementarías la redirección real
+            // Por ejemplo: window.location.href = `/anime/${animeId}`;
+        }
+
+        // Event listeners
+        document.getElementById("search-input").addEventListener("input", searchAnime);
+        document.addEventListener("click", (e) => {
+            if (!e.target.closest(".search-container")) {
+                hideSearchResults();
+            }
+        });
+
+        // Evitar que el formulario se envíe al presionar Enter
+        document.getElementById("search-input").addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+    <script src="/js/index-script.js"></script>
+</body>
+
+</html>

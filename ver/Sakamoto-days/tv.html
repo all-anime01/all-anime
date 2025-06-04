@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="http://www.class.pm/projects/jquery/classysocial">
+  <title>Ver Sakamoto Days Online — All-Anime</title>
+  <link rel="shortcut icon" href="/image/logo.ico">
+  <link rel="stylesheet" href="/css/List_Episodios.css">
+  <link rel="stylesheet" href="/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="https://all-anime.net/" class="logo">
+      <img src="https://all-anime.net/image/Logo/logo-all-anime-min.svg" alt="">
+    </a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="https://all-anime.net/">INICIO</a></li>
+        <li><a href="https://all-anime.net/explorar">EXPLORAR</a></li>
+        <li><a href="https://all-anime.net/peliculas">PELÍCULAS</a></li>
+
+        <div class="search">
+          <div class="search-container">
+            <input type="text" placeholder="Buscar..." id="search-input" oninput="hideResults()">
+            <!-- <div class="icon-search">
+                            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-t="search-svg" aria-labelledby="search-svg" aria-hidden="false" role="img"><title id="search-svg">Buscar</title><path d="M15.474 14.035l6.235 6.26a1 1 0 1 1-1.418 1.41l-6.228-6.253a7.5 7.5 0 1 1 1.41-1.418zM9.5 15a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z"/></svg>
+                        </div> -->
+            <div id="search-results"></div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <style>
+      .search-container {
+        position: relative;
+        top: 5px;
+        left: 100%;
+        transform: translateX(-95%);
+        width: 185px;
+        z-index: 2000;
+        border-radius: 2.5px;
+        opacity: 2;
+      }
+
+      #search-input {
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      #search-results {
+        position: absolute;
+        width: 100%;
+        background-color: #f2f2f2;
+        z-index: 1;
+      }
+
+      #search-results div {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+      }
+
+      #search-results div a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+      }
+
+      #search-results img {
+        height: 70px;
+        margin-right: 10px;
+      }
+
+      #search-results .title {
+        font-weight: bold;
+      }
+
+      .title:hover {
+        color: rgb(7, 247, 59);
+      }
+
+      #search-results .Type {
+        margin-left: auto;
+      }
+
+      .Type {
+        background-color: rgb(7, 247, 59);
+        border-color: rgb(7, 247, 59);
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 16px;
+        width: 60px;
+        color: #fff;
+        height: 16px;
+        border-radius: 8px;
+      }
+
+      .Type:hover {
+        background-color: rgb(32, 106, 243);
+        border-color: rgb(32, 106, 243);
+      }
+    </style>
+  </header>
+
+  <section class="Inicio" id="Inicio">
+
+    <div class="Body">
+      <div>
+        <div class="Ficha fchlt">
+          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://occ-0-4440-3934.1.nflxso.net/dnm/api/v6/Z-WHgqd_TeJxSuha8aZ5WpyLcX8/AAAABXTG17BFUnYPJ85VMDsaTVpjNKwj2WHsUHHrcoifNyZeQBHHDHZlXtNfRk8_yBGZRhuOWBmGAadp4YEYyAeNwT-Q2Pe1szDw6Ltn.webp?r=5cf); max-width: 100%; height: 105%; background-repeat: no-repeat;
+            background-attachment: fixed;">
+          </div>
+          <div class="Container">
+            <img
+              src="https://occ-0-4440-3934.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABemKOWL1V4rv61wwalKNdi9che_5dUQD3KvcrCf-CHZWg3F8-e6KEvIYBMHanQPGS-ZzKnH9EwrXc_cP8udykMZLMVTVusZ_VQ.webp?r=0b2"
+              alt="" style="width: 300px;">
+            <span class="Type tv">Anime</span>
+            <div>
+              <span class="TxtAlt">all-anime</span>
+              <span class="TxtAlt">NETFLIX</span>
+              <span class="TxtAlt">+16</span>
+              <span class="TxtAlt">Sub | Dob</span>
+            </div>
+            <div class="vtshr">
+              <div class="Votes">
+                <span class="vtprmd" id="votes_prmd">4.6</span>
+                <div class="Strs RateIt" data-id="7">
+                  <a href="#" class="fa-star-o Hf" data-value="5" title="5 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="4" title="4 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="3" title="3 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="2" title="2 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="1" title="1 Estrellas"></a>
+                </div>
+                <span class="Nmbr"><span id="votes_nmbr">(7.6K)</span> VOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Container">
+          <div class="BX Row BFluid Sp20">
+
+            <aside class="SidebarA BFixed">
+              <div class="AnimeCover">
+                <div class="Image">
+                  <figure><img
+                      src="https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQTA0WH6Znc8it-5EP5hduuMVjwyhhGlAt6E33RgLTxjpJDShUnvsirIEq9-fjG1G0Fnf95nVmpDSNZTjLnIrEHwYzwb-wx453ISGixLcJjo_oC5v3Obk8y1n_HhX7Zka8eXqLW5YewPssqDcN2LlEyXX.jpg?r=1f3"
+                      alt="One Piece" itemprop="image">
+                  </figure>
+                </div>
+              </div>
+              <p class="AnmStts"><span class="fa-tv">Finalizado</span></p>
+              <ul class="ListAnmBnts ClFx">
+
+            </aside>
+
+
+            <main class="Main">
+
+              <section class="WdgtCn">
+                <div class="Top">
+                  <div class="Title">Sinopsis</div>
+                </div>
+                <nav class="Nvgnrs">
+                  <a href="#">Acción</a>
+                  <a href="#">Comedia</a>
+                </nav>
+                <div class="Description">
+                  <p>Taro Sakamoto, célebre asesino a sueldo, decidió retirarse de la acción cuando se enamoró. Pero el
+                    pasado vuelve por él y ahora debe dar pelea para proteger a su familia.
+                  </p>
+                </div>
+                <br>
+                <div class="relative w-full" style="display: flex; position: relative;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/UF4Fz5WKGCc?si=ZdlqX5TErU9mgif0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+              </section>
+
+
+              <section class="WdgtCn">
+                <br>
+                <span class="list-temp">Temporadas y Episodios</span>
+                <br>
+                <br>
+
+                <ul class="collapsible popout">
+                  <li class="active">
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">fiber_new</i>Temporada 1</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://occ-0-4440-3934.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABbERq_aL7Nej4e_fjN0OZY9qMp4g9JirfV5VKZgJr7FSdM7NE2i_1c3Nep4NDwnBo9r-a5_qAuko9O_FG-n4-oHa7oK1VDBwf8sn.jpg?r=acd"
+                                  alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                                  alt="calendar" />Finalizado.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m {
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
+
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Sakamoto-days/T1/11">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://image.tmdb.org/t/p/w300/iAHih3zBgtj8GVc272L0VrhBB87.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/lTMXGwNqowukW2e3bkg5mtiblMW.jpg';"
+                                  onmouseout="this.src='https://image.tmdb.org/t/p/w300/iAHih3zBgtj8GVc272L0VrhBB87.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">11. Batalla en el casino.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">15/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Sakamoto-days/T1/10">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://occ-0-1472-114.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABYp0xfxceEZyU7SAvIJLx7ZkT9GrmnlW-MkXF_fwyzemx9BzLIjkvJZMeVvkX2Ls_--wUVPyhFGsBohWaObYskBD-VrUUhigzjC4sIa4owrrv6ivyXbEnCTv.jpg?r=fa2"
+                                  onmouseover="this.src='https://i2.wp.com/aniyt.net/wp-content/uploads/2025/03/jmgh453h45h245h54.jpg?resize=454,340';"
+                                  onmouseout="this.src='https://occ-0-1472-114.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABYp0xfxceEZyU7SAvIJLx7ZkT9GrmnlW-MkXF_fwyzemx9BzLIjkvJZMeVvkX2Ls_--wUVPyhFGsBohWaObYskBD-VrUUhigzjC4sIa4owrrv6ivyXbEnCTv.jpg?r=fa2'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">10. Modo de baños termales.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">08/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Sakamoto-days/T1/9">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://occ-0-4440-116.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABUSjeBZnxPsIYrWhId6-_Z6oMB_bVSMq4R_DqE9YVOi6vhPunnh0-DPLO2NYL0J31S8qQC0iovZye7PGo0_COEYdamhZSYS0Vm-pcuhdsCzULzAi1gsbjUY7.jpg?r=e78"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_7d9c6b78c0b8e6682580577d9c34cb14.jpg';"
+                                  onmouseout="this.src='https://occ-0-4440-116.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABUSjeBZnxPsIYrWhId6-_Z6oMB_bVSMq4R_DqE9YVOi6vhPunnh0-DPLO2NYL0J31S8qQC0iovZye7PGo0_COEYdamhZSYS0Vm-pcuhdsCzULzAi1gsbjUY7.jpg?r=e78'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">9. Todos a bordo.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">01/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Sakamoto-days/T1/8">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://occ-0-1472-3934.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbzD7pgx2f60mXWTU7kj2IP5ujs949qJa5c7HwzPIivWWlFrEghSWTUg-ZNhAub9_D2xy-3Epw7b8kkt9aaRCbMDx4lB3xd_nMp_Q-6IOgfmGJB0NrAzUu51.jpg?r=e38"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_f290ed2930c3eef7e9bdefe8d11469a2.jpg';"
+                                  onmouseout="this.src='https://occ-0-1472-3934.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbzD7pgx2f60mXWTU7kj2IP5ujs949qJa5c7HwzPIivWWlFrEghSWTUg-ZNhAub9_D2xy-3Epw7b8kkt9aaRCbMDx4lB3xd_nMp_Q-6IOgfmGJB0NrAzUu51.jpg?r=e38'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">8. Sakamoto vs. el laboratorio.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">22/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Sakamoto-days/T1/7">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://occ-0-1472-114.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABZ4Y4E3ENselOQl_U3BrPRVe2rItjBznbus-T9qgRyPb3Q1EbYKSoDrdcrLBkwiwtG9IHfrzPXbExmWBAphvgmIMnGMQsYZTkb8dM7AxLtIz6JNbwAvAzme9.jpg?r=a3f"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_2f67fa66c62881aa94535c65d2804f99.jpg';"
+                                  onmouseout="this.src='https://occ-0-1472-114.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABZ4Y4E3ENselOQl_U3BrPRVe2rItjBznbus-T9qgRyPb3Q1EbYKSoDrdcrLBkwiwtG9IHfrzPXbExmWBAphvgmIMnGMQsYZTkb8dM7AxLtIz6JNbwAvAzme9.jpg?r=a3f'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">7. Bastardo jurásico.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">15/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Sakamoto-days/T1/6">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://occ-0-1472-116.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbgnxBuESrWldPHsS8zUXGf6uPnvoANHgZ2aFdxFGwg3VaHd8bUm81qz0FEj69x4Rl5kYEhA84uqABzvTY5zEUOGVRkixxrsrASyR9nA-vkxpduEOc7oq7HQ.jpg?r=ff1"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_45f9f9e03f16a809a40a6f5899235694.jpg';"
+                                  onmouseout="this.src='https://occ-0-1472-116.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbgnxBuESrWldPHsS8zUXGf6uPnvoANHgZ2aFdxFGwg3VaHd8bUm81qz0FEj69x4Rl5kYEhA84uqABzvTY5zEUOGVRkixxrsrASyR9nA-vkxpduEOc7oq7HQ.jpg?r=ff1'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">6. Heisuke Mashimo.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">08/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Sakamoto-days/T1/5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://occ-0-1472-116.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABRG0LjOg0-3kuEzaYaZWsqyrfLopPDg6NfAFTaRD9zRRyyAKZNr6KZciJOZGuftItkhy8joFD_JOUtP2nD3KxwwaxuiP84qI907ztW0DGuTT89zZ7Km6AAch.jpg?r=918"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image_thumb/jkvideo_ed29e0a6d56b5dc9c8dc953726c55c27.jpg';"
+                                  onmouseout="this.src='https://occ-0-1472-116.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABRG0LjOg0-3kuEzaYaZWsqyrfLopPDg6NfAFTaRD9zRRyyAKZNr6KZciJOZGuftItkhy8joFD_JOUtP2nD3KxwwaxuiP84qI907ztW0DGuTT89zZ7Km6AAch.jpg?r=918'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">5. Boiled, el duro.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">08/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Sakamoto-days/T1/4">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://occ-0-4440-3934.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABW9T2rbsTMD0TU4EEqUqyOGZjcdGJHccN61rklv7AoKr5OvDLkdR6teozgztmes3rOauaLXdkel_sQaX9kLQHBzoUcFA9_HAkR0PmEWCNZJJDweK9aMD5hfI.jpg?r=6ae"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_bd8b975c15dc7c3a06c9f2df0cffae6b.jpg';"
+                                  onmouseout="this.src='https://occ-0-4440-3934.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABW9T2rbsTMD0TU4EEqUqyOGZjcdGJHccN61rklv7AoKr5OvDLkdR6teozgztmes3rOauaLXdkel_sQaX9kLQHBzoUcFA9_HAkR0PmEWCNZJJDweK9aMD5hfI.jpg?r=6ae'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">4. Boiled, el duro.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">25/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Sakamoto-days/T1/3">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://occ-0-1472-3933.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbsVyoI-ps8n1GBdgDqJgFryQphT-HuR7TU65bfk3LqjTnzk2SukdgbG0XUNj43hNtgK0Down26GfWi0Nzm4ah6HuIS50BAxEcFNFKXM-0_Pqexl3MbbZP9g.webp?r=46b"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_1888ec27908c840e609605924d578c20.jpg';"
+                                  onmouseout="this.src='https://occ-0-1472-3933.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABbsVyoI-ps8n1GBdgDqJgFryQphT-HuR7TU65bfk3LqjTnzk2SukdgbG0XUNj43hNtgK0Down26GfWi0Nzm4ah6HuIS50BAxEcFNFKXM-0_Pqexl3MbbZP9g.webp?r=46b'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">3. Bienvenidos a Sugar Park.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">25/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Sakamoto-days/T1/2">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_970a2dacdd7d20c07c011641b9c2382f.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/2YaDsBPG9kob4o6ohfvOl9Wmate.jpg';"
+                                  onmouseout="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_970a2dacdd7d20c07c011641b9c2382f.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">2. Contra Son Hee y Bacho.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">18/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Sakamoto-days/T1/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://occ-0-4440-3934.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWHnS22C_66n2XVbTMhsuhScaDfHqmG5omAMxMWUgAaAQJgHWtk_9V2oGODtI2RtAxM_C9maBSH-LsN1V4TA_jtJUT4Dxdlt0p-jIev2NegUBKfwPmhiuPXN.webp?r=ef0"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/qEI4JdzHUe9o31gjnIvM4sRK0TL.jpg';"
+                                  onmouseout="this.src='https://occ-0-4440-3934.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABWHnS22C_66n2XVbTMhsuhScaDfHqmG5omAMxMWUgAaAQJgHWtk_9V2oGODtI2RtAxM_C9maBSH-LsN1V4TA_jtJUT4Dxdlt0p-jIev2NegUBKfwPmhiuPXN.webp?r=ef0'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">25m</p>
+                              </figure>
+                              <h3 class="Title">1. El asesino legendario.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">11/01/25</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <!-- <li>
+                    <div class="collapsible-header"><i class="material-icons">place</i>Temporada 2</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                  </li> -->
+                </ul>
+
+                <script>
+                  //expandible
+
+                  document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.collapsible');
+                    var instances = M.Collapsible.init(elems, options);
+                  });
+
+                  // Or with jQuery
+
+                  $(document).ready(function () {
+                    $('.collapsible').collapsible();
+                  });
+                  var instance = M.Collapsible.getInstance(elem);
+
+                  /* jQuery Method Calls
+                    You can still use the old jQuery plugin method calls.
+                    But you won't be able to access instance properties.
+                
+                    $('.collapsible').collapsible('methodName');
+                    $('.collapsible').collapsible('methodName', paramName);
+                  */
+                  var elem = document.querySelector('.collapsible.expandable');
+                  var instance = M.Collapsible.init(elem, {
+                    accordion: false
+                  });
+                </script>
+
+                <!-- <details open>
+                  <summary class="temp1 btn-floating btn-large pulse">Temporada 1<i class="material-icons"
+                      style="margin: -25px 175px; font-size: 28px;">fiber_new</i></summary>
+                  <div id='linea1'>
+                    <div class="Top">
+                      <div class="Title">Lista de episodios</div>
+                      <div class="lstopt-frm">
+                        <span class="order-lst">
+                        </span>
+                      </div>
+                    </div>
+                    <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                      <li class="fa-play-circle Next">
+                        <a href="#">
+                          <figure>
+                            <img
+                              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/397409971ee95b61bcaaa65b598280e7.jpe"
+                              alt="" style="display: block; background-image: cover;">
+                          </figure>
+                          <h3 class="Title">Proximo Episodio Miércoles</h3>
+                          <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                              alt="calendar" />Estreno 08/05/24.</p>
+                        </a>
+                      </li>
+                      <style>
+                        .time-m {
+                          z-index: 1000;
+                          background: #222;
+                          font-family: sans-serif;
+                          opacity: 0.8;
+                          height: 22px;
+                          width: 30px;
+                          margin: 44px 75px;
+                          text-align: center;
+                        }
+                      </style>
+
+                      
+                      <li class="fa-play-circle">
+                        <a href="https://all-anime.net/ver/Ranma-1-2-2024/T1/1">
+                          <figure>
+                            <img class="lazy1" alt=""
+                              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/b8bf242593f0f0fa1abee4f1d1aed7f8.jpe"
+                              onmouseover="this.src='https://image.tmdb.org/t/p/w300/xG54T2JtsnR9qSg2nLQMoLghkRs.jpg';"
+                              onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/b8bf242593f0f0fa1abee4f1d1aed7f8.jpe'"
+                              style="display: block;">
+                            <p class="time-m" style="color: #fff;">22m</p>
+                          </figure>
+                          <h3 class="Title">1. Primer post.</h3>
+                          <p>Subtitulado</p>
+                          <p style="color: rgb(7, 247, 59)">10/04/24</p>
+                        </a>
+                      </li>
+                </details> -->
+                <br>
+                <br>
+              </section>
+  </section>
+  </div>
+  </section>
+  </main>
+
+
+
+  <footer class="Footer">
+    <div class="Container">
+      <div class="BX Row BFluid Sp20 NMb">
+        <div>
+          <p><span>Anime HD Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+          <nav class="mnftxt">
+            <a href="https://all-anime.net/condiciones-de-uso">Términos y Condiciones</a>
+            <a href="https://all-anime.net/politica-de-privacidad">Política de Privacidad</a>
+            <a href="https://all-anime.net/sobre-all-anime">Sobre All-ANIME</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/idioma.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

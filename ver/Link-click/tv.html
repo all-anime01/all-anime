@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="http://www.class.pm/projects/jquery/classysocial">
+  <title>Ver Link click Online — All-Anime</title>
+  <link rel="shortcut icon" href="/image/logo.ico">
+  <link rel="stylesheet" href="/css/List_Episodios.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="https://all-anime.net/" class="logo">
+      <img src="https://all-anime.net/image/Logo/logo-all-anime-min.svg" alt="">
+    </a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="https://all-anime.net/">INICIO</a></li>
+        <li><a href="https://all-anime.net/explorar">EXPLORAR</a></li>
+        <li><a href="https://all-anime.net/peliculas">PELÍCULAS</a></li>
+
+        <div class="search">
+          <div class="search-container">
+            <input type="text" placeholder="Buscar..." id="search-input" oninput="hideResults()">
+            <!-- <div class="icon-search">
+                            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-t="search-svg" aria-labelledby="search-svg" aria-hidden="false" role="img"><title id="search-svg">Buscar</title><path d="M15.474 14.035l6.235 6.26a1 1 0 1 1-1.418 1.41l-6.228-6.253a7.5 7.5 0 1 1 1.41-1.418zM9.5 15a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z"/></svg>
+                        </div> -->
+            <div id="search-results"></div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <style>
+      .search-container {
+        position: relative;
+        top: 5px;
+        left: 100%;
+        transform: translateX(-95%);
+        width: 185px;
+        z-index: 2000;
+        border-radius: 2.5px;
+        opacity: 2;
+      }
+
+      #search-input {
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      #search-results {
+        position: absolute;
+        width: 100%;
+        background-color: #f2f2f2;
+        z-index: 1;
+      }
+
+      #search-results div {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+      }
+
+      #search-results div a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+      }
+
+      #search-results img {
+        height: 70px;
+        margin-right: 10px;
+      }
+
+      #search-results .title {
+        font-weight: bold;
+      }
+
+      .title:hover {
+        color: rgb(7, 247, 59);
+      }
+
+      #search-results .Type {
+        margin-left: auto;
+      }
+
+      .Type {
+        background-color: rgb(7, 247, 59);
+        border-color: rgb(7, 247, 59);
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 16px;
+        width: 60px;
+        color: #fff;
+        height: 16px;
+        border-radius: 8px;
+      }
+
+      .Type:hover {
+        background-color: rgb(32, 106, 243);
+        border-color: rgb(32, 106, 243);
+      }
+    </style>
+  </header>
+
+  <section class="Inicio" id="Inicio">
+
+    <div class="Body">
+      <div>
+        <div class="Ficha fchlt">
+          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=94,width=1920/CurationAssets/Link%20Click/SEASON%203/ULTRA-WIDE/LinkClick-S3-KV0-UW-LTR.png); max-width: 100%; height: 105%; background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;">
+          </div>
+          <div class="Container">
+            <img
+              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480/CurationAssets/Link%20Click/SEASON%203/ULTRA-WIDE/LinkClick-S3-KV0-UW-Logo.png"
+              alt="" style="width: 300px;">
+            <span class="Type tv">Anime</span>
+            <div>
+              <span class="TxtAlt">all-anime</span>
+              <span class="TxtAlt">Crunchyroll</span>
+              <span class="TxtAlt">+14</span>
+              <span class="TxtAlt">Sub | Dob</span>
+            </div>
+            <div class="vtshr">
+              <div class="Votes">
+                <span class="vtprmd" id="votes_prmd">4.8</span>
+                <div class="Strs RateIt" data-id="7">
+                  <a href="#" class="fa-star-o Hf" data-value="5" title="5 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="4" title="4 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="3" title="3 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="2" title="2 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="1" title="1 Estrellas"></a>
+                </div>
+                <span class="Nmbr"><span id="votes_nmbr">10K</span> VOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Container">
+          <div class="BX Row BFluid Sp20">
+
+            <aside class="SidebarA BFixed">
+              <div class="AnimeCover">
+                <div class="Image">
+                  <figure><img
+                      src="https://a.storyblok.com/f/178900/1064x1490/4361c92d33/link-click-bidon-arc-kv.png/m/filters:quality(95)format(webp)"
+                      alt="One Piece" itemprop="image"></figure>
+                </div>
+              </div>
+              <p class="AnmStts"><span class="fa-tv">Finalizado</span></p>
+              <ul class="ListAnmBnts ClFx">
+
+            </aside>
+
+            <main class="Main">
+
+              <section class="WdgtCn">
+                <div class="Top">
+                  <div class="Title">Sinopsis</div>
+                </div>
+                <nav class="Nvgnrs">
+                  <a href="#">Drama</a><a href="#">Fantasía</a>
+                </nav>
+                <div class="Description">
+                  <p>Cheng Xiaoshi entra en el mundo de las fotos de Emma, una empleada de Quede Games, bajo el mando de
+                    Lu Guang con el fin de obtener pruebas sobre unos informes financieros falsificados.</p>
+                </div>
+                <br>
+                <div class="relative w-full" style="display: flex; position: relative;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/yF8G6_KaMhA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+              </section>
+
+              <section class="WdgtCn">
+                <br>
+                <span class="list-temp">Temporadas y Episodios</span>
+                <br>
+                <br>
+                <ul class="collapsible popout">
+                  <li class="active">
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">fiber_new</i>Link Click: Bridon Arc</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://m.media-amazon.com/images/S/pv-target-images/e0dfb8c5e81b2b7d540322989588b4589d49349bbb89642e97c5b43f4c0b137f.jpg"
+                                  alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                                  alt="calendar" />Finalizado.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m {
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/Bridon-Arc/6">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ce82b5c7fd476ea050545f56af86bf33.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_a7e29255874fd4cdd4b2f04279fa5de4.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ce82b5c7fd476ea050545f56af86bf33.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">6. Rompecabezas.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">31/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/Bridon-Arc/5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/05294c32fe26804e7519b618183c117b.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_79e3e897e9211985b5b19b8706b52d80.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/05294c32fe26804e7519b618183c117b.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">5. Reunión.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">24/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/Bridon-Arc/4">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/a9b1f95d242ff410d0de435853baaa75.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_fb6aaa16f76030d95bbf6f71ded0ccb6.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/a9b1f95d242ff410d0de435853baaa75.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">4. Y no quedó ninguno.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">17/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/Bridon-Arc/3">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/c29c94e67fbc8c7c4d805abe799d3755.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_b22ca0e399fd2d575d9f54e71f3cb4c6.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/c29c94e67fbc8c7c4d805abe799d3755.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">3. Ellos.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">10/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/Bridon-Arc/2">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/849e01fd049da5798d0475f5535a44e7.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image_thumb/jkvideo_cda070d2bce0cef6c9557c099b341cf3.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/849e01fd049da5798d0475f5535a44e7.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">2. Preludio.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">03/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/Bridon-Arc/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/afab0ce4d447254df20f7fad77c8ae25.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image_thumb/jkvideo_32265d3618a19bd34ec0ef8daca7cb5e.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/afab0ce4d447254df20f7fad77c8ae25.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">65m</p>
+                              </figure>
+                              <h3 class="Title">1. Episodio 1.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">27/12/24</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">ondemand_video</i>Temporada 2</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4e2887f99eb5eff532182b77cf6d7acf.jpe"
+                                  alt="" style="display: block;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p>Finalizado.</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/12">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c3828f39bd864e734665daa7f0910890.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/12.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c3828f39bd864e734665daa7f0910890.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">No se puede vivir sin un buen hermanos.</h3>
+                              <p>Episodio 12</p>
+                              <p style="color: rgb(7, 247, 59)">21/09/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/11">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/660cc9bf0e284fefa332b9b5d7d86116.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/11.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/660cc9bf0e284fefa332b9b5d7d86116.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Confrontación.</h3>
+                              <p>Episodio 11</p>
+                              <p style="color: rgb(7, 247, 59)">14/09/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/10">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1176741782b34380bd94587395944c75.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/10.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/1176741782b34380bd94587395944c75.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Improvisación.</h3>
+                              <p>Episodio 10</p>
+                              <p style="color: rgb(7, 247, 59)">07/09/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/9">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ef21778f9b2ca789638b802a5a415c6f.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/9.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/ef21778f9b2ca789638b802a5a415c6f.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Tres historias.</h3>
+                              <p>Episodio 9</p>
+                              <p style="color: rgb(7, 247, 59)">31/08/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/8">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9289a71c138e74f201278369b134fab7.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/8.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9289a71c138e74f201278369b134fab7.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Rehén.</h3>
+                              <p>Episodio 8</p>
+                              <p style="color: rgb(7, 247, 59)">24/08/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/7">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/036f9d8a3b08b048de970bfb317071c1.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/7.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/036f9d8a3b08b048de970bfb317071c1.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Guerra urbana.</h3>
+                              <p>Episodio 7</p>
+                              <p style="color: rgb(7, 247, 59)">17/08/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/6">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/bfab7aa52489cb7bfe1cc7c627ba2977.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/6.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/bfab7aa52489cb7bfe1cc7c627ba2977.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Li TianXi.</h3>
+                              <p>Episodio 6</p>
+                              <p style="color: rgb(7, 247, 59)">10/08/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/3bf72d49f2a942ed23cd7f4dd88900e5.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/5.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/3bf72d49f2a942ed23cd7f4dd88900e5.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">La última comida.</h3>
+                              <p>Episodio 5</p>
+                              <p style="color: rgb(7, 247, 59)">03/08/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/4">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/cc91cfaa1e3cdb75d7e4c90659defcb6.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/4.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/cc91cfaa1e3cdb75d7e4c90659defcb6.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Los extraños de la foto.</h3>
+                              <p>Episodio 4</p>
+                              <p style="color: rgb(7, 247, 59)">27/07/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/3">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/85e279acb30ed35a6a5356dd7e9030d2.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/3.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/85e279acb30ed35a6a5356dd7e9030d2.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Ataque nocturno.</h3>
+                              <p>Episodio 3</p>
+                              <p style="color: rgb(7, 247, 59)">20/07/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/2">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5627b24cf60ce61862c1bf8490beed20.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/2.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5627b24cf60ce61862c1bf8490beed20.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Ataque nocturno.</h3>
+                              <p>Episodio 2</p>
+                              <p style="color: rgb(7, 247, 59)">13/07/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Link-click/T2/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/75023e42cc5acf10c5e49f828cc0cfca.jpe"
+                                  onmouseover="this.src='/image/Link-click/T2/1.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/75023e42cc5acf10c5e49f828cc0cfca.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Caída.</h3>
+                              <p>Episodio 1</p>
+                              <p style="color: rgb(7, 247, 59)">13/07/23</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">ondemand_video</i>Temporada 1</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img src="https://i.blogs.es/80ea50/link-click---temporada-2/450_1000.jpeg" alt=""
+                                  style="display: block;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p>Finalizado.</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Jujutsu-kaisen/T1/12">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/aa1e20044d94474e6ed867d8dd57aa25.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/12.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/aa1e20044d94474e6ed867d8dd57aa25.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Personas de luz.</h3>
+                              <p>Episodio 11</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Jujutsu-kaisen/T1/11">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/bc3f745b649078fcf2a79192fbe8c904.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/11.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/bc3f745b649078fcf2a79192fbe8c904.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Trampa.</h3>
+                              <p>Episodio 10</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Jujutsu-kaisen/T1/10">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/50eef7efe9d701dd4e7c0ead6264ddc1.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/10.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/50eef7efe9d701dd4e7c0ead6264ddc1.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Consecuencia de buenas intenciones.</h3>
+                              <p>Episodio 9</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Jujutsu-kaisen/T1/9">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2818c21d279ce494b6269422936662a5.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/9.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2818c21d279ce494b6269422936662a5.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Sin señal.</h3>
+                              <p>Episodio 8</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Jujutsu-kaisen/T1/8">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a8fe3f3a646be77f6310bf28724edc79.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/8.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/a8fe3f3a646be77f6310bf28724edc79.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Tía Mei.</h3>
+                              <p>Episodio 7</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Jujutsu-kaisen/T1/7">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7532a9ad1f3694a5bbef08f61807c3fe.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/7.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7532a9ad1f3694a5bbef08f61807c3fe.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Buscar a un hijo.</h3>
+                              <p>Episodio 6</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Bleach-sennen-kessen-hen/6">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e036622069df77a3eb763c920ba30fd3.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/6.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/e036622069df77a3eb763c920ba30fd3.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Artes marciales y matrimonio.</h3>
+                              <p>Episodio 5.5</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Jujutsu-kaisen/T1/5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4989f8cf39e8e0050284467d67645ca4.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/5.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/4989f8cf39e8e0050284467d67645ca4.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Adiós.</h3>
+                              <p>Episodio 5</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Jujutsu-kaisen/T1/4">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2c6ecf6d856f12fb8c2aea23a27f9bd4.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/4.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/2c6ecf6d856f12fb8c2aea23a27f9bd4.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Declaración.</h3>
+                              <p>Episodio 4</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Jujutsu-kaisen/T1/3">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/86d6133d61197fe2b456d2cfbbb7c390.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/3.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/86d6133d61197fe2b456d2cfbbb7c390.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">21m</p>
+                              </figure>
+                              <h3 class="Title">Solo puede perder, no debe ganar.</h3>
+                              <p>Episodio 3</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Jujutsu-kaisen/T1/2">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8b61721d7e7ae971f7ed468142fe16e8.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/2.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8b61721d7e7ae971f7ed468142fe16e8.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Receta secreta.</h3>
+                              <p>Episodio 2</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Jujutsu-kaisen/T1/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/12aafc517f3523dd11cb700b200ba72e.jpe"
+                                  onmouseover="this.src='/image/jujutsu-k/1.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/12aafc517f3523dd11cb700b200ba72e.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Emma.</h3>
+                              <p>Episodio 1</p>
+                              <p style="color: rgb(7, 247, 59)">17/05/22</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <!-- <li>
+                          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li> -->
+                </ul>
+                <script>
+                  //expandible
+
+                  document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.collapsible');
+                    var instances = M.Collapsible.init(elems, options);
+                  });
+
+                  // Or with jQuery
+
+                  $(document).ready(function () {
+                    $('.collapsible').collapsible();
+                  });
+                  var instance = M.Collapsible.getInstance(elem);
+
+                  /* jQuery Method Calls
+                    You can still use the old jQuery plugin method calls.
+                    But you won't be able to access instance properties.
+                
+                    $('.collapsible').collapsible('methodName');
+                    $('.collapsible').collapsible('methodName', paramName);
+                  */
+                  var elem = document.querySelector('.collapsible.expandable');
+                  var instance = M.Collapsible.init(elem, {
+                    accordion: false
+                  });
+                </script>
+                <br>
+                <br>
+              </section>
+  </section>
+  </div>
+  </section>
+  </main>
+
+
+
+  <footer class="Footer">
+    <div class="Container">
+      <div class="BX Row BFluid Sp20 NMb">
+        <div>
+          <p><span>Anime HD Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+          <nav class="mnftxt">
+            <a href="https://all-anime.net/condiciones-de-uso">Términos y Condiciones</a>
+            <a href="https://all-anime.net/politica-de-privacidad">Política de Privacidad</a>
+            <a href="https://all-anime.net/sobre-all-anime">Sobre All-ANIME</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/idioma.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

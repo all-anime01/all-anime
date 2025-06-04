@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="http://www.class.pm/projects/jquery/classysocial">
+  <title>Ver Shangri-La Frontier Online — All-Anime</title>
+  <link rel="shortcut icon" href="/image/logo.ico">
+  <link rel="stylesheet" href="/css/List_Episodios.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="https://all-anime.net/" class="logo">
+      <img src="https://all-anime.net/image/Logo/logo-all-anime-min.svg" alt="">
+    </a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="https://all-anime.net/">INICIO</a></li>
+        <li><a href="https://all-anime.net/explorar">EXPLORAR</a></li>
+        <li><a href="https://all-anime.net/peliculas">PELÍCULAS</a></li>
+
+        <div class="search">
+          <div class="search-container">
+            <input type="text" placeholder="Buscar..." id="search-input" oninput="hideResults()">
+            <!-- <div class="icon-search">
+                            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-t="search-svg" aria-labelledby="search-svg" aria-hidden="false" role="img"><title id="search-svg">Buscar</title><path d="M15.474 14.035l6.235 6.26a1 1 0 1 1-1.418 1.41l-6.228-6.253a7.5 7.5 0 1 1 1.41-1.418zM9.5 15a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11z"/></svg>
+                        </div> -->
+            <div id="search-results"></div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <style>
+      .search-container {
+        position: relative;
+        top: 5px;
+        left: 100%;
+        transform: translateX(-95%);
+        width: 185px;
+        z-index: 2000;
+        border-radius: 2.5px;
+        opacity: 2;
+      }
+
+      #search-input {
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      #search-results {
+        position: absolute;
+        width: 100%;
+        background-color: #f2f2f2;
+        z-index: 1;
+      }
+
+      #search-results div {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+      }
+
+      #search-results div a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+      }
+
+      #search-results img {
+        height: 70px;
+        margin-right: 10px;
+      }
+
+      #search-results .title {
+        font-weight: bold;
+      }
+
+      .title:hover {
+        color: rgb(7, 247, 59);
+      }
+
+      #search-results .Type {
+        margin-left: auto;
+      }
+
+      .Type {
+        background-color: rgb(7, 247, 59);
+        border-color: rgb(7, 247, 59);
+        text-align: center;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 16px;
+        width: 60px;
+        color: #fff;
+        height: 16px;
+        border-radius: 8px;
+      }
+
+      .Type:hover {
+        background-color: rgb(32, 106, 243);
+        border-color: rgb(32, 106, 243);
+      }
+    </style>
+  </header>
+
+  <section class="Inicio" id="Inicio">
+
+    <div class="Body">
+      <div>
+        <div class="Ficha fchlt">
+          <div class="Bg" style="background-image: linear-gradient(rgba(16, 16, 23, 0.40), #000000), url(https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=cover,format=auto,quality=94,width=1920/keyart/G79H23Z8P-backdrop_wide); background-size: 100% 95%; background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;">
+          </div>
+          <div class="Container">
+            <img
+              src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480/cr/logo/418a64a7-fb05-48c8-a83a-88777d21224f.png"
+              alt="" style="width: 300px;">
+            <span class="Type tv">Anime</span>
+            <div>
+              <span class="TxtAlt">all-anime</span>
+              <span class="TxtAlt">crunchyroll</span>
+              <span class="TxtAlt">+14</span>
+              <span class="TxtAlt">Sub | Dob</span>
+            </div>
+            <div class="vtshr">
+              <div class="Votes">
+                <span class="vtprmd" id="votes_prmd">4.9</span>
+                <div class="Strs RateIt" data-id="7">
+                  <a href="#" class="fa-star-o Hf" data-value="5" title="5 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="4" title="4 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="3" title="3 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="2" title="2 Estrellas"></a>
+                  <a href="#" class="fa-star-o On" data-value="1" title="1 Estrellas"></a>
+                </div>
+                <span class="Nmbr"><span id="votes_nmbr">(45.4K)</span> VOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Container">
+          <div class="BX Row BFluid Sp20">
+
+            <aside class="SidebarA BFixed">
+              <div class="AnimeCover">
+                <div class="Image">
+                  <figure><img
+                      src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/c4b9650d301c602a2e04cbdf09412204.jpg"
+                      alt="One Piece" itemprop="image">
+                  </figure>
+                </div>
+              </div>
+              <p class="AnmStts"><span class="fa-tv">Finalizado.</span></p>
+              <ul class="ListAnmBnts ClFx">
+
+            </aside>
+
+
+            <main class="Main">
+
+              <section class="WdgtCn">
+                <div class="Top">
+                  <div class="Title">Sinopsis</div>
+                </div>
+                <nav class="Nvgnrs">
+                  <a href="#">Acción</a>
+                  <a href="#">Fantasía</a>
+                  <a href="#">Shounen</a>
+                </nav>
+                <div class="Description">
+                  <p>"¿Cuándo fue la última vez que jugué un juego que no fuera una basura?" Este es un mundo en el
+                    futuro cercano donde los juegos que usan pantallas se consideran retro, y muchos juegos de realidad
+                    virtual no llegan a un mínimo de calidad: son los llamados "juegos basura". A aquellos que dedican
+                    sus vidas a completar estos juegos se les llama "cazadores de juegos basura", y Rakuro Hizutome es
+                    uno de ellos. El juego que ha elegido abordar a continuación es Shangri-La Frontier, un juego que
+                    goza de una gran crítica y más de 30 millones de jugadores. ¡La mejor historia de aventuras escrita
+                    por el jugador más fuerte de "juegos basura" está a punto de comenzar!.</p>
+                </div>
+                <br>
+                <div class="relative w-full" style="display: flex; position: relative;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Wb46WeAYntg?si=AWQ-SOYbhZvBihXT"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                </div>
+
+              </section>
+
+              <section class="WdgtCn">
+                <br>
+                <span class="list-temp">Temporadas y Episodios</span>
+                <br>
+                <br>
+                <ul class="collapsible popout">
+                  <li class="active">
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">fiber_new</i>Temporada 2</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a5f4f7ffb7e57e2e1409f123f6498c1a.jpg"
+                                  alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                                  alt="calendar" />Finalizado.</p>
+                            </a>
+                          </li>
+                          <style>
+                            .time-m {
+                              z-index: 1000;
+                              background: #222;
+                              font-family: sans-serif;
+                              opacity: 0.8;
+                              height: 22px;
+                              width: 30px;
+                              margin: 44px 75px;
+                              text-align: center;
+                            }
+                          </style>
+
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/50">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/7dfee558a466e76dc6b1599dcd3b505a.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/uZ6IUfFIROm0GjpX0TPGsKrIjHS.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/7dfee558a466e76dc6b1599dcd3b505a.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">25. La loca Brigada A (de anónimo) enfrenta una crisis.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">30/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/49">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/5acc8e981c10e7b7c314a96c3058497e.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/wfOCc9t3ttGvXFNEQfbleZgfYLD.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/5acc8e981c10e7b7c314a96c3058497e.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">24. Monarca de las profundidades, prepárate a caer.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">23/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/48">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/88b4dac8e657f302dccb1fc8863e85d6.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/prQ9RvNAgeEWKlUGAXBXEgSSA3y.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/88b4dac8e657f302dccb1fc8863e85d6.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">23. Asesinato a cien metros por segundo.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">16/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/47">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/7d0b7d6f49fa4dfff57bb8f7c830b257.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/6VZhwVXLKcZlMw0SXi2mR7bxy1S.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/7d0b7d6f49fa4dfff57bb8f7c830b257.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">22. La luz milagrosa estalla en gloria por un momento.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">09/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/46">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/b266361352922e080051ced9074391c0.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/e8sSqXbDpWB00vWqjxj0VUDX1pQ.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/b266361352922e080051ced9074391c0.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">21. Y la Banda del Lobo va del mar a los rascacielos.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">02/03/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/45">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=1200,height=675/catalog/crunchyroll/76047dde0ed2a5ebd75431bea90cbed6.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/5iixTEX7EjZCupJ2bLog5OVV13M.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=1200,height=675/catalog/crunchyroll/76047dde0ed2a5ebd75431bea90cbed6.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">20. La tranquilidad termina en las ruinas de
+                                la ciudad.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">23/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/44">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ffc505589a097c353866d5da94af1254.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_2edf088ac4c20fd12c5cd999d2afb4ac.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ffc505589a097c353866d5da94af1254.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">19. La tranquilidad termina en las ruinas de la ciudad.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">16/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/43">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=1200,height=675/catalog/crunchyroll/9f20f2508bc77d1e0003b0df8e2d3a06.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_4d4f4e28c6f045a647bbae95f6a05568.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=1200,height=675/catalog/crunchyroll/9f20f2508bc77d1e0003b0df8e2d3a06.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">18. La Ballena Roja contra los peces monstruosos.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">09/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/42">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/7d8921de3f3f179f0e52eed45e038907.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/kJYGP7hcn4w8YXMaWI1lyrbL8X3.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/7d8921de3f3f179f0e52eed45e038907.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">17. Escalera de color con comodín.
+                              </h3>
+                              <p>sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">02/02/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/41">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/1e4d0bb06b7fc93c16c19f51a2f10b79.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/k8T2QLAEr2nMX62L4nzwEXpLX2L.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/1e4d0bb06b7fc93c16c19f51a2f10b79.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">16. ¿Para qué juegas videojuegos? Esta es su respuesta
+                                .
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">26/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/40">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/6033e4a8b93b0380a84ad0935ea4468f.jpg"
+                                  onmouseover="this.src='https://cdn.jkdesu.com/assets/images/animes/video/image/jkvideo_27519130c59aca8e04b9c3fb2d66dfd2.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/6033e4a8b93b0380a84ad0935ea4468f.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">15. Lleva contigo la flama de la gran ambición: Parte 5
+                                .
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">19/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/39">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/590c500c644a6ffae6745e90d1373227.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/kM0Q9pUVVvIBzRmWajmfIEzhsY8.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/590c500c644a6ffae6745e90d1373227.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">14. Lleva contigo la flama de la gran ambición: Parte 4
+                                .
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">12/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/38">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/85861f999216f9f6b2e41b08213695d4.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/qLXq4DZKDzwuYHHbkuMsOROj0GH.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/85861f999216f9f6b2e41b08213695d4.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">13. Lleva contigo la flama de la gran
+                                ambición: Parte 3.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">05/01/25</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/37">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/749418b96db07df9765a8f0666b08fb6.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/c87whK6FVT8Snnq3buWRA7bMngm.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/749418b96db07df9765a8f0666b08fb6.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">12. Lleva contigo la flama de la gran
+                                ambición: Parte 2.
+                              </h3>
+                              <p>Sub 1 Dob</p>
+                              <p style="color: rgb(7, 247, 59)">29/12/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/36">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/5638a801ba5ac00f7c97279ba5286f0e.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/bobLLf4vAjTsPjx5hOzi9cMGFgo.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/5638a801ba5ac00f7c97279ba5286f0e.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">11. Lleva contigo la flama de la gran
+                                ambición: Parte 1.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">22/12/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/35">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/727d1c2765fe7e72c15e31f8edf4f288.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/jJzNYKn2KJNUFTCFVlJvwCEf5Lj.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/727d1c2765fe7e72c15e31f8edf4f288.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">10. Sigue su olor como un perro de caza.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">15/12/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/34">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/a4dbf5c30e558ecaba862455493dbaaf.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/zHU7ayDd1YwjAD14pZc4IRh4Ct3.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/a4dbf5c30e558ecaba862455493dbaaf.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">9. Corre usando la ansiedad como tu combustible.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">08/12/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/33">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/d0dd2c9a4531e247200acc1bc22b77be.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/original/igLsTDh6Z4dUEUb3viXp7zYk2IO.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/d0dd2c9a4531e247200acc1bc22b77be.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">8. El león usa todas sus fuerzas para cazar al conejo, mientras que el
+                                cangrejo enfrenta al fénix con un cortador de pizza.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">01/12/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/32">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/c25c2a60c268456aafc2719131e324f0.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/original/gekL0AsLdqzfbODmoY7cDq7XxGr.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/c25c2a60c268456aafc2719131e324f0.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">7. Choque de alas gemelas.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">24/11/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/31">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/69847a859fa5271821f35ea715026e88.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/original/22sATWsTWE3c2tNdmPS8otSXunD.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/69847a859fa5271821f35ea715026e88.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">6. Desesperación al final del duelo.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">17/11/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/30">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/a63a5879ee1107ee12cae303c8260058.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/original/sqzmKGqxChBqR1APnBfqug0dP8j.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/a63a5879ee1107ee12cae303c8260058.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">5. Ese impulso es apetito; esa perseverancia, un deseo obsesivo.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">10/11/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/29">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/dd2d185e68b420b6f0d5a37e0de08c10.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/1ncrYwV1THKwwgylGlgM4sa1brL.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/dd2d185e68b420b6f0d5a37e0de08c10.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">4. La gente sueña con cosas imposibles, como caminar por el cielo.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">03/11/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/28">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/00832517f58b3f3eda493abaabfe81a4.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/ixsms5MmCKOBn6BHqyGNP9e3zyp.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/00832517f58b3f3eda493abaabfe81a4.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">3. Las ambiciones e intenciones de todos se intensifican en la reunión.
+                              </h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">27/10/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/27">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/3fc35d572a3ba5245a893e6c8fe6fea9.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/hcg0cinfjMCYI2FxMvXGg2cvYLE.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/3fc35d572a3ba5245a893e6c8fe6fea9.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">2. El portero carente de versatilidad.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">20/10/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T2/26">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ad119352471f1739ff61738c7158ab1d.jpg"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/pTfvmz4gwMBYr6rTj8aQ9Xr4KGH.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=70,width=320,height=180/catalog/crunchyroll/ad119352471f1739ff61738c7158ab1d.jpg'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">1. El pajarraco medio desnudo y sus valientes compañeros en el paraíso
+                                de los golems.</h3>
+                              <p>Sub | Dob</p>
+                              <p style="color: rgb(7, 247, 59)">13/10/24</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons"
+                        style="font-size: 25px; color: rgb(202, 48, 48);">ondemand_video</i>Temporada 1</div>
+                    <div class="collapsible-body">
+                      <div id='linea1'>
+                        <div class="Top">
+                          <div class="Title">Lista de episodios</div>
+                          <div class="lstopt-frm">
+                            <span class="order-lst">
+                            </span>
+                          </div>
+                        </div>
+                        <ul class="ListCaps" id="episodeList" style="max-height: 1000px; overflow-y: auto;">
+                          <li class="fa-play-circle Next">
+                            <a href="#">
+                              <figure>
+                                <img
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/34cf65c200da726462d0c0ac7e0e55af.jpe"
+                                  alt="" style="display: block; background-image: cover;">
+                              </figure>
+                              <h3 class="Title">Proximo Episodio</h3>
+                              <p><img width="30" height="30" src="https://img.icons8.com/quill/50/calendar.png"
+                                  alt="calendar" />Finalizado.</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/25">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/54f4c62d7db8031daa874b0c66e213c5.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/7zv4lXi3YqlCCDtdqO309RWQp2.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=320,height=180,quality=70/catalog/crunchyroll/54f4c62d7db8031daa874b0c66e213c5.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">26m</p>
+                              </figure>
+                              <h3 class="Title">Aquellos que iluminan la oscuridad del mundo.</h3>
+                              <p>Episodio 25</p>
+                              <p style="color: rgb(7, 247, 59)">31/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/24">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/efd4a6f29ce3b03a6f9d14d818b804bf.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/vTcuPupfSxyF5qC9WazrdFgrY3l.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/efd4a6f29ce3b03a6f9d14d818b804bf.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">26m</p>
+                              </figure>
+                              <h3 class="Title">Los ítems raros valen más que la vida.</h3>
+                              <p>Episodio 24</p>
+                              <p style="color: rgb(7, 247, 59)">24/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/23">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/decc594d791590285a8ce914f25b32cc.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/mDRuh4YXDMISyKqf9oUC3H991cZ.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/decc594d791590285a8ce914f25b32cc.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">El pájaro y los conejos contra el coro
+                                calavera.</h3>
+                              <p>Episodio 23</p>
+                              <p style="color: rgb(7, 247, 59)">17/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/22">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/880eb051934c25a1bc7a871d98c4445d.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/hfPnV1C5pFQ3WCuK65wIKn8ZZa9.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/880eb051934c25a1bc7a871d98c4445d.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">El purificador de aire ambulante.</h3>
+                              <p>Episodio 22</p>
+                              <p style="color: rgb(7, 247, 59)">10/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/21">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/54775bb5f30ff151e3e8f8b3f6915c37.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/bAYomVxxkjIRm1vQh6A8cqP8mez.jpg';"
+                                  onmouseout="this.src='https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,width=320,height=180,fit=contain,quality=70/catalog/crunchyroll/54775bb5f30ff151e3e8f8b3f6915c37.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Mandados, formación y conquista.</h3>
+                              <p>Episodio 21</p>
+                              <p style="color: rgb(7, 247, 59)">03/03/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/20">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/94a03db22a5fb3b1ec0342f0a5c7c049.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/gglAgt0hfU8NxdXzZAaUSD2naFx.jpg';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/94a03db22a5fb3b1ec0342f0a5c7c049.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">El presente y la siguiente acción de cada uno.</h3>
+                              <p>Episodio 20</p>
+                              <p style="color: rgb(7, 247, 59)">25/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/19">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/51efec384f26a6a279c6e2ffb609f098.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/dSgVDs03axBDfOA04duszylnFEf.jpg';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/51efec384f26a6a279c6e2ffb609f098.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">El mundo avanza y aparecen nuevos héroes.</h3>
+                              <p>Episodio 19</p>
+                              <p style="color: rgb(7, 247, 59)">18/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/18">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/603d38662e9a87fce4826548549b7f14.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/cCh3PGxqhqq8sFaCGT0ClhmKIBS.jpg';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/603d38662e9a87fce4826548549b7f14.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Con cariño, para Setsuna, parte 4.</h3>
+                              <p>Episodio 18</p>
+                              <p style="color: rgb(7, 247, 59)">11/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/17">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/036f55d51f0aaa24f3c65a80a68fcd32.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/p90w8NaO1tD2vxgRGWgVPiSxU39.jpg';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/036f55d51f0aaa24f3c65a80a68fcd32.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Con cariño, para Setsuna, parte 3.</h3>
+                              <p>Episodio 17</p>
+                              <p style="color: rgb(7, 247, 59)">04/02/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/16">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8c314cd552392412f3a6ae5c54a0ab67.jpe"
+                                  onmouseover="this.src='https://image.tmdb.org/t/p/w300/sQTbf047vACkhwwXfhhcGKcMbcl.jpg';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/8c314cd552392412f3a6ae5c54a0ab67.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Con cariño, para Setsuna, parte 2.</h3>
+                              <p>Episodio 16</p>
+                              <p style="color: rgb(7, 247, 59)">28/01/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/15">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/445657f760552b27dc294819a4c4c3c0.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/15.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/445657f760552b27dc294819a4c4c3c0.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">24m</p>
+                              </figure>
+                              <h3 class="Title">Con cariño, para Setsuna, parte 1.</h3>
+                              <p>Episodio 15</p>
+                              <p style="color: rgb(7, 247, 59)">21/01/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/14">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9924c3cd821de1d9943ecd1f2db59d12.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/14.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9924c3cd821de1d9943ecd1f2db59d12.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">La uva murió aplastada.</h3>
+                              <p>Episodio 14</p>
+                              <p style="color: rgb(7, 247, 59)">07/01/24</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/13">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/684cf599bd6bb60a2309b66b7c29741a.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/13.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/684cf599bd6bb60a2309b66b7c29741a.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Solo me queda arrepentimiento.</h3>
+                              <p>Episodio 13</p>
+                              <p style="color: rgb(7, 247, 59)">24/12/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/12">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f62a15938b4a17a1fc3b1d26088bbf38.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/12.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/f62a15938b4a17a1fc3b1d26088bbf38.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">No tiene caso arrepentirse del pasado.</h3>
+                              <p>Episodio 12</p>
+                              <p style="color: rgb(7, 247, 59)">17/12/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/11">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5bb26f9371fc6a701147fba5da4f9601.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/11.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5bb26f9371fc6a701147fba5da4f9601.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">El verdadero resplandor.</h3>
+                              <p>Episodio 11</p>
+                              <p style="color: rgb(7, 247, 59)">10/12/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/10">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c44e40fe13c4029c0f677d59d4aad574.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/10.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c44e40fe13c4029c0f677d59d4aad574.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">¡Todos listos para saquear tumbas!.</h3>
+                              <p>Episodio 10</p>
+                              <p style="color: rgb(7, 247, 59)">03/12/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/9">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c44e40fe13c4029c0f677d59d4aad574.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/9.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/c44e40fe13c4029c0f677d59d4aad574.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">El gran y florido bosque frondoso.</h3>
+                              <p>Episodio 9</p>
+                              <p style="color: rgb(7, 247, 59)">26/11/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/8">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/51cbf8475a520734fdf69f531443fbd4.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/8.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/51cbf8475a520734fdf69f531443fbd4.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">El caprichoso límite de 300.</h3>
+                              <p>Episodio 8</p>
+                              <p style="color: rgb(7, 247, 59)">19/11/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/7">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7d5846bcda63cdeefd41c7a48b339246.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/7.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/7d5846bcda63cdeefd41c7a48b339246.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Restos de la Era de los Dioses y un
+                                perdedor con convicción.</h3>
+                              <p>Episodio 7</p>
+                              <p style="color: rgb(7, 247, 59)">12/11/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/6">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5206d7dfe5868df1a08830057433ab59.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/6.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/5206d7dfe5868df1a08830057433ab59.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">La reina de los caballeros de papelería.</h3>
+                              <p>Episodio 6</p>
+                              <p style="color: rgb(7, 247, 59)">05/11/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/5">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/927479b688a8a6e847664107019a7a1d.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/5.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/927479b688a8a6e847664107019a7a1d.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Al final, fuiste acorralado por la lanza de la revuelta.</h3>
+                              <p>Episodio 5</p>
+                              <p style="color: rgb(7, 247, 59)">29/10/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/4">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9069a2ba1c7f138ada336b20ae798d14.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/4.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/9069a2ba1c7f138ada336b20ae798d14.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">23m</p>
+                              </figure>
+                              <h3 class="Title">Los valores inútiles se quitan con juegos
+                                basura.</h3>
+                              <p>Episodio 4</p>
+                              <p style="color: rgb(7, 247, 59)">22/10/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/3">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/dec597181d1450ef02a31a11ea10d6c2.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/3.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/dec597181d1450ef02a31a11ea10d6c2.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">25m</p>
+                              </figure>
+                              <h3 class="Title">El ataque nocturno del lobo negro.</h3>
+                              <p>Episodio 3</p>
+                              <p style="color: rgb(7, 247, 59)">15/10/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/2">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/306a0b30d0c5300d5c8a2abd403f46d1.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/2.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/306a0b30d0c5300d5c8a2abd403f46d1.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">25m</p>
+                              </figure>
+                              <h3 class="Title">Aquel que se vuelve peculiar.</h3>
+                              <p>Episodio 2</p>
+                              <p style="color: rgb(7, 247, 59)">08/10/23</p>
+                            </a>
+                          </li>
+                          <li class="fa-play-circle">
+                            <a href="https://all-anime.net/ver/Shangri-La-Frontier/T1/1">
+                              <figure>
+                                <img class="lazy1" alt=""
+                                  src="https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d710bc1a89143e37eca8bbfa861be1f7.jpe"
+                                  onmouseover="this.src='/image/Shangri-La-Frontier/T1/1.webp';"
+                                  onmouseout="this.src='https://www.crunchyroll.com/imgsrv/display/thumbnail/320x180/catalog/crunchyroll/d710bc1a89143e37eca8bbfa861be1f7.jpe'"
+                                  style="display: block;">
+                                <p class="time-m" style="color: #fff;">25m</p>
+                              </figure>
+                              <h3 class="Title">¿Tú para qué juegas?.</h3>
+                              <p>Episodio 1</p>
+                              <p style="color: rgb(7, 247, 59)">01/10/23</p>
+                            </a>
+                          </li>
+                      </div>
+                  </li>
+                  <!-- <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li> -->
+                </ul>
+                <script>
+                  //expandible
+
+                  document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.collapsible');
+                    var instances = M.Collapsible.init(elems, options);
+                  });
+
+                  // Or with jQuery
+
+                  $(document).ready(function () {
+                    $('.collapsible').collapsible();
+                  });
+                  var instance = M.Collapsible.getInstance(elem);
+
+                  /* jQuery Method Calls
+                    You can still use the old jQuery plugin method calls.
+                    But you won't be able to access instance properties.
+                
+                    $('.collapsible').collapsible('methodName');
+                    $('.collapsible').collapsible('methodName', paramName);
+                  */
+                  var elem = document.querySelector('.collapsible.expandable');
+                  var instance = M.Collapsible.init(elem, {
+                    accordion: false
+                  });
+                </script>
+                <br>
+                <br>
+              </section>
+  </section>
+  </div>
+  </section>
+  </main>
+
+
+
+  <footer class="Footer">
+    <div class="Container">
+      <div class="BX Row BFluid Sp20 NMb">
+        <div>
+          <p><span>Anime HD Online</span> - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+          <nav class="mnftxt">
+            <a href="https://all-anime.net/condiciones-de-uso">Términos y Condiciones</a>
+            <a href="https://all-anime.net/politica-de-privacidad">Política de Privacidad</a>
+            <a href="https://all-anime.net/sobre-all-anime">Sobre All-ANIME</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/idioma.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

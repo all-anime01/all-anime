@@ -1,0 +1,294 @@
+import { Play, Info, Bell, Search, ChevronDown, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
+
+// Episodes data organized by seasons
+const allEpisodes = {
+  5: [
+    {
+      id: 1,
+      title: "Chapter One: The Hellfire Club",
+      duration: "76 min",
+      description: "With war raging overseas, Mike, Dustin, Lucas and Max find their spring break complicated by the emergence of a new threat in Hawkins.",
+      thumbnail: "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?w=800&auto=format&fit=crop&q=60"
+    },
+    {
+      id: 2,
+      title: "Chapter Two: Vecna's Curse",
+      duration: "77 min",
+      description: "A mysterious death sparks a police investigation, leading to shocking revelations about the supernatural forces at work in Hawkins.",
+      thumbnail: "https://images.unsplash.com/photo-1635805737707-575885ab0820?w=800&auto=format&fit=crop&q=60"
+    }
+  ],
+  4: [
+    {
+      id: 1,
+      title: "Chapter One: The Hellfire Club",
+      duration: "85 min",
+      description: "As Hawkins prepares for a new school year, strange occurrences begin to surface, and a new evil threatens the town.",
+      thumbnail: "https://images.unsplash.com/photo-1604076913837-52ab5629fba9?w=800&auto=format&fit=crop&q=60"
+    },
+    {
+      id: 2,
+      title: "Chapter Two: The Nina Project",
+      duration: "80 min",
+      description: "Eleven faces her past while others confront shocking revelations that could change everything.",
+      thumbnail: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=800&auto=format&fit=crop&q=60"
+    }
+  ],
+  3: [
+    {
+      id: 1,
+      title: "Chapter One: Suzie, Do You Copy?",
+      duration: "72 min",
+      description: "Summer brings new jobs and budding romance. But the mood shifts when Dustin's radio picks up a Russian broadcast, and Will senses something is wrong.",
+      thumbnail: "https://images.unsplash.com/photo-1635805737707-575885ab0820?w=800&auto=format&fit=crop&q=60"
+    }
+  ],
+  2: [
+    {
+      id: 1,
+      title: "Chapter One: MADMAX",
+      duration: "68 min",
+      description: "As the town preps for Halloween, a high-scoring rival shakes things up at the arcade, and a skeptical Hopper inspects a field of rotting pumpkins.",
+      thumbnail: "https://images.unsplash.com/photo-1604076913837-52ab5629fba9?w=800&auto=format&fit=crop&q=60"
+    }
+  ],
+  1: [
+    {
+      id: 1,
+      title: "Chapter One: The Vanishing of Will Byers",
+      duration: "65 min",
+      description: "On his way home from a friend's house, young Will sees something terrifying. Nearby, a sinister secret lurks in the depths of a government lab.",
+      thumbnail: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=800&auto=format&fit=crop&q=60"
+    }
+  ]
+};
+
+interface Episode {
+  id: number;
+  title: string;
+  duration: string;
+  description: string;
+  thumbnail: string;
+}
+
+function App() {
+  const [selectedSeason, setSelectedSeason] = useState(5);
+  const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
+  const [showInfoModal, setShowInfoModal] = useState(false);
+  const [selectedEpisode, setSelectedEpisode] = useState<Episode | null>(null);
+
+  // Handle scroll effect for header
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsHeaderScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleEpisodeClick = (episode: Episode) => {
+    setSelectedEpisode(episode);
+    setShowInfoModal(true);
+  };
+
+  return (
+    <div className="min-h-screen bg-[#141414] text-white font-netflix">
+      {/* Header */}
+      <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isHeaderScrolled ? 'bg-[#dc2d22]' : 'bg-gradient-to-b from-black/30 to-transparent'
+      }`}>
+        <div className="flex items-center justify-between px-12 py-4">
+          <div className="flex items-center gap-12">
+            <img 
+              src="https://all-anime.net/image/Logo/logo-all-anime-min.svg"
+              alt="Netflix"
+              className="w-24"
+            />
+            <nav className="flex gap-6">
+              <a href="#" className="text-sm hover:text-gray-300">Home</a>
+              <a href="#" className="text-sm hover:text-gray-300">TV Shows</a>
+              <a href="#" className="text-sm hover:text-gray-300">Movies</a>
+              <a href="#" className="text-sm hover:text-gray-300">New & Popular</a>
+              <a href="#" className="text-sm hover:text-gray-300">My List</a>
+            </nav>
+          </div>
+          <div className="flex items-center gap-6">
+            <Search className="w-5 h-5 cursor-pointer hover:text-gray-300" />
+            <Bell className="w-5 h-5 cursor-pointer hover:text-gray-300" />
+            <div className="flex items-center gap-2 cursor-pointer group">
+              <img 
+                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=800&auto=format&fit=crop&q=60"
+                alt="Profile"
+                className="w-8 h-8 rounded"
+              />
+              <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Hero Banner */}
+      <div className="relative h-screen">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+        <img 
+          src="https://occ-0-4440-3934.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABbERq_aL7Nej4e_fjN0OZY9qMp4g9JirfV5VKZgJr7FSdM7NE2i_1c3Nep4NDwnBo9r-a5_qAuko9O_FG-n4-oHa7oK1VDBwf8sn.jpg?r=acd"
+          alt="Stranger Things"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute bottom-1/4 left-12 max-w-2xl">
+          <img 
+            src="https://occ-0-4440-3934.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABemKOWL1V4rv61wwalKNdi9che_5dUQD3KvcrCf-CHZWg3F8-e6KEvIYBMHanQPGS-ZzKnH9EwrXc_cP8udykMZLMVTVusZ_VQ.webp?r=0b2"
+            alt="Stranger Things"
+            className="w-96 mb-6"
+          />
+          <div className="flex items-center gap-4 mb-6">
+            <span className="text-green-500 font-semibold">98% Match</span>
+            <span>2025</span>
+            <span className="border px-1 text-sm">TV-14</span>
+            <span>5 Seasons</span>
+            <span className="border px-1 text-sm">HD</span>
+          </div>
+          <p className="text-lg mb-6 text-gray-200">
+            When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.
+          </p>
+          <div className="flex gap-4">
+            <button className="flex items-center gap-2 px-8 py-3 bg-white text-black rounded hover:bg-white/90 transition">
+              <Play className="w-6 h-6" />
+              Play
+            </button>
+            <button 
+              onClick={() => setShowInfoModal(true)}
+              className="flex items-center gap-2 px-8 py-3 bg-gray-500/70 text-white rounded hover:bg-gray-500/60 transition"
+            >
+              <Info className="w-6 h-6" />
+              More Info
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Episodes Section */}
+      <section className="px-12 py-8">
+        <div className="flex items-center gap-4 mb-6">
+          <h2 className="text-2xl font-semibold">Episodios</h2>
+          <div className="relative">
+            <select 
+              value={selectedSeason}
+              onChange={(e) => setSelectedSeason(Number(e.target.value))}
+              className="bg-black border rounded px-4 py-1 appearance-none pr-8"
+            >
+              {[5, 4, 3, 2, 1].map(season => (
+                <option key={season} value={season}>Season {season}</option>
+              ))}
+            </select>
+            <ChevronDown className="w-4 h-4 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none" />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 gap-4">
+          {allEpisodes[selectedSeason as keyof typeof allEpisodes].map(episode => (
+            <div 
+              key={episode.id}
+              onClick={() => handleEpisodeClick(episode)}
+              className="flex gap-4 p-4 rounded-md hover:bg-white/10 transition cursor-pointer group"
+            >
+              <div className="relative w-64 h-36">
+                <img 
+                  src={episode.thumbnail}
+                  alt={episode.title}
+                  className="w-full h-full object-cover rounded"
+                />
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                  <Play className="w-12 h-12" />
+                </div>
+              </div>
+              <div className="flex-1">
+                <div className="flex justify-between items-start mb-2">
+                  <h3 className="text-xl font-semibold">{episode.title}</h3>
+                  <span className="text-gray-400">{episode.duration}</span>
+                </div>
+                <p className="text-gray-400">{episode.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Info Modal */}
+      {showInfoModal && (
+        <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center">
+          <div className="bg-[#181818] rounded-lg max-w-4xl w-full mx-4 relative">
+            <button 
+              onClick={() => setShowInfoModal(false)}
+              className="absolute top-4 right-4 text-white/70 hover:text-white"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            
+            {selectedEpisode ? (
+              <div className="p-8">
+                <div className="relative h-[400px] mb-6">
+                  <img 
+                    src={selectedEpisode.thumbnail}
+                    alt={selectedEpisode.title}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#181818] to-transparent" />
+                </div>
+                <h2 className="text-3xl font-bold mb-4">{selectedEpisode.title}</h2>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="text-green-500 font-semibold">98% Match</span>
+                  <span>{selectedEpisode.duration}</span>
+                  <span className="border px-1">HD</span>
+                </div>
+                <p className="text-lg text-gray-300 mb-8">{selectedEpisode.description}</p>
+                <div className="flex gap-4">
+                  <button className="flex items-center gap-2 px-8 py-3 bg-white text-black rounded hover:bg-white/90 transition">
+                    <Play className="w-6 h-6" />
+                    Play
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <div className="p-8">
+                <div className="relative h-[400px] mb-6">
+                  <img 
+                    src="https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?w=1800&auto=format&fit=crop&q=80"
+                    alt="Stranger Things"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#181818] to-transparent" />
+                </div>
+                <h2 className="text-3xl font-bold mb-4">Stranger Things</h2>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="text-green-500 font-semibold">98% Match</span>
+                  <span>2025</span>
+                  <span className="border px-1">TV-14</span>
+                  <span>5 Seasons</span>
+                  <span className="border px-1">HD</span>
+                </div>
+                <p className="text-lg text-gray-300 mb-8">
+                  When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl. Created by The Duffer Brothers, Stranger Things is a love letter to the supernatural classics of the 80's that captivated a generation.
+                </p>
+                <div className="grid grid-cols-2 gap-8 text-sm text-gray-400">
+                  <div>
+                    <p><span className="text-gray-200">Starring:</span> Millie Bobby Brown, Finn Wolfhard, Noah Schnapp</p>
+                    <p><span className="text-gray-200">Creators:</span> The Duffer Brothers</p>
+                  </div>
+                  <div>
+                    <p><span className="text-gray-200">Genres:</span> Sci-Fi TV, Teen TV Shows, Horror TV Shows</p>
+                    <p><span className="text-gray-200">Maturity rating:</span> TV-14</p>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default App;
