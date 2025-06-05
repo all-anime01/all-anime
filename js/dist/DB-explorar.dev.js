@@ -620,7 +620,7 @@ var animes = [{
   description: "Durante el período Edo, un joven llamado Jinta protege la ciudad y a Itsukihime. Cuando se enfrenta a un extraño demonio en el bosque cercano.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 9
+  episodes: 10
 }, {
   id: 63,
   name: "The Beginning After the End (Saikyou no Ousama, Nidome no Jinsei wa Nani wo Suru?)",
@@ -630,7 +630,7 @@ var animes = [{
   description: "Después de una muerte misteriosa, el Rey Grey renace como Arthur Leywin en el continente mágico de Dicathen. Aunque comienza su segunda vida como un bebé, conserva su sabiduría pasada.",
   type: "Subtitulado",
   seasons: 1,
-  episodes: 9
+  episodes: 10
 }, {
   id: 64,
   name: "Devil May Cry 2025",
@@ -660,7 +660,7 @@ var animes = [{
   description: "Koichi Haimawari es un estudiante aburrido que aspiraba a ser un héroe pero abandonó su sueño. Aunque el 80% de la población mundial tenga poderes sobrehumanos llamados Dones, pocos son elegidos para convertirse en héroes y proteger a las personas.",
   type: "Sub | Dob",
   seasons: 1,
-  episodes: 8
+  episodes: 9
 }, {
   id: 67,
   name: "Fire Force (Ennen no Shouboutai)",
